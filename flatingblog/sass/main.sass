@@ -17,6 +17,10 @@ header
 	background-color: $post-bg
 	width: 100%
 	box-shadow: 0px 4px 30px -17px rgba(0,0,0,0.75)
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 999
 	.menu
 		width: 60%
 		margin: 0 auto
@@ -253,7 +257,22 @@ footer
 		font-size: 8px
 @media (max-width: 1000px) 
 	html
-		font-size: 6px
+		font-size: 8px
+	.container
+		width: 100%
+	header
+		.menu
+			width: 90%
+			nav
+				ul
+					li
+						a
+							font-size: 3rem
+	.desc-section
+		display: none
+		width: 0% !important
+	.blog-section
+		width: 100% !important
 @media (max-width: 970px) 
 	html
 		font-size: 5px
