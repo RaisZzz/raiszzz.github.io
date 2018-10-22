@@ -1,0 +1,284 @@
+@import 'colors'
+.container
+	width: 70%
+	margin: 0 auto
+*
+	padding: 0
+	margin: 0
+*::selection
+	background-color: $main-color
+	color: $text-color
+html
+	font-size: 10px
+body
+	background-color: $main-bg
+	font-family: "Roboto", sans-serif
+header
+	background-color: $post-bg
+	width: 100%
+	box-shadow: 0px 4px 30px -17px rgba(0,0,0,0.75)
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 999
+	.menu
+		width: 60%
+		margin: 0 auto
+		padding: 25px 0
+		nav>ul
+			list-style: none
+			display: flex
+			justify-content: space-around
+			li
+				a
+					text-decoration: none
+					font-size: 1.6rem
+					font-weight: 700
+					color: $text-color
+					text-transform: uppercase
+				a:after
+					background-color: $main-color
+					display: block
+					content: ""
+					height: 3px
+					width: 0%
+					transition: all 0.5s
+				a:hover:after
+					width: 100%
+			.ham
+				display: none
+#home
+	padding: 100px 0
+	background-image: url('../img/blog.jpg')
+	background-size: cover
+	background-color: darken($main-color, 20%)
+	background-blend-mode: multiply
+	.container
+		text-align: center
+		color: $post-bg
+		font-weight: 400
+		h3
+			margin-top: 150px
+			font-size: 1.8rem
+		h1
+			margin-top: 50px
+			font-size: 3.6rem
+		.more-btn
+			margin: 70px 0
+			a
+				padding: 15px 40px
+				font-size: 1.6rem
+				font-weight: 700
+				border: 2px solid $post-bg
+				text-decoration: none
+				text-transform: uppercase
+				color: $post-bg
+				transition: all 0.5s
+				&:hover
+					background-color: $main-color
+					border: 2px solid $main-color
+					color: $post-desc
+#blog
+	padding: 100px
+	.container
+		display: flex
+		justify-content: space-between
+		.blog-section
+			width: 70%
+			.post
+				background-color: $post-bg
+				border-radius: 15px
+				box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4)
+				padding-bottom: 30px
+				margin-top: 60px
+				.post-img
+					position: relative
+					cursor: pointer
+					img
+						max-width: 100%
+						border-radius: 15px 15px 0 0
+					&::before
+						max-height: 99%
+						content: ''
+						position: absolute
+						top: 0
+						left: 0
+						right: 0
+						bottom: 0
+						background-color: rgba(0, 0, 0, 0)
+						z-index: 1
+						border-radius: 15px 15px 0 0
+						transition: all 0.5s
+					&:hover::before
+						background-color: rgba(0, 0, 0, 0.6)
+				.post-desc
+					text-align: center
+					padding: 0 5rem
+					.category
+						margin-top: 30px
+						a
+							background-color: $main-color
+							padding: 5px 15px
+							color: $text-color
+							text-decoration: none
+					h2
+						margin-top: 30px
+						font-size: 3.6rem
+						color: $text-color
+					p
+						margin-top: 25px
+						font-size: 1.8rem
+						color: $post-desc
+					hr
+						width: 70px
+						height: 1px
+						border: none
+						background-color: darken($post-bg, 50%)
+						margin: 25px auto
+					a
+						font-size: 1.6rem
+						color: $post-date
+			.load-posts
+				margin-top: 50px
+				display: flex
+				justify-content: center
+				color: $text-color
+				font-size: 2.3rem
+				text-transform: uppercase
+				font-weight: 700
+				align-items: center
+				cursor: pointer
+				a
+					margin-right: 10px
+				i
+					transition: all 1.3s
+				&:hover>i
+					transform: rotate(720deg)
+		.desc-section
+			width: 25%
+			margin-top: 30px
+			div
+				margin-top: 30px
+				box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1)
+				text-align: center
+				padding: 30px 0
+				background-color: $post-bg
+				border-radius: 15px
+				div
+					border-radius: 0
+					box-shadow: none
+					margin: 0
+					padding: 0
+				h3
+					font-size: 2rem
+					color: $text-color
+				hr
+					margin-top: 20px
+					height: 1px
+					border: none
+					background-color: darken($post-bg, 50%)
+				img
+					margin-top: 30px
+					width: 50%
+					border-radius: 50%
+				p
+					margin-top: 25px
+					color: $post-desc
+					font-size: 1.6rem
+					padding: 0 10px
+				.social
+					display: flex
+					justify-content: space-around
+					margin: 20px 0 0 0
+					padding: 0
+					i
+						border-radius: 50%
+						border: 1px solid darken($post-bg, 50%)
+						padding: 10px
+						color: $text-color
+						font-size: 1.3rem
+						cursor: pointer
+						transition: all 0.5s
+						&:hover
+							background-color: darken($post-bg, 50%)
+							color: $post-bg
+				form
+					margin: 30px auto 0 auto
+					input[type='text']
+						border: 1px solid darken($main-bg, 10%)
+						background-color: $main-bg
+						padding: 2rem
+						width: 70%
+						outline: none
+					input[type='submit']
+						width: 90%
+						margin-top: 10px
+						background-color: $main-color
+						border: none
+						text-transform: uppercase
+						padding: 15px
+						cursor: pointer
+						outline: none
+						transition: all 0.5s
+						&:hover
+							background-color: $text-color
+							color: $main-color
+				.category
+					display: flex
+					justify-content: space-between
+					padding: 20px
+					color: $post-date
+					border-bottom: 1px dotted $post-date
+					font-size: 1.8rem
+					transition: all 0.5s
+					cursor: pointer
+					&:hover
+						color: $text-color
+footer
+	display: flex
+	justify-content: space-around
+	background-color: $footer-bg
+	padding: 40px 0
+	a
+		font-size: 1.6rem
+		color: $main-bg
+		text-decoration: none
+	.social-footer
+		display: flex
+		i
+			color: $main-bg
+			transition: all 0.5s
+			font-size: 1.3rem
+			cursor: pointer
+			margin: 0 10px
+// Media
+@media (max-width: 1230px) 
+	html
+		font-size: 8px
+@media (max-width: 1000px) 
+	html
+		font-size: 8px
+	.container
+		width: 100%
+	header
+		.menu
+			width: 90%
+			nav
+				ul
+					li
+						a
+							font-size: 3rem
+	.desc-section
+		display: none
+		width: 0% !important
+	.blog-section
+		width: 100% !important
+@media (max-width: 970px) 
+	html
+		font-size: 5px
+@media (max-width: 700px) 
+	html
+		font-size: 4px
+@media (max-width: 600px) 
+	html
+		font-size: 3px
