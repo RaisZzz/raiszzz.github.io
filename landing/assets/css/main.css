@@ -1,0 +1,50 @@
+html { font-size: 10px; }
+
+body { font-family: "Montserrat", sans-serif; padding: 0; margin: 0; }
+
+.container { width: 70%; }
+
+header { padding: 10px; background-color: #ffffff; }
+header .container { margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+header .container .logo img { max-width: 100%; }
+header .container .info { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
+header .container .info a { text-decoration: none; font-size: 1.6rem; color: #333333; font-weight: 400; }
+header .container .info a span { color: gray; }
+
+#banner { background-color: #f6f6f6; padding: 30px; }
+#banner .container { margin: 0 auto; text-align: center; font-size: 1.6rem; }
+#banner .container h1 { font-weight: 500; color: #333333; }
+#banner .container h1 span { color: #d0021b; }
+#banner .container p { color: #d0021b; font-weight: 500; }
+
+#form { margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+#form .resultokno { background-color: #fcfcfc; width: 45%; padding: 30px; }
+#form .resultokno form { float: right; margin-right: 20px; }
+#form .resultokno form input { width: 100%; margin-bottom: 10px; background-color: #ffffff; border: 1px solid #cbcbcb; border-radius: 4px; font-size: 1.6rem; font-weight: 500; padding: 6px; }
+#form .resultokno form input[type='submit'] { width: 105%; background-color: #a73535; cursor: pointer; color: #ffffff; padding: 10px; }
+#form .resultokno form input[type='file'] { border: none; background: none; font-size: 1.6rem; font-weight: 500; color: gray; }
+#form .resultokno form textarea { width: 102.5%; height: 150px; margin-bottom: 10px; background-color: #ffffff; border: 1px solid #cbcbcb; border-radius: 4px; font-size: 1.6rem; font-weight: 500; resize: none; }
+#form .resultokno form .elemtext { width: 98%; background-color: #ffffff; border: 1px solid #cbcbcb; border-radius: 4px; margin-bottom: 10px; padding: 10px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+#form .resultokno form .elemtext i { font-size: 5rem; color: gray; }
+#form .resultokno form .elemtext p { text-align: center; font-size: 1.6rem; font-weight: 500; color: gray; }
+#form .desc { background: url("../img/exc-bg.jpg") 0; background-size: cover; width: 55%; padding: 30px; }
+#form .desc .excellences { width: 40%; }
+#form .desc .excellences hr { width: 90%; background-color: #a73535; border: none; border-radius: 5px 5px 0 0; height: 7px; margin: 0 auto; }
+#form .desc .excellences .excs { padding: 10px; background-color: #ffffff; margin: 0; border-radius: 5px; }
+#form .desc .excellences .excs .ex { font-size: 1.6rem; font-weight: 500; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 20px 0 20px 10px; }
+#form .desc .excellences .excs .ex i { color: #6ac259; font-size: 3.5rem; }
+#form .desc .excellences .excs .ex a { margin-left: 20px; }
+
+#jobs { padding-bottom: 50px; }
+#jobs .container { margin: 0 auto; text-align: center; }
+#jobs .container h2 { font-weight: 500; font-size: 3.2rem; }
+#jobs .container i { font-size: 2rem; color: #6ac259; margin-left: 69%; }
+#jobs .container .jobs-cont { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+#jobs .container .jobs-cont i { margin: 0 !important; font-size: 2rem; }
+#jobs .container .jobs-cont .job { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; border: 1px solid #6ac259; border-radius: 5px; -webkit-transition: all 0.5s; transition: all 0.5s; width: 50%; height: 100px !important; }
+#jobs .container .jobs-cont .job p { font-weight: 500; font-size: 1.6rem; }
+#jobs .container .jobs-cont .job:hover { background-color: #6ac259; }
+
+footer { background-color: #292929; padding: 40px; }
+footer .container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; margin: 0 auto; }
+footer .container a { color: #ffffff; font-size: 1.4rem; font-weight: 500; }
