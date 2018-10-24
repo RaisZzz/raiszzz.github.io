@@ -1,0 +1,180 @@
+@import 'colors'
+html
+	font-size: 10px
+body
+	font-family: 'Montserrat', sans-serif
+	padding: 0
+	margin: 0
+.container
+	width: 70%
+header
+	padding: 10px
+	background-color: $header-bg
+	.container
+		margin: 0 auto
+		display: flex
+		justify-content: space-between
+		align-items: center
+		.logo
+			img
+				max-width: 100%
+		.info
+			display: flex
+			flex-direction: column
+			align-items: flex-end
+			a
+				text-decoration: none
+				font-size: 1.6rem
+				color: $text-color
+				font-weight: 400
+				span
+					color: lighten($text-color, 30%)
+#banner
+	background-color: $banner-bg
+	padding: 30px
+	.container
+		margin: 0 auto
+		text-align: center
+		font-size: 1.6rem
+		h1
+			font-weight: 500
+			color: $text-color
+			span
+				color: $second-text-color
+		p
+				color: $second-text-color
+				font-weight: 500
+#form
+	margin: 0 auto
+	display: flex
+	justify-content: center
+	.resultokno
+		background-color: $form-bg
+		width: 45%
+		padding: 30px
+		form
+			float: right
+			margin-right: 20px
+			input
+				width: 100%
+				margin-bottom: 10px
+				background-color: $header-bg
+				border: 1px solid $second-color
+				border-radius: 4px
+				font-size: 1.6rem
+				font-weight: 500
+				padding: 6px
+			input[type='submit']
+				width: 105%
+				background-color: $btn-color
+				cursor: pointer
+				color: $footer-text-color
+				padding: 10px
+			input[type='file']
+				border: none
+				background: none
+				font-size: 1.6rem
+				font-weight: 500
+				color: lighten($text-color, 30%)
+			textarea
+				width: 102.5%
+				height: 150px
+				margin-bottom: 10px
+				background-color: $header-bg
+				border: 1px solid $second-color
+				border-radius: 4px
+				font-size: 1.6rem
+				font-weight: 500
+				resize: none
+			.elemtext
+				width: 98%
+				background-color: $header-bg
+				border: 1px solid $second-color
+				border-radius: 4px
+				margin-bottom: 10px
+				padding: 10px
+				display: flex
+				flex-direction: column
+				align-items: center
+				i
+					font-size: 5rem
+					color: lighten($text-color, 30%)
+				p
+					text-align: center
+					font-size: 1.6rem
+					font-weight: 500
+					color: lighten($text-color, 30%)
+	.desc
+		background: url('../img/exc-bg.jpg') 50-50
+		background-size: cover
+		width: 55%
+		padding: 30px
+		.excellences
+			width: 40%
+			hr
+				width: 90%
+				background-color: $btn-color
+				border: none
+				border-radius: 5px 5px 0 0
+				height: 7px
+				margin: 0 auto
+			.excs
+				padding: 10px
+				background-color: $header-bg
+				margin: 0
+				border-radius: 5px
+				.ex
+					font-size: 1.6rem
+					font-weight: 500
+					display: flex
+					align-items: center
+					margin: 20px 0 20px 10px
+					i
+						color: $ex-color
+						font-size: 3.5rem
+					a
+						margin-left: 20px
+#jobs
+	padding-bottom: 50px
+	.container
+		margin: 0 auto
+		text-align: center
+		h2
+			font-weight: 500
+			font-size: 3.2rem
+		i
+			font-size: 2rem
+			color: $jobs-bg
+			margin-left: 69%
+		.jobs-cont
+			display: flex
+			justify-content: space-between
+			align-items: center
+			i
+				margin: 0 !important
+				font-size: 2rem
+			.job
+				display: flex
+				align-items: center
+				justify-content: center
+				border: 1px solid $jobs-bg
+				border-radius: 5px
+				transition: all 0.5s
+				width: 50%
+				height: 100px !important
+				p
+					font-weight: 500
+					font-size: 1.6rem
+				&:hover
+					background-color: $jobs-bg
+footer
+	background-color: $footer-bg
+	padding: 40px
+	.container
+		display: flex
+		flex-direction: column
+		margin: 0 auto
+		a
+			color: $footer-text-color
+			font-size: 1.4rem
+			font-weight: 500
