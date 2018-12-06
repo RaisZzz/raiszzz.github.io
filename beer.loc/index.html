@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Beer</title>
+	<!-- Font Roboto -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<!-- Style -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<!-- Modal -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+</head>
+<body>
+	<div class="loaderArea">
+		<img src="assets/img/logo.jpg" alt="">
+	</div>
+	<img src="assets/img/main.jpg" class="background" alt="">
+	<div class="container">
+		<div class="image">
+			<img src="assets/img/main.jpg" alt="">
+		</div>
+		<div class="main">
+			<div class="main-container">
+				<h1>Blonde Ale - Светлый эль</h1>
+				<p>Переходите по ссылкам и получайте информацию о нас в Ваших любимых социальных сетях</p>
+			</div>
+		</div>
+		<div class="social">
+			<a href="https://untappd.com">
+				<div class="main-container">
+					<i class="fas fa-globe" style="background-color: #616568;"></i>
+					<div class="desc">
+						<h4>Оцени наше пиво :)</h4>
+						<p>untappd.com</p>
+					</div>
+				</div>
+			</a>
+			<hr>
+			<a href="https://www.facebook.com/brewery.dwarf/?ref=bookmarks">
+				<div class="main-container">
+					<i class="fab fa-facebook-f" style="background-color: #3B5998;"></i>
+					<div class="desc">
+						<h4>Facebook</h4>
+						<p>Стань фанатом :)</p>
+					</div>
+				</div>
+			</a>
+			<hr>
+			<a href="https://www.instagram.com/dwarfbeer/">
+				<div class="main-container">
+					<i class="fab fa-instagram" style="background-color: #E1306C;"></i>
+					<div class="desc">
+						<h4>Instagram</h4>
+						<p>Будь с нами :)</p>
+					</div>
+				</div>
+			</a>
+			<hr>
+			<a href="https://vk.com/pivovarnya_drunkendwarf">
+				<div class="main-container">
+					<i class="fab fa-vk" style="background-color: #45668E;"></i>
+					<div class="desc">
+						<h4>VKontakte</h4>
+						<p>Пиши нам :)</p>
+					</div>
+				</div>
+			</a>
+			<hr>
+			<div class="main-container">
+				<a href="#social_modal" rel="modal:open">
+					<i class="fas fa-share-alt"></i>
+					Share this page
+				</a>
+			</div>
+		</div>
+	</div>
+	<div id="social_modal">
+		<h3>Share page</h3>
+		<div class="pluso" data-background="transparent" data-options="big,square,line,vertical,nocounter,theme=04" data-services="facebook,twitter,google,email">
+		</div>
+		<div class="p-cont">
+			<p>Facebook</p>
+			<p>Twitter</p>
+			<p>Google +</p>
+			<p>Email</p>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<script>
+		$(window).on('load', function () {
+			$preloader = $('.loaderArea'),
+			$loader = $preloader.find('.loader');
+			$loader.fadeOut();
+			$preloader.delay(350).fadeOut('slow');
+		});
+	</script>
+	<script >
+		window.___gcfg = {
+			lang: 'zh-CN',
+			parsetags: 'onload'
+		};
+	</script>
+	<script type="text/javascript">(function() {
+		if (window.pluso)if (typeof window.pluso.start == "function") return;
+		if (window.ifpluso==undefined) { window.ifpluso = 1;
+		var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+		s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+		s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+		var h=d[g]('body')[0];
+		h.appendChild(s);
+		}})();
+	</script>
+</body>
+</html>
