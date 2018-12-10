@@ -1,0 +1,314 @@
+@import 'colors'
+html
+	font-size: 10px
+	background-color: #030C15
+body
+	font-family: 'Roboto', sans-serif
+	background-image: url('../img/html-bg.jpg')
+	background-size: 100%
+#main
+	.container
+		text-transform: uppercase
+		.menu
+			align-items: center
+			nav
+				width: 100%
+				background-color: $menu-bg
+				ul
+					list-style: none
+					display: flex
+					align-items: center
+					justify-content: flex-start
+					margin: 0
+					li
+						padding: 10px 0
+						background-color: $menu-bg
+						display: flex
+						align-items: center
+						flex-grow: 20
+						transition: all 0.5s
+						&:hover
+							background-color: $menu-active-bg
+						img
+							width: 3rem
+							height: 3rem
+							margin-left: 10px
+						a
+							margin: 0
+							margin-left: 20px
+							text-decoration: none
+							color: $main-text-color
+							font-size: 1.3rem
+							transition: all 0.5s
+					.shop
+						background-color: $menu-shop-bg
+						&:hover
+							background-color: $menu-shop-active-bg
+			a
+				margin-bottom: 10px
+				color: #e5c21e
+				text-decoration: none
+				margin-right: 20px
+		.menu-bottom
+			display: flex
+			align-items: center
+			margin-top: 0
+			background-color: #111723
+			padding-top: 10px
+			nav
+				ul
+					margin: 0
+					list-style: none
+					li
+						padding-bottom: 10px
+						a
+							margin-right: 30px
+							text-decoration: none
+							color: $main-text-color
+							transition: all 0.5s
+							&:hover
+								color: darken($main-text-color, 20%)
+			a
+				margin-bottom: 10px
+				color: #e5c21e
+				text-decoration: none
+				margin-right: 20px
+				transition: all 0.5s
+				&:hover
+					color: darken(#e5c21e, 20%)
+		h1
+			text-align: center
+			color: #ffffff
+			font-size: 2.5rem
+			font-weight: 700
+			margin-top: 15.5%
+			span
+				color: #c6e22b
+#servers
+	background-color: rgba(0, 0, 0, 0.5)
+	margin-top: 140px
+	.container
+		padding-top: 10px
+		h3
+			font-weight: 700
+			font-size: 2.4rem
+			margin-top: 10px
+			margin-left: 5%
+			color: #ffffff
+			text-transform: uppercase
+			span
+				color: #e5c21e
+		.row
+			margin-top: 30px
+			display: flex
+			justify-content: space-around
+			.server-card
+				background-image: url('../img/card-bg.png')
+				background-size: cover
+				display: flex
+				flex-direction: column
+				align-items: center
+				padding: 10px
+				h4
+					margin-top: 10px
+					color: #f7f7f7
+					font-size: 1.2rem
+					font-weight: 400
+					text-align: center
+				img
+					width: 90%
+					margin: 0 auto
+					margin-top: 10px
+					margin-bottom: 20px
+				p
+					color: #f7f7f7
+					font-size: 1.2rem
+					font-weight: 400
+				a
+					text-decoration: none
+					color: #e69b30
+					font-size: 1.2rem
+					font-weight: 400
+#search
+	background-color: rgba(0, 0, 0, 0.5)
+	padding: 20px 0
+	.container
+		background-image: url('../img/search-bg.png')
+		background-size: cover
+		padding-bottom: 40px
+		h3
+			font-weight: 700
+			font-size: 2.4rem
+			padding-top: 30px
+			margin-left: 10px
+			color: #ffffff
+			text-transform: uppercase
+			span
+				color: #e5c21e
+		form
+			.row
+				display: flex
+				justify-content: space-around
+				margin-top: 30px
+				.search-column
+					display: flex
+					flex-direction: column
+					width: 20%
+					label
+						margin-top: 10px
+						color: #bdcbd3
+						font-weight: 400
+						font-size: 1.3rem
+					input[name="min"]
+						width: 40%
+					input[name="max"]
+						width: 40%
+					select
+						border: 1px solid #30383d
+						background-color: #0a1115
+						color: #5a6b74
+						height: 35px
+						padding: 5px
+						outline: none
+					input
+						border: 1px solid #30383d
+						background-color: #0a1115
+						color: #5a6b74
+						height: 35px
+						padding: 5px
+					.row
+						margin-top: 0 !important
+			.count
+				margin-top: 40px
+				input[name="count"]
+					border: 1px solid #30383d
+					background-color: #0a1115
+					color: #5a6b74
+					width: 20%
+					height: 35px
+					padding: 5px
+				label
+					color: #bdcbd3
+					font-weight: 400
+					font-size: 1.3rem
+					margin-right: 21px
+				input[type="button"]
+					background-image: url('../img/button.png')
+					background-size: 100%
+					color: #ffffff
+					border: none
+					outline: none
+					width: 166px
+					height: 35px
+					box-shadow: 0 4px 3px rgba(0, 0, 2, 0.75)
+					margin-left: 19px
+					font-size: 12px
+					text-transform: uppercase
+					font-weight: 400
+					cursor: pointer
+					transition: all 0.5s
+					&:hover
+						color: #15242D
+#servers-list
+	background-color: rgba(0, 0, 0, 0.5)
+	.container
+		display: flex
+		flex-direction: column
+		align-items: space-between
+		h3
+			font-weight: 700
+			font-size: 2.4rem
+			padding: 30px 0
+			margin-left: 10px
+			color: #ffffff
+			text-transform: uppercase
+			span
+				color: #e5c21e
+		.row
+			justify-content: space-between
+			h4
+				color: #d26f1e
+				font-size: 1.6rem
+				font-weight: 400
+		.servers-container
+			margin-top: 10px
+			.server
+				padding-top: 5px
+				&:nth-child(2n+1)
+					background-color: #00203c
+			.row
+				display: flex
+				justify-content: space-between
+				align-items: center
+				p
+					color: #ffffff
+					font-weight: 400
+					font-size: 1.4rem
+				.game-img
+					width: 15px
+					height: 15px
+					margin-left: 1%
+					margin-bottom: 10px
+				.country-img
+					width: 10%
+					padding-bottom: 10px
+					margin-right: 10px
+				.online-img
+					width: 5%
+					padding-bottom: 10px
+				.lite-img
+					width: 40px
+					height: 25px
+					margin-bottom: 10px
+		.row.justify-content-center
+			margin-top: 50px
+			a
+				width: 23px
+				height: 27px
+				text-align: center
+				color: #ffffff
+				font-size: 1.2rem
+				font-weight: 400
+				background-image: url('../img/icons/serverlist-btn.png')
+				text-decoration: none
+				transition: all 0.5s
+				&:hover
+					color: #e5c21e
+			p
+				color: #ffffff
+				font-size: 2rem
+				font-weight: 400
+				margin: 0 10px
+footer
+	background-image: url('../img/footer-bg.jpg')
+	background-size: cover
+	padding: 60px 0
+	.container
+		p
+			color: #ffffff
+			font-size: 1.4rem
+			font-weight: 400
+			span
+				font-size: 2rem
+				font-weight: 700
+				color: #b2d5fd
+		.payments
+			padding: 40px 0
+			align-items: center
+			margin-top: 200px
+			img
+				margin-left: 50px
+				width: 10%
+		.copyright
+			font-size: #ffffff
+			font-weight: 400
+			font-size: 1.4rem
+			text-align: center
+			margin-top: 30px
+// Media
+@media (max-width: 1330px)
+	html
+		font-size: 9px
+@media (max-width: 1000px)
+	html
+		font-size: 7px
