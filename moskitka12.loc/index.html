@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Moskitka</title>
+	<!-- Slick Slider -->
+	<link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
+	<!-- Font Lato -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<!-- Style -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/adaptive.css">
+</head>
+<body id="body">
+	<header>
+		<div class="mobile-menu" id="mobile-nav">
+			<i class="fas fa-bars" onclick="openmenu()"></i>
+			<nav>
+				<ul>
+					<li onclick="submenu()" id="li-sub"><a>продукция <i class="fas fa-angle-right"></i></a>
+						<div id="submenu-mobile">
+							<ul>
+								<li><a href="#">Изделия</a></li>
+								<li><a href="#">Типы полотен</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">стоимость</a></li>
+					<li><a href="#">онлайн - заказ</a></li>
+					<li><a href="#">калькулятор</a></li>
+					<li><a href="#">контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="left-block">
+			<div class="logo">
+				<img src="assets/img/logo.png" alt="Supermoskitka">
+				<div class="right-logo">
+					<a href="#">Supermoskitka<span>.ru</span></a>
+					<p>Изготовление<br>и монтаж<br>мокитных сеток</p>
+				</div>
+			</div>
+			<div class="left-contacts">
+				<h4>Наш офис</h4>
+				<p>г.Москва<br>ул. Енисейская, вл.7а, стр. 4</p>
+				<h4>Напишите нам</h4>
+				<a href="#"><span>info@supermoskitka.ru</span></a>
+			</div>
+			<a href="#" class="leader-button">Для дилеров</a>
+			<a href="#" class="call-button-mobile">Заказать звонок</a>
+			<label onclick="openmenu()" style="z-index: 10000 !important;"><i class="fas fa-bars"></i></label>
+		</div>
+		<div class="mobile-contacts">
+			<p>+7(495) 755 1537</p>
+			<p>с 9.00 до 18.00 ежедневно</p>
+		</div>
+		<div class="container">
+			<div class="header-nav">
+				<div class="menu">
+					<nav>
+						<ul>
+							<li>
+								<a href="#">продукция <i class="fas fa-angle-right"></i></a>
+								<ul class="sub-menu">
+									<div class="left">
+										<h3>изделия</h3>
+										<li><a href="#">Рамочная сетка</a></li>
+										<li><a href="#">Дверная сетка</a></li>
+										<li><a href="#">Рулонная сетка (роллета)</a></li>
+										<li><a href="#">Раздвижная сетка для балконов и лоджий (Provedal)</a></li>
+										<li><a href="#">Раздвижная сетка для больших проемов</a></li>
+										<li><a href="#">Сетки - плиссе</a></li>
+										<li><a href="#">Сетка для мансардных окон</a></li>
+										<li><a href="#">Сетки нестандартной формы</a></li>
+									</div>
+									<div class="right">
+										<h3>Типы полотен</h3>
+										<li><a href="#">Стандарт</a></li>
+										<li><a href="#">Ультравью</a></li>
+										<li><a href="#">Антикошка</a></li>
+										<li><a href="#">Антипыль</a></li>
+									</div>
+								</ul>
+							</li>
+							<li><a href="#">стоимость</a></li>
+							<li><a href="#">онлайн - заказ</a></li>
+							<li><a href="#">калькулятор</a></li>
+							<li><a href="#">контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="contacts">
+					<div class="top-contact">
+						<h4>+7(495) 755 1537</h4>
+						<h4>с 9.00 до 18.00<br>ежедневно</h4>
+					</div>
+					<a href="#" class="call-button">Заказать звонок</a>
+				</div>
+			</div>
+			<div class="slider">
+				<div class="card">
+					<h1>Спецпредложение для владельцев загородных домов!<br>
+						<span>Бесплатная диагностика окон при<br>замере или установке москитных сеток!</span>
+					</h1>
+				</div>
+			</div>
+			<div class="bottom-mobile-contacts">
+				<div class="left">
+					<h3>Наш офис</h3>
+					<p>г.Москва ул. Енисейская, вл.7а, стр. 4</p>
+				</div>
+				<div class="right">
+					<h3>Напишите нам</h3>
+					<p><span>info@supermoskitka.ru</span></p>
+					<div class="leader-button-mobile">
+						<a href="#">Для дилеров</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section id="catalog">
+		<div class="container">
+			<div class="grid-container">
+				<div class="image-1">
+					<p>сетки нестандартных форм</p>
+					<img src="assets/img/catalog/1.jpg" alt="">
+				</div>
+				<div class="image-2">
+					<h3><span>Хит продаж</span><br>рамочная сетка для окон</h3>
+					<img src="assets/img/catalog/2.jpg" alt="">
+				</div>
+				<div class="image-3">
+					<p>рулонная сетка</p>
+					<img src="assets/img/catalog/3.jpg" alt="">
+				</div>
+				<div class="image-4">
+					<p>сетка - плиссе</p>
+					<img src="assets/img/catalog/4.jpg" alt="">
+				</div>
+				<div class="image-5">
+					<p>раздвижная москитная сетка для балконов</p>
+					<img src="assets/img/catalog/5.jpg" alt="">
+				</div>
+				<div class="image-6">
+					<p>дверные сетки</p>
+					<img src="assets/img/catalog/6.jpg" alt="">
+				</div>
+			</div>
+			<div class="description">
+				<div class="desc-block">
+					<h3>Москитные сетки на
+					<br>пластиковые окна - доступная
+					<br>цена, высочайшее качество</h3>
+					<img src="assets/img/description.jpg" alt="">
+					<p>Мы предлагаем купить москитные сетки на пластиковые окна и двери,
+ которые изготавливаются исключительно из полотен пр-ва <span>Phifer (США)</span> 
+и являются высококачественным экологически безопасным продуктом, 
+выгодно отличающимся по своим характеристикам от китайских аналогов.
+<br>
+<br>
+Стоимость подобных москитных сеток сопоставима со стоимостью 
+стандартных москитных сеток российского производства, что делает их 
+лучшим предложением по соотношению цена/качество на рынке! 
+<span>Гарантия на установленную москитную сетку  составляет 1 год!</span></p>
+				</div>
+			</div>
+			<div class="cards">
+				<div class="card1">
+					<div class="description-container">
+						<h3>высокое качество продукции</h3>
+						<hr>
+						<p>Надежная защита от комаров, уличной пыли, пыльцы растений и т.д.</p>
+					</div>
+					<img src="assets/img/cards/1.jpg" alt="">
+				</div>
+				<div class="card2">
+					<div class="description-container">
+						<h3>вся Продукция сертифицирована</h3>
+						<hr>
+						<p>Международные сертификаты экологической безопасности Greenguard и Microban</p>
+					</div>
+					<img src="assets/img/cards/2.jpg" alt="">
+				</div>
+				<div class="card3">
+					<div class="description-container">
+						<h3>Быстрота изготовления</h3>
+						<hr>
+						<p>Возможен выезд замерщика в день обращения, срок изготовления - 1 день</p>
+					</div>
+					<img src="assets/img/cards/3.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="calc">
+		<div class="container">
+			<div class="cards">
+				<div class="card1">
+					<div class="description-container">
+						<h3>Лучшие цена / качество в Москве</h3>
+						<hr>
+						<p>Все москитные сетки изготавливаются из полотна Phifer (США) по цене российских или китайских аналогов</p>
+					</div>
+					<img src="assets/img/cards/4.jpg" alt="">
+				</div>
+				<div class="card2">
+					<div class="description-container">
+						<h3>Пожаробезопасность</h3>
+						<hr>
+						<p>Сетки не горючие, надежно защитят помещение от окурков, искр с улицы и прочего</p>
+					</div>
+					<img src="assets/img/cards/5.jpg" alt="">
+				</div>
+				<div class="card3">
+					<div class="description-container">
+						<h3>10 лет на рынке</h3>
+						<hr>
+						<p>За это время мы заслужили безупречную репутацию у наших клиентов!</p>
+					</div>
+					<img src="assets/img/cards/6.jpg" alt="">
+				</div>
+			</div>
+			<div class="description">
+				<h3>Розничные цены на москитные сетки и услуги</h3>
+				<p>Цена готовой москитной сетки зависит от типа полотна, назначения (пластиковое, алюминиевое, деревянное окно или дверь или балкон / лоджия), 
+цвета рамки (стандартного цвета или окрашенная), типа крепежа, материалов и комплектующих. 
+Ниже приведены базовые цены на основные позиции.</p>
+			</div>
+		</div>
+		<div class="footer-slider">
+			<div class="slide" style="background-image: url(assets/img/footer-slider/1.jpg);">
+				<h2>Хит продаж</h2>
+				<h3>Ультравью</h3>
+				<p>Высокопрочная, тонкая, практически незаметная в проеме окна или двери. Ультравью на 25% лучше пропускает свет и воздух, чем стандартная сетка.</p>
+				<p><span>от 1100 руб./изделие</span></p>
+				<a href="#"><span>детали</span></a>
+			</div>
+			<div class="slide" style="background-image: url(assets/img/footer-slider/2.jpg);">
+				<h2>Хит продаж</h2>
+				<h3>Ультравью</h3>
+				<p>Высокопрочная, тонкая, практически незаметная в проеме окна или двери. Ультравью на 25% лучше пропускает свет и воздух, чем стандартная сетка.</p>
+				<p><span>от 1100 руб./изделие</span></p>
+				<a href="#"><span>детали</span></a>
+			</div>
+			<div class="slide hit" style="background-image: url(assets/img/footer-slider/3.jpg);">
+				<h2>Хит продаж</h2>
+				<h3>Антикошка</h3>
+				<p>Высокопрочная, тонкая, практически незаметная в проеме окна или двери. Ультравью на 25% лучше пропускает свет и воздух, чем стандартная сетка.</p>
+				<p><span>от 1100 руб./изделие</span></p>
+				<a href="#"><span>детали</span></a>
+			</div>
+			<div class="slide" style="background-image: url(assets/img/footer-slider/4.jpg);">
+				<h2>Хит продаж</h2>
+				<h3>Антипыль</h3>
+				<p>Высокопрочная, тонкая, практически незаметная в проеме окна или двери. Ультравью на 25% лучше пропускает свет и воздух, чем стандартная сетка.</p>
+				<p><span>от 1100 руб./изделие</span></p>
+				<a href="#"><span>детали</span></a>
+			</div>
+			<div class="slide" style="background-image: url(assets/img/footer-slider/5.jpg);">
+				<h2>Хит продаж</h2>
+				<h3>Монтаж и установка</h3>
+				<p>Высокопрочная, тонкая, практически незаметная в проеме окна или двери. Ультравью на 25% лучше пропускает свет и воздух, чем стандартная сетка.</p>
+				<p><span>от 1100 руб./изделие</span></p>
+				<a href="#"><span>детали</span></a>
+			</div>
+			<div class="slide bottom" style="background-image: url(assets/img/footer-slider/1.jpg);">
+				<h2>Хит продаж</h2>
+				<h3>Стандарт</h3>
+				<p>Высокопрочная, тонкая, практически незаметная в проеме окна или двери. Ультравью на 25% лучше пропускает свет и воздух, чем стандартная сетка.</p>
+				<p><span>от 1100 руб./изделие</span></p>
+				<a href="#"><span>детали</span></a>
+			</div>
+		</div>
+	</section>
+	<section id="calc2">
+		<div class="container">
+			<div class="products-button">
+				<a href="#">Наша продукция</a>
+			</div>
+		</div>
+		<div class="container">
+			<div class="calculator-main">
+				<h2>Расчет стоимости сетки</h2>
+				<form action="#">
+					<legend>Расчет стоимости сетки</legend>
+					<img src="assets/img/calculator.png" alt="">
+					<div class="form-container">
+						<div class="left">
+							<label for="type">Выберите тип сетки</label>
+							<select name="type" id="">
+								<option value="">Сетка с полотном "Аньтипылца"</option>
+							</select>
+							<label for="color">Цвет рамки</label>
+							<select name="color" id="">
+								<option value="">Белый</option>
+							</select>
+							<label for="crep">Тип крепления</label>
+							<select name="crep" id="">
+								<option value="">Крепеж Z-образный</option>
+							</select>
+							<label for="width">Ширина, мм</label>
+							<input type="text" name="width" placeholder="110">
+							<label for="height">Высота, мм</label>
+							<input type="text" name="height" placeholder="220">
+							<label for="count">Количество, шт.</label>
+							<input type="text" name="count" placeholder="1">
+						</div>
+						<div class="right">
+							<div class="input">
+								<input type="checkbox" name="mont">
+								<label for="mont">Монтаж 350 руб./изделие</label>
+							</div>
+							<div class="input">
+								<input type="checkbox" name="dost">
+								<label for="dost">Доставка 750 руб.</label>
+							</div>
+							<h3>Площадь полотна: <span>1,5 м<sup>2</sup></span></h3>
+							<h3 style="margin-top: 10px !important;">Общая стоимость: <span>10500 руб.</span></h3>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="column-row">
+					<div class="column">
+						<div class="logo">
+							<img src="assets/img/logo.png" alt="Supermoskitka">
+							<div class="right-logo">
+								<a href="#">Supermoskitka<span>.ru</span></a>
+								<p>Изготовление<br>и монтаж<br>мокитных сеток</p>
+							</div>
+						</div>
+						<p>г.Москва<br>ул. Енисейская, вл.7а, стр. 4</p>
+						<a href="#"><span>info@supermoskitka.ru</span></a>
+					</div>
+					<div class="column">
+						<h3>Наша продукция</h3>
+						<nav>
+							<ul>
+								<li><a href="#">Рамочная сетка</a></li>
+								<li><a href="#">Дверная сетка</a></li>
+								<li><a href="#">Рулонная сетка (роллета)</a></li>
+								<li><a href="#">Раздвижная сетка для балконов и лоджий</a></li>
+								<li><a href="#">(Provedal)</a></li>
+								<li><a href="#">Раздвижная сетка для больших проемов</a></li>
+								<li><a href="#">Сетки - плиссе</a></li>
+								<li><a href="#">Сетка для мансардных окон</a></li>
+								<li><a href="#">Сетки нестандартной формы</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="column-row">
+					<div class="column">
+						<h3>о компании</h3>
+						<nav>
+							<ul>
+								<li><a href="#">Сертификаты</a></li>
+								<li><a href="#">Замер и заказ</a></li>
+								<li><a href="#">Доставка и оплата</a></li>
+								<li><a href="#">Вакансии</a></li>
+								<li><a href="#">Гарантия и гарантийное</a></li>
+								<li><a href="#">обслуживание</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="column">
+						<h3>дополнительно</h3>
+						<nav>
+							<ul>
+								<li><a href="#">Техническая страница</a></li>
+								<li><a href="#">Жалюзи / ремонт окон</a></li>
+								<li><a href="#">Переработчикам</a></li>
+								<li><a href="#">Дилерам (готовые изделия)</a></li>
+								<li><a href="#">Цены</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<p>© 2018 Supermoskitka.ru</p>
+		</div>
+	</footer>
+	<!-- JQuery -->
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	<!-- Slick Slider -->
+	<script type="text/javascript" src="assets/slick/slick.min.js"></script>
+	<script>
+		$('.slider').slick({
+			arrows: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: false,
+		});
+	</script>
+	<script>
+		if(window.matchMedia('(max-width: 900px)').matches) {
+			$('.footer-slider').slick({
+				arrows: true,
+				slidesToShow: 1,
+				autoplay: true,
+				autoplaySpeed: 2000
+			});
+		}
+		else{
+			$('.footer-slider').slick({
+				arrows: false,
+				slidesToShow: 5,
+				autoplay: true,
+				autoplaySpeed: 2000
+			});
+		}
+	</script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>

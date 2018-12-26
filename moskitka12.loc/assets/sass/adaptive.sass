@@ -1,0 +1,201 @@
+@import 'colors'
+@media(max-width: 1472px)
+	html
+		font-size: 8px
+@media(max-width: 1200px)
+	html
+		font-size: 7px
+@media(max-width: 1085px)
+	html
+		font-size: 6.5px
+@media(max-width: 1040px)
+	html
+		font-size: 6px
+@media(max-width: 990px)
+	html
+		font-size: 5px
+// Mobile
+@media(max-width: 900px)
+	html
+		font-size: 10px
+	header
+		flex-direction: column !important
+		background-image: url('../img/mobile-header-bg.jpg') !important
+		.left-block
+			display: flex !important
+			flex-direction: row !important
+			justify-content: space-between
+			align-items: flex-start
+			padding: 20px
+	.fa-bars
+		display: block !important
+	.contacts
+		display: none !important
+	.left-contacts
+		display: none !important
+	.leader-button
+		display: none
+	.container
+		width: 100%
+	.menu
+		display: none !important
+	.call-button-mobile
+		display: block
+	.mobile-contacts
+		display: flex
+		justify-content: center
+		align-items: center
+	.slider
+		width: 80% !important
+		.card
+			padding-bottom: 200px
+			h1
+				font-size: 3rem !important
+				margin-top: 60px !important
+				font-weight: 700 !important
+			span
+				font-size: 3rem !important
+	.bottom-mobile-contacts
+		display: flex !important
+		justify-content: space-between
+	.description
+		.desc-block
+			width: 95% !important
+			h3
+				width: 100% !important
+			img
+				position: relative !important
+				display: block
+				left: 0 !important
+				margin: 0 auto !important
+			p
+				margin: 20px 0 !important
+				padding: 0 !important
+				width: 100% !important
+				border: none !important
+	.cards
+		grid-template-columns: 0 1fr 0 !important
+		grid-template-rows: 0.7fr 0.5fr 0.7fr !important
+		.card1
+			grid-row-start: 1 !important
+			grid-row-end: 2 !important
+			grid-column-start: 2 !important
+			grid-column-end: 3 !important
+		.card2
+			grid-row-start: 2 !important
+			grid-row-end: 3 !important
+		.card3
+			grid-row-start: 3 !important
+			grid-row-end: 4 !important
+			grid-column-start: 2 !important
+			grid-column-end: 3 !important
+	#calc>.container>.description
+		margin-top: 20px !important
+	.slick-arrow
+		top: -50px !important
+		background-color: rgba(30, 30, 31, 0.7)
+		padding: 25px
+	.slick-next
+		position: absolute !important
+		right: 2% !important
+		z-index: 50
+		&:hover
+			background-color: rgba(30, 30, 31, 0.7) !important
+		&:before
+			position: absolute
+			top: 30%
+			right: 30%
+			color: $third-main-color !important
+	.slick-prev
+		position: absolute !important
+		left: 2% !important
+		z-index: 50
+		&:hover
+			background-color: rgba(30, 30, 31, 0.7) !important
+		&:before
+			position: absolute
+			top: 30%
+			left: 30%
+			color: $third-main-color !important
+	#calc
+		.footer-slider
+			.slide
+				padding-left: 50px !important
+				padding-right: 50px !important
+				padding-bottom: 50px !important
+				h3
+					margin-top: 300px !important
+					font-size: 4rem
+				p
+					font-size: 3rem
+				p>span
+					font-size: 3.5rem
+				a
+					font-size: 2.5rem
+	#calc2
+		.calculator-main
+			form
+				padding-top: 0 !important
+				margin-bottom: 30px !important
+				legend
+					display: none
+				label
+					font-size: 2.5rem !important
+				.form-container
+					flex-direction: column !important
+				img
+					display: none
+			h2
+				display: block !important
+	.grid-container
+		grid-template-columns: 1fr 1fr 0 !important
+		grid-template-rows: 1fr 1fr 1fr 2fr !important
+		.image-2
+			grid-column-start: 1 !important
+			grid-column-end: 3 !important
+		.image-3
+			grid-column-start: 1 !important
+			grid-column-end: 2 !important
+			grid-row-start: 2 !important
+			grid-row-end: 3 !important
+		.image-6
+			grid-column-start: 2 !important
+			grid-column-end: 3 !important
+			grid-row-start: 2 !important
+			grid-row-end: 3 !important
+		.image-4
+			grid-column-start: 1 !important
+			grid-column-end: 2 !important
+			grid-row-start: 3 !important
+			grid-row-end: 4 !important
+		.image-5
+			grid-column-start: 2 !important
+			grid-column-end: 3 !important
+			grid-row-start: 3 !important
+			grid-row-end: 4 !important
+		.image-1
+			grid-column-start: 1 !important
+			grid-column-end: 2 !important
+			grid-row-start: 4 !important
+			grid-row-end: 5 !important
+	.desc-block
+		p
+			font-size: 4rem !important
+	footer
+		.row
+			flex-direction: column
+@media(max-width: 780px)
+	html
+		font-size: 9px
+@media(max-width: 710px)
+	html
+		font-size: 8px
+@media(max-width: 450px)
+	html
+		font-size: 7px
+@media(max-width: 403px)
+	html
+		font-size: 6px
+@media(max-width: 360px)
+	html
+		font-size: 4px
