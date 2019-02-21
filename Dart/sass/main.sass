@@ -1,0 +1,270 @@
+@import "colors"
+html
+	font-size: 10px
+body
+	font-family: 'Raleway', sans-serif
+	margin: 0
+*::selection
+	color: $second-main-color
+	background-color: $third-color
+#header
+	background: url('../img/bg.jpg')
+	background-size: cover
+	.header-menu
+		width: 90%
+		margin: 0 auto
+		padding-top: 50px
+		display: flex
+		align-items: center
+		justify-content: space-between
+		.logo
+			display: flex
+			align-items: center
+			.logo-text
+				display: flex
+				flex-direction: column
+				text-transform: uppercase
+				font-size: 1.5rem
+				margin-left: 10px
+				.dart
+					font-weight: 400
+					color: $main-color
+					text-decoration: none
+				.service
+					font-weight: 700
+					color: $main-color
+					text-decoration: none
+		.menu
+			nav>ul
+				display: flex
+				list-style: none
+				li>a
+					transition: all 0.5s
+					text-decoration: none
+					color: $main-color
+					padding-right: 50px
+					font-weight: 400
+					font-size: 1.5rem
+				li:hover
+					a
+						color: $second-main-color
+		.sign-up
+			.sign-btn
+				text-decoration: none
+				text-transform: lowercase
+				color: $main-color
+				font-size: 1.2rem
+				font-weight: 400
+				padding: 6px 20px
+				border: 1px solid $main-color
+				border-radius: 2px
+				transition: all 0.5s
+			.sign-btn:hover
+				border-color: $second-main-color
+				color: $second-main-color
+	.header-top
+		width: 90%
+		display: flex
+		justify-content: space-between
+		margin: 150px auto 0 auto
+		.left-top
+			color: $main-color
+			h1
+				font-size: 5.5rem
+				font-weight: 700
+				text-transform: uppercase
+				padding: 0
+				margin: 0
+			p
+				font-size: 1.5rem
+				font-weight: 400
+				margin-top: 28px
+			.btn-area
+				display: flex
+				.buy-btn
+					margin-top: 30px
+					a
+						font-size: 1.5rem
+						font-weight: 400
+						text-transform: uppercase
+						box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15)
+						background-color: $second-main-color
+						border-radius: 5px
+						padding: 18px 38px
+						color: $main-color
+						text-decoration: none
+						transition: all 1s
+					a:hover
+						color: $second-main-color
+						background-color: $main-color
+				.try-btn
+					margin-top: 30px
+					margin-left: 30px
+					a
+						font-size: 1.5rem
+						font-weight: 400
+						text-transform: uppercase
+						box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15)
+						background-color: $main-color
+						border-radius: 5px
+						padding: 18px 38px
+						color: $second-main-color
+						text-decoration: none
+						transition: all 1s
+					a:hover
+						color: $main-color
+						background-color: $second-main-color
+		.right-top
+			img
+				max-width: 95%
+				margin-bottom: 10px
+				height: auto
+				float: right
+				border: 1px solid #061e37
+				border-radius: 5px
+				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2)
+#easy
+	.easy-container
+		width: 90%
+		margin: 0 auto
+		.easy-top
+			text-align: center
+			h1
+				color: $second-main-color
+				font-size: 4.5rem
+				font-weight: 400
+			h3
+				color: $paragraphe-color
+				font-size: 2.5rem
+				font-weight: 400
+				margin-top: 14px
+			p
+				color: $paragraphe-color
+				font-size: 1.5rem
+				font-weight: 400
+				margin-top: 20px
+		.easy-points
+			display: flex
+			margin: 0 auto
+			text-align: center
+			font-size: 8rem
+			font-weight: 400
+			div
+				margin: 0 100px
+			.fa-calendar-alt
+				color: $fourth-color
+			.fa-user-circle
+				color: $fithf-color
+			.fa-user
+				color: $fourth-color
+			.point
+				h2
+					color: $second-main-color
+					font-size: 2rem
+					font-weight: 400
+				p
+					color: $six-color
+					font-size: 15px
+					font-weight: 400
+	.easy-btn
+		text-align: center
+		margin-top: 40px
+		a
+			font-size: 1.5rem
+			font-weight: 400
+			text-transform: uppercase
+			box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15)
+			background-color: $third-color
+			border-radius: 5px
+			padding: 18px 38px
+			color: $main-color
+			text-decoration: none
+			transition: all 1s
+		a:hover
+			color: $second-main-color
+			background-color: $fourth-color
+#services
+	.services-container
+		margin-bottom: 50px
+		.services-top
+			margin-top: 100px
+			text-align: center
+			h1
+				color: $second-main-color
+				font-size: 4.5rem
+				font-weight: 400
+			p
+				color: $paragraphe-color
+				font-size: 1.5rem
+				font-weight: 400
+				margin-top: 20px
+		.services-accordion
+			width: 50%
+			margin: 0 auto
+.accordion
+	background-color: $main-color
+	color: $second-main-color
+	cursor: pointer
+	padding: 2rem
+	width: 100%
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.13)
+	border: none
+	border-radius: 5px
+	text-align: left
+	outline: none
+	font-size: 1.5rem
+	font-weight: 700
+	transition: 0.4s
+	&:hover
+		background-color: $six-color
+.accordion:after
+	content: '\002B'
+	color: #777
+	font-weight: bold
+	float: right
+	margin-left: 5px
+.active:after
+	content: "\2212"
+.panel
+	display: flex
+	padding: 0 25px
+	background-color: $main-color
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1)
+	max-height: 0
+	overflow: hidden
+	transition: max-height 0.2s ease-out
+	font-size: 1.5rem
+	font-weight: 400
+	color: $second-main-color
+	img
+		height: 100%
+
+/*Media*/
+@media (max-width: 1161px) 
+	html
+		font-size: 8px
+@media (max-width: 1049px) 
+	html
+		font-size: 7px
+@media (max-width: 1000px) 
+	html
+		font-size: 6px
+	.buy-btn
+		a
+			padding: 12px 18px !important
+	.try-btn
+		a
+			padding: 12px 18px !important
+	.easy-btn
+		a
+			padding: 12px 18px !important
+	.easy-points
+		div
+			margin: 0 50px !important
+@media (max-width: 830px)
+	html
+		font-size: 5px
+@media (max-width: 650px)
+	.easy-points
+		div
+			margin: 25px !important
