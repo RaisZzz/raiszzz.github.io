@@ -1,0 +1,119 @@
+@import 'colors'
+html
+	font-size: 10px
+body
+	margin: 0
+	padding: 0
+	font-family: 'SF UI Text', sans-serif
+.container
+	width: 70%
+	margin: 0 auto
+header
+	background: url('../img/header-bg.png')
+	background-size: cover
+	background-repeat: no-repeat
+	.header
+		display: flex
+		justify-content: space-between
+		padding: 20px 0
+		.logo
+			position: absolute
+			top: -40px
+			left: -40px
+			img
+				top: 55px
+				left: 55px
+				position: absolute
+				width: 25%
+		.phone
+			margin-left: 15%
+			.row
+				display: flex
+				align-items: center
+				.column
+					margin-left: 20px
+					a
+						color: $main-color
+						text-decoration: none
+						font-size: 3rem
+						font-weight: 700
+						margin: 0 !important
+						padding: 0 !important
+						outline: none
+						sup
+							color: $second-color
+					p
+						color: $third-color
+						padding: 0 !important
+						margin: 0 !important
+						font-size: 1.8rem
+						font-weight: 400
+		.contacts
+			display: flex
+			align-items: center
+			margin-right: 50px
+			a
+				text-decoration: none
+				margin-right: 70px
+				color: $third-color
+				font-size: 1.4rem
+				font-weight: 400
+				text-transform: uppercase
+				letter-spacing: 11.2px
+			.social
+				i
+					font-size: 2rem
+					margin: 0 10px
+	.main
+		display: flex
+		justify-content: space-between
+		margin-top: 50px
+		.left
+			width: 40%
+			h4
+				margin: 0 !important
+				padding: 0 !important
+				color: #ffc018
+				font-size: 1.8rem
+				font-weight: 700
+				line-height: 55px
+				text-transform: uppercase
+				letter-spacing: 5.4px
+			h1
+				margin: 0 !important
+				padding: 0 !important
+				color: #02d1de
+				font-size: 8rem
+				font-weight: 700
+				line-height: 82.23px
+			h3
+				margin: 0 !important
+				padding: 0 !important
+				color: #4d65b9
+				font-size: 3rem
+				font-weight: 700
+				line-height: 82.23px
+			p
+				margin: 0 !important
+				padding: 0 !important
+				color: #8697b7
+				font-size: 2.3rem
+				font-weight: 400
+				line-height: 40px
+			.btn
+				margin-top: 65px
+				a
+					color: #ffffff
+					font-size: 2.2rem
+					text-decoration: none
+					border-radius: 35px
+					padding: 20px 40px
+					font-weight: 700
+					line-height: 30px
+					background-image: -webkit-linear-gradient(right, #00d3de 0%, #7167f2 100%)
+					background-image: -o-linear-gradient(right, #00d3de 0%, #7167f2 100%)
+					background-image: linear-gradient(to left, #00d3de 0%, #7167f2 100%)
+		.right
+			width: 60%
+			img
+				max-width: 100%
