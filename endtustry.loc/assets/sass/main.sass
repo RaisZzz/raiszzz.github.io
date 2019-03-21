@@ -1,6 +1,6 @@
 @import 'colors'
 html
-	font-size: 10px
+	font-size: 7px
 body
 	margin: 0
 	padding: 0
@@ -8,23 +8,103 @@ body
 .container
 	width: 70%
 	margin: 0 auto
+.visible-div
+	opacity: 1 !important
 header
 	background: url('../img/header-bg.png')
 	background-size: cover
 	background-repeat: no-repeat
+	height: 100vh
+	position: relative
+	.nav-menu
+		z-index: 1000
+		.button
+			position: absolute
+			cursor: pointer
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			left: 0
+			top: 43%
+			z-index: 30
+			&:hover
+				a
+					color: $second-color
+			a
+				transition: 0.5s
+				margin-bottom: 70px
+				transform: rotate(270deg)
+				color: $main-color
+				font-size: 1.8rem
+				font-weight: 700
+				line-height: 72px
+				text-transform: uppercase
+				letter-spacing: 11.21px
+			img
+				width: 24px
+				height: 16px
+		#submenu
+			position: absolute
+			z-index: 20
+			width: 100%
+			height: 100%
+			background: rgba(255, 255, 255, 0.9)
+			display: none
+			align-items: center
+			opacity: 0
+			transition: 0.5s !important
+			nav
+				margin-left: 150px
+				ul
+					display: flex
+					flex-direction: column
+					list-style: none
+					li
+						a
+							color: #8697b7
+							font-size: 6rem
+							text-decoration: none
+							font-weight: 400
+							line-height: 120px
+							transition: 0.5s
+							outline: none
+							sup
+								color: #0a0a0a
+								font-size: 2rem
+								font-weight: 700
+								border-radius: 14px
+								background-color: #ffc925
+								padding: 7px 11px
+								margin-bottom: 20px
+								margin-left: 10px
+							&:hover
+								color: #11c3e1
+						.submenu-2
+							position: absolute
+							top: 170px
+							right: 0
+							display: flex
+							align-items: center
+							opacity: 0
+							transition: 0.5s
+							img
+								width: 35%
+								margin: 0 30px
 	.header
 		display: flex
 		justify-content: space-between
 		padding: 20px 0
 		.logo
 			position: absolute
-			top: -40px
-			left: -40px
+			top: -70px
+			left: -70px
+			z-index: 100
 			img
-				top: 55px
-				left: 55px
+				top: 80px
+				left: 80px
 				position: absolute
-				width: 25%
+				width: 18%
 		.phone
 			margin-left: 15%
 			.row
@@ -101,19 +181,77 @@ header
 				font-weight: 400
 				line-height: 40px
 			.btn
-				margin-top: 65px
-				a
+				margin-top: 40px
+				button
+					border: none
+					cursor: pointer
+					margin: 0 !important
 					color: #ffffff
-					font-size: 2.2rem
+					font-size: 2.5rem
 					text-decoration: none
 					border-radius: 35px
 					padding: 20px 40px
 					font-weight: 700
 					line-height: 30px
-					background-image: -webkit-linear-gradient(right, #00d3de 0%, #7167f2 100%)
-					background-image: -o-linear-gradient(right, #00d3de 0%, #7167f2 100%)
-					background-image: linear-gradient(to left, #00d3de 0%, #7167f2 100%)
+					background: -webkit-linear-gradient(right, #00d3de 0%, #7167f2 100%)
+					background: -o-linear-gradient(right, #00d3de 0%, #7167f2 100%)
+					background: linear-gradient(to left, #00d3de 0%, #7167f2 100%)
+					z-index: 1
+					position: relative
+					&:before
+						border-radius: inherit
+						background-image: linear-gradient(160deg,#44cbd4,#2881ef)
+						content: ''
+						display: block
+						height: 100%
+						position: absolute
+						top: 0
+						left: 0
+						opacity: 0
+						width: 100%
+						z-index: -100
+						transition: opacity .3s
+					&:hover:before
+						opacity: 1
 		.right
 			width: 60%
 			img
 				max-width: 100%
+	.bottom
+		position: absolute
+		display: flex
+		text-align: center
+		bottom: 0
+		left: 50%
+		margin-left: -230px
+		p
+			margin: 0 80px
+			color: $third-color
+			font-size: 1.4rem
+			font-weight: 400
+			line-height: 40px
+			text-transform: uppercase
+			letter-spacing: 11.2px
+		img
+			position: absolute
+			width: 237px
+			height: 68px
+			bottom: 0
+			left: 50%
+			margin-left: -130px
+			z-index: 0
+		&:after
+			content: url('../img/after-icon.png')
+			position: absolute
+			width: 44px
+			height: 44px
+			left: 50%
+			margin-left: -30px
+			bottom: 0
+			z-index: 10
+			animation: header-after 1s infinite alternate ease-in-out
+@keyframes header-after
+	from
+		bottom: 0
+	to
+		bottom: 10px
