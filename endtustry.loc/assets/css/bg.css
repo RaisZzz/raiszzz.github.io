@@ -6,6 +6,7 @@
   transform-style: preserve-3d;
   outline: 1px solid transparent;
   will-change: border-radius;
+  opacity: 0.5 !important;
 }
 .bg:before,
 .bg:after{

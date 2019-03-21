@@ -1,6 +1,6 @@
 html { font-size: 7px; }
 
-body { margin: 0; padding: 0; font-family: "SF UI Text", sans-serif; }
+body { margin: 0; padding: 0; overflow-x: hidden; font-family: "SF UI Text", sans-serif; }
 
 .container { width: 70%; margin: 0 auto; }
 
@@ -8,7 +8,7 @@ body { margin: 0; padding: 0; font-family: "SF UI Text", sans-serif; }
 
 .show-menu { opacity: 1 !important; visibility: visible !important; }
 
-header { background: url("../img/header-bg.png"); background-size: cover; background-repeat: no-repeat; height: 100vh; position: relative; }
+header { background: url("../img/header-bg.png"); background-size: cover; background-repeat: no-repeat; width: 100vw; height: 100vh; position: relative; }
 header .nav-menu { z-index: 1000; }
 header .nav-menu .button { position: absolute; cursor: pointer; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; left: 0; top: 43%; z-index: 30; }
 header .nav-menu .button:hover a { color: #4491ea; }
@@ -41,8 +41,9 @@ header .header .phone .row .column a { color: #3a54b1; text-decoration: none; fo
 header .header .phone .row .column a sup { color: #4491ea; }
 header .header .phone .row .column p { color: #b6becd; padding: 0 !important; margin: 0 !important; font-size: 1.8rem; font-weight: 400; }
 header .header .contacts { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-right: 50px; }
-header .header .contacts a { text-decoration: none; margin-right: 70px; color: #b6becd; font-size: 1.4rem; font-weight: 400; text-transform: uppercase; letter-spacing: 11.2px; }
-header .header .contacts .social i { font-size: 2rem; margin: 0 10px; }
+header .header .contacts a { text-decoration: none; margin-right: 70px; color: #b6becd; font-size: 1.4rem; font-weight: 400; text-transform: uppercase; letter-spacing: 11.2px; -webkit-transition: 0.5s; transition: 0.5s; }
+header .header .contacts a:hover { color: #009CCC; }
+header .header .contacts .social i { font-size: 2rem; margin: 0 10px; cursor: pointer; }
 header .main { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-top: 50px; }
 header .main .left { width: 40%; }
 header .main .left h4 { margin: 0 !important; padding: 0 !important; color: #ffc018; font-size: 1.8rem; font-weight: 700; line-height: 55px; text-transform: uppercase; letter-spacing: 5.4px; }
@@ -54,7 +55,8 @@ header .main .left .btn button { background: none; border: none; outline: none; 
 header .main .left .btn img { width: 36px; height: 15px; }
 header .main .left .btn:before { border-radius: inherit; background-image: linear-gradient(160deg, #44cbd4, #2881ef); content: ""; display: block; height: 100%; position: absolute; top: 0; left: 0; opacity: 0; width: 100%; z-index: -100; -webkit-transition: opacity 0.3s; transition: opacity 0.3s; }
 header .main .left .btn:hover:before { opacity: 1; }
-header .main .right img { position: absolute; left: 45%; top: 16%; width: 45%; z-index: 10; }
+header .main .right .slider-2 { position: absolute; left: 45%; top: 16%; width: 45%; z-index: 10; }
+header .main .right .slider-2 img { width: 100%; }
 header .main .right .hbg { position: absolute; left: 52%; top: 17%; width: 450px; height: 450px; z-index: 0; }
 header .bottom { position: absolute; display: -webkit-box; display: -ms-flexbox; display: flex; text-align: center; bottom: 0; left: 50%; margin-left: -230px; }
 header .bottom p { margin: 0 80px; color: #b6becd; font-size: 1.4rem; font-weight: 400; line-height: 40px; text-transform: uppercase; letter-spacing: 11.2px; }

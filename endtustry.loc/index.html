@@ -112,7 +112,10 @@
 				</div>
 			</div>
 			<div class="right">
-				<img src="assets/img/header-img.png" alt="port">
+				<div class="slider-2">
+					<img src="assets/img/header-img.png" alt="port">
+					<img src="assets/img/header-img.png" alt="port">
+				</div>
 				<div class="bg hbg"></div>
 			</div>
 		</div>
@@ -143,6 +146,16 @@
 				slidesToShow: 3,
 				prevArrow: $('.prev-arrow'),
 				nextArrow: $('.next-arrow')
+			});
+		});
+  	</script>
+  	<script>
+		$(document).ready(function(){
+			$('.slider-2').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: false,
+				autoplay: true
 			});
 		});
   	</script>
