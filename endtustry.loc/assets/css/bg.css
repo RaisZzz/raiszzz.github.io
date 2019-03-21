@@ -1,14 +1,14 @@
-.gooey{
+.bg{
   background-image: linear-gradient(to top, #00d3de 0%, #7167f2 100%);
   border-radius: 42% 58% 70% 30% / 100% 100% 100% 100%;
   width: 150px; height: 144px;
-  animation: morph 7s linear infinite; 
+  animation: morph 10s linear infinite; 
   transform-style: preserve-3d;
   outline: 1px solid transparent;
   will-change: border-radius;
 }
-.gooey:before,
-.gooey:after{
+.bg:before,
+.bg:after{
   content: '';
   width: 100%;
   height: 100%;
@@ -22,10 +22,10 @@
   background-image: linear-gradient(to top, #00d3de 0%, #7167f2 100%);
 }
 
-.gooey:before{
-  animation: morph 7s linear infinite;
+.bg:before{
+  animation: morph 10s linear alternate;
   opacity: .21;
-  animation-duration: 4s;
+  animation-duration: 10s;
 }
 
 @keyframes morph{
@@ -35,20 +35,18 @@
   }
   34%{
       border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
-    transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+    transform:  translate3d(0,5px,0) rotateZ(20deg);
   }
   50%{
     opacity: .89;
-    transform: translate3d(0,0,0) rotateZ(0.01deg);
+    transform: translate3d(0,0,0) rotateZ(50deg);
   }
   67%{
-    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
-    transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+    border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+    transform:  translate3d(0,5px,0) rotateZ(20deg);
+  }
+  100%{
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    transform: translate3d(0,0,0) rotateZ(0.01deg);
   }
 }
-
-@keyframes fadeIn{
-  100%{
-    transform: scale(1.03);
-    opacity: 0;
-  }
