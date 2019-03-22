@@ -12,6 +12,12 @@
 </head>
 <body>
 	<header>
+		<div class="after">
+			<img id="after-1" src="assets/img/after-1.png" alt="">
+			<img id="after-2" src="assets/img/after-2.png" alt="">
+			<img id="after-3" src="assets/img/after-3.png" alt="">
+			<img id="after-4" src="assets/img/after-4.png" alt="">
+		</div>
 		<div class="nav-menu">
 			<div class="button" id="menu-btn">
 				<a>Menu</a>
@@ -112,9 +118,18 @@
 				</div>
 			</div>
 			<div class="right">
-				<div class="slider-2">
+				<div class="slider-2" id="slider-2">
 					<img src="assets/img/header-img.png" alt="port">
 					<img src="assets/img/header-img.png" alt="port">
+					<img src="assets/img/header-img.png" alt="port">
+					<img src="assets/img/header-img.png" alt="port">
+				</div>
+				<div class="slider-count">
+					<p id="counter">01</p>
+					<div class="row">
+						<p>/</p>
+						<sup>04</sup>
+					</div>
 				</div>
 				<div class="bg hbg"></div>
 			</div>
@@ -155,7 +170,8 @@
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				arrows: false,
-				autoplay: true
+				autoplay: true,
+				autoplaySpeed: 4000
 			});
 		});
   	</script>
