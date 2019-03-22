@@ -1,6 +1,6 @@
 html { font-size: 7px; }
 
-body { margin: 0; padding: 0; overflow-x: hidden; font-family: "SF UI Text", sans-serif; }
+body { margin: 0; padding: 0; overflow-x: hidden; overflow-y: hidden; font-family: "SF UI Text", sans-serif; }
 
 .container { width: 70%; margin: 0 auto; }
 
