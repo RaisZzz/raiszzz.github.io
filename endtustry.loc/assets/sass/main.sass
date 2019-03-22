@@ -15,6 +15,38 @@ body
 .show-menu
 	opacity: 1 !important
 	visibility: visible !important
+
+// Loader
+.loaderArea
+	background: linear-gradient(90deg, #04CEDE 10%, #6E69F1 90%)
+	overflow: hidden
+	position: fixed
+	left: 0
+	top: 0
+	right: 0
+	bottom: 0
+	z-index: 100000
+.loader
+	height: 40px
+	width: 40px
+	position: absolute
+	left: 50%
+	margin-left: -20px
+	top: 50%
+	margin-top: -20px
+.loader:before, .loader:after
+	content: ''
+	height: 40px
+	width: 40px
+	border: 8px solid rgba(255,255,255,.5)
+	border-radius: 10px
+	position: absolute
+	top: 0
+.loader:before
+	animation: preloader 2s infinite linear
+.loader:after
+	animation: preloader2 2s infinite linear
+
 header
 	background: url('../img/header-bg.png')
 	background-size: cover
@@ -487,6 +519,16 @@ circle
 		opacity: 0
 	to
 		opacity: 1
+@keyframes preloader
+	0%
+		transform: rotate(0) skew(0)
+	100%
+		transform: rotate(180deg) skew(360deg)
+@keyframes preloader2
+	0%
+		transform: rotate(0) skew(0)
+	100%
+		transform: rotate(-180deg) skew(-360deg)
 
 @media screen and (max-width: 1920px)
 	.hbg
