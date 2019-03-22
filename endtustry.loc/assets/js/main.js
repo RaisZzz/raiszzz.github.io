@@ -23,3 +23,19 @@ $('#slider-2').on('afterChange', function(){
 		count.innerHTML = '01'
 	}
 })
+$(document).ready(function(){
+
+	const $nextBtn = $(".progress")[0];
+
+	$('.slider-2').on('init', function () {
+		$($nextBtn).addClass('active');
+	});
+
+	$('.slider-2').on('beforeChange', function(){
+		$($nextBtn).removeClass('active');
+	});
+
+	$('.slider-2').on('afterChange', function(){
+		$($nextBtn).addClass('active');
+	});
+});
