@@ -7,6 +7,7 @@ $(window).on('load', function () {
 
 $('#menu-btn').click(function() {
   $('#submenu').toggleClass('show-menu');
+  $('#sub-bg').toggleClass('bg-active');
 })
 
 $('.submenu-li1').click(function(){
