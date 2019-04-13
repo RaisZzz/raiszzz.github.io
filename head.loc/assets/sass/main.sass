@@ -1,0 +1,151 @@
+*
+	padding: 0
+	margin: 0
+html
+	font-size: 10px
+body
+	font-family: 'Roboto', sans-serif
+.container
+	width: 80%
+	margin: 0 auto
+#head
+	background: url('../img/head-bg.png')
+	background-size: cover
+	background-repeat: no-repeat
+	.header
+		padding: 30px 50px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		.logo
+			width: 10%
+			img
+				width: 100%
+				height: auto
+		.menu
+			nav
+				ul
+					display: flex
+					list-style: none
+					li
+						margin: 0 10px
+						position: relative
+						&::after
+							content: ''
+							position: absolute
+							bottom: -5px
+							left: 0
+							width: 0%
+							height: 3px
+							background-color: #1b84f4
+							border-radius: 2px
+							transition: 0.5s
+						&:hover
+							&::after
+								width: 100%
+						a
+							color: #ffffff
+							text-decoration: none
+							font-size: 2.2rem
+							font-weight: 400
+		.contacts
+			display: flex
+			flex-direction: column
+			align-items: center
+			.social
+				display: flex
+				align-items: center
+				justify-content: center
+				a
+					text-decoration: none
+					&:hover
+						i
+							background: #ffffff
+							color: #000000
+					i
+						color: #ffffff
+						padding: 10px 10px
+						border-radius: 50%
+						border: 2px solid #ffffff
+						width: 3rem
+						font-size: 3rem
+						height: 3rem
+						transition: 0.5s
+			a
+				text-decoration: underline
+				color: #ffffff
+				font-size: 2.4rem
+				font-weight: 400
+				transition: 0.5s
+				&:hover
+					text-decoration: none
+	.main
+		.container
+			.line
+				width: 4px
+				height: 107px
+				background-color: #ffffff
+				margin: 0 auto
+				margin-top: 40px
+			h1
+				color: #ffffff
+				font-size: 4.6rem
+				font-weight: 700
+				text-transform: uppercase
+				text-align: center
+				font-size: 48px
+				letter-spacing: 0.48px
+				margin-top: 40px
+			.btn
+				margin-top: 50px
+				text-align: center
+				a
+					text-align: center
+					background-image: linear-gradient(to right, #00b3ff 0%, #00b3ff 12%, #2672f0 99%, #2672f0 100%)
+					box-shadow: 0 10px 9px 1px rgba(0, 0, 0, 0.15)
+					color: #ffffff
+					padding: 20px 60px
+					font-size: 2rem
+					text-decoration: none
+					font-weight: 700
+					text-transform: uppercase
+					transition: 0.5s
+					&:hover
+						box-shadow: 0 4px 14px 4px rgba(18, 148, 248, 0.54)
+			.prems
+				display: flex
+				justify-content: space-between
+				align-items: flex-start
+				border: 2px solid rgba(255, 255, 255, 0.5)
+				padding: 20px 40px
+				width: 85%
+				margin: 0 auto
+				margin-top: 70px
+				.block
+					width: 30%
+					height: 100%
+					position: relative
+					display: flex
+					justify-content: space-between
+					flex-direction: column
+					flex-shrink: 0
+					h3
+						font-size: 2.2rem
+						font-weight: 400
+						color: #ffffff
+					p
+						font-size: 2rem
+						color: #1b84f4
+						font-weight: 700
+						margin-top: 5px
+					&:nth-child(3)::after
+						display: none !important
+					&::after
+						content: ''
+						position: absolute
+						width: 2px
+						height: 100%
+						background: rgba(255, 255, 255, 0.5)
+						opacity: 0.4
+						right: -10px
+						top: 0
