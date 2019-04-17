@@ -5,6 +5,8 @@ html
 	font-size: 10px
 body
 	font-family: 'Roboto', sans-serif
+.visible
+	opacity: 1 !important
 .container
 	width: 80%
 	margin: 0 auto
@@ -612,10 +614,16 @@ body
 			display: flex
 			justify-content: space-between
 			.step
+				position: relative
+				padding-bottom: 50px
 				&:nth-child(2)
 					margin-top: 50px
+					.sub-step
+						bottom: 50px
 				&:nth-child(3)
 					margin-top: 100px
+					.sub-step
+						bottom: 0
 				h4
 					font-size: 16rem
 					font-weight: 400
@@ -644,6 +652,18 @@ body
 							border-radius: 50%
 							transform: rotate(180deg)
 							padding: 5px
+				.sub-step
+					position: absolute
+					bottom: 100px
+					opacity: 0
+					transition: 0.5s
+					left: 0
+					width: 100%
+					background: #ffffff
+					border-radius: 10px
+					padding: 10px
+					p
+						color: #000000
 #info
 	padding: 50px 0 100px 0
 	background: url('../img/what-bg.png')
@@ -732,3 +752,55 @@ body
 					background-image: linear-gradient(10deg, #004ca9 0%, #004ca9 25%, #127ab6 85%, #127ab6 90%)
 					.img
 						width: 40%
+#footer
+	background: #000000
+	padding: 30px 0
+	.container
+		display: flex
+		justify-content: space-between
+		align-items: center
+		.logo
+			width: 15%
+			img
+				width: 100%
+		.contact-us
+			display: flex
+			flex-direction: column
+			align-items: center
+			a
+				font-size: 2.4rem
+				font-weight: 400
+				color: #ffffff
+				text-decoration: underline
+				&:hover
+					text-decoration: none
+			.row
+				display: flex
+				align-items: center
+				justify-content: center
+				svg
+					fill: #ffffff
+					width: 25px
+					height: 18px
+				a
+					font-size: 2.4rem
+					color: #ffffff
+					text-decoration: none
+					font-weight: 400
+		.social
+			display: flex
+			align-items: center
+			justify-content: center
+			svg
+				fill: #ffffff
+				width: 35px
+				height: 35px
+				padding: 10px
+				cursor: pointer
+				border-radius: 50%
+				border: 1px solid #ffffff
+				transition: 0.5s
+				margin: 0 10px
+				&:hover
+					background: #ffffff
+					fill: #000000

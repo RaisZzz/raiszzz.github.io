@@ -4,6 +4,8 @@ html { font-size: 10px; }
 
 body { font-family: "Roboto", sans-serif; }
 
+.visible { opacity: 1 !important; }
+
 .container { width: 80%; margin: 0 auto; }
 
 .line { width: 4px; height: 107px; background-color: #ffffff; margin: 0 auto; margin-top: 40px; }
@@ -127,14 +129,19 @@ body { font-family: "Roboto", sans-serif; }
 #steps { background: url("../img/steps-bg.png"); background-size: cover; background-repeat: no-repeat; padding: 50px 0; }
 #steps .container h3 { font-size: 4rem; text-align: center; color: #ffffff; margin-top: 30px; font-weight: 500; text-transform: uppercase; }
 #steps .container .row { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+#steps .container .row .step { position: relative; padding-bottom: 50px; }
 #steps .container .row .step:nth-child(2) { margin-top: 50px; }
+#steps .container .row .step:nth-child(2) .sub-step { bottom: 50px; }
 #steps .container .row .step:nth-child(3) { margin-top: 100px; }
+#steps .container .row .step:nth-child(3) .sub-step { bottom: 0; }
 #steps .container .row .step h4 { font-size: 16rem; font-weight: 400; text-transform: uppercase; color: #ffffff; }
 #steps .container .row .step h4 span { color: #0D2BD3; }
 #steps .container .row .step p { font-size: 2.1rem; color: #ffffff; font-weight: 400; font-variant: small-caps; }
 #steps .container .row .step .btn { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-top: 10px; cursor: pointer; }
 #steps .container .row .step .btn .row-line { width: 30px; margin-top: 10px; }
 #steps .container .row .step .btn .button i { font-size: 2rem; color: #ffffff; border: 1px solid #ffffff; border-radius: 50%; -webkit-transform: rotate(180deg); transform: rotate(180deg); padding: 5px; }
+#steps .container .row .step .sub-step { position: absolute; bottom: 100px; opacity: 0; -webkit-transition: 0.5s; transition: 0.5s; left: 0; width: 100%; background: #ffffff; border-radius: 10px; padding: 10px; }
+#steps .container .row .step .sub-step p { color: #000000; }
 
 #info { padding: 50px 0 100px 0; background: url("../img/what-bg.png"); background-size: cover; background-repeat: no-repeat; }
 #info .container { position: relative; }
@@ -156,3 +163,17 @@ body { font-family: "Roboto", sans-serif; }
 #info .container .blocks .block:nth-child(1) { -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 45%; background-image: linear-gradient(10deg, #0072ff 0%, #0072ff 25%, #00a6ed 76%, #00a6ed 90%); }
 #info .container .blocks .block:nth-child(2) { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; background-image: linear-gradient(10deg, #004ca9 0%, #004ca9 25%, #127ab6 85%, #127ab6 90%); }
 #info .container .blocks .block:nth-child(2) .img { width: 40%; }
+
+#footer { background: #000000; padding: 30px 0; }
+#footer .container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+#footer .container .logo { width: 15%; }
+#footer .container .logo img { width: 100%; }
+#footer .container .contact-us { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+#footer .container .contact-us a { font-size: 2.4rem; font-weight: 400; color: #ffffff; text-decoration: underline; }
+#footer .container .contact-us a:hover { text-decoration: none; }
+#footer .container .contact-us .row { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+#footer .container .contact-us .row svg { fill: #ffffff; width: 25px; height: 18px; }
+#footer .container .contact-us .row a { font-size: 2.4rem; color: #ffffff; text-decoration: none; font-weight: 400; }
+#footer .container .social { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+#footer .container .social svg { fill: #ffffff; width: 35px; height: 35px; padding: 10px; cursor: pointer; border-radius: 50%; border: 1px solid #ffffff; -webkit-transition: 0.5s; transition: 0.5s; margin: 0 10px; }
+#footer .container .social svg:hover { background: #ffffff; fill: #000000; }
