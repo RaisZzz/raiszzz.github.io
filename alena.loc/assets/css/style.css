@@ -1,0 +1,133 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+*::selection{
+	background: #1cf640;
+	color: #f2f2f2;
+}
+html{
+	font-size: 10px;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+h1{
+	font-size: 4rem;
+	color: #ffffff;
+	text-align: center;
+	font-weight: 700;
+}
+.container{
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+}
+#header{
+	background: url('../img/header-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 100px 0;
+}
+.btn{
+	margin-top: 150px;
+	text-align: center;
+}
+.btn>a{
+	text-transform: uppercase;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 2.2rem;
+	background-image: linear-gradient(to top, #00c925 0%, #1cf640 100%);
+	padding: 20px 30px;
+	border-radius: 66px;
+	font-weight: 700;
+	box-shadow: 0 0 95px rgba(68, 189, 50, 0.7);
+	transition: 0.5s;
+}
+.btn>a:hover{
+	box-shadow: 0 0 0 0 rgba(68, 189, 50, 0.7);
+}
+nav{
+	margin-top: 100px;
+}
+nav>ul{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+nav>ul>li{
+	margin: 0 30px;
+}
+nav>ul>li>a{
+	text-decoration: none;
+	font-weight: 500;
+	color: #ffffff;
+	font-size: 2rem;
+	position: relative;
+}
+nav>ul>li>a:after{
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 0%;
+	height: 3px;
+	background: #48c835;
+	transition: 0.5s;
+}
+nav>ul>li>a:hover:after{
+	width: 100%;
+}
+#slider{
+	background: url('../img/slider-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 100px 0;
+}
+.slider{
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.slick-slide>img{
+	margin: 0 auto;
+	width: 70%;
+	outline: none;
+	border: 10px solid #ffffff;
+	border-radius: 20px;
+	box-shadow: 0 0 51px 1px rgba(0, 0, 0, 0.2);
+}
+.slick-slide>p{
+	text-align: center;
+	font-weight: 700;
+	font-size: 2.5rem;
+	margin-top: 30px;
+}
+.next>i, .prev>i{
+	position: absolute;
+	top: 50%;
+	margin-top: -30px;
+	font-size: 4rem;
+	color: #ffffff;
+	z-index: 100;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.next>i:hover, .prev>i:hover{
+	color: #2C3A47;
+}
+.next>i{
+	right: 0;
+}
+#footer{
+	background: #ffffff;
+	padding: 100px 0;
+}
+h3{
+	color: #e84118;
+	font-size: 4rem;
+	font-weight: 700;
+	text-align: center;
+}
