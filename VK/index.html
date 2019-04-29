@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover">
+			<meta name="theme-color" content="#000000">
+			<meta content="IE=Edge" http-equiv="X-UA-Compatible">
+			<title>VK App Boilerplate</title>
+			<link rel="stylesheet" href="style.css">
+			<link rel="stylesheet" href="ion.rangeSlider.css"/>
+	</head>
+	<body>
+			<div id="root">
+				<form>
+			<legend>Я ищу...</legend>
+			<div class="radio">
+				<div class="row">
+					<div class="radio-btn radio-btn1" id="comp">
+						<div class="img">
+							<img src="img/1.png" />
+						</div>
+						<h3>Компьютер</h3>
+					</div>
+					<div class="radio-btn radio-btn1" id="note">
+						<div class="img">
+							<img src="img/2.png" />
+						</div>
+						<h3>Ноутбук</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="radio-btn radio-btn1" id="smart">
+						<div class="img">
+							<img src="img/3.png" />
+						</div>
+						<h3>Смартфон</h3>
+					</div>
+					<div class="radio-btn radio-btn1" id="gadj">
+						<div class="img">
+							<img src="img/4.png" />
+						</div>
+						<h3>Гаджет</h3>
+					</div>
+				</div>
+				<p>Выберите категорию техники</p>
+			</div>
+			<div class="imenno" id="i-1">
+				<h2>Какой именно?<span>*</span></h2>
+				<div class="row">
+					<div class="radio-btn radio-btn4">
+						<p>Other</p>
+					</div>
+					<div class="radio-btn radio-btn4">
+						<p>Test</p>
+					</div>
+					<div class="radio-btn radio-btn4">
+						<p>Шindows</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="radio-btn radio-btn4">
+						<p>Macbook</p>
+					</div>
+					<div class="radio-btn radio-btn4">
+						<p>Ноутбук-планшет</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="radio-btn radio-btn4">
+						<p>Ноутбук-трансформер</p>
+					</div>
+					<div class="radio-btn radio-btn4">
+						<p>Другой</p>
+					</div>
+				</div>
+			</div>
+			<div class="imenno" id="i-2">
+				<h2>Какой именно?<span>*</span></h2>
+				<div class="row">
+					<div class="radio-btn radio-btn4">
+						<p>Нетбук</p>
+					</div>
+					<div class="radio-btn radio-btn4">
+						<p>Ултьрабук</p>
+					</div>
+					<div class="radio-btn radio-btn4">
+						<p>С Windows</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="radio-btn radio-btn4">
+						<p>Macbook</p>
+					</div>
+					<div class="radio-btn radio-btn4">
+						<p>Ноутбук-планшет</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="radio-btn radio-btn4">
+						<p>Ноутбук-трансформер</p>
+					</div>
+					<div class="radio-btn radio-btn4">
+						<p>Другой</p>
+					</div>
+				</div>
+			</div>
+			<div class="for">
+				<h2>Для чего?</h2>
+				<div class="row">
+					<div class="radio-btn radio-btn2">
+						<p>Для работы</p>
+					</div>
+					<div class="radio-btn radio-btn2">
+						<p>Для игр</p>
+					</div>
+					<div class="radio-btn radio-btn2">
+						<p>Для семьи</p>
+					</div>
+					<div class="radio-btn radio-btn2">
+						<p>Другое</p>
+					</div>
+				</div>
+			</div>
+			<div class="price">
+				<h2>Диапазон цены<span>*</span></h2>
+				<div class="row">
+					<p>0 ₽</p>
+					<input type="range" class="js-range-slider" min="0" max="10000" step="1" value="0" />
+					<p id="cost" style="color: #F38098;">0 ₽</p>
+				</div>
+			</div>
+			<div class="where">
+				<h2>Где удобно покупать</h2>
+				<div class="row">
+					<div class="radio-btn radio-btn3">
+						<p>В магазине</p>
+					</div>
+					<div class="radio-btn radio-btn3">
+						<p>В интернете</p>
+					</div>
+					<div class="radio-btn radio-btn3">
+						<p>Все равно</p>
+					</div>
+				</div>
+			</div>
+			<div class="comment">
+				<p>Комментарий</p>
+				<textarea cols="30" rows="10" placeholder="Укажите иные пожелания, например, цвет"></textarea>
+			</div>
+			<div class="city">
+				<h2>Ваш город<span>*</span></h2>
+				<input type="text" placeholder="Город" />
+			</div>
+			<div class="submit">
+				<button type="submit">Подать заявку</button>
+			</div>
+		</form>
+			</div>
+			<script
+  src="https://code.jquery.com/jquery-3.4.0.min.js"
+  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+  crossorigin="anonymous"></script>
+  			<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+  			<script>
+  				$(".js-range-slider").ionRangeSlider({
+					type: "double",
+					min: 0,
+					max: 10000,
+					from: 0,
+					to: 10000,
+					grid: false
+  				});
+  			</script>
+  			<script src="script.js"></script>
+	</body>
+</html>

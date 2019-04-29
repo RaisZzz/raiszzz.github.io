@@ -1,0 +1,494 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'SF UI Text', sans-serif;
+}
+body{
+	overflow-x: hidden;
+}
+.selected{
+	background: linear-gradient(45deg, #ff9100, #e80334 76%, #e80035) !important;
+	color: #ffffff !important;
+}
+.i-open{
+	display: block !important;
+}
+.Panel__in{
+	background: #ffffff !important;
+}
+.row{
+	display: flex;
+	width: 100%;
+	overflow: auto;
+}
+.radio-btn{
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	color: white;
+	background-color: rgba(232, 3, 52, 0.1);
+	margin: 16px;
+	color: #e80334;
+	font-size: 17px;
+	font-weight: bold;
+	border-radius: 8px;
+	padding: 20px;
+	transition: 0.5s;
+}
+.radio-btn>h3{
+	margin-top: 25px;
+}
+.radio-btn>p{
+	font-size: 15px;
+}
+.radio-btn>.img{
+	width: 30%;
+}
+.radio-btn>.img>img{
+	width: 100%;
+}
+.radio>p{
+	color: #76787a;
+	font-size: 15px;
+	margin-left: 16px;
+}
+.imenno{
+	display: none;
+}
+.imenno>.row>.radio-btn{
+	border-radius: 30px;
+	background: none;
+	border: 1px solid #e80334;
+	text-transform: uppercase;
+}
+.imenno>.row:nth-child(1)>.radio-btn{
+	width: 25%;
+}
+.imenno>.row:nth-child(2)>.radio-btn{
+	width: 50%;
+}
+.imenno>.row:nth-child(3)>.radio-btn{
+	width: 50%;
+}
+.imenno>.row>.radio-btn>p{
+	font-size: 10px;
+	padding: 0 !important;
+	text-align: center;
+}
+legend{
+	font-size: 28px;
+	color: #242424;
+	font-weight: bold;
+	margin-left: 16px;
+}
+form{
+	width: 100%;
+	margin: 0 auto;
+}
+h2{
+	margin-left: 16px;
+	margin-top: 20px;
+	margin-bottom: 16px;
+}
+h2>span{
+	color: #ee5300;
+	font-size: 30px;
+	margin-left: 5px;
+}
+.for>.row>.radio-btn{
+	border-radius: 15px;
+	width: 25%;
+	color: #76787a;
+	background: none;
+	text-align: center;
+}
+.for>.row{
+	border: 0.5px solid rgba(0, 0, 0, 0.12);
+}
+input[type=range] {
+	-webkit-appearance: none;
+	width: 100% !important;
+	background: transparent;
+}
+input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+}
+input[type=range]:focus {
+	outline: none;
+}
+input[type=range]::-ms-track {
+	width: 90%;
+	cursor: pointer;
+	background: transparent; 
+	border-color: transparent;
+	color: transparent;
+}
+input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	background: #ffffff;
+	cursor: pointer;
+	margin-top: -5px;
+	box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+}
+input[type=range]::-moz-range-thumb {
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	border: 1px solid #000000;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	background: #ffffff;
+	cursor: pointer;
+}
+input[type=range]::-ms-thumb {
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	border: 1px solid #000000;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	background: #ffffff;
+	cursor: pointer;
+}
+input[type=range]::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 8px;
+	cursor: pointer;
+	border-radius: 3px;
+	background-color: #ebedf0;
+}
+input[type=range]::-moz-range-track {
+	width: 100%;
+	height: 8.4px;
+	cursor: pointer;
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	background: #3071a9;
+	border-radius: 50%;
+	border: 0.2px solid #010101;
+}
+input[type=range]::-ms-track {
+	width: 100%;
+	height: 8.4px;
+	cursor: pointer;
+	background: transparent;
+	border-color: transparent;
+	border-radius: 50%;
+	color: transparent;
+}
+.price>.row{
+	justify-content: center;
+	margin: 10px 0;
+}
+.price>.row>p{
+	color: #e80334;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0 10px;
+	border: 2px solid #e80334;
+	padding: 15px 20px;
+	border-radius: 30px;
+}
+.where>.row>.radio-btn{
+	border-radius: 15px;
+	color: #76787a;
+	background: none;
+	text-align: center;
+}
+.where>.row{
+	border: 0.5px solid rgba(0, 0, 0, 0.12);
+}
+.comment{
+	padding: 0 16px;
+}
+.comment>p{
+	color: #76787a;
+	font-size: 14px;
+	margin: 14px 0;
+}
+.comment>textarea{
+	resize: none;
+	outline: none;
+	background: #f2f3f5;
+	border: 0.5px solid rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+	width: calc(100% - 24px);
+	color: #818c99;
+	font-size: 16px;
+	padding: 12px;
+}
+.city{
+	padding: 0 16px;
+}
+.city>h2{
+	margin: 14px 0 !important;
+}
+.city>input{
+	outline: none;
+	background: #f2f3f5;
+	border: 0.5px solid rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+	width: calc(100% - 24px);
+	color: #818c99;
+	font-size: 16px;
+	padding: 12px;
+	margin-bottom: 12px;
+}
+.submit{
+	padding: 0 16px;
+}
+button{
+	width: 100%;
+	padding: 20px 0;
+	margin-top: 30px;
+	opacity: 0.5;
+	border-radius: 10px;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+	background-image: linear-gradient(83deg, #ff9100, #e80334 76%, #e80035);
+	color: #ffffff;
+	font-size: 17px;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+	font-family: 'SF UI Text';
+	src: url('SFUIText-HeavyItalic.eot');
+	src: local('SF UI Text Heavy Italic'), local('SFUIText-HeavyItalic'),
+		url('SFUIText-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+		url('SFUIText-HeavyItalic.woff') format('woff'),
+		url('SFUIText-HeavyItalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'SF UI Text';
+	src: url('SFUIText-LightItalic.eot');
+	src: local('SF UI Text Light Italic'), local('SFUIText-LightItalic'),
+		url('SFUIText-LightItalic.eot?#iefix') format('embedded-opentype'),
+		url('SFUIText-LightItalic.woff') format('woff'),
+		url('SFUIText-LightItalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'SF UI Text';
+	src: url('SFUIText-MediumItalic.eot');
+	src: local('SF UI Text Medium Italic'), local('SFUIText-MediumItalic'),
+		url('SFUIText-MediumItalic.eot?#iefix') format('embedded-opentype'),
+		url('SFUIText-MediumItalic.woff') format('woff'),
+		url('SFUIText-MediumItalic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'SF UI Display';
+	src: url('SFUIDisplay-Medium.eot');
+	src: local('SF UI Display Medium'), local('SFUIDisplay-Medium'),
+		url('SFUIDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+		url('SFUIDisplay-Medium.woff') format('woff'),
+		url('SFUIDisplay-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI Display';
+	src: url('SFUIDisplay-Regular.eot');
+	src: local('SF UI Display Regular'), local('SFUIDisplay-Regular'),
+		url('SFUIDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+		url('SFUIDisplay-Regular.woff') format('woff'),
+		url('SFUIDisplay-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI Display';
+	src: url('SFUIDisplay-Light.eot');
+	src: local('SF UI Display Light'), local('SFUIDisplay-Light'),
+		url('SFUIDisplay-Light.eot?#iefix') format('embedded-opentype'),
+		url('SFUIDisplay-Light.woff') format('woff'),
+		url('SFUIDisplay-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI Display';
+	src: url('SFUIDisplay-Thin.eot');
+	src: local('SF UI Display Thin'), local('SFUIDisplay-Thin'),
+		url('SFUIDisplay-Thin.eot?#iefix') format('embedded-opentype'),
+		url('SFUIDisplay-Thin.woff') format('woff'),
+		url('SFUIDisplay-Thin.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI Display';
+	src: url('SFUIDisplay-Ultralight.eot');
+	src: local('SF UI Display Ultralight'), local('SFUIDisplay-Ultralight'),
+		url('SFUIDisplay-Ultralight.eot?#iefix') format('embedded-opentype'),
+		url('SFUIDisplay-Ultralight.woff') format('woff'),
+		url('SFUIDisplay-Ultralight.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI Text';
+	src: url('SFUIText-Semibold.eot');
+	src: local('SF UI Text Semibold'), local('SFUIText-Semibold'),
+		url('SFUIText-Semibold.eot?#iefix') format('embedded-opentype'),
+		url('SFUIText-Semibold.woff') format('woff'),
+		url('SFUIText-Semibold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI Display';
+	src: url('SFUIDisplay-Semibold.eot');
+	src: local('SF UI Display Semibold'), local('SFUIDisplay-Semibold'),
+		url('SFUIDisplay-Semibold.eot?#iefix') format('embedded-opentype'),
+		url('SFUIDisplay-Semibold.woff') format('woff'),
+		url('SFUIDisplay-Semibold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI Text';
+	src: url('SFUIText-Regular.eot');
+	src: local('SF UI Text Regular'), local('SFUIText-Regular'),
+		url('SFUIText-Regular.eot?#iefix') format('embedded-opentype'),
+		url('SFUIText-Regular.woff') format('woff'),
+		url('SFUIText-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI Display';
+	src: url('SFUIDisplay-Black.eot');
+	src: local('SF UI Display Black'), local('SFUIDisplay-Black'),
+		url('SFUIDisplay-Black.eot?#iefix') format('embedded-opentype'),
+		url('SFUIDisplay-Black.woff') format('woff'),
+		url('SFUIDisplay-Black.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI Text';
+	src: url('SFUIText-BoldItalic.eot');
+	src: local('SF UI Text Bold Italic'), local('SFUIText-BoldItalic'),
+		url('SFUIText-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('SFUIText-BoldItalic.woff') format('woff'),
+		url('SFUIText-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'SF UI Text';
+	src: url('SFUIText-Bold.eot');
+	src: local('SF UI Text Bold'), local('SFUIText-Bold'),
+		url('SFUIText-Bold.eot?#iefix') format('embedded-opentype'),
+		url('SFUIText-Bold.woff') format('woff'),
+		url('SFUIText-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI Display';
+	src: url('SFUIDisplay-Heavy.eot');
+	src: local('SF UI Display Heavy'), local('SFUIDisplay-Heavy'),
+		url('SFUIDisplay-Heavy.eot?#iefix') format('embedded-opentype'),
+		url('SFUIDisplay-Heavy.woff') format('woff'),
+		url('SFUIDisplay-Heavy.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI Text';
+	src: url('SFUIText-Light.eot');
+	src: local('SF UI Text Light'), local('SFUIText-Light'),
+		url('SFUIText-Light.eot?#iefix') format('embedded-opentype'),
+		url('SFUIText-Light.woff') format('woff'),
+		url('SFUIText-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI Text';
+	src: url('SFUIText-Heavy.eot');
+	src: local('SF UI Text Heavy'), local('SFUIText-Heavy'),
+		url('SFUIText-Heavy.eot?#iefix') format('embedded-opentype'),
+		url('SFUIText-Heavy.woff') format('woff'),
+		url('SFUIText-Heavy.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI Text';
+	src: url('SFUIText-Medium.eot');
+	src: local('SF UI Text Medium'), local('SFUIText-Medium'),
+		url('SFUIText-Medium.eot?#iefix') format('embedded-opentype'),
+		url('SFUIText-Medium.woff') format('woff'),
+		url('SFUIText-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI Display';
+	src: url('SFUIDisplay-Bold.eot');
+	src: local('SF UI Display Bold'), local('SFUIDisplay-Bold'),
+		url('SFUIDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+		url('SFUIDisplay-Bold.woff') format('woff'),
+		url('SFUIDisplay-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI Text';
+	src: url('SFUIText-Italic.eot');
+	src: local('SF UI Text Italic'), local('SFUIText-Italic'),
+		url('SFUIText-Italic.eot?#iefix') format('embedded-opentype'),
+		url('SFUIText-Italic.woff') format('woff'),
+		url('SFUIText-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'SF UI Text';
+	src: url('SFUIText-SemiboldItalic.eot');
+	src: local('SF UI Text Semibold Italic'), local('SFUIText-SemiboldItalic'),
+		url('SFUIText-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+		url('SFUIText-SemiboldItalic.woff') format('woff'),
+		url('SFUIText-SemiboldItalic.ttf') format('truetype');
+	font-weight: 600;
+	font-style: italic;
+}
