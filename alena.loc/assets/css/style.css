@@ -11,12 +11,75 @@ html{
 }
 body{
 	font-family: 'Montserrat', sans-serif;
+	position: relative;
 }
 h1{
 	font-size: 4rem;
 	color: #ffffff;
 	text-align: center;
 	font-weight: 700;
+}
+a>span{
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	text-align: center;
+	top: 30px;
+	background: #ffffff;
+	border-radius: 20px;
+	color: #E84118;
+	transition: 0.5s;
+	padding: 10px 20px;
+}
+a:hover span{
+	opacity: 1;
+}
+.modal{
+	width: 50%;
+	top: 30px;
+	left: 50%;
+	opacity: 0;
+	margin-left: -350px;
+	text-align: left;
+	background: #ffffff;
+	color: #535363;
+	z-index: 0;
+	border-radius: 20px;
+	padding: 20px 40px;
+	position: absolute;
+	font-size: 1.8rem;
+	transition: 0.5s;
+}
+.modal-active{
+	opacity: 1 !important;
+	z-index: 120 !important;
+}
+.overlay-active{
+	opacity: 0.7 !important;
+	z-index: 110 !important;
+}
+.modal>i{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 2rem;
+	color: #535363;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.modal>i:hover{
+	transform: rotate(360deg);
+}
+.overlay{
+	transition: 0.5s;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	opacity: 0;
+	z-index: 0;
 }
 .container{
 	width: 80%;
