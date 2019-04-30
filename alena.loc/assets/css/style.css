@@ -39,7 +39,7 @@ a:hover span{
 	top: 30px;
 	left: 50%;
 	opacity: 0;
-	margin-left: -350px;
+	margin-left: -500px;
 	text-align: left;
 	background: #ffffff;
 	color: #535363;
@@ -193,4 +193,9 @@ h3{
 	font-size: 4rem;
 	font-weight: 700;
 	text-align: center;
+}
+@media(max-width: 1420px){
+	.modal{
+		margin-left: -370px;
+	}
 }
