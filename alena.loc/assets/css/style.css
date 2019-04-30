@@ -212,6 +212,16 @@ h3>span>a:after{
 h3>span>a:hover:after{
 	width: 100%;
 }
+footer{
+	background: #535363;
+	padding: 20px 0;
+}
+footer>.container>p{
+	text-align: center;
+	color: #ffffff;
+	font-size: 1.7rem;
+	font-weight: 500;
+}
 @media(max-width: 1420px){
 	.modal{
 		margin-left: -370px;
