@@ -194,6 +194,24 @@ h3{
 	font-weight: 700;
 	text-align: center;
 }
+h3>span>a{
+	color: #e84118;
+	text-decoration: none;
+	position: relative;
+}
+h3>span>a:after{
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 0%;
+	background: #1cf640;
+	height: 4px;
+	transition: 0.5s;
+}
+h3>span>a:hover:after{
+	width: 100%;
+}
 @media(max-width: 1420px){
 	.modal{
 		margin-left: -370px;
