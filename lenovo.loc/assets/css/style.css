@@ -179,6 +179,7 @@ body{
 }
 .blocks>.row>.block{
 	width: 100%;
+	position: relative;
 	height: calc(100% - 40px);
 	border: solid 0.5px #d7d7d7;
 	text-align: center;
@@ -191,6 +192,14 @@ body{
 	padding: 20px;
 	margin: 20px 0;
 	transition: 0.5s;
+}
+.blocks>.row>.block>a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 6;
 }
 .blocks>.row>.block:hover{
 	background: rgba(125,125,125,0.6);
@@ -236,4 +245,46 @@ footer>.container>p{
 	font-size: 16px;
 	font-weight: 400;
 	text-align: center;
+}
+
+
+#main>.container>h2{
+	text-align: center;
+	font-weight: 700;
+	color: #777;
+	font-size: 30px;
+	margin-top: 100px;
+}
+#main>.container>h3{
+	text-align: center;
+	font-weight: 700;
+	color: #777;
+	font-size: 30px;
+	margin-top: 50px;
+}
+table{
+	width: 100%;
+	margin-top: 50px;
+}
+table>tbody>tr>td{
+	padding: 10px;
+	background: #f1f1f1;
+}
+table>tbody>tr:nth-child(1)>td{
+	background: #777;
+	color: #ffffff;
+}
+table>tbody>tr>td:nth-child(1){
+	text-align: left;
+}
+.video{
+	position: relative;
+}
+.yt-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
 }
