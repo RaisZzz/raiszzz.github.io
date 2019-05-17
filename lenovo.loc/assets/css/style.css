@@ -71,6 +71,16 @@ body{
 	height: 100%;
 	position: relative;
 }
+#video::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0px;
+	width: 100%;
+	height: 50px;
+	background: #ffffff;
+	z-index: 1000;
+}
 #video>.yt-overlay{
 	position: absolute;
 	display: flex;
@@ -129,30 +139,61 @@ body{
 #job>.container{
 	padding: 0 20px;
 }
-#job>.container>h2{
-	text-align: center;
-	margin: 50px 0;
-	text-transform: uppercase;
-	font-weight: 500;
-	font-size: 30px;
+#job>.container>.wpb_wrapper{
+	margin-top: 60px;
+}
+.wpb_wrapper>h3, .wpb_wrapper>h4, .wpb_wrapper>h5{
 	color: #1d2127;
+	font-size: 24px;
+	font-weight: 400;
+}
+.wpb_wrapper>ul{
+	margin: 20px 40px;
+}
+.wpb_wrapper>ul>li{
+	color: #777;
+	margin: 7px 0;
+	font-weight: 400;
+	font-size: 16px;
+	list-style: disc;
+}
+.wpb_wrapper>p{
+	color: #777;
+	margin: 15px 0;
+	font-weight: 400;
+	font-size: 16px;
+}
+.blocks{
+	position: absolute;
+	width: 60%;
+	height: 100%;
+	z-index: 5;
+	top: -30px;
+	right: 0px;
 }
 .blocks>.row{
+	height: 50%;
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-around;
 }
 .blocks>.row>.block{
-	width: 40%;
-	border: solid 2px #d7d7d7;
+	width: 100%;
+	height: calc(100% - 40px);
+	border: solid 0.5px #d7d7d7;
 	text-align: center;
+	background: rgba(0,0,0,0.5);
+	cursor: pointer;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background: #ffffff;
 	padding: 20px;
 	margin: 20px 0;
+	transition: 0.5s;
+}
+.blocks>.row>.block:hover{
+	background: rgba(125,125,125,0.6);
 }
 .blocks>.row>.block>.img{
 	width: 60%;
@@ -162,13 +203,13 @@ body{
 }
 .blocks>.row>.block>.col>h3{
 	font-size: 30px;
-	color: #1d2127;
+	color: #ffffff;
 	font-weight: 300;
 }
 .blocks>.row>.block>.col>p{
 	margin: 10px 0;
 	font-size: 17px;
-	color: #1d2127;
+	color: #ffffff;
 	font-weight: 400;
 }
 .blocks>.row>.block>.col>.btn{
@@ -184,4 +225,15 @@ body{
 }
 .blocks>.row>.block>.col>.btn>a:hover{
 	box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+footer{
+	background: #bbbbbb;
+	margin-top: 40px;
+	padding: 15px 0;
+}
+footer>.container>p{
+	color: #555555;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
 }
