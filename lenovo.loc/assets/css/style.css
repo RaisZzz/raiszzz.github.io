@@ -3,6 +3,7 @@
 	margin: 0;
 	text-decoration: none;
 	list-style: none;
+	overflow: none;
 }
 body{
 	font-family: 'Roboto', sans-serif;
@@ -418,4 +419,35 @@ form #input-submit:hover {
 }
 .cf:after {
   clear: both;
+}
+
+
+
+/* Media */
+@media (max-width: 1100px){
+	.yt-overlay>h1, .yt-overlay>h4{
+		display: none;
+	}
+	#video>.blocks{
+		width: 100%;
+	}
+}
+@media (max-width: 715px){
+	#video>.blocks>.row>.block>.col>h3{
+		font-size: 14px;
+	}
+	#video>.blocks>.row>.block>.col>p{
+		font-size: 10px
+	}
+}
+@media (max-width: 655px){
+	#video>.blocks>.row>.block>.col>h3{
+		font-size: 11px;
+	}
+	#video>.blocks>.row>.block>.col>p{
+		font-size: 7px
+	}
+	.menu>nav>ul>li>a{
+		font-size: 13px;
+	}
 }
