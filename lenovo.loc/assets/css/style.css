@@ -294,5 +294,128 @@ table>tbody>tr>td:nth-child(1){
 	align-items: center;
 }
 .lenovo>img{
-	width: 80%;
+	width: 40%;
+}
+
+#contacts>.container>h1{
+	text-align: center;
+	margin-top: 150px;
+	font-weight: 600;
+	font-size: 35px;
+	color: #777;
+}
+.contact{
+	margin-top: 50px;
+	border: 1px solid #CCCCCC;
+}
+.contact>.row{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 40px;
+	padding: 0 20px;
+}
+.contact>.row:nth-child(1){
+	background: #E9E9E9;
+	justify-content: flex-start;
+	padding: 10px 0;
+	position: relative;
+	border-bottom: 1px solid #CCCCCC;
+}
+.contact>.row:nth-child(1)>h3{
+	margin-left: 20px;
+}
+.contact>.row:nth-child(1)::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 7px;
+	height: 100%;
+	background: #DC291E;
+}
+.contact>.row>.img{
+	width: 40px;
+	height: 40px;
+}
+.contact>.row>.img>img{
+	width: 100%;
+}
+.contact>.row>i{
+	font-size: 30px;
+	padding: 5px;
+	color: #3498db;
+}
+.contact>.row>a{
+	color: #777;
+	margin-left: 20px;
+	text-decoration: none;
+}
+form {
+  width: 50%;
+  text-align: center;
+  margin: 20px auto;
+}
+form input{
+  border: 0;
+  outline: 0;
+  background: #F0F0F0;
+  padding: 1em;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  display: block;
+  color: #777;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 1em;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  resize: none;
+}
+form input:focus, form textarea:focus {
+  -moz-box-shadow: 0 0px 2px #FE1E14 !important;
+  -webkit-box-shadow: 0 0px 2px #FE1E14 !important;
+  box-shadow: 0 0px 2px #FE1E14 !important;
+}
+form #input-submit {
+  color: white;
+  background: #FE1E14;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 17px;
+  transition: 0.5s;
+}
+form #input-submit:hover {
+  -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+}
+.half {
+  float: left;
+  width: 95%;
+  margin-bottom: 1em;
+}
+.right {
+  width: 50%;
+}
+.left {
+  margin-right: 2%;
+}
+@media (max-width: 480px) {
+  .half {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+  }
+}
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
 }
