@@ -6,6 +6,7 @@
 	<meta name="theme-color" content="#FE1E14">
 	<title>Lenovo</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 	<link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
@@ -23,6 +24,22 @@
 					</ul>
 				</nav>
 			</div>
+		</div>
+		<div class="mobile-menu">
+			<i class="fas fa-bars" id="open"></i>
+			<i class="fas fa-times" id="close"></i>
+			<nav>
+				<ul>
+					<li><a href="#">Ноутбуки</a></li>
+					<li><a href="#">Ноутбуки</a></li>
+					<li><a href="#">Ноутбуки</a></li>
+					<li><a href="#">Ноутбуки</a></li>
+					<li><a href="#">Ноутбуки</a></li>
+					<li><a href="#">Ноутбуки</a></li>
+					<li><a href="#">Ноутбуки</a></li>
+					<li><a href="#">Ноутбуки</a></li>
+				</ul>
+			</nav>
 		</div>
 	</section>
 	<div class="head">
@@ -109,11 +126,24 @@
 			<p>Это далеко не полный перечень возможных поломок. При обнаружении любых странностей в работе техники следует обратиться, минимум, за диагностикой, так как может понадобиться срочный <strong>ремонт компьютеров Леново.</strong></p>
 			<p>Починка ПК – лучший выход из любой ситуации с неисправностью. Во-первых, это гораздо дешевле, чем покупать новый. Во-вторых, на жестком диске может храниться важная информация, потеря которой может иметь свои негативные последствия. К тому же, покупка нового ноутбука – это потеря времени на его изучение, установку необходимых программ и настройку.</p>
 		</div>
+		<form class="cf">
+			<legend>Оставить заявку</legend>
+			<div class="half left cf">
+				<input type="name" id="input-name" placeholder="Имя">
+				<input type="phone" id="input-subject" placeholder="Телефон">
+			</div>
+			<input type="submit" value="Отправить" id="input-submit">
+		</form>
 	</section>
 	<footer>
 		<div class="container">
 			<p>© Copyright 2019. All Rights Reserved</p>
 		</div>
 	</footer>
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+	<script src="../assets/js/script.js"></script>
 </body>
 </html>
