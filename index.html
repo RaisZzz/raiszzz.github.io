@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>miniPortfolio</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			text-decoration: none;
+			list-style: none;
+		}
+		body{
+			background: #e67e22;
+			font-family: 'Roboto Condensed', sans-serif;
+		}
+		h1{
+			text-align: center;
+			font-weight: bold;
+			font-size: 50px;
+			color: #ffffff;
+			margin-top: 50px;
+		}
+		.sites{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin-left: 60px;
+		}
+		.sites>ul>li{
+			margin-top: 15px;
+		}
+		.sites>ul>li>a{
+			font-size: 20px;
+			color: #2c3e50;
+			position: relative;
+		}
+		.sites>ul>li>a::before{
+			content: '';
+			position: absolute;
+			top: 10px;
+			left: -10px;
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
+			background: #c0392b;
+		}
+		.sites>ul>li>a::after{
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: -5px;
+			height: 3px;
+			width: 0%;
+			background: #ffffff;
+			transition: 0.5s;
+		}
+		.sites>ul>li>a:hover::after{
+			width: 100%;
+		}
+		p{
+			color: #ffffff;
+			text-align: center;
+			font-weight: bold;
+			font-size: 20px;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Web-Sites</h1>
+	<nav class="sites">
+		<ul>
+			<li>
+				<a href="endtustry.loc/index.html">Endustry</a>
+			</li>
+			<li>
+				<a href="error.loc/index.html">Error</a>
+			</li>
+			<li>
+				<a href="flatingblog.loc/index.html">Flatingblog</a>
+			</li>
+			<li>
+				<a href="gigi.loc/index.html">Gigi</a>
+			</li>
+			<li>
+				<a href="head.loc/index.html">Head</a>
+			</li>
+			<li>
+				<a href="landing.loc/index.html">Landing</a>
+			</li>
+			<li>
+				<a href="landing2.loc/index.html">Landing2</a>
+			</li>
+			<li>
+				<a href="misocial.loc/index.html">Misocial</a>
+			</li>
+			<li>
+				<a href="moskitka.loc/index.html">Moskitka</a>
+			</li>
+			<li>
+				<a href="newstec.loc/index.html">Newstec</a>
+			</li>
+			<li>
+				<a href="portfolio.loc/index.html">Portfolio</a>
+			</li>
+		</ul>
+	</nav>
+	<p>With love, by Rais</p>
+</body>
+</html>
