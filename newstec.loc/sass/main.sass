@@ -1,0 +1,174 @@
+@import 'colors'
+html
+	font-size: 10px
+*::selection
+	color: $second-color
+	background-color: $main-color
+body
+	font-family: 'Roboto', sans-serif
+	height: 100vh
+	padding: 0
+	margin: 0
+	background-color: $bg-color
+	display: flex
+	justify-content: flex-end
+h2
+	text-align: center
+	font-size: 3rem
+	color: $main-color
+a
+	text-decoration: none
+.closed, .closed>a
+	color: #d63031 !important
+#left-bar-menu
+	width: 20%
+	height: 100vh
+	box-shadow: 1px 0px 0px 0px $second-color
+	padding-top: 55px
+	position: fixed
+	background-color: #ffffff
+	z-index: 100
+	top: 0
+	left: 0
+	.menu-button
+		margin-bottom: 10px
+		#menu-open
+			display: none
+			text-align: center
+			i
+				color: $main-color
+				font-size: 3rem
+		#menu-close
+			display: none
+			text-align: center
+			i
+				color: $main-color
+				font-size: 3rem
+	.logo
+		text-align: center
+		a
+			color: $main-color
+			font-size: 2.5rem
+			font-weight: 700
+			text-transform: uppercase
+			text-decoration: none
+	.menu
+		margin-top: 45px
+		background-color: #ffffff
+		text-align: left
+		color: $second-text-color
+		nav>ul
+			padding: 0
+			margin: 0
+			li
+				cursor: pointer
+				padding: 15px 0
+				list-style: none
+				display: flex
+				align-items: center
+				transition: 0.5s
+				i
+					padding-left: 30px
+					font-size: 1.4rem
+				a
+					text-transform: uppercase
+					margin-left: 20px
+					color: $second-text-color
+					text-decoration: none
+					font-size: 1.3rem
+					font-weight: 400
+				&:hover
+					border-left: solid 3px $main-color
+					background-color: lighten($second-text-color, 15%)
+#loader
+	width: 80%
+	padding-top: 55px
+	.main-page
+		.prem-block
+			display: flex
+			justify-content: space-around
+			margin-top: 70px
+			.block
+				width: 25%
+				padding: 30px 10px
+				color: $second-color
+				text-align: center
+				border-radius: 10px
+				-webkit-box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.75)
+				-moz-box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.75)
+				box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.75)
+				position: relative
+				h4
+					font-size: 3rem
+					padding: 0
+					margin: 0
+				i
+					font-size: 6rem
+					margin: 20px 0
+				p
+					font-size: 1.6rem
+				&:nth-child(1)
+					background-image: -webkit-linear-gradient(left, #008d75, #00976b, #00a15a, #07aa41, #3ab117)
+					background-image: -o-linear-gradient(left, #008d75, #00976b, #00a15a, #07aa41, #3ab117)
+					background-image: linear-gradient(to right, #008d75, #00976b, #00a15a, #07aa41, #3ab117)
+				&:nth-child(2)
+					background-image: -webkit-linear-gradient(left, #845ec2, #c05cb0, #e66599, #fa7a82, #ff9671)
+					background-image: -o-linear-gradient(left, #845ec2, #c05cb0, #e66599, #fa7a82, #ff9671)
+					background-image: linear-gradient(to right, #845ec2, #c05cb0, #e66599, #fa7a82, #ff9671)
+				&:nth-child(3)
+					background-image: -webkit-linear-gradient(left, #43d5bd, #00c4c7, #00b3cd, #009fcd, #008bc5)
+					background-image: -o-linear-gradient(left, #43d5bd, #00c4c7, #00b3cd, #009fcd, #008bc5)
+					background-image: linear-gradient(to right, #43d5bd, #00c4c7, #00b3cd, #009fcd, #008bc5)
+	.news-list
+		margin-left: 30px
+		.news
+			.new
+				border-radius: 10px
+				width: 90%
+				display: flex
+				margin-bottom: 40px
+				align-items: flex-start
+				padding: 10px
+				background-color: $new-bg
+				-webkit-box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.75)
+				-moz-box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.75)
+				box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.75)
+				color: $second-text-color
+				img
+					width: 35%
+					border-radius: 10px
+				.right-new
+					width: 60%
+					margin-left: 20px
+					p
+						font-size: 1.6rem
+						font-weight: 700
+						margin: 0
+						padding: 0
+						span
+							color: $main-color
+					h3
+						font-size: 2.5rem
+						margin: 20px 0
+						padding: 0
+						font-weight: 700
+					a
+						color: $main-color
+						font-size: 1.7rem
+						transition: 0.5s
+						&:hover
+							color: $second-color
+//Media
+@media (max-width: 1024px)
+	html
+		font-size: 8.5px
+@media (max-width: 850px)
+	#loader
+		width: 95%
+	#left-bar-menu
+		width: 5%
+		.menu-button
+			#menu-open
+				display: block
+		#menu
+			display: none
