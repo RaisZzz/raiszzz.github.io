@@ -1,0 +1,303 @@
+@import 'colors'
+html
+	font-size: 10px
+body
+	margin: 0
+	padding: 0
+	justify-content: center
+	font-family: 'Poppins', sans-serif
+.container
+	width: 87%
+	padding: 0
+	margin: 0 auto
+.button
+	font-size: 2rem
+	text-transform: uppercase
+	font-weight: 400
+	color: $third-main-color
+	background-color: $second-main-color
+	border-radius: 3rem
+	padding: 1rem 4rem
+	margin-top: 30px
+	text-decoration: none
+	transition: 0.5s
+	&:hover
+		background-color: $third-main-color
+		color: $second-main-color
+#sidebar
+	position: fixed
+	top: 0
+	left: 0
+	width: 13%
+	height: 100%
+	background-color: darken($main-color, 5%)
+	justify-content: flex-start
+	text-align: center
+	padding-top: 50px
+	a.logo
+		text-transform: uppercase
+		color: $second-main-color
+		font-size: 3.2rem
+		font-weight: 400
+		text-decoration: none
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			width: 50%
+			height: 4px
+			border-radius: 2px
+			background-color: $second-main-color
+			bottom: -10px
+			left: 25%
+	hr
+		border: 1px solid $main-color
+		width: 70%
+	nav
+		ul
+			list-style: none
+			padding: 0
+			margin: 0
+			li
+				margin: 25px				
+				a
+					color: $third-main-color
+					opacity: 0.5
+					text-decoration: none
+					font-weight: 400
+					font-size: 1.6rem
+					text-transform: uppercase
+					position: relative
+					&:after
+						content: ''
+						position: absolute
+						left: 0
+						bottom: -5px
+						width: 0%
+						height: 2px
+						background-color: $third-main-color
+						opacity: 0.5
+						transition: 0.5s
+					&:hover 
+						&:after
+							width: 100% !important
+	i
+		cursor: pointer
+		font-size: 2rem
+		color: $third-main-color
+		opacity: 0.5
+header
+	margin-left: 13%
+	padding: 150px 0
+	background-color: $main-color
+	.container
+		width: 60%
+		h1
+			color: $third-main-color
+			font-size: 62px
+			font-weight: 400
+			position: relative
+			text-transform: uppercase
+			margin: 0
+			padding: 0
+			&:before
+				content: ''
+				position: absolute
+				left: 0
+				top: -10px
+				width: 5%
+				height: 4px
+				background-color: $second-main-color
+				border-radius: 2px
+		h4
+			font-size: 3rem
+			font-weight: 500
+			text-transform: uppercase
+			color: $third-main-color
+			margin: 20px 0
+			padding: 0
+		p
+			margin: 0
+			padding: 0
+			color: $third-main-color
+			opacity: 0.5
+			font-weight: 300
+			font-size: 2.2rem
+			margin-bottom: 50px
+#description
+	margin-left: 13%
+	background-color: $third-main-color
+	.container
+		display: flex
+		justify-content: space-around
+		padding: 120px 0
+		.card
+			width: 23%
+			display: flex
+			flex-direction: column
+			align-items: center
+			position: relative
+			background-color: darken($third-main-color, 5%)
+			padding: 40px
+			border-radius: 6px
+			i
+				position: absolute
+				top: -15%
+				color: $second-main-color
+				font-size: 3rem
+				background-color: $third-main-color
+				padding: 35px
+				border-radius: 50%
+			h3
+				color: $main-color
+				font-size: 3rem
+				font-weight: 500
+				text-transform: uppercase
+			p
+				color: lighen($main-color, 10%)
+				font-size: 1.8rem
+				text-align: center
+				margin: 0
+				padding: 0
+				font-weight: 300
+#comment
+	background-color: $main-color
+	padding: 140px
+	.container
+		width: 70%
+		margin-left: 20%
+		img
+			width: 10%
+		h4
+			color: $third-main-color
+			font-size: 2.8rem
+			font-weight: 400
+			margin-bottom: 50px
+		p
+			font-size: 2rem
+			font-weight: 500
+			color: darken($third-main-color, 40%)
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				left: 0
+				top: -10px
+				width: 10%
+				height: 5px
+				background-color: darken($third-main-color, 40%)
+				border-radius: 2px
+			span
+				color: darken($third-main-color, 50%)
+#blog
+	margin-left: 13%
+	padding: 100px 0
+	.container
+		h2
+			color: $main-color
+			font-size: 4.4rem
+			font-weight: 500
+			position: relative
+			text-transform: uppercase
+			&:before
+				content: ''
+				position: absolute
+				left: 0
+				top: -10px
+				width: 5%
+				height: 5px
+				border-radius: 6px
+				background-color: $second-main-color
+		.posts
+			.post
+				display: flex
+				justify-content: space-between
+				align-items: center
+				margin-top: 50px
+				.img
+					width: 200%
+					margin-right: 40px
+					img
+						width: 100%
+						height: auto
+						border-radius: 6px
+						box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.75)
+				.description
+					display: flex
+					flex-direction: column
+					justify-content: center
+					h3
+						color: $main-color
+						font-size: 3rem
+						font-weight: 500
+						text-transform: uppercase
+						margin: 0
+					p
+						color: lighten($main-color, 20%)
+						font-weight: 300
+						font-size: 1.8rem
+					.button
+						width: 25%
+						text-align: center
+footer
+	background-color: $main-color
+	margin-left: 13%
+	padding: 40px 0
+	.container
+		display: flex
+		justify-content: space-between
+		align-items: center
+		.left
+			nav
+				ul
+					display: flex
+					list-style: none
+					padding-left: 0
+					li
+						margin-right: 20px
+						a
+							color: $third-main-color
+							opacity: 0.5
+							font-weight: 500
+							font-size: 1.8rem
+							text-transform: uppercase
+							text-decoration: none
+							position: relative
+							&:after
+								content: ''
+								position: absolute
+								left: 0
+								bottom: -5px
+								width: 0%
+								height: 2px
+								background-color: $third-main-color
+								opacity: 0.5
+								transition: 0.5s
+							&:hover 
+								&:after
+									width: 100% !important
+			p
+				color: $third-main-color
+				opacity: 0.3
+				font-weight: 300
+				font-size: 1.6rem
+		.social
+			display: flex
+			i
+				margin-left: 30px
+				font-size: 3rem
+				color: $third-main-color
+				opacity: 0.5
+				transition: 0.5s
+				cursor: pointer
+				&:hover
+					opacity: 1
+			.fa-facebook-f
+				&:hover
+					color: #3b5998
+			.fa-twitter
+				&:hover
+					color: #00acee
+			.fa-instagram
+				&:hover
+					color: #cd486b

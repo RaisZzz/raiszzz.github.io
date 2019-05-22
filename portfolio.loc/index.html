@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flating</title>
+	<!-- Style -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<!-- Adaptive -->
+	<link rel="stylesheet" href="assets/css/adaptive.css">
+	<!-- Font Poppins -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+	<section id="sidebar">
+		<div class="container">
+			<a href="#header" class="logo scrollto">SDS</a>
+			<hr style="margin-top: 50px;">
+			<nav>
+				<ul>
+					<li><a class="scrollto" href="#description">Work</a></li>
+					<li><a class="scrollto" href="#comment">About</a></li>
+					<li><a class="scrollto" href="#blog">Portfolio</a></li>
+					<li><a class="scrollto" href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+			<hr style="margin-bottom: 50px;">
+			<i class="fas fa-search"></i>
+		</div>
+	</section>
+	<header id="header">
+		<div class="container">
+			<h1>Title Of The Page</h1>
+			<h4>Subtitle</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pharetra turpis tristique nisi laoreet gravida. Sed sed orci ut ante pellentesque efficitur id ac erat. Morbi metus metus, dictum sed arcu at, interdum porttitor erat.</p>
+			<a href="#" class="button">Button</a>
+		</div>
+	</header>
+	<section id="description">
+		<div class="container">
+			<div class="card">
+				<i class="fas fa-image"></i>
+				<h3>Photos</h3>
+				<p>Vestibulum suscipit tortor magna, quis pellentesque arcu volutpat ac. Tempus leo erat, sit amet ullamcorper nisl.</p>
+				<a href="#" class="button">Button</a>
+			</div>
+			<div class="card">
+				<i class="fas fa-video"></i>
+				<h3>Videos</h3>
+				<p>Vestibulum suscipit tortor magna, quis pellentesque arcu volutpat ac. Tempus leo erat, sit amet ullamcorper nisl.</p>
+				<a href="#" class="button">Button</a>
+			</div>
+			<div class="card">
+				<i class="fas fa-download"></i>
+				<h3>Downloads</h3>
+				<p>Vestibulum suscipit tortor magna, quis pellentesque arcu volutpat ac. Tempus leo erat, sit amet ullamcorper nisl.</p>
+				<a href="#" class="button">Button</a>
+			</div>
+		</div>
+	</section>
+	<section id="comment">
+		<div class="container">
+			<img src="assets/img/quote.png" alt="">
+			<h4>In hac habitasse platea dictumst. Phasellus finibus ipsum enim, non pretium massa mattis non. Curabitur ut tempus ex. Nunc dictum est enim, consectetur convallis odio mollis tempus!</h4>
+			<p>Jim Gordon <span>(GCPD)</span></p>
+		</div>
+	</section>
+	<section id="blog">
+		<div class="container">
+			<h2>Portfolio</h2>
+			<div class="posts">
+				<div class="post">
+					<div class="img">
+						<img src="assets/img/posts/1.jpg" alt="">
+					</div>
+					<div class="description">
+						<h3>Title of a post</h3>
+						<p>In hac habitasse platea dictumst. Phasellus finibus ipsum enim, non pretium massa mattis non. Curabitur ut tempus ex. Nunc dictum est enim, consectetur convallis odio mollis tempus.</p>
+						<a href="#" class="button">Read more</a>
+					</div>
+				</div>
+				<div class="post">
+					<div class="img">
+						<img src="assets/img/posts/2.jpg" alt="">
+					</div>
+					<div class="description">
+						<h3>Title of a post</h3>
+						<p>In hac habitasse platea dictumst. Phasellus finibus ipsum enim, non pretium massa mattis non. Curabitur ut tempus ex. Nunc dictum est enim, consectetur convallis odio mollis tempus.</p>
+						<a href="#" class="button">Read more</a>
+					</div>
+				</div>
+				<div class="post">
+					<div class="img">
+						<img src="assets/img/posts/3.jpg" alt="">
+					</div>
+					<div class="description">
+						<h3>Title of a post</h3>
+						<p>In hac habitasse platea dictumst. Phasellus finibus ipsum enim, non pretium massa mattis non. Curabitur ut tempus ex. Nunc dictum est enim, consectetur convallis odio mollis tempus.</p>
+						<a href="#" class="button">Read more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer id="contact">
+		<div class="container">
+			<div class="left">
+				<nav>
+					<ul>
+						<li><a class="scrollto" href="#description">Work</a></li>
+						<li><a class="scrollto" href="#comment">About</a></li>
+						<li><a class="scrollto" href="#blog">Portfolio</a></li>
+						<li><a class="scrollto" href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+				<p>(c) 2018 NAME. All rights reserved.</p>
+			</div>
+			<div class="social">
+				<i class="fab fa-facebook-f"></i>
+				<i class="fab fa-twitter"></i>
+				<i class="fab fa-instagram"></i>
+			</div>
+		</div>
+	</footer>
+	<!-- JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Scroll -->
+	<script>
+		jQuery(document).ready(function() {
+			jQuery("a.scrollto").click(function () {
+				elementClick = jQuery(this).attr("href")
+				destination = jQuery(elementClick).offset().top;
+				jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1100);
+				return false;
+			});
+		});
+	</script>
+</body>
+</html>
