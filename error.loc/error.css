@@ -1,0 +1,134 @@
+html{
+	font-size: 10px;
+}
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	background-image: url('bg.png');
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	overflow-x: none !important;
+	overflow-y: none !important;
+}
+.error{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+h2{
+	text-align: center;
+	background: -webkit-linear-gradient(#7F4183, #B82F47);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 40rem;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+h2:nth-child(2){
+	z-index: -10000 !important;
+}
+img{
+	top: 5%;
+	left: 50%;
+	position: absolute;
+	z-index: -1;
+	width: 20%;
+}
+p{
+	font-size: 2.4rem;
+	color: #ffffff;
+	font-weight: 400;
+	text-align: center;
+	text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+a{
+	font-size: 1.6rem;
+	font-weight: 400;
+	color: #ffffff;
+	border-radius: 35px;
+	border: 2px solid #ffffff;
+	padding: 2rem 5rem;
+	text-decoration: none;
+	outline: none;
+	transition: 0.5s;
+	margin-bottom: 20px;
+}
+a:hover{
+	color: #B82F47;
+	background: #ffffff;
+}
+h2::selection{
+	background: none;
+	-webkit-text-fill-color: #fff;
+}
+p::selection{
+	color: #B82F47;
+}
+a::selection{
+	color: #B82F47;
+}
+/*Adaptive*/
+@media(min-width: 1921px){
+	html{
+		font-size: 17px;
+	}
+}
+@media(max-width: 1920px){
+	html{
+		font-size: 13px;
+	}
+}
+@media(max-width: 1490px){
+	img{
+		width: 25% !important;
+	}
+}
+@media(max-width: 1340px){
+	html{
+		font-size: 10px;
+	}
+}
+@media(max-width: 1040px){
+	img{
+		width: 27% !important;
+	}
+}
+@media(max-width: 880px){
+	img{
+		width: 34% !important;
+	}
+}
+@media(max-width: 850px){
+	html{
+		font-size: 7px;
+	}
+	img{
+		top: 15% !important;
+		width: 25% !important;
+	}
+}
+@media(max-width: 660px){
+	img{
+		top: 20% !important;
+		width: 30% !important;
+	}
+}
+@media(max-width: 600px){
+	html{
+		font-size: 5px;
+	}
+	img{
+		top: 25% !important;
+	}
+}
+@media(max-width: 500px){
+	img{
+		width: 30% !important;
+	}
+}
