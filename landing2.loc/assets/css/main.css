@@ -1,0 +1,58 @@
+html { font-size: 10px; }
+
+body { font-family: "Montserrat", sans-serif; padding: 0; margin: 0; }
+
+.container { width: 70%; }
+
+header { padding: 10px; background-color: #ffffff; }
+header .container { margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+header .container .logo img { max-width: 100%; }
+header .container .info { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
+header .container .info a { text-decoration: none; font-size: 1.6rem; color: #333333; font-weight: 400; }
+header .container .info a span { color: gray; }
+
+#banner { padding: 80px 0; background: url(../img/banner-bg.png); background-size: cover; }
+#banner .container { margin: 0 auto; }
+#banner .container h1 { color: #ffffff; text-align: center; font-size: 3.8rem; font-weight: 500; }
+#banner .container .desc-block { margin-top: 50px; margin-left: 10%; }
+#banner .container .desc-block .exs .ex { color: #ffffff; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-top: 25px; }
+#banner .container .desc-block .exs .ex img { width: 4%; }
+#banner .container .desc-block .exs .ex a { margin-left: 20px; font-size: 2rem; }
+
+#form { margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding: 75px 0; }
+#form .container h2 { text-align: center; color: #333333; font-weight: 500; font-size: 3rem; }
+#form .container .resultokno { background-color: #fcfcfc; padding: 30px; margin-top: 50px; }
+#form .container .resultokno form { font-family: Montserrat; margin-right: 20px; color: #757575; display: -webkit-box; display: -ms-flexbox; display: flex; }
+#form .container .resultokno form .left { width: 50%; }
+#form .container .resultokno form .right { width: 50%; }
+#form .container .resultokno form input { width: 90%; font-family: Montserrat; margin-bottom: 30px; background-color: #ffffff; border: 1px solid #cbcbcb; border-radius: 4px; font-size: 1.6rem; font-weight: 500; padding: 15px; }
+#form .container .resultokno form input[type='submit'] { width: 100%; margin-top: 10px; font-family: Montserrat; background-color: #a73535; cursor: pointer; color: #ffffff; padding: 15px; -webkit-transition: all 0.5s; transition: all 0.5s; }
+#form .container .resultokno form input[type='submit']:hover { background-color: #d63d3d; }
+#form .container .resultokno form input[type='file'] { width: 100%; font-family: Montserrat; padding: 0; border: none; background: none; font-size: 1.6rem; font-weight: 500; height: 270px; }
+#form .container .resultokno form textarea { width: 90%; font-family: Montserrat; height: 150px; margin-bottom: 10px; background-color: #ffffff; border: 1px solid #cbcbcb; border-radius: 4px; font-size: 1.6rem; font-weight: 500; resize: none; padding: 15px; }
+#form .container .resultokno form .elemtext { background-color: #ffffff; border: 1px solid #cbcbcb; border-radius: 4px; margin-bottom: 10px; height: 270px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+#form .container .resultokno form .elemtext .input_file { margin: 0 auto; text-align: center; }
+#form .container .resultokno form .elemtext .input_file i { font-size: 5rem; }
+#form .container .resultokno form .elemtext .input_file p { font-family: Montserrat; text-align: center; font-size: 2rem; font-weight: 500; }
+
+#clients { background-color: #f6f6f6; padding: 80px 0; }
+#clients .container { margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+#clients .container h1 { text-align: center; font-size: 3.2rem; color: #333333; font-weight: 500; }
+#clients .container .top-img { margin-top: 50px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+#clients .container .top-img .img { background-color: #ffffff; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 20%; height: 70px !important; border: 1px solid #979797; border-radius: 5px; padding: 10px; }
+#clients .container .bottom-img { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-top: 40px; }
+#clients .container .bottom-img .img { margin: 0 1.9%; background-color: #ffffff; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 20%; height: 70px !important; border: 1px solid #979797; border-radius: 5px; padding: 10px; }
+
+footer { background-color: #292929; padding: 40px; }
+footer .container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; margin: 0 auto; }
+footer .container a { color: #ffffff; font-size: 1.4rem; font-weight: 500; }
+
+.input_file { position: relative; margin: 0 0 10px 0; padding: 20px; }
+
+.input_file input[type=file] { top: 0; opacity: 0; position: absolute; z-index: 999; cursor: pointer; height: 270px; width: 100%; }
+
+.fake_file { position: absolute; z-index: 1; top: 0; left: 0; }
+
+.fake_file input[type=button] { border-radius: 17px; behavior: url(PIE.htc); height: 34px; background-color: #f13fa8; border: none; color: #fff; font-size: 14px; cursor: pointer; }
+
+.fake_file_input { height: 28px; border: 1px solid #ccc; border-radius: 4px; behavior: url(PIE.htc); position: relative; top: 2px; font-size: 20px; width: 210px; }
