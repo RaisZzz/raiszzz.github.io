@@ -1,0 +1,118 @@
+@import 'colors'
+html
+	font-size: 10px
+body
+	padding: 0
+	margin: 0
+	font-family: 'Maven Pro', sans-serif
+.container
+	width: 80%
+	margin: 0 auto
+header
+	background: url('../img/header-bg.jpg')
+	background-size: cover
+	background-repeat: no-repeat
+	height: 100vh
+	.menu
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 50px
+		.logo>img
+			width: 90%
+		nav>ul
+			display: flex
+			list-style: none
+			align-items: center
+			li
+				margin: 0 25px
+				a
+					color: $main-color
+					font-size: 1.6rem
+					font-weight: 500
+					text-decoration: none
+					position: relative
+					&:after
+						transition: 0.5s
+						content: ''
+						width: 100%
+						transform: scale(0)
+						position: absolute
+						height: 2px
+						background: $main-color
+						left: 0
+						bottom: -5px
+					&:hover
+						&:after
+							transform: scale(1)
+			.button
+				color: $main-color
+				font-size: 1.6rem
+				font-weight: 500
+				text-decoration: none
+				padding: 15px 30px
+				border: 1px solid $main-color
+				border-radius: 30px
+				text-transform: uppercase
+				transition: 0.5s
+				&:hover
+					background: $main-color
+					color: #7fa8d4
+	.main-header
+		margin-top: 50px
+		color: $main-color
+		width: 50%
+		h4
+			font-size: 1.4rem
+			font-weight: 700
+		h2
+			padding: 0
+			margin: 0
+			margin-top: 30px
+			margin-top: 25px
+			font-size: 6rem
+			font-weight: 500
+		p
+			font-size: 1.6rem
+			font-weight: 400
+			width: 60%
+		.buttons
+			display: flex
+			align-items: center
+			justify-content: flex-start
+			margin-top: 50px
+			a
+				text-decoration: none
+				font-size: 1.2rem
+				font-weight: 700
+				padding: 20px 50px
+				border-radius: 25px
+				margin-right: 10px
+			.button:nth-child(1)
+				color: $main-color
+				background: $second-color
+			.button:nth-child(2)
+				color: $third-color
+				background: $main-color
+	#side-btn
+		text-align: center
+		i
+			cursor: pointer
+			width: 25px
+			height: 25px
+			color: $third-color
+			background: $main-color
+			border-radius: 50%
+			padding: 15px
+			font-size: 2.5rem
+			box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.5)
+			transition: 0.5s
+			&:hover
+				color: $main-color
+				background: $third-color
+
+
+
+
+#test
+	height: 100vh
