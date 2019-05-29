@@ -21,7 +21,8 @@
     margin-right: 90px;
 }
 .icon-profile{
-    font-size: 40px;
+    font-size: 35px;
+    margin-right: 5px;
     color: #ffffff;
 }
 .holder-no-hidden{
@@ -109,8 +110,9 @@
     vertical-align: top;
     height: 60px;
     background-color: #f7f7f7;
-    padding: 0 10px;
+    padding: 5px 10px 0 10px;
     line-height: 60px;
+    margin-left: 20px;
 }
 
 /* menu right */
@@ -126,7 +128,7 @@
     text-align: center;
     background-color: #0998C6;
     width: 60px;
-    height: 60px;
+    height: 65px;
     font-weight: bold;
     font-size: 28px;
     line-height: 60px;
@@ -307,18 +309,11 @@
     .menu-brands>li>a{
         font-size: 20px;
     }
-    .menu-main-item>a{
-        font-size: 16px;
-    }
     .menu-main-ad{
         display: none;
     }
     .icon-4PDA-plain{
-        font-size: 25px;
-        margin-right: 70px;
-    }
-    .icon-profile{
-        font-size: 30px;
+        margin-right: 80px;
     }
     .menu-right{
         margin-left: 20px;
@@ -332,20 +327,33 @@
         font-size: 12px;
     }
     .menu-brands>li>a{
-        font-size: 15px;
-        width: 80px;
+        font-size: 17px;
+        width: 90px;
     }
     .icon-search{
         display: block;
     }
 }
 @media (max-width: 768px){
-    .menu-main{
-        background: #0998C6;
-    }
     .bbg{
         background: #0998C6;
         padding: 12px 0;
+    }
+    .icon-4PDA-plain{
+        font-size: 25px;
+        margin-right: 65px;
+    }
+}
+@media (max-width: 746px){
+    .icon-4PDA-plain{
+        margin-right: 70px;
+    }
+    .menu-brands>li>a{
+        font-size: 18px;
+        width: 80px;
+    }
+    .menu-main-item>a{
+        font-size: 17px;
     }
 }
 @media (max-width: 648px){
@@ -365,9 +373,10 @@
     .icon-login, .icon-search, .icon-profile{
         font-size: 20px;
     }
-    .icon-4PDA-plain{
-        font-size: 20px;
-        margin-right: 55px;
+}
+@media (max-width: 590px){
+    .menu-main-item>a{
+        font-size: 15px;
     }
 }
 @media (max-width: 576px){
@@ -402,7 +411,7 @@
     }
     .menu-main-mobile>.menu-main-item>.menu-sub{
         width: 100vw;
-        left: 0 !important;
+        left: 0;
         flex-direction: column;
         padding: 0;
         align-items: center;
