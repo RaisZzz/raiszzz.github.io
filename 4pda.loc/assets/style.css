@@ -303,6 +303,9 @@
 }
 
 @media (max-width: 1220px){
+    .holder-no-hidden{
+        width: auto;
+    }
     .menu-brands>li{
         font-size: 14px;
     }
