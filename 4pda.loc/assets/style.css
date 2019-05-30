@@ -386,9 +386,6 @@
     .menu-main-mobile>.menu-main-item:hover{
         background: #0998C6;
     }
-    .menu{
-        padding: 0 12px;
-    }
     .menu-search{
         display: block;
     }
