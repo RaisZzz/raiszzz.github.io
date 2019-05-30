@@ -1,12 +1,10 @@
 @font-face {
-    font-family: 'Roboto Condensed';
-    src: url('fonts/RobotoCondensedRegular.ttf');
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
 }
 @font-face {
-    font-family: 'Roboto Condensed';
-    src: url('fonts/RobotoCondensedBold.ttf');
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
 }
