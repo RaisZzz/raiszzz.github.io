@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+	<div class="adj-size-block"></div>
 	<div class="menu">
         <div class="holder-no-hidden">
             <a href="/" title="4pda" class="logo">
@@ -263,6 +264,52 @@
 			<li><a href="#">msi</a></li>
 		</ul>
     </div>
+    <div class="adj-size-block"></div>
+<style>
+.icon-4PDA-plain:before{
+  margin: 0;
+}
+.adj-size-block:before{
+  display: block;
+  width: 100%;
+  height:100%;
+  background: #CCC;
+  content: '';
+}
+.adj-size-block{
+  position:relative;
+  padding: 0;
+  margin:0 auto;
+  width: 1196px;
+  background: #000;
+  outline: 0;
+  height: 20px;
+  padding: 0 12px;
+}
+@media screen and (max-width: 1219px){
+  .adj-size-block {
+      width: 974px;
+  }
+}
+@media screen and (max-width: 997px){
+  .adj-size-block {
+      width: 744px;
+  }
+}
+@media screen and (max-width: 767px){
+  .adj-size-block {
+      width: 676px;
+  }
+}
+@media screen and (max-width: 699px){
+  .adj-size-block {
+      width: 100%;
+      margin: 0;
+      padding-left: 0;
+      padding-right: 0;
+  }
+}
+</style>
     <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
