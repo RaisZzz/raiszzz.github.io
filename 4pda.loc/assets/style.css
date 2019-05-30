@@ -18,20 +18,30 @@
 .icon-4PDA-plain{
     font-size: 30px;
     color: #fff;
-    margin-right: 90px;
+    margin: 0 90px 0 0;
+}
+.icon-4PDA-plain::before{
+    margin: 0;
+}
+.menu-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .icon-profile{
+    padding-top: 1px;
     font-size: 35px;
     margin-right: 5px;
     color: #ffffff;
 }
 .holder-no-hidden{
+    width: 1196px;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 .menu-right{
-    margin-left: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -63,11 +73,17 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    align-items: center;
+    height: 66px;
 }
 .menu-main-item {
     display: inline-block;
     vertical-align: top;
     position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 .menu-main-item > a {
     display: inline-block;
@@ -110,7 +126,7 @@
     vertical-align: top;
     height: 60px;
     background-color: #f7f7f7;
-    padding: 5px 10px 0 10px;
+    padding: 6px 10px 0 10px;
     line-height: 60px;
     margin-left: 20px;
 }
@@ -129,6 +145,9 @@
     background-color: #0998C6;
     width: 60px;
     height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: bold;
     font-size: 28px;
     line-height: 60px;
@@ -303,9 +322,9 @@
 }
 
 @media (max-width: 1220px){
-    .holder-no-hidden{
-        width: auto;
-    }
+    .rnd-replace-holder, .holder, .holder-no-hidden {
+    width: 974px;
+}
     .menu-brands>li{
         font-size: 14px;
     }
@@ -321,8 +340,14 @@
     .menu-right{
         margin-left: 20px;
     }
+    .menu-main-item > a{
+        font-size: 17px;
+    }
 }
 @media (max-width: 998px){
+    .rnd-replace-holder, .holder, .holder-no-hidden {
+    width: 744px;
+}
     .menu-search{
         display: none;
     }
@@ -338,12 +363,14 @@
     }
 }
 @media (max-width: 768px){
+    .rnd-replace-holder, .holder, .holder-no-hidden {
+    width: 676px;
+}
     .bbg{
         background: #0998C6;
         padding: 12px 0;
     }
     .icon-4PDA-plain{
-        font-size: 25px;
         margin-right: 65px;
     }
 }
@@ -356,7 +383,18 @@
         width: 80px;
     }
     .menu-main-item>a{
-        font-size: 17px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 699px){
+    .rnd-replace-holder, .holder, .holder-no-hidden {
+        width: 100%;
+        margin: 0;
+    }
+}
+@media (max-width: 666px){
+    .menu-main-item > a{
+        font-size: 15px;
     }
 }
 @media (max-width: 648px){
@@ -379,7 +417,7 @@
 }
 @media (max-width: 590px){
     .menu-main-item>a{
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 @media (max-width: 576px){
