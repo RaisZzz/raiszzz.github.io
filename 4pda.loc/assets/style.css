@@ -6,7 +6,7 @@
 @font-face {
     font-family: "Segoe UI", "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 500;
 }
 *{
     text-decoration: none;
@@ -439,6 +439,15 @@
 @media (max-width: 490px){
     .menu-search>input[type="search"]{
         width: 100%;
+    }
+}
+@media (max-width: 390px){
+    .menu-main-mobile>.menu-main-item>a{
+        font-size: 12px;
+    }
+    .menu-brands>li>a{
+        font-size: 7px;
+        width: 40px;
     }
 }
 
