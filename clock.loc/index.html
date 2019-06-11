@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="assets/favicon.ico">
+	<title>Apple Watch</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="clock">
+			<a href="#" id="power"></a>
+			<div class="numbers">
+				<time id="time"></time>
+				<div class="bottom">
+					<div class="left">
+						<div class="circle circle-dayofyear">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+							viewBox="0 0 1200 800"
+							preserveAspectRatio="xMidYMid">
+								<path d="M200,200 " id="arc" fill="none" stroke="#FF205D" stroke-width="120" />
+							</svg>
+						</div>
+						<div class="circle circle-day">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+							viewBox="0 0 1200 800"
+							preserveAspectRatio="xMidYMid">
+								<path d="M200,200 " id="arc2" fill="none" stroke="#84FB00" stroke-width="120" />
+							</svg>
+						</div>
+						<div class="circle circle-month">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+							viewBox="0 0 1200 800"
+							preserveAspectRatio="xMidYMid">
+								<path d="M200,200 " id="arc3" fill="none" stroke="#00FEF7" stroke-width="120" />
+							</svg>
+						</div>
+					</div>
+					<div class="right">
+						<span id="dayofyear"></span>
+						<span id="day"></span>
+						<span id="month"></span>
+					</div>
+				</div>
+			</div>
+			<img src="assets/img/clock.jpg" alt="">
+		</div>
+	</div>
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  	<script src="assets/js/main.js"></script>
+</body>
+</html>

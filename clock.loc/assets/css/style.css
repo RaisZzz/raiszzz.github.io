@@ -1,0 +1,157 @@
+@font-face {
+	font-family: 'San Francisco Text Bold';
+	src: url('../fonts/SFUIText-Bold.eot');
+	src: url('../fonts/SFUIText-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/SFUIText-Bold.woff') format('woff'),
+	url('../fonts/SFUIText-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	font-weight: bold;
+}
+body{
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.opacity{
+	opacity: 1 !important;
+}
+#power{
+	position: absolute;
+	right: 0;
+	top: 150px;
+	width: 20px;
+	height: 60px;
+}
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+}
+.clock{
+	position: relative;
+}
+.numbers{
+	position: absolute;
+	opacity: 0;
+	transition: 0.5s;
+	z-index: 10;
+	right: 60px;
+	bottom: 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+#time, #dayofyear, #day, #month{
+	font-size: 2rem;
+}
+#time{
+	color: #FFFFFF;
+}
+#dayofyear{
+	color: #FF205D;
+}
+#day{
+	color: #84FB00;
+}
+#month{
+	color: #00FEF7;	
+}
+.bottom{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.right{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.circle{
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+	box-shadow: 0px 0px 36px -8px rgba(0,0,0,0.75);
+}
+.circle-dayofyear{
+	left: -70px;
+	top: 50px;
+	width: 105px;
+	height: 105px;
+	background: #4A0213;
+	z-index: 11;
+}
+.circle-dayofyear::before{
+	content: '';
+	position: absolute;
+	top: 11px;
+	left: 11px;
+	width: 80%;
+	height: 80%;
+	background: black;
+	border-radius: 50%;
+	z-index: 20;
+}
+.circle-day{
+	left: -57px;
+	top: 63px;
+	width: 80px;
+	height: 80px;
+	background: #163800;
+	z-index: 11;
+}
+.circle-day::before{
+	content: '';
+	position: absolute;
+	top: 11px;
+	left: 11px;
+	width: 75%;
+	height: 75%;
+	background: black;
+	border-radius: 50%;
+	z-index: 20;
+}
+.circle-month{
+	left: -44px;
+	top: 76px;
+	width: 55px;
+	height: 55px;
+	background: #003835;
+	z-index: 11;
+}
+.circle-month::before{
+	content: '';
+	position: absolute;
+	top: 9px;
+	left: 9px;
+	width: 70%;
+	height: 70%;
+	background: black;
+	border-radius: 50%;
+	z-index: 20;
+}
+svg{
+	z-index: 100;
+	width: 100%;
+	z-index: 15;
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+svg>path{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
