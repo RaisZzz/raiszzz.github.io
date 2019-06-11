@@ -27,6 +27,7 @@ body{
 	top: 150px;
 	width: 20px;
 	height: 60px;
+	cursor: pointer;
 }
 .container{
 	display: flex;
