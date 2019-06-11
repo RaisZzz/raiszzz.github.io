@@ -2,170 +2,454 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="robots" content="">
+	<meta name="msapplication-TileColor" content="#56A5EC">
+	<meta name="theme-color" content="#56A5EC">
 	<title>Endustry</title>
 	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/adaptive.css">
 	<link rel="stylesheet" href="assets/fonts/font.css">
 	<link rel="stylesheet" href="assets/css/logo.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
-	<link rel="stylesheet" href="assets/css/bg.css">
 </head>
 <body>
+	<div class="scrollbar-container">
+		<div class="scrollbar" id="scrollbar"></div>
+	</div>
 	<div class="loaderArea">
 		<div class="loader"></div>
 	</div>
-	<header>
-		<div class="after">
-			<img id="after-1" src="assets/img/after-1.png" alt="">
-			<img id="after-2" src="assets/img/after-2.png" alt="">
-			<img id="after-3" src="assets/img/after-3.png" alt="">
-			<img id="after-4" src="assets/img/after-4.png" alt="">
-		</div>
-		<div class="nav-menu">
-			<div class="button" id="menu-btn">
-				<a>Menu</a>
-				<img src="assets/img/menu.png" alt="">
+	<div class="sub-bg bg-non-active" id="sub-bg"></div>
+	<div class="body">
+		<section id="header" class="section">
+			<div class="top-btn">
+				<a href="#header"><i id="rocket" class="fas fa-rocket"></i></a>
 			</div>
-			<div id="submenu">
-				<div class="sub-bg" id="sub-bg"></div>
-				<nav>
-					<ul>
-						<li class="submenu-li1">
-							<a href="#">Home</a>
-						</li>
-						<li class="submenu-li1">
-							<a href="#">Projects<sup>17</sup></a>
-							<div class="submenu-2">
-								<div class="arrows">
-									<div class="prev-arrow">
-										<img src="assets/img/prev-arrow.png" alt="">
+			<div class="after">
+				<img id="after-1" src="assets/img/after-1.png" alt="">
+				<img id="after-2" src="assets/img/after-2.png" alt="">
+				<img id="after-3" src="assets/img/after-3.png" alt="">
+				<img id="after-4" src="assets/img/after-4.png" alt="">
+			</div>
+			<div class="nav-menu">
+				<div class="button" id="menu-btn">
+					<a>Menu</a>
+					<img src="assets/img/menu.png" alt="">
+				</div>
+				<div id="submenu">
+					<nav>
+						<ul>
+							<li class="submenu-li1">
+								<a href="#">Home</a>
+							</li>
+							<li class="submenu-li1">
+								<a href="#">Projects<sup>17</sup></a>
+								<div class="submenu-2">
+									<div class="arrows">
+										<div class="prev-arrow">
+											<img src="assets/img/prev-arrow.png" alt="">
+										</div>
+										<div class="next-arrow">
+											<img src="assets/img/next-arrow.png" alt="">
+										</div>
 									</div>
-									<div class="next-arrow">
-										<img src="assets/img/next-arrow.png" alt="">
+									<div class="slider">
+										<div class="block">
+											<img src="assets/img/adidas.png" alt="">
+											<h3>Adidas</h3>
+											<p><span class="ux">UX</span> / <span class="brand">Branding</span> / <span class="anim">Animation</span></p>
+										</div>
+										<div class="block">
+											<img src="assets/img/levis.png" alt="">
+											<h3>Levis Store</h3>
+											<p><span class="web">Website</span> / <span class="mobile">Mobile</span></p>
+										</div>
+										<div class="block">
+											<img src="assets/img/k2.png" alt="">
+											<h3>K2 Mobile App</h3>
+											<p><span class="ux">UX</span> / <span class="mobile">Mobile</span></p>
+										</div>
+										<div class="block">
+											<img src="assets/img/levis.png" alt="">
+											<h3>Levis Store</h3>
+											<p><span class="web">Website</span> / <span class="mobile">Mobile</span></p>
+										</div>
 									</div>
 								</div>
-								<div class="slider">
-									<div class="block">
-										<img src="assets/img/adidas.png" alt="">
-										<h3>Adidas</h3>
-										<p><span class="ux">UX</span> / <span class="brand">Branding</span> / <span class="anim">Animation</span></p>
-									</div>
-									<div class="block">
-										<img src="assets/img/levis.png" alt="">
-										<h3>Levis Store</h3>
-										<p><span class="web">Website</span> / <span class="mobile">Mobile</span></p>
-									</div>
-									<div class="block">
-										<img src="assets/img/k2.png" alt="">
-										<h3>K2 Mobile App</h3>
-										<p><span class="ux">UX</span> / <span class="mobile">Mobile</span></p>
-									</div>
-									<div class="block">
-										<img src="assets/img/levis.png" alt="">
-										<h3>Levis Store</h3>
-										<p><span class="web">Website</span> / <span class="mobile">Mobile</span></p>
-									</div>
+							</li>
+							<li class="submenu-li1">
+								<a href="#">Services</a>
+								<div class="submenu-2">
+									
 								</div>
-							</div>
-						</li>
-						<li class="submenu-li1">
-							<a href="#">Services</a>
-							<div class="submenu-2">
-								
-							</div>
-						</li>
-						<li class="submenu-li1">
-							<a href="#">Team</a>
-							<div class="submenu-2">
-
-							</div>
-						</li>
-						<li class="submenu-li1">
-							<a href="#">Contact</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-		<div class="header">
-			<div class="logo">
-				<div class="gooey"></div>
-				<img src="assets/img/logo.png" alt="E">
-			</div>
-			<div class="phone">
-				<div class="row">
-					<img src="assets/img/phone.png" alt="phone">
-					<div class="column">
-						<a href="tel:977001020"><sup>97</sup>700 10 20</a>
-						<p>for any question or concern</p>
-					</div>
+							</li>
+							<li class="submenu-li1">
+								<a href="#">Team</a>
+								<div class="submenu-2">
+		
+								</div>
+							</li>
+							<li class="submenu-li1">
+								<a href="#">Contact</a>
+							</li>
+						</ul>
+					</nav>
 				</div>
 			</div>
-			<div class="contacts">
-				<a href="#">Follow us</a>
-				<div class="social">
-					<i class="fab fa-facebook-f" style="color: #4867aa;"></i>
-					<i class="fab fa-twitter" style="color: #1da1f2;"></i>
-					<i class="fab fa-vk" style="color: #4a76a8;"></i>
+			<div class="header">
+				<div class="logo">
+					<div class="gooey">
+						<a href="#header"></a>
+					</div>
+					<img src="assets/img/logo.png" alt="E">
 				</div>
-			</div>
-		</div>
-		<div class="main container" id="main">
-			<div class="left">
-				<h4>We are</h4>
-				<h1>Endustry</h1>
-				<h3>Media Group</h3>
-				<p>Crafting digital experiences to help ambitious brands grow.</p>
-				<div class="btn">
-					<button>Start a Project</button>
-					<img src="assets/img/btn-shape.png" alt="">
-				</div>
-			</div>
-			<div class="right">
-				<div class="slider-2" id="slider-2">
-					<div class="slide">
-						<img src="assets/img/header-img1.png" alt="">
-						<img src="assets/img/header-img2.png" alt="">
-					</div>
-					<div class="slide">
-						<img src="assets/img/header-img1.png" alt="">
-						<img src="assets/img/header-img2.png" alt="">
-					</div>
-					<div class="slide">
-						<img src="assets/img/header-img1.png" alt="">
-						<img src="assets/img/header-img2.png" alt="">
-					</div>
-					<div class="slide">
-						<img src="assets/img/header-img1.png" alt="">
-						<img src="assets/img/header-img2.png" alt="">
-					</div>
-				</div>
-				<div class="slider-count">
-					<p id="counter">01</p>
+				<div class="phone">
 					<div class="row">
-						<p>/</p>
-						<sup>04</sup>
-					</div>
-					<div class="btn show">
-						<div class="show-wrap">
-							<svg class="progress" viewBox="0 0 120 120">
-								<circle cx="60" cy="60" r="54"></circle>
-							</svg>
+						<img src="assets/img/phone.png" alt="phone">
+						<div class="column">
+							<a href="tel:977001020"><sup>97</sup>700 10 20</a>
+							<p>for any question or concern</p>
 						</div>
 					</div>
 				</div>
-				<div class="bg-container">
-					<div class="bg hbg"></div>
+				<div class="contacts">
+					<a href="#">Follow us</a>
+					<div class="social">
+						<i class="fab fa-facebook-f" style="color: #4867aa;"></i>
+						<i class="fab fa-twitter" style="color: #1da1f2;"></i>
+						<i class="fab fa-vk" style="color: #4a76a8;"></i>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="bottom">
-			<p>What</p>
-			<img src="assets/img/header-after.png" alt="">
-			<p>We do</p>
-		</div>
-	</header>
-	
+			<div class="main container" id="main">
+				<div class="left">
+					<h4>We are</h4>
+					<h1>Endustry</h1>
+					<h3>Media Group</h3>
+					<p>Crafting digital experiences to help ambitious brands grow.</p>
+					<div class="main-btn">
+						<button>Start a Project</button>
+						<img src="assets/img/btn-shape.png" alt="">
+					</div>
+				</div>
+				<div class="right">
+					<div class="slider-2" id="slider-2">
+						<div class="slide">
+							<img src="assets/img/header-img1.png" alt="">
+							<img src="assets/img/header-img2.png" alt="">
+						</div>
+						<div class="slide">
+							<img src="assets/img/header-img1.png" alt="">
+							<img src="assets/img/header-img2.png" alt="">
+						</div>
+						<div class="slide">
+							<img src="assets/img/header-img1.png" alt="">
+							<img src="assets/img/header-img2.png" alt="">
+						</div>
+						<div class="slide">
+							<img src="assets/img/header-img1.png" alt="">
+							<img src="assets/img/header-img2.png" alt="">
+						</div>
+					</div>
+					<div class="slider-count">
+						<p id="counter">01</p>
+						<div class="row">
+							<p>/</p>
+							<sup>04</sup>
+						</div>
+						<div class="btn show">
+							<div class="show-wrap">
+								<svg class="progress" viewBox="0 0 120 120">
+									<circle cx="60" cy="60" r="54"></circle>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="bg-container">
+						<div class="hbg">
+							<img src="assets/img/header-after1.png" alt="">
+							<img src="assets/img/header-after2.png" alt="">
+							<img src="assets/img/header-after3.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom">
+				<p>What</p>
+				<img src="assets/img/header-after.png" alt="">
+				<p>We do</p>
+				<a href="#brandbook"></a>
+			</div>
+			<img class="header-bottom" src="assets/img/header-bottom.png" alt="">
+		</section>
+		<section id="brandbook" class="section">
+			<div class="after">
+				<img id="after-1" src="assets/img/after-1.png" alt="">
+				<img id="after-2" src="assets/img/after-2.png" alt="">
+				<img id="after-3" src="assets/img/after-3.png" alt="">
+				<img id="after-4" src="assets/img/after-4.png" alt="">
+			</div>
+			<div class="container">
+				<div class="left">
+					<div class="row">
+						<div class="brand-svg">
+							<img src="assets/img/svg/brand/1.png" alt="">
+							<img src="assets/img/svg/brand/2.png" alt="">
+							<img src="assets/img/svg/brand/3.png" alt="">
+							<img src="assets/img/svg/brand/4.png" alt="">
+							<img src="assets/img/svg/brand/4.png" alt="">
+							<img src="assets/img/svg/brand/4.png" alt="">
+							<img src="assets/img/svg/brand/4.png" alt="">
+							<img src="assets/img/svg/brand/5.png" alt="">
+							<img src="assets/img/svg/brand/6.png" alt="">
+							<img src="assets/img/svg/brand/7.png" alt="">
+							<img src="assets/img/svg/brand/8.png" alt="">
+							<img src="assets/img/svg/brand/9.png" alt="">
+							<img src="assets/img/svg/brand/10.png" alt="">
+						</div>
+						<h2>Brandbook<br><span>Development</span></h2>
+					</div>
+					<div class="prems">
+						<div class="row">
+							<div class="col">
+								<p>Naming</p>
+								<p>Guideline</p>
+							</div>
+							<div class="col">
+								<p>Logo</p>
+								<p>Brandbook</p>
+							</div>
+						</div>
+					</div>
+					<p class="bottom-p">Although it’s all but imperceptible to the end user, this is one ofthe biggest steps in any web-based project. 
+		The backend developer is in charge of powering all of the features on a website. 
+		Backend technologies are typically built using
+		languages like PHP, Ruby, and Python, among others.</p>
+				</div>
+				<div class="right">
+					<div class="parallax-brand">
+						<img src="assets/img/brand1.png" class="first-img" alt="">
+						<img src="assets/img/brand2.png" class="second-img" alt="">
+						<img src="assets/img/brand3.png" class="third-img" alt="">
+						<img src="assets/img/brand5.png" class="five-img" alt="">
+					</div>
+					<div class="b-bg">
+						<img src="assets/img/brand-bg.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="wave"></div>
+		</section>
+		<section id="sites" class="section">
+			<div class="after">
+				<img id="after-1" src="assets/img/after-1.png" alt="">
+				<img id="after-2" src="assets/img/after-2.png" alt="">
+				<img id="after-3" src="assets/img/after-3.png" alt="">
+				<img id="after-4" src="assets/img/after-4.png" alt="">
+			</div>
+			<div class="container">
+				<div class="left">
+					<div class="parallax">
+						<img src="assets/img/sites-tablet.png" alt="">
+						<img src="assets/img/sites-tablet2.png" alt="">
+					</div>
+					<div class="s-bg">
+						<img src="assets/img/sites-bg.png" alt="">
+					</div>
+				</div>
+				<div class="right">
+					<div class="row">
+						<div class="s-svg">
+							<img src="assets/img/svg/sites/1.png" alt="">
+							<img src="assets/img/svg/sites/2.png" alt="">
+							<img src="assets/img/svg/sites/3.png" alt="">
+							<img src="assets/img/svg/sites/4.png" alt="">
+							<img src="assets/img/svg/sites/5.png" alt="">
+							<img src="assets/img/svg/sites/6.png" alt="">
+							<img src="assets/img/svg/sites/7.png" alt="">
+							<img src="assets/img/svg/sites/7.png" alt="">
+							<img src="assets/img/svg/sites/8.png" alt="">
+							<img src="assets/img/svg/sites/9.png" alt="">
+						</div>
+						<h2>Sites<br><span>Development</span></h2>
+					</div>
+					<div class="col">
+						<p>UI/UX Design</p>
+						<p>Development</p>
+					</div>
+					<p class="bottom-p">The Collectionist offers access to prestigious villas all around the world.</p>
+				</div>
+			</div>
+			<div class="wave"></div>
+		</section>
+		<section id="mobile">
+			<div class="after">
+				<img id="after-1" src="assets/img/after-1.png" alt="">
+				<img id="after-2" src="assets/img/after-2.png" alt="">
+				<img id="after-3" src="assets/img/after-3.png" alt="">
+				<img id="after-4" src="assets/img/after-4.png" alt="">
+			</div>
+			<div class="container">
+				<div class="left">
+					<div class="row">
+						<div class="mobile-svg">
+							<img src="assets/img/svg/mobile/1.png" alt="">
+							<img src="assets/img/svg/mobile/2.png" alt="">
+							<img src="assets/img/svg/mobile/3.png" alt="">
+							<img src="assets/img/svg/mobile/4.png" alt="">
+							<img src="assets/img/svg/mobile/5.png" alt="">
+							<img src="assets/img/svg/mobile/6.png" alt="">
+						</div>
+						<h2>Mobile<br><span>Application</span></h2>
+					</div>
+					<div class="prems">
+						<div class="row">
+							<div class="col">
+								<p>UI/UX Design</p>
+								<p>Development</p>
+							</div>
+						</div>
+					</div>
+					<p class="bottom-p">Marks lists bars and restaurants, most instagrammed by the influencers of the moment.</p>
+				</div>
+				<div class="right mobil">
+					<img src="assets/img/mobile1.png" alt="">
+					<img src="assets/img/mobile2.png" alt="">
+					<div class="m-bg">
+						<img src="assets/img/m-bg.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="wave"></div>
+		</section>
+		<section id="business" class="section">
+			<div class="after">
+				<img id="after-1" src="assets/img/after-1.png" alt="">
+				<img id="after-2" src="assets/img/after-2.png" alt="">
+				<img id="after-3" src="assets/img/after-3.png" alt="">
+				<img id="after-4" src="assets/img/after-4.png" alt="">
+			</div>
+			<div class="row h">
+				<div class="bus-svg">
+					<img src="assets/img/svg/business/1.png" alt="">
+					<img src="assets/img/svg/business/2.png" alt="">
+					<img src="assets/img/svg/business/3.png" alt="">
+					<img src="assets/img/svg/business/4.png" alt="">
+					<img src="assets/img/svg/business/5.png" alt="">
+					<img src="assets/img/svg/business/6.png" alt="">
+				</div>
+				<h2>Business<br><span>Process Automation</span></h2>
+			</div>
+			<div class="container">
+				<div class="slider3-loader"></div>
+				<div id="slider-3" class="slider-3">
+					<div class="slide">
+						<div class="left">
+							<img src="assets/img/slide3-1.jpg" alt="">
+						</div>
+						<div class="right">
+							<div class="col">
+								<p>Communications</p>
+								<p>Your company. United.</p>
+							</div>
+							<p class="bottom-p">Activity stream, group chat, calendars, workgroups and other collaboration tools at your disposal.</p>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="left">
+							<img src="assets/img/slide3-2.jpg" alt="">
+						</div>
+						<div class="right">
+							<div class="col">
+								<p>Tasks and projects</p>
+								<p>Get more done.</p>
+							</div>
+							<p class="bottom-p">Gantt, Kanban, time tracking, workload planning, external users and more.</p>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="left">
+							<img src="assets/img/slide3-3.jpg" alt="">
+						</div>
+						<div class="right">
+							<div class="col">
+								<p>CRM</p>
+								<p>Grow your sales.</p>
+							</div>
+							<p class="bottom-p">Improve conversion rates, automate marketing and serve your customers better with our free CRM.</p>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="left">
+							<img src="assets/img/slide3-4.jpg" alt="">
+						</div>
+						<div class="right">
+							<div class="col">
+								<p>Contact Center</p>
+								<p>Love your clients</p>
+							</div>
+							<p class="bottom-p">Provide real time support via popular communication channels. Social networks, messengers, telephony, email or live chat.</p>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="left">
+							<img src="assets/img/slide3-5.jpg" alt="">
+						</div>
+						<div class="right">
+							<div class="col">
+								<p>Websites</p>
+								<p>Websites that sell</p>
+							</div>
+							<p class="bottom-p">Stunningly beautiful websites and landing pages, ready to help you sell your products and services in minutes.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wave"></div>
+		</section>
+		<section id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h2>Endustry</h2>
+						<h4>Media Group</h4>
+					</div>
+					<div class="btn">
+						<button>Start a Project</button>
+						<img src="assets/img/btn-shape.png" alt="">
+					</div>
+				</div>
+				<div class="row">
+					<nav>
+						<ul>
+							<li><a href="#header">Home</a></li>
+							<li><a href="#">Project</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Team</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="row contacts">
+					<a href="#">Follow us</a>
+					<div class="social">
+						<i class="fab fa-facebook-f" style="color: #4867aa;"></i>
+						<i class="fab fa-twitter" style="color: #1da1f2;"></i>
+						<i class="fab fa-vk" style="color: #4a76a8;"></i>
+					</div>
+				</div>
+			</div>
+			<div class="wrap">
+				<img src="assets/img/header-after1.png" alt="">
+				<img src="assets/img/header-after2.png" alt="">
+				<img src="assets/img/header-after3.png" alt="">
+			</div>
+		</section>
+	</div>
 
 
 
@@ -179,14 +463,24 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
   	<script type="text/javascript" src="assets/js/main.js"></script>
+  	<script type="text/javascript" src="assets/js/anim.js"></script>
   	<script type="text/javascript" src="assets/js/slick.min.js"></script>
   	<script>
 		$(document).ready(function(){
-			$('.slider').slick({
-				slidesToShow: 3,
-				prevArrow: $('.prev-arrow'),
-				nextArrow: $('.next-arrow')
-			});
+			if($(window).width() > 968){
+				$('.slider').slick({
+					slidesToShow: 3,
+					prevArrow: $('.prev-arrow'),
+					nextArrow: $('.next-arrow')
+				});
+			}
+			else{
+				$('.slider').slick({
+					slidesToShow: 1,
+					prevArrow: $('.prev-arrow'),
+					nextArrow: $('.next-arrow')
+				});
+			}
 		});
   	</script>
   	<script>
@@ -195,8 +489,22 @@
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				autoplay: true,
-				autoplaySpeed: 4000,
+				autoplaySpeed: 7000,
 				nextArrow: $('.progress')[0],
+				infinite: true,
+				fade: true,
+				cssEase: 'linear'
+			});
+		});
+  	</script>
+  	<script>
+  		$(document).ready(function(){
+			$('.slider-3').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				autoplay: true,
+				arrows: false,
+				autoplaySpeed: 5000,
 				infinite: true,
 				fade: true,
 				cssEase: 'linear'
