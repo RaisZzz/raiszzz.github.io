@@ -5,22 +5,132 @@ body
 	margin: 0
 	padding: 0
 	overflow-x: hidden
-	overflow-y: hidden
 	font-family: 'SF UI Text', sans-serif
+.hbtn-b
+	opacity: 0
+.hbtn-b-d
+	display: none !important
+.rotate
+	animation: rotate 2s infinite linear !important
+.write
+	animation: write 2s infinite linear alternate !important
+.body-scroll
+	overflow-y: hidden !important
 .container
 	width: 70%
 	margin: 0 auto
+.scrollbar-container
+	position: fixed
+	width: 100%
+	height: 4px
+	top: 0
+	left: 0
+	z-index: 1000
+.slider3-loader-anim
+	animation: s3la 5s 1
+.scrollbar
+	height: 100%
+	width: 0%
+	background: linear-gradient(to right, #03D1DF, #6F69F2)
 .visible-div
 	opacity: 1 !important
 .show-menu
 	opacity: 1 !important
-	visibility: visible !important
+.show-nav
+	opacity: 1 !important
+.zi-menu
+	z-index: 29 !important
+.section
+	box-sizing: border-box
+.sub-bg
+	z-index: 0
+	position: fixed
+	width: 40px
+	height: 40px
+	background: #fff
+	border-radius: 50%
+	left: 20px
+	top: 50%
+	margin-top: -20px
+	opacity: 0
+	box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.5)
+	transition: 0.5s
 .bg-active
+	will-change: transform
 	animation: sub-bg 3s forwards
+	opacity: 1
+	z-index: 27
+.bg-non-active
+	animation: sub-bg-non-active 1.5s forwards
+	will-change: transform
+	opacity: 0
+	z-index: 0
+.slide-next
+	animation: slide-change 3s forwards
+	will-change: transform
+.slide-next3
+	animation: slide-3 4s forwards
+	will-change: transform
+.phone
+	animation: phone 4s forwards 1s
+	will-change: transform
+.laptop
+	animation: laptop 4s forwards
+	will-change: transform
+.wave
+	background: url('../img/wave.png')
+	width: 100%
+	height: 189px
+	overflow: hidden
+	position: absolute
+	left: 0
+	bottom: 0
+	z-index: 0 !important
+.after
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	animation: header 2s 1
+	will-change: transform
+	img
+		position: absolute
+		&:nth-child(1)
+			top: 50%
+			left: 40%
+			animation: after-1 2s infinite alternate
+			animation-delay: 200ms
+			will-change: transform
+		&:nth-child(2)
+			right: 10%
+			top: 30%
+			animation-delay: 200ms
+			animation: after-2 2s infinite alternate
+			will-change: transform
+		&:nth-child(3)
+			bottom: 10%
+			left: 10%
+			animation-delay: 200ms
+			animation: after-3 2s infinite alternate
+			will-change: transform
+		&:nth-child(4)
+			top: 10%
+			left: 50%
+			animation-delay: 200ms
+			animation: after-4 2s infinite alternate
+			will-change: transform
+.gooey>a
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	z-index: 100
 
 // Loader
 .loaderArea
-	background: linear-gradient(90deg, #04CEDE 10%, #6E69F1 90%)
+	background: linear-gradient(90deg, #6E69F1 10%, #03D0DF 90%)
 	overflow: hidden
 	position: fixed
 	left: 0
@@ -33,59 +143,75 @@ body
 	width: 40px
 	position: absolute
 	left: 50%
-	margin-left: -50px
+	margin-left: -20px
 	top: 50%
-	margin-top: -50px
-.loader:before
-	content: url('../img/logo.png')
+	margin-top: -20px
+.loader:before, .loader:after
+	content: ""
 	height: 40px
 	width: 40px
+	border: 8px solid rgba(255,255,255,.5)
 	border-radius: 10px
 	position: absolute
 	top: 0
 .loader:before
-	animation: preloader 2s infinite linear
+	animation: animate 2s infinite linear
+	will-change: transform
+.loader:after
+	animation: animate2 2s infinite linear
+	will-change: transform
 
-header
-	background: url('../img/header-bg.png')
+#header
+	background: #e4ecf0
 	background-size: cover
 	background-repeat: no-repeat
 	width: 100vw
 	height: 100vh
+	padding-bottom: 20px
 	position: relative
-	.after
-		position: absolute
-		top: 0
-		left: 0
-		width: 100%
-		height: 100%
-		animation: header 2s 1
-		img
+	.top-btn
+		position: fixed
+		right: 20px
+		bottom: 20px
+		z-index: 1000
+		background: linear-gradient(to left, #00d3de 0%, #7167f2 100%)
+		border-radius: 50%
+		cursor: pointer
+		box-shadow: 0 0 30px 2px rgba(73, 141, 192,0.7)
+		width: 60px
+		height: 60px
+		a
 			position: absolute
-			&:nth-child(1)
-				top: 50%
-				left: 40%
-				animation: after-1 2s infinite alternate
-				animation-delay: 200ms
-			&:nth-child(2)
-				right: 10%
-				top: 30%
-				animation-delay: 200ms
-				animation: after-2 2s infinite alternate
-			&:nth-child(3)
-				bottom: 10%
-				left: 10%
-				animation-delay: 200ms
-				animation: after-3 2s infinite alternate
-			&:nth-child(4)
-				top: 10%
-				left: 50%
-				animation-delay: 200ms
-				animation: after-4 2s infinite alternate
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			z-index: 1002
+			outline: none
+			i
+				font-size: 4rem
+				color: #fff
+				padding: 15px
+				transform: rotate(-45deg)
+				position: absolute
+				top: 5px
+				left: 1px
+				z-index: 1001
+				opacity: 1
+			&:hover
+				#rocket
+					animation: rocket 0.5s 1
+	.header-bottom
+		width: 100%
+		position: absolute
+		left: 0
+		opacity: 1
+		bottom: -40px
+		transition: 0.5s !important
 	.nav-menu
 		.button
 			z-index: 10000
-			position: absolute
+			position: fixed
 			cursor: pointer
 			display: flex
 			flex-direction: column
@@ -96,6 +222,7 @@ header
 			z-index: 30
 			animation-delay: 2s
 			animation: menu-btn 2s 1
+			will-change: transform
 			&:hover
 				a
 					color: $second-color
@@ -114,31 +241,26 @@ header
 				width: 24px
 				height: 16px
 		#submenu
-			position: absolute
+			position: fixed
 			width: 100%
 			height: 100%
 			display: flex
-			visibility: hidden
 			align-items: center
 			opacity: 0
-			transition: 0.5s !important
-			.sub-bg
-				z-index: 29 !important
-				position: absolute
-				width: 40px
-				height: 40px
-				background: rgba(0,0,0,0.95)
-				border-radius: 50%
-				left: 20px
-				box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.5)
+			z-index: 0
+			transition: 1s !important
 			nav
 				z-index: 200
 				margin-left: 150px
+				transition: 1s
+				opacity: 0
 				ul
 					display: flex
 					flex-direction: column
 					list-style: none
+					z-index: 201
 					li
+						z-index: 201
 						a
 							color: #8697b7
 							font-size: 6rem
@@ -147,6 +269,7 @@ header
 							line-height: 120px
 							transition: 0.5s
 							outline: none
+							z-index: 201
 							sup
 								color: #0a0a0a
 								font-size: 2rem
@@ -194,15 +317,16 @@ header
 											color: #339ce3
 									img
 										width: 100%
-										// box-shadow: 0 11px 19px 1px rgba(73, 141, 192, 0.22), 0 68px 88px 12px rgba(103, 170, 221, 0.11)
+										box-shadow: 0 11px 19px 1px rgba(73, 141, 192, 0.22), 0 68px 88px 12px rgba(103, 170, 221, 0.11)
 
 	.header
 		display: flex
 		justify-content: space-between
 		padding: 20px 0
 		animation: header 3s 1
+		will-change: transform
 		.logo
-			position: absolute
+			position: fixed !important
 			top: -70px
 			left: -70px
 			z-index: 100
@@ -243,7 +367,7 @@ header
 			a
 				text-decoration: none
 				margin-right: 70px
-				color: $third-color
+				color: $second-color
 				font-size: 1.4rem
 				font-weight: 400
 				text-transform: uppercase
@@ -262,19 +386,20 @@ header
 		margin-top: 50px
 		.left
 			animation: main 2s 1
+			will-change: transform
 			z-index: 1
 			width: 40%
 			h4
 				margin: 0 !important
 				padding: 0 !important
 				color: #ffc018
-				font-size: 1.8rem
+				font-size: 3.8rem
 				font-weight: 700
 				line-height: 55px
 				text-transform: uppercase
 				letter-spacing: 5.4px
 			h1
-				margin: 0 !important
+				margin: 0 0 0 -3px !important
 				padding: 0 !important
 				color: #02d1de
 				font-size: 8rem
@@ -294,7 +419,7 @@ header
 				font-size: 2.3rem
 				font-weight: 400
 				line-height: 40px
-			.btn
+			.main-btn
 				margin-top: 70px
 				cursor: pointer
 				margin: 0 !important
@@ -305,7 +430,7 @@ header
 				background: -o-linear-gradient(right, #00d3de 0%, #7167f2 100%)
 				background: linear-gradient(to left, #00d3de 0%, #7167f2 100%)
 				box-shadow: 0px 5px 30px 2px rgba(113,103,242,1)
-				z-index: 1
+				z-index: 100
 				position: relative
 				width: 45%
 				display: flex
@@ -345,6 +470,7 @@ header
 				top: 16%
 				width: 45%
 				z-index: 10
+				width: 100vw
 				.slide
 					height: 100vh
 					img
@@ -352,15 +478,16 @@ header
 							position: absolute
 							top: 0
 							left: 0
-							width: 100%
-							animation: laptop 3s 1
+							width: 45%
+							animation: laptop 4s forwards
+							will-change: transform
 						&:nth-child(2)
-							width: 50%
+							width: 23%
 							position: absolute
-							z-index: 1000000
-							right: -50px
+							left: 250em
 							top: 130px
-							animation: phone 5s 1
+							animation: phone 4s forwards 1s
+							will-change: transform
 			.slider-count
 				display: flex
 				position: absolute
@@ -370,6 +497,7 @@ header
 				font-weight: 500
 				align-items: center
 				animation: header 2s 1
+				will-change: transform
 				p
 					margin-right: 7px
 					color: $main-color
@@ -389,14 +517,25 @@ header
 				position: absolute
 				left: 52%
 				top: 17%
-				animation: hbg 2s 1
 				.hbg
 					position: absolute
 					left: 0
 					top: 0
-					width: 450px
-					height: 450px
 					z-index: 0
+					img
+						position: absolute
+						top: 0
+						left: 0
+						width: 90%
+						&:nth-child(1)
+							animation: hbg 2s 1
+							will-change: transform
+						&:nth-child(2)
+							animation: hbg 3s 1
+							will-change: transform
+						&:nth-child(3)
+							animation: hbg 4s 1
+							will-change: transform
 	.bottom
 		position: absolute
 		display: flex
@@ -404,12 +543,15 @@ header
 		bottom: 0
 		left: 50%
 		animation: header 2s 1
+		will-change: transform
 		margin-left: -230px
+		z-index: 30
+		transition: 2s
 		p
 			margin: 0 80px
-			color: $third-color
+			color: $main-color
 			font-size: 1.4rem
-			font-weight: 400
+			font-weight: 700
 			line-height: 40px
 			text-transform: uppercase
 			letter-spacing: 11.2px
@@ -431,6 +573,669 @@ header
 			bottom: 0
 			z-index: 10
 			animation: header-after 0.7s infinite alternate
+			will-change: transform
+		a
+			position: absolute
+			top: 0
+			left: 0
+			height: 100%
+			width: 100%
+			z-index: 15
+
+#brandbook
+	position: relative
+	opacity: 0
+	z-index: 5
+	padding: 150px 0 250px 0
+	.container
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		.left
+			width: 40%
+			margin-right: 20px
+			.row
+				display: flex
+				justify-content: flex-start
+				align-items: center
+				position: relative
+				.brand-svg
+					img
+						position: absolute
+						&:nth-child(1)
+							top: 40px
+							left: -70em
+							z-index: 1
+						&:nth-child(2)
+							top: 50px
+							left: 20px
+							transform: scale(0)
+							z-index: 2
+						&:nth-child(3)
+							top: 75px
+							left: 21px
+							z-index: 2
+							transform: scale(0)
+						&:nth-child(4)
+							top: 82px
+							left: 21px
+							z-index: 2
+							transform: scale(0)
+						&:nth-child(5)
+							top: 89px
+							left: 21px
+							z-index: 2
+							transform: scale(0)
+						&:nth-child(6)
+							top: 96px
+							left: 21px
+							z-index: 2
+							transform: scale(0)
+						&:nth-child(7)
+							top: 103px
+							left: 21px
+							z-index: 2
+							transform: scale(0)
+						&:nth-child(8)
+							top: 110px
+							left: 30px
+							z-index: 2
+							transform: scale(0)
+						&:nth-child(9)
+							top: 40px
+							left: -70em
+							z-index: 3
+						&:nth-child(10)
+							top: 110px
+							left: -70em
+							z-index: 3
+						&:nth-child(11)
+							top: 117px
+							left: 5px
+							z-index: 4
+							transform: scale(0)
+						&:nth-child(12)
+							top: 100px
+							left: -70em
+							z-index: 5
+						&:nth-child(13)
+							top: 100px
+							left: 50px
+							z-index: 6
+							transform: scale(0)
+			h2
+				padding-left: 110px
+				color: #6864d5
+				font-size: 6.4rem
+				line-height: 45px
+				span
+					color: #bdc8e3
+					font-size: 3rem
+					font-weight: 700
+		.prems
+			.row>.col
+				p
+					color: #2542a9
+					font-size: 2.4rem
+					font-weight: 400
+					line-height: 44px
+					padding: 0 50px 0 0 !important
+					margin: 0 !important
+					&:before
+						content: url('../img/list1.png')
+						width: 10px
+						height: 10px
+						margin-right: 15px
+		p.bottom-p
+			color: #8697b7
+			font-size: 2.2rem
+			font-weight: 400
+			position: relative
+			line-height: 40px
+			padding-left: 20px
+			&:before
+				display: block
+				position: absolute
+				left: 0
+				top: 0
+				content: ''
+				width: 5px
+				height: 100%
+				background: #edf4f8
+				border-radius: 5px
+		.right
+			position: relative
+			width: 60%
+			margin-top: 40px
+			.parallax-brand
+				position: absolute
+				width: 100%
+				top: 0
+				left: 0
+				img
+					position: absolute
+					z-index: 20
+					&:nth-child(1)
+						top: 0
+						left: 0
+						width: 50%
+					&:nth-child(2)
+						top: 0
+						left: 55%
+						width: 45%
+					&:nth-child(3)
+						top: 160px
+						right: 0
+						width: 8%
+					&:nth-child(4)
+						top: 140px
+						right: 0
+						width: 32%
+				.b-bg
+					position: absolute
+					top: -50px
+					left: 0
+					width: 90%
+					z-index: 10
+					img
+						width: 100%
+#sites
+	opacity: 0
+	position: relative
+	padding: 50px 0 300px 0
+	background: #e4ecf0
+	.wave
+		background: url('../img/wave2.png') !important
+		height: 179px !important
+	.container
+		display: flex
+		justify-content: flex-end
+		.left
+			width: 60%
+			position: relative
+			.parallax
+				width: 100%
+				position: relative
+				img
+					position: absolute
+					width: 80%
+					z-index: 2
+					&:nth-child(1)
+						top: 550px
+						left: 0
+					&:nth-child(2)
+						top: 750px
+						left: -100em
+			.s-bg
+				position: absolute
+				left: -140em
+				top: 10px
+				width: 100%
+				z-index: 1
+				img
+					width: 90%
+		.right
+			width: 40%
+			margin-top: 100px
+			.row
+				display: flex
+				position: relative
+				img
+					position: absolute
+					&:nth-child(1)
+						top: 0
+						left: 0
+						z-index: 1
+						transform: scale(0)
+					&:nth-child(2)
+						left: 40px
+						bottom: 50px
+						z-index: 2
+						transform: scale(0)
+					&:nth-child(3)
+						left: 5px
+						bottom: 67px
+						z-index: 2
+						transform: scale(0)
+					&:nth-child(4)
+						left: 5px
+						top: 5px
+						z-index: 2
+						transform: scale(0)
+					&:nth-child(5)
+						left: 50px
+						bottom: 20px
+						z-index: 3
+						transform: scale(0)
+					&:nth-child(6)
+						left: 57px
+						bottom: 26px
+						z-index: 4
+						transform: scale(0)
+					&:nth-child(7)
+						left: 75px
+						bottom: 26px
+						z-index: 4
+						transform: scale(0)
+					&:nth-child(8)
+						left: 93px
+						bottom: 26px
+						z-index: 4
+						transform: scale(0)
+					&:nth-child(9)
+						left: 50px
+						bottom: 40px
+						z-index: 4
+						transform: scale(0)
+					&:nth-child(10)
+						left: 57px
+						bottom: 45px
+						z-index: 5
+						transform: scale(0)
+				h2
+					font-weight: 700
+					line-height: 50px
+					color: #36c6d0
+					font-size: 6.4rem
+					padding: 0 0 0 150px !important
+					margin: 0 !important
+					span
+						color: #bcc7e3
+						font-size: 3rem
+			.col
+				p
+					color: #2542a9
+					font-size: 2.4rem
+					font-weight: 400
+					line-height: 44px
+					padding: 0 50px 0 0 !important
+					margin: 0 !important
+					&:before
+						content: url('../img/list2.png')
+						width: 10px
+						height: 10px
+						margin-right: 15px
+			p.bottom-p
+				color: #8697b7
+				font-size: 2.2rem
+				font-weight: 400
+				position: relative
+				line-height: 40px
+				padding-left: 20px
+				&:before
+					display: block
+					position: absolute
+					left: 0
+					top: 0
+					content: ''
+					width: 5px
+					height: 100%
+					background: #edf4f8
+					border-radius: 5px
+#mobile
+	background: #ffffff
+	height: 100vh
+	padding: 150px 0
+	z-index: 5
+	position: relative
+	opacity: 0
+	.container
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		.left
+			width: 40%
+			margin-right: 20px
+			margin-top: 40px
+			.row
+				display: flex
+				justify-content: flex-start
+				align-items: center
+				position: relative
+				.mobile-svg
+					img
+						position: absolute
+						&:nth-child(1)
+							top: 0
+							left: 0
+							transform: scale(0)
+							z-index: 1
+						&:nth-child(2)
+							top: 13px
+							left: 7px
+							transform: scale(0)
+							z-index: 2
+						&:nth-child(3)
+							top: 18px
+							left: 48px
+							transform: scale(0)
+							z-index: 3
+						&:nth-child(4)
+							top: 33px
+							left: 53px
+							transform: scale(0)
+							z-index: 4
+						&:nth-child(5)
+							top: 40px
+							left: 70px
+							transform: scale(0)
+							z-index: 5
+						&:nth-child(6)
+							top: 70px
+							left: 15px
+							transform: scale(0)
+							z-index: 5
+			h2
+				padding: 0 0 0 110px !important
+				margin: 0 !important
+				color: #2293e1
+				font-size: 6.4rem
+				line-height: 45px
+				span
+					color: #bdc8e3
+					font-size: 3rem
+					font-weight: 700
+		.prems
+			.row>.col
+				p
+					color: #2542a9
+					font-size: 2.4rem
+					font-weight: 400
+					line-height: 44px
+					padding: 0 50px 0 0 !important
+					margin: 0 !important
+					&:before
+						content: url('../img/list3.png')
+						width: 10px
+						height: 10px
+						margin-right: 15px
+		p.bottom-p
+			color: #8697b7
+			font-size: 2.2rem
+			font-weight: 400
+			position: relative
+			line-height: 40px
+			padding-left: 20px
+			&:before
+				display: block
+				position: absolute
+				left: 0
+				top: 0
+				content: ''
+				width: 5px
+				height: 100%
+				background: #edf4f8
+				border-radius: 5px
+		.right
+			position: relative
+			width: 60%
+			margin-top: 40px
+			img
+				position: absolute
+				z-index: 6
+				width: 60%
+				&:nth-child(1)
+					top: 250px
+					left: 0
+				&:nth-child(2)
+					top: 300px
+					left: 100em
+			.m-bg
+				position: absolute
+				top: -250px
+				left: 0
+				width: 100%
+				z-index: 5
+				img
+					width: 100%
+#business
+	height: 100vh
+	position: relative
+	padding: 100px 0 200px 0
+	background: #e4ecf0
+	opacity: 0
+	.wave
+		background: url('../img/wave2.png') !important
+		height: 179px !important
+	.row.h
+		position: absolute
+		right: 250px
+		top: 100px
+		.bus-svg
+			position: relative
+			img
+				position: absolute
+				&:nth-child(1)
+					top: 0
+					left: 0
+					z-index: 1
+					transform: scale(0)
+				&:nth-child(2)
+					top: 15px
+					left: 20px
+					z-index: 2
+					transform: scale(0)
+				&:nth-child(3)
+					top: -5px
+					left: 37px
+					z-index: 2
+					transform: scale(0)
+				&:nth-child(4)
+					top: 5px
+					left: 55px
+					z-index: 2
+					transform: scale(0)
+				&:nth-child(5)
+					top: 19px
+					left: 72px
+					z-index: 2
+					transform: scale(0)
+				&:nth-child(6)
+					top: -30px
+					left: 5px
+					z-index: 2
+					transform: scale(0)
+		h2
+			padding: 0 0 0 110px !important
+			margin: 0 !important
+			color: #2cbde7
+			font-size: 6.4rem
+			line-height: 45px
+			span
+				color: #bdc8e3
+				font-size: 3rem
+				font-weight: 700
+	.container
+		display: flex
+		justify-content: flex-end
+		position: relative
+		.slider3-loader
+			position: absolute
+			top: -10px
+			width: 0%
+			height: 3px
+			background: linear-gradient(to right, #03D1DF, #6F69F2)
+			left: 0
+		.slider-3
+			position: absolute
+			top: 0
+			left: 0
+			opacity: 1
+			width: 100%
+			.slide
+				display: flex
+				align-items: flex-end
+				justify-content: space-between
+				.left
+					width: 60%
+					img
+						width: 100%
+						box-shadow: 0 0 30px 0 rgba(0,0,0,0.5)
+				.right
+					width: 40%
+					margin-left: 30px
+					.col
+						p
+							color: #2542a9
+							font-size: 2.4rem
+							font-weight: 400
+							line-height: 44px
+							padding: 0 50px 0 0 !important
+							margin: 0 !important
+							&:before
+								content: url('../img/list4.png')
+								width: 10px
+								height: 10px
+								margin-right: 15px
+			p.bottom-p
+				color: #8697b7
+				font-size: 2.2rem
+				font-weight: 400
+				position: relative
+				line-height: 40px
+				padding-left: 20px
+				&:before
+					display: block
+					position: absolute
+					left: 0
+					top: 0
+					content: ''
+					width: 5px
+					height: 100%
+					background: #edf4f8
+					border-radius: 5px
+#footer
+	background-size: cover
+	background-repeat: no-repeat
+	position: relative
+	padding: 100px 0
+	opacity: 0
+	.container
+		width: 50% !important
+		position: relative
+		z-index: 10
+		.row
+			display: flex
+			align-items: center
+			justify-content: flex-start
+			margin-left: 10%
+			.col
+				h2
+					color: #02d1de
+					font-size: 6.4rem
+					font-weight: 700
+					padding: 0 !important
+					margin: 0 !important
+				h4
+					color: #4d65b9
+					font-size: 3rem
+					font-weight: 700
+					padding: 0 !important
+					margin: 0 !important
+			.btn
+				cursor: pointer
+				margin: 0 0 0 100px !important
+				font-size: 2.5rem
+				border-radius: 35px
+				padding: 15px 20px
+				background: -webkit-linear-gradient(right, #00d3de 0%, #7167f2 100%)
+				background: -o-linear-gradient(right, #00d3de 0%, #7167f2 100%)
+				background: linear-gradient(to left, #00d3de 0%, #7167f2 100%)
+				box-shadow: 0px 5px 30px 2px rgba(113,103,242,1)
+				z-index: 1
+				position: relative
+				width: 30%
+				display: flex
+				align-items: center
+				justify-content: space-around
+				button
+					background: none
+					border: none
+					outline: none
+					color: #ffffff
+					cursor: pointer
+					font-weight: 700
+					line-height: 30px
+					font-size: 2.2rem
+				img
+					width: 36px
+					height: 15px
+				&:before
+					border-radius: inherit
+					background-image: linear-gradient(160deg,#44cbd4,#2881ef)
+					content: ''
+					display: block
+					height: 100%
+					position: absolute
+					top: 0
+					left: 0
+					opacity: 0
+					width: 100%
+					z-index: -100
+					transition: opacity .3s
+				&:hover:before
+					opacity: 1
+			nav
+				margin-top: 40px
+				ul
+					display: flex
+					list-style: none
+					padding-left: 0 !important
+					li
+						margin-right: 45px
+						a
+							color: $main-color
+							text-decoration: none
+							font-size: 2.3rem
+							font-weight: 400
+							line-height: 40px
+							transition: 0.5s
+							&:hover
+								color: #02d1de
+		.contacts
+			display: flex
+			align-items: center
+			margin-top: 50px
+			z-index: 10
+			a
+				text-decoration: none
+				margin-right: 70px
+				color: $main-color
+				font-size: 1.4rem
+				font-weight: 400
+				text-transform: uppercase
+				letter-spacing: 11.2px
+				transition: 0.5s
+				&:hover
+					color: #009CCC
+			.social
+				i
+					font-size: 2rem
+					margin: 0 10px
+					cursor: pointer
+	.wrap
+		overflow: hidden
+		height: 100%
+		width: 100%
+		z-index: 1
+		position: absolute
+		top: 0
+		left: 0
+		img
+			width: 20%
+			position: absolute
+			&:nth-child(1)
+				left: -100px
+				bottom: -100px
+				animation: footer-1 2s infinite alternate
+			&:nth-child(2)
+				right: 100px
+				bottom: 100px
+				animation: footer-2 2s infinite alternate
+			&:nth-child(3)
+				left: 400px
+				top: 50px
+				animation: footer-3 2s infinite alternate
 
 // slider
 .arrows
@@ -449,9 +1254,11 @@ header
 .slider-2
 	.slick-prev
 		display: none !important
+.slick-slide
+	outline: none !important
 .show
 	position: absolute
-	z-index: 2
+	z-index: 10
 	top: 70px
 	right: 20px
 	height: 35px
@@ -486,6 +1293,9 @@ circle
 	stroke-dashoffset: 339.292
 	stroke: #FFF
 .progress.active circle
+	transition: stroke-dashoffset 7s linear
+	stroke-dashoffset: 0
+.active3>circle
 	transition: stroke-dashoffset 4s linear
 	stroke-dashoffset: 0
 
@@ -497,11 +1307,11 @@ circle
 		bottom: 10px
 @keyframes after-1
 	from
-		top: 50%
-		left: 40%
+		transform: translateY(50%)
+		transform: translateX(40%)
 	to
-		top: 53%
-		left: 41%
+		transform: translateY(53%)
+		transform: translateX(41%)
 @keyframes after-2
 	from
 		right: 10%
@@ -547,31 +1357,190 @@ circle
 		opacity: 0
 	to
 		opacity: 1
-@keyframes preloader
-	0%
-		opacity: 1
-	100%
-		opacity: 0
+@keyframes animate
+	from
+		transform: rotate(0) skew(0)
+	to
+		transform: rotate(180deg) skew(360deg)
+@keyframes animate2
+	from
+		transform: rotate(0) skew(0)
+	to
+		transform: rotate(-180deg) skew(-360deg)
 @keyframes sub-bg
 	from
 		transform: scale(1)
 	to
 		transform: scale(100)
+@keyframes sub-bg-non-active
+	from
+		transform: scale(100)
+		opacity: 1
+	to
+		transform: scale(0)
+		opacity: 1
 @keyframes laptop
 	from
-		top: 100em
+		left: 300em
 	to
-		top: 0
+		left: 0
+@keyframes slide-change
+	from
+		left: 300em
+	to
+		left: 45%
 @keyframes phone
 	from
-		top: 150em
+		left: 250em
 	to
-		top: 130px
+		left: 350px
 @keyframes hbg
 	from
-		top: 50em
+		left: 200em
 	to
-		top: 17%
+		left: 0
+@keyframes h2b
+	from
+		opacity: 0
+	to
+		opacity: 1
+@keyframes b-bg
+	from
+		left: 70em
+	to
+		left: 0
+@keyframes first-img
+	from
+		left: 50em
+	to
+		left: 0
+@keyframes second-img
+	from
+		left: 60em
+	to
+		left: 55%
+@keyframes third-img
+	from
+		left: 70em
+	to
+		left: 55%
+@keyframes four-img
+	from
+		right: -70em
+	to
+		right: 0
+@keyframes five-img
+	from
+		right: -70em
+	to
+		right: 0
+@keyframes svg-1
+	from
+		left: -70em
+	to
+		left: 10px
+@keyframes svg-2
+	from
+		transform: scale(0)
+	to
+		transform: scale(1)
+@keyframes svg-3
+	from
+		left: -30em
+	to
+		left: 80px
+@keyframes svg-4
+	from
+		left: -70em
+	to
+		left: 0
+@keyframes svg-5
+	from
+		left: -70em
+	to
+		left: 50px
+@keyframes s-bg
+	from
+		left: -140em
+	to
+		left: 0
+@keyframes s-img1
+	from
+		left: -140em
+	to
+		left: 0
+@keyframes s-img2
+	from
+		left: -100em
+	to
+		left: 100px
+@keyframes rotate
+	from
+		transform: rotate(0)
+	to
+		transform: rotate(360deg)
+@keyframes m-img1
+	from
+		left: 100em
+	to
+		left: 0
+@keyframes m-img2
+	from
+		left: 200em
+	to
+		left: 300px
+@keyframes slide-3
+	from
+		left: 0
+		opacity: 1
+	to
+		left: -30px
+		opacity: 0
+@keyframes s3la
+	from
+		width: 0%
+	to
+		width: 60%
+@keyframes footer-1
+	from
+		left: -100px
+		bottom: -100px
+	to
+		left: -70px
+		bottom: -80px
+@keyframes footer-2
+	from
+		right: 100px
+		bottom: 100px
+	to
+		right: 170px
+		bottom: 140px
+@keyframes footer-3
+	from
+		left: 400px
+		top: 50px
+	to
+		left: 390px
+		bottom: 150px
+@keyframes rocket
+	from
+		top: 5px
+		opacity: 1
+	to
+		top: -100px
+		opacity: 0
+@keyframes write
+	from
+		transform: scale(1)
+	to
+		transform: scale(0)
+
+
+
+
+
+
+
 @media screen and (max-width: 1920px)
 	.hbg
 		width: 650px !important
@@ -604,10 +1573,23 @@ circle
 	.hbg
 		width: 450px !important
 		height: 450px !important
-	.btn
+	.main-btn
 		padding: 10px 15px !important
 		width: 70% !important
 @media screen and (max-width: 1070px)
 	.hbg
 		width: 400px !important
 		height: 400px !important
+
+
+
+
+
+
+
+
+::-webkit-scrollbar
+	background: #f1f1f1
+	width: 7px
+::-webkit-scrollbar-thumb
+	background: linear-gradient(#03D1DF, #6F69F2)
