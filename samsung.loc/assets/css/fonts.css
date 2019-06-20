@@ -1,0 +1,50 @@
+@font-face {
+	font-family: 'Helvetica-Light';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Helvetica-Light'), url('../font/HelveticaLight.woff') format('woff');
+}
+@font-face {
+	font-family: 'Helvetica-Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Helvetica-Regular'), url('../font/HelveticaRegular.woff') format('woff');
+}
+@font-face {
+	font-family: 'Helvetica-Thin';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Helvetica-Thin'), url('../font/HelveticaThin.woff') format('woff');
+}
+@font-face {
+	font-family: 'SamsungSharpSans';
+	font-style: normal;
+	font-weight: bold;
+	src: url('../font/SamsungSharpSans-Bold.woff');
+	src: url('../font/SamsungSharpSans-Bold.eot') format('embedded-opentype'),
+	url('../font/SamsungSharpSans-Bold.woff') format('woff'), url('../font/SamsungSharpSans-Bold.svg') format('svg');
+}
+@font-face {
+	font-family: 'Helvetica-Light';
+	font-style: normal;
+	font-weight: bold;
+	src: url('../font/HelveticaLight.woff');
+	src: url('../font/HelveticaLight.eot') format('embedded-opentype'),
+	url('../font/HelveticaLight.woff') format('woff');
+}
+@font-face {
+	font-family: 'Helvetica-Regular';
+	font-style: normal;
+	font-weight: bold;
+	src: url('../font/HelveticaRegular.woff');
+	src: url('../font/HelveticaRegular.eot') format('embedded-opentype'),
+	url('../font/HelveticaRegular.woff') format('woff');
+}
+@font-face {
+	font-family: 'Helvetica-Thin';
+	font-style: normal;
+	font-weight: bold;
+	src: url('../font/HelveticaThin.woff');
+	src: url('../font/HelveticaThin.eot') format('embedded-opentype'),
+	url('../font/HelveticaThin.woff') format('woff');
+}

@@ -1,0 +1,153 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+body{
+	font-family: 'SamsungSharpSans', sans-serif;
+}
+.container{
+	width: 1196px;
+	margin: 0 auto;
+}
+.icon-4pda-logo{
+	color: #fff;
+	font-size: 30px;
+}
+.icon-4pda-logo:before{
+	margin: 0;
+}
+h1{
+	font-size: 100px;
+	text-align: center;
+}
+/*Header*/
+#header{
+	background: #0072BC;
+	padding: 15px 0;
+}
+/*Timeline*/
+#timeline{
+	background: url('../img/timeline-bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+	padding: 90px 0 400px 0;
+	position: relative;
+}
+#timeline:after{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 350px;
+	background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1), rgba(0,0,0,1));
+}
+#timeline>.container>p{
+	text-align: center;
+	font-size: 30px;
+	line-height: 36px;
+	margin-top: 40px;
+	font-family: 'Helvetica-Light'
+}
+#timeline>.container>h3{
+	text-align: center;
+	font-size: 70px;
+	margin-top: 100px;
+}
+.timeline{
+	position: relative;
+	width: 1000px;
+	margin: 50px auto 0 auto;
+}
+.timeline:before{
+	content: '';
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #fff;
+	border-radius: 50%;
+}
+.timeline-item{
+	width: calc(50% - 13px);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	top: 25px;
+}
+.timeline-item>.left>h4{
+	font-size: 30px;
+}
+.timeline-item>.left>p{
+	font-size: 14px;
+	margin-top: 7px;
+}
+.timeline-item>.right>p{
+	font-size: 30px;
+}
+.timeline-item:after{
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	right: -21px;
+	background: #fff;
+	border-radius: 50%;
+}
+.timeline-item:before{
+	content: '';
+	position: absolute;
+	width: 4px;
+	height: 100%;
+	right: -15px;
+	background: #fff;
+}
+.timeline-item:nth-child(even){
+	right: calc(-50% - 13px);
+	flex-direction: row-reverse;
+}
+.timeline-item:nth-child(even)>.left{
+	text-align: right;
+}
+.timeline-item:nth-child(even):after{
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	left: -21px;
+	background: #fff;
+	border-radius: 50%;
+}
+.timeline-item:nth-child(even):before{
+	content: '';
+	position: absolute;
+	width: 4px;
+	height: 100%;
+	left: -15px;
+	background: #fff;
+}
+.timeline-item:nth-child(10):before{
+	background: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,0));
+}
+/*Gallery*/
+#gallery{
+	background: #000;
+	padding-bottom: 70px;
+}
+#gallery>.container>h2{
+	font-size: 70px;
+	text-align: center;
+	color: #fff;
+}
+#gallery>.container>h3{
+	font-size: 50px;
+	text-align: center;
+	color: #fff;
+}
