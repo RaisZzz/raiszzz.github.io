@@ -6,4 +6,5 @@ $(document).ready(function(){
 		prevArrow: $('#left-arrow'),
 		nextArrow: $('#right-arrow')
 	});
+	$('.footer-slider').slick();
 });
