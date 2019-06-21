@@ -151,3 +151,64 @@ h1{
 	text-align: center;
 	color: #fff;
 }
+.slider{
+	position: relative;
+}
+.slider:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 300px;
+	background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.9),rgba(0,0,0,0.7), rgba(0,0,0,0));
+	z-index: 10;
+}
+.slider:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 300px;
+	background: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0.9),rgba(0,0,0,0.7), rgba(0,0,0,0));
+	z-index: 10;
+}
+.slider-arrow{
+	position: relative;
+}
+#left-arrow, #right-arrow{
+	position: absolute;
+	top: 50%;
+	width: 45px;
+	height: 194px;
+	transform: translateY(-50%);
+	z-index: 100;
+	cursor: pointer;
+}
+#left-arrow{
+	left: 0;
+}
+#right-arrow{
+	right: 0;
+}
+.slide{
+	transform: scale(0.8);
+	transition: 0.5s;
+}
+.slick-center{
+	transform: scale(1);
+}
+.slide>img{
+	width: 100%;
+}
+/*Technology*/
+#technology{
+	padding: 100px 0;
+	background: #000;
+}
+#technology>.container>h2{
+	font-size: 70px;
+	text-align: center;
+	color: #fff;
+}
