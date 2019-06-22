@@ -1,9 +1,3 @@
-// 3) Блок "10 лет впечатлений". Фотогалерея #снятонаGalaxy.
-// Галерея будет двигаться при прокручивании колесика мыши 
-// и при перетягивании мыши (больше, чем на одну позицию).
-// 4) Блок "10 лет технологий"
-// Обзоры и материалы, которые касаются только устройств линейки Galaxy. 
-// При скролле появляются левый блок двигается вниз, правый - вверх. Таким образом появляются новые материалы.
 $(document).ready(function(){
 	$('.slider').slick({
 		centerMode: true,
@@ -13,12 +7,22 @@ $(document).ready(function(){
 		nextArrow: $('#right-arrow')
 	});
 	$('.footer-slider').slick({
+		Infinite: false,
 		centerMode: false,
 		adaptiveHeight: true,
 		slidesToShow: 1,
 		prevArrow: $('#footer-left-arrow'),
 		nextArrow: $('#footer-right-arrow')
 	});
+	const slider = $(".slider");
+	slider.on('wheel', (function(e) {
+		e.preventDefault();
+		if (e.originalEvent.deltaY < 0) {
+			$(slider).slick('slickPrev');
+		} else {
+			$(slider).slick('slickNext');
+		}
+	}));
 	$(window).scroll(function(){
 
 		var st = $(this).scrollTop();
