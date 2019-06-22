@@ -239,6 +239,15 @@ h1{
 }
 #technology>.container>.blocks>.col{
 	margin: 10px;
+	transition: 1s;
+	position: relative;
+	opacity: 0;
+}
+#technology>.container>.blocks>.col:nth-child(1){
+	top: 400px;
+}
+#technology>.container>.blocks>.col:nth-child(2){
+	bottom: 400px;
 }
 #technology>.container>.blocks>.col>.block{
 	width: 450px;
