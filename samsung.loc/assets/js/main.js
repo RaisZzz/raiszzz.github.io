@@ -8,6 +8,7 @@ $(document).ready(function(){
 	});
 	$('.footer-slider').slick({
 		centerMode: false,
+		adaptiveHeight: true,
 		slidesToShow: 1,
 		prevArrow: $('#footer-left-arrow'),
 		nextArrow: $('#footer-right-arrow')
