@@ -6,5 +6,10 @@ $(document).ready(function(){
 		prevArrow: $('#left-arrow'),
 		nextArrow: $('#right-arrow')
 	});
-	$('.footer-slider').slick();
+	$('.footer-slider').slick({
+		centerMode: false,
+		slidesToShow: 1,
+		prevArrow: $('#footer-left-arrow'),
+		nextArrow: $('#footer-right-arrow')
+	});
 });

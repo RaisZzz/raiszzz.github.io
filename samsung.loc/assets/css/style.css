@@ -338,18 +338,37 @@ h1{
 	text-align: center;
 	font-size: 60px;
 }
-#footer>.container>.footer-slider-arrow>.footer-slider>.slide{
+.footer-slider{
+	max-width: 90%;
+	margin: 0 auto;
+}
+.footer-slider-arrow>.footer-slider>.slide{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-#footer>.container>.footer-slider-arrow>.footer-slider>.slide>.right>.top{
+.footer-slider-arrow>.footer-slider>.slide>.right>.top{
 	display: flex;
 }
-#footer>.container>.footer-slider-arrow>.footer-slider>.slide>.right>.bottom{
+.footer-slider-arrow>.footer-slider>.slide>.right>.bottom{
 	display: flex;
 }
 .block>img{
 	width: 100%;
 	padding: 5px;
+}
+#footer-left-arrow, #footer-right-arrow{
+	position: absolute;
+	top: 50%;
+	width: 45px;
+	height: 194px;
+	transform: translateY(-50%);
+	z-index: 100;
+	cursor: pointer;
+}
+#footer-left-arrow{
+	left: 0;
+}
+#footer-right-arrow{
+	right: 0;
 }
