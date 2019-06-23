@@ -9,6 +9,12 @@ body{
 	font-family: 'SamsungSharpSans', sans-serif;
 	overflow-x: hidden;
 }
+.slick-slide {
+    outline: none
+}
+.block>a{
+	outline: none;
+}
 .container{
 	width: 1196px;
 	margin: 0 auto;

@@ -1,8 +1,10 @@
 $(document).ready(function(){
 	$('.slider').slick({
+		infinite: true,
 		centerMode: true,
 		centerPadding: '0px',
 		slidesToShow: 3,
+		slidesToScroll: 3,
 		prevArrow: $('#left-arrow'),
 		nextArrow: $('#right-arrow')
 	});
