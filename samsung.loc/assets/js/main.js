@@ -2,6 +2,7 @@ $(document).ready(function(){
 	$('.slider').slick({
 		infinite: true,
 		centerMode: true,
+		adaptiveHeight: true,
 		centerPadding: '0px',
 		slidesToShow: 3,
 		slidesToScroll: 3,
