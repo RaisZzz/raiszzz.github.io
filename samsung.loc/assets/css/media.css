@@ -1,0 +1,23 @@
+@media(max-width: 1219px){
+	.container{
+		width: 974px !important;
+	}
+	*{
+		opacity: 1 !important;
+	}
+}
+@media(max-width: 997px){
+	.container{
+		width: 744px !important;
+	}
+}
+@media(max-width: 767px){
+	.container{
+		width: 676px !important;
+	}
+}
+@media(max-width: 699px){
+	.container{
+		width: 100% !important;
+	}
+}

@@ -2,15 +2,15 @@ $(document).ready(function(){
 	$('.slider').slick({
 		infinite: true,
 		centerMode: true,
-		adaptiveHeight: true,
 		centerPadding: '0px',
+		adaptiveHeight: true,
 		slidesToShow: 3,
 		slidesToScroll: 3,
 		prevArrow: $('#left-arrow'),
 		nextArrow: $('#right-arrow')
 	});
 	$('.footer-slider').slick({
-		Infinite: false,
+		infinite: false,
 		centerMode: false,
 		adaptiveHeight: true,
 		slidesToShow: 1,
