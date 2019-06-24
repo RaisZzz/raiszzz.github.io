@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('.slider').slick({
+	$('#header-slider').slick({
 		infinite: true,
 		centerMode: true,
 		centerPadding: '0px',
@@ -9,8 +9,18 @@ $(document).ready(function(){
 		prevArrow: $('#left-arrow'),
 		nextArrow: $('#right-arrow')
 	});
+	$('#mobile-slider').slick({
+		infinite: true,
+		centerMode: true,
+		centerPadding: '0px',
+		adaptiveHeight: true,
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		prevArrow: $('#mobile-left-arrow'),
+		nextArrow: $('#mobile-right-arrow')
+	});
 	$('.footer-slider').slick({
-		infinite: false,
+		infinite: true,
 		centerMode: false,
 		adaptiveHeight: true,
 		slidesToShow: 1,

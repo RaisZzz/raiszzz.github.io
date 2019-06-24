@@ -5,19 +5,384 @@
 	*{
 		opacity: 1 !important;
 	}
+	.timeline-item:nth-child(odd){
+		left: 0 !important;
+	}
+	.timeline-item:nth-child(even){
+		right: calc(-50% - 13px) !important;
+	}
+	#technology>.container>.blocks>.col{
+		top: 0 !important;
+	}
+	.bg{
+		filter: none !important;
+	}
+	h1{
+		font-size: 65px !important;
+	}
+	#timeline>.container>p{
+		font-size: 20px !important;
+	}
+	#timeline>.container>h3{
+		font-size: 50px !important;
+	}
+	.timeline-item>.left>h4{
+		font-size: 20px !important;
+	}
+	.timeline-item>.left>p{
+		font-size: 12px !important;
+	}
+	.timeline-item>.right>p{
+		font-size: 20px !important;
+	}
+	.timeline{
+		width: 646px !important;
+	}
+	#gallery>.container>h2{
+		font-size: 50px !important;
+	}
+	#gallery>.container>h3{
+		font-size: 30px !important;
+	}
+	#technology>.container>h2{
+		font-size: 50px !important;
+	}
+	#technology>.container>.blocks>.col>.block{
+		width: 300px !important;
+	}
+	#technology>.container>.blocks>.col>.block>h3{
+		font-size: 18px !important;
+	}
+	#technology{
+		padding: 50px 0 !important; 
+	}
+	#technology>.container>.btn>a{
+		padding: 10px 50px !important;
+	}
+	#choose>.container>h2{
+		font-size: 45px !important;
+	}
+	#choose>.container>.blocks>.block>h3{
+		font-size: 19px !important;
+	}
+	#choose>.container>.blocks>.block{
+		width: 190px !important;
+		height: 220px !important;
+	}
+	.footer-slider-arrow>.footer-slider .slide .block p{
+		font-size: 11px !important;
+	}
 }
 @media(max-width: 997px){
 	.container{
 		width: 744px !important;
+	}
+	h1{
+		font-size: 50px !important;
+	}
+	#timeline>.container>p{
+		font-size: 18px !important;
+	}
+	#timeline>.container>h3{
+		font-size: 45px !important;
+	}
+	.timeline-item>.left>h4{
+		font-size: 16px !important;
+	}
+	.timeline-item>.left>p{
+		font-size: 10px !important;
+	}
+	.timeline-item>.right>p{
+		font-size: 16px !important;
+	}
+	.timeline{
+		width: 470px !important;
+	}
+	#gallery>.container>h2{
+		font-size: 40px !important;
+	}
+	#gallery>.container>h3{
+		font-size: 25px !important;
+	}
+	#technology>.container>h2{
+		font-size: 40px !important;
+	}
+	#technology>.container>.blocks>.col>.block{
+		width: 230px !important;
+	}
+	#technology>.container>.blocks>.col>.block>h3{
+		font-size: 16px !important;
+	}
+	#technology>.container>.btn>a{
+		padding: 10px 50px !important;
+	}
+	#choose>.container>h2{
+		font-size: 35px !important;
+	}
+	#choose>.container>.blocks>.block>h3{
+		font-size: 14px !important;
+	}
+	#choose>.container>.blocks>.block{
+		width: 150px !important;
+		height: 180px !important;
+	}
+	.footer-slider-arrow>.footer-slider .slide .block p{
+		font-size: 9px !important;
+	}
+	.footer-slider-arrow>.footer-slider .slide .block p{
+		left: 10px !important;
+	}
+	#left-arrow, #right-arrow{
+		width: 23px !important;
+		height: 100px !important;
+		top: 40% !important;
 	}
 }
 @media(max-width: 767px){
 	.container{
 		width: 676px !important;
 	}
+	h1{
+		font-size: 35px !important;
+	}
+	#timeline>.container>p{
+		font-size: 14px !important;
+	}
+	#timeline>.container>h3{
+		font-size: 35px !important;
+	}
+	.timeline-item>.left>h4{
+		font-size: 14px !important;
+	}
+	.timeline-item>.left>p{
+		font-size: 9px !important;
+	}
+	.timeline-item>.right>p{
+		font-size: 14px !important;
+	}
+	.timeline-item:before{
+		display: none;
+	}
+	.timeline-item:after{
+		display: none;
+	}
+	.timeline:before{
+		display: none;
+	}
+	.timeline-item{
+		flex-direction: column-reverse !important;
+		align-items: left !important;
+		justify-content: left !important;
+		left: 0 !important;
+		width: 100% !important;
+		margin-top: 15px;
+	}
+	.timeline-item:nth-child(odd){
+		padding-right: 10px;
+	}
+	.timeline-item:nth-child(even){
+		padding-left: 10px;
+	}
+	.timeline-item .right{
+		width: 100%;
+		text-align: left;
+	}
+	.timeline-item .left{
+		width: 100%;
+		text-align: left !important;
+	}
+	.timeline{
+		width: 470px !important;
+		display: grid;
+		grid-template-columns: 50% 50%;
+	}
+	#gallery>.container>h2{
+		font-size: 35px !important;
+	}
+	#gallery>.container>h3{
+		font-size: 25px !important;
+	}
+	#technology>.container>h2{
+		font-size: 35px !important;
+	}
+	#technology>.container>.blocks>.col>.block{
+		width: 177px !important;
+	}
+	#technology>.container>.blocks>.col>.block>h3{
+		font-size: 12px !important;
+	}
+	#technology>.container>.btn>a{
+		padding: 10px 50px !important;
+	}
+	#choose>.container>h2{
+		font-size: 27px !important;
+	}
+	#choose>.container>.blocks>.block>h3{
+		font-size: 12px !important;
+	}
+	#choose>.container>.blocks>.block{
+		width: 118px !important;
+		height: 138px !important;
+	}
+	#footer>.container>h2{
+		font-size: 27px !important;
+	}
+	.footer-slider-arrow>.footer-slider .slide .block p{
+		font-size: 8px !important;
+	}
+	#footer-left-arrow, #footer-right-arrow{
+		width: 18px !important;
+		height: 77px !important;
+	}
+	#left-arrow, #right-arrow{
+		width: 23px !important;
+		height: 100px !important;
+		top: 40% !important;
+	}
+	#gallery>.container>.slider-arrow>.slider:before, #gallery>.container>.slider-arrow>.slider:after{
+		width: 200px !important;
+	}
 }
 @media(max-width: 699px){
 	.container{
 		width: 100% !important;
+	}
+	.mobile-slider-arrow{
+		display: block !important;
+	}
+	h1{
+		font-size: 45px !important;
+	}
+	#timeline>.container>p{
+		font-size: 20px !important;
+	}
+	.timeline-item>.left>h4{
+		font-size: 18px !important;
+	}
+	.timeline-item>.left>p{
+		font-size: 16px !important;
+	}
+	.timeline-item>.right>p{
+		font-size: 18px !important;
+	}
+	.timeline{
+		width: 580px !important;
+	}
+	#technology>.container>.blocks>.col>.block{
+		width: 270px !important;
+	}
+	#technology>.container>.blocks>.col>.block>h3{
+		font-size: 20px !important;
+	}
+	#technology>.container>.btn>a{
+		padding: 10px 50px !important;
+	}
+	#choose>.container>h2{
+		font-size: 35px !important;
+	}
+	#choose>.container>.blocks{
+		display: grid !important;
+		grid-template-columns: 50% 50%;
+		align-self: center;
+		padding: 0 30px;
+	}
+	#choose>.container>.blocks>.block>h3{
+		font-size: 16px !important;
+	}
+	#choose>.container>.blocks>.block{
+		width: calc(100% - 20px) !important;
+		height: 200px !important;
+		margin: 10px;
+	}
+	#footer>.container>h2{
+		font-size: 35px !important;
+	}
+	.footer-slider-arrow>.footer-slider .slide .block p{
+		font-size: 8px !important;
+	}
+	#footer-left-arrow, #footer-right-arrow{
+		width: 18px !important;
+		height: 77px !important;
+	}
+	#left-arrow, #right-arrow{
+		width: 23px !important;
+		height: 100px !important;
+		top: 33% !important;
+	}
+	#gallery>.container>.slider-arrow>.slider:before, #gallery>.container>.slider-arrow>.slider:after{
+		width: 200px !important;
+	}
+	.mobile-footer-slider-arrows{
+		display: block !important;
+	}
+	.footer-slider-arrow{
+		display: none;
+	}
+}
+@media(max-width: 582px){
+	.container{
+		width: 100% !important;
+	}
+	h1{
+		font-size: 45px !important;
+	}
+	#timeline>.container>p{
+		font-size: 20px !important;
+	}
+	.timeline-item>.left>h4{
+		font-size: 18px !important;
+	}
+	.timeline-item>.left>p{
+		font-size: 16px !important;
+	}
+	.timeline-item>.right>p{
+		font-size: 18px !important;
+	}
+	.timeline{
+		width: 580px !important;
+	}
+	#technology>.container>.blocks>.col>.block{
+		width: 270px !important;
+	}
+	#technology>.container>.blocks>.col>.block>h3{
+		font-size: 20px !important;
+	}
+	#technology>.container>.btn>a{
+		padding: 10px 50px !important;
+	}
+	#choose>.container>h2{
+		font-size: 35px !important;
+	}
+	#choose>.container>.blocks{
+		display: grid !important;
+		grid-template-columns: 50% 50%;
+		align-self: center;
+		padding: 0 30px;
+	}
+	#choose>.container>.blocks>.block>h3{
+		font-size: 16px !important;
+	}
+	#choose>.container>.blocks>.block{
+		width: calc(100% - 20px) !important;
+		height: 200px !important;
+		margin: 10px;
+	}
+	#footer>.container>h2{
+		font-size: 35px !important;
+	}
+	.footer-slider-arrow>.footer-slider .slide .block p{
+		font-size: 8px !important;
+	}
+	#footer-left-arrow, #footer-right-arrow{
+		width: 18px !important;
+		height: 77px !important;
+	}
+	#left-arrow, #right-arrow{
+		width: 23px !important;
+		height: 100px !important;
+		top: 33% !important;
+	}
+	#gallery>.container>.slider-arrow>.slider:before, #gallery>.container>.slider-arrow>.slider:after{
+		width: 200px !important;
 	}
 }
