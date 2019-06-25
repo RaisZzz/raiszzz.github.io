@@ -266,7 +266,7 @@
 		font-size: 18px !important;
 	}
 	.timeline{
-		width: 580px !important;
+		width: 100% !important;
 	}
 	#technology>.container>.blocks>.col>.block{
 		width: 270px !important;
@@ -324,34 +324,34 @@
 		width: 100% !important;
 	}
 	h1{
-		font-size: 45px !important;
+		font-size: 35px !important;
 	}
 	#timeline>.container>p{
-		font-size: 20px !important;
-	}
-	.timeline-item>.left>h4{
-		font-size: 18px !important;
-	}
-	.timeline-item>.left>p{
 		font-size: 16px !important;
 	}
+	.timeline-item>.left>h4{
+		font-size: 16px !important;
+	}
+	.timeline-item>.left>p{
+		font-size: 12px !important;
+	}
 	.timeline-item>.right>p{
-		font-size: 18px !important;
+		font-size: 16px !important;
 	}
 	.timeline{
-		width: 580px !important;
+		width: 100% !important;
 	}
 	#technology>.container>.blocks>.col>.block{
-		width: 270px !important;
+		width: 100% !important;
 	}
 	#technology>.container>.blocks>.col>.block>h3{
-		font-size: 20px !important;
+		font-size: 14px !important;
 	}
 	#technology>.container>.btn>a{
 		padding: 10px 50px !important;
 	}
 	#choose>.container>h2{
-		font-size: 35px !important;
+		font-size: 30px !important;
 	}
 	#choose>.container>.blocks{
 		display: grid !important;
@@ -360,18 +360,18 @@
 		padding: 0 30px;
 	}
 	#choose>.container>.blocks>.block>h3{
-		font-size: 16px !important;
+		font-size: 14px !important;
 	}
 	#choose>.container>.blocks>.block{
 		width: calc(100% - 20px) !important;
-		height: 200px !important;
+		height: 166px !important;
 		margin: 10px;
 	}
 	#footer>.container>h2{
-		font-size: 35px !important;
+		font-size: 30px !important;
 	}
 	.footer-slider-arrow>.footer-slider .slide .block p{
-		font-size: 8px !important;
+		font-size: 12px !important;
 	}
 	#footer-left-arrow, #footer-right-arrow{
 		width: 18px !important;
@@ -382,7 +382,26 @@
 		height: 100px !important;
 		top: 33% !important;
 	}
+}
+@media (max-width: 450px){
+	#left-arrow, #right-arrow{
+		top: 25% !important;
+		width: 15px !important;
+		height: 70px !important;
+	}
+	#header-slider{
+		overflow: hidden !important;
+	}
 	#gallery>.container>.slider-arrow>.slider:before, #gallery>.container>.slider-arrow>.slider:after{
-		width: 200px !important;
+		width: 50px !important;
+	}
+	#mobile-left-arrow, #mobile-right-arrow{
+		top: 11% !important;
+	}
+	#mobile-left-arrow{
+		left: 10px !important;
+	}
+	#mobile-right-arrow{
+		right: -10px !important;
 	}
 }
