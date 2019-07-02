@@ -131,6 +131,12 @@ h1{
 	padding: 90px 0 400px 0;
 	position: relative;
 }
+.logo{
+	width: 200px;
+}
+.logo>img{
+	width: 100%;
+}
 #timeline:after{
 	content: '';
 	position: absolute;
@@ -241,9 +247,11 @@ h1{
 	padding-bottom: 70px;
 }
 #gallery>.container>h2{
+	transition: 0.5s;
 	font-size: 70px;
 	text-align: center;
 	color: #fff;
+	opacity: 0;
 }
 #gallery>.container>h3{
 	font-size: 50px;
@@ -320,9 +328,11 @@ h1{
 	background: #000;
 }
 #technology>.container>h2{
+	transition: 0.5s;
 	font-size: 70px;
 	text-align: center;
 	color: #fff;
+	opacity: 0;
 }
 #technology>.container>.blocks{
 	display: flex;
@@ -381,9 +391,11 @@ h1{
 	background: #fff;
 }
 #choose>.container>h2{
+	transition: 0.5s;
 	color: #283F9C;
 	font-size: 60px;
 	text-align: center;
+	opacity: 0;
 }
 #choose>.container>.blocks{
 	margin-top: 35px;
@@ -411,7 +423,8 @@ h1{
 	transition: 0.5s;
 	z-index: 10;
 	color: #1428A0;
-	background: #fff;
+	background: rgba(255,255,255,0.7);
+	text-align: center;
 	padding: 5px;
 }
 #choose>.container>.blocks>.block>a{
@@ -452,9 +465,11 @@ h1{
 	padding: 65px 0;
 }
 #footer>.container>h2{
+	transition: 0.5s;
 	color: #fff;
 	text-align: center;
 	font-size: 60px;
+	opacity: 0;
 }
 .footer-slider{
 	max-width: 90%;
