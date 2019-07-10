@@ -1,4 +1,8 @@
 $(document).ready(function(){
+	$('h1').css('opacity', '1');
+	$('#timeline>.container>h3').css('opacity', '1');
+	$('.logo').css('opacity', '1');
+	$('#timeline>.container>p').css('opacity', '1');
 	$('#header-slider').slick({
 		infinite: true,
 		centerMode: true,
@@ -86,11 +90,11 @@ $(document).ready(function(){
 			}
 			if ($(this).scrollTop() >= 1700) {
 				$('#technology>.container>.blocks>.col:nth-child(1)').css('opacity', '1');
-				$('#technology>.container>.blocks>.col:nth-child(1)').css('top', -(st - 1850));
+				$('#technology>.container>.blocks>.col:nth-child(1)').css('top', '0');
 				$('#technology>.container>.blocks>.col:nth-child(2)').css('opacity', '1');
-				$('#technology>.container>.blocks>.col:nth-child(2)').css('bottom', (st - 1850));
+				$('#technology>.container>.blocks>.col:nth-child(2)').css('bottom', '0');
 				$('#technology>.container>.blocks>.col:nth-child(3)').css('opacity', '1');
-				$('#technology>.container>.blocks>.col:nth-child(3)').css('top', -(st - 1850));
+				$('#technology>.container>.blocks>.col:nth-child(3)').css('top', '0');
 
 			}
 			if ($(this).scrollTop() >= 3200) {
