@@ -89,6 +89,8 @@ $(document).ready(function(){
 				$('#technology>.container>.blocks>.col:nth-child(1)').css('top', '0');
 				$('#technology>.container>.blocks>.col:nth-child(2)').css('opacity', '1');
 				$('#technology>.container>.blocks>.col:nth-child(2)').css('bottom', '0');
+				$('#technology>.container>.blocks>.col:nth-child(3)').css('opacity', '1');
+				$('#technology>.container>.blocks>.col:nth-child(3)').css('top', '0');
 			}
 			if ($(this).scrollTop() >= 3200) {
 				$('#gallery>.container>h2').css('opacity', '1');

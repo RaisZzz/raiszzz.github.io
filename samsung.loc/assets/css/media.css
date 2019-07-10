@@ -2,6 +2,10 @@
 	.container{
 		width: 974px !important;
 	}
+	.logo>img{
+		width: 182px !important;
+		height: 48px !important;
+	}
 	*{
 		opacity: 1 !important;
 	}
@@ -47,11 +51,8 @@
 	#technology>.container>h2{
 		font-size: 50px !important;
 	}
-	#technology>.container>.blocks>.col>.block{
-		width: 300px !important;
-	}
 	#technology>.container>.blocks>.col>.block>h3{
-		font-size: 18px !important;
+		font-size: 14px !important;
 	}
 	#technology{
 		padding: 50px 0 !important; 
@@ -63,11 +64,14 @@
 		font-size: 45px !important;
 	}
 	#choose>.container>.blocks>.block>h3{
-		font-size: 19px !important;
+		display: none !important;
 	}
 	#choose>.container>.blocks>.block{
 		width: 190px !important;
 		height: 220px !important;
+	}
+	#choose>.container>.blocks>.block>a{
+		background: rgba(0,0,0,0) !important;
 	}
 	.footer-slider-arrow>.footer-slider .slide .block p{
 		font-size: 11px !important;
@@ -76,6 +80,10 @@
 @media(max-width: 997px){
 	.container{
 		width: 744px !important;
+	}
+	.logo>img{
+		width: 146px !important;
+		height: 40px !important;
 	}
 	h1{
 		font-size: 50px !important;
@@ -107,11 +115,8 @@
 	#technology>.container>h2{
 		font-size: 40px !important;
 	}
-	#technology>.container>.blocks>.col>.block{
-		width: 230px !important;
-	}
 	#technology>.container>.blocks>.col>.block>h3{
-		font-size: 16px !important;
+		font-size: 12px !important;
 	}
 	#technology>.container>.btn>a{
 		padding: 10px 50px !important;
@@ -141,6 +146,10 @@
 @media(max-width: 767px){
 	.container{
 		width: 676px !important;
+	}
+	.logo>img{
+		width: 127px !important;
+		height: 34px !important;
 	}
 	h1{
 		font-size: 35px !important;
@@ -205,11 +214,8 @@
 	#technology>.container>h2{
 		font-size: 35px !important;
 	}
-	#technology>.container>.blocks>.col>.block{
-		width: 177px !important;
-	}
 	#technology>.container>.blocks>.col>.block>h3{
-		font-size: 12px !important;
+		font-size: 9px !important;
 	}
 	#technology>.container>.btn>a{
 		padding: 10px 50px !important;
@@ -247,6 +253,13 @@
 	.container{
 		width: 100% !important;
 	}
+	.logo{
+		justify-content: center !important;
+	}
+	.logo>img{
+		width: 175px !important;
+		height: 47px !important;
+	}
 	.mobile-slider-arrow{
 		display: block !important;
 	}
@@ -267,12 +280,10 @@
 	}
 	.timeline{
 		width: 100% !important;
-	}
-	#technology>.container>.blocks>.col>.block{
-		width: 270px !important;
+		padding: 0 10px;
 	}
 	#technology>.container>.blocks>.col>.block>h3{
-		font-size: 20px !important;
+		font-size: 9px !important;
 	}
 	#technology>.container>.btn>a{
 		padding: 10px 50px !important;
@@ -293,6 +304,9 @@
 		width: calc(100% - 20px) !important;
 		height: 200px !important;
 		margin: 10px;
+	}
+	#choose>.container>.blocks:nth-child(2){
+		display: none !important;
 	}
 	#footer>.container>h2{
 		font-size: 35px !important;
@@ -323,6 +337,10 @@
 	.container{
 		width: 100% !important;
 	}
+	.logo>img{
+		width: 123px !important;
+		height: 33px !important;
+	}
 	h1{
 		font-size: 35px !important;
 	}
@@ -338,14 +356,17 @@
 	.timeline-item>.right>p{
 		font-size: 16px !important;
 	}
-	.timeline{
-		width: 100% !important;
+	#technology>.container>.blocks>.col{
+		width: calc(50% - 20px) !important;
+	}
+	#technology>.container>.blocks>.col:nth-child(3){
+		display: none !important;
 	}
 	#technology>.container>.blocks>.col>.block{
 		width: 100% !important;
 	}
 	#technology>.container>.blocks>.col>.block>h3{
-		font-size: 14px !important;
+		font-size: 20px !important;
 	}
 	#technology>.container>.btn>a{
 		padding: 10px 50px !important;
