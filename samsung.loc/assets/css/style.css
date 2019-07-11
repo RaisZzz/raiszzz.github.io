@@ -267,6 +267,8 @@ h1{
 	opacity: 0;
 }
 #gallery>.container>h3{
+	opacity: 0;
+	transition: 1s;
 	font-size: 50px;
 	text-align: center;
 	color: #fff;
@@ -340,6 +342,10 @@ h1{
 	padding: 100px 0;
 	background: #000;
 }
+#technology>.container{
+	position: relative;
+	top: -200px;
+}
 #technology>.container>h2{
 	transition: 1s;
 	font-size: 70px;
@@ -412,6 +418,7 @@ h1{
 	color: #283F9C;
 	font-size: 60px;
 	text-align: center;
+	margin-bottom: 30px;
 	opacity: 0;
 }
 #choose>.container>.blocks{
