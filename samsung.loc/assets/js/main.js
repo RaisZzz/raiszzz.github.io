@@ -45,43 +45,43 @@ $(document).ready(function(){
 		var st = $(this).scrollTop();
 
 		if($(window).width() >= 1196){
-			if ($(this).scrollTop() >= 80) {
+			if ($(this).scrollTop() >= 280) {
 				$('.timeline-item:nth-child(1)').css('opacity', '1');
 				$('.timeline-item:nth-child(1)').css('left', '0');
 			}
-			if ($(this).scrollTop() >= 160) {
+			if ($(this).scrollTop() >= 360) {
 				$('.timeline-item:nth-child(2)').css('opacity', '1');
 				$('.timeline-item:nth-child(2)').css('right', 'calc(-50% - 13px)');
 			}
-			if ($(this).scrollTop() >= 240) {
+			if ($(this).scrollTop() >= 440) {
 				$('.timeline-item:nth-child(3)').css('opacity', '1');
 				$('.timeline-item:nth-child(3)').css('left', '0');
 			}
-			if ($(this).scrollTop() >= 320) {
+			if ($(this).scrollTop() >= 520) {
 				$('.timeline-item:nth-child(4)').css('opacity', '1');
 				$('.timeline-item:nth-child(4)').css('right', 'calc(-50% - 13px)');
 			}
-			if ($(this).scrollTop() >= 400) {
+			if ($(this).scrollTop() >= 600) {
 				$('.timeline-item:nth-child(5)').css('opacity', '1');
 				$('.timeline-item:nth-child(5)').css('left', '0');
 			}
-			if ($(this).scrollTop() >= 480) {
+			if ($(this).scrollTop() >= 680) {
 				$('.timeline-item:nth-child(6)').css('opacity', '1');
 				$('.timeline-item:nth-child(6)').css('right', 'calc(-50% - 13px)');
 			}
-			if ($(this).scrollTop() >= 560) {
+			if ($(this).scrollTop() >= 760) {
 				$('.timeline-item:nth-child(7)').css('opacity', '1');
 				$('.timeline-item:nth-child(7)').css('left', '0');
 			}
-			if ($(this).scrollTop() >= 640) {
+			if ($(this).scrollTop() >= 840) {
 				$('.timeline-item:nth-child(8)').css('opacity', '1');
 				$('.timeline-item:nth-child(8)').css('right', 'calc(-50% - 13px)');
 			}
-			if ($(this).scrollTop() >= 720) {
+			if ($(this).scrollTop() >= 920) {
 				$('.timeline-item:nth-child(9)').css('opacity', '1');
 				$('.timeline-item:nth-child(9)').css('left', '0');
 			}
-			if ($(this).scrollTop() >= 800) {
+			if ($(this).scrollTop() >= 1000) {
 				$('.timeline-item:nth-child(10)').css('opacity', '1');
 				$('.timeline-item:nth-child(10)').css('right', 'calc(-50% - 13px)');
 			}
