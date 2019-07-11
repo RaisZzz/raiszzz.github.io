@@ -142,6 +142,12 @@
 		height: 100px !important;
 		top: 40% !important;
 	}
+	#footer-left-arrow{
+		left: -10px !important;
+	}
+	#footer-right-arrow{
+		right: -10px !important;
+	}
 }
 @media(max-width: 767px){
 	.container{
