@@ -3,6 +3,8 @@ $(document).ready(function(){
 	$('#timeline>.container>h3').css('opacity', '1');
 	$('.logo').css('opacity', '1');
 	$('#timeline>.container>p').css('opacity', '1');
+	var news = $('#technology>.container>.blocks>.col>.block>.img>img').width();
+	$('#technology>.container>.blocks>.col>.block>.img>img').css({'height':news+'px'});
 	$('#header-slider').slick({
 		infinite: true,
 		centerMode: true,
