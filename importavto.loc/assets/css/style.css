@@ -172,14 +172,6 @@ nav>ul>li>a{
 .slide>img{
 	width: 100%;
 }
-#cat{
-	padding: 100px 0;
-}
-#cat>.container>h2{
-	color: #202020;
-	font-size: 54px;
-	font-weight: 400;
-}
 .slick-dots{
 	position: absolute;
 	top: 100px;
@@ -208,4 +200,234 @@ nav>ul>li>a{
 	background: #fff;
 	padding: 30px 35px;
 	margin-left: 20px;
+}
+#cat{
+	padding: 100px 0;
+}
+#cat>.container>h2{
+	color: #202020;
+	font-size: 54px;
+	font-weight: 400;
+}
+.auto{
+	margin-top: 70px;
+}
+.auto>h2{
+	color: #202020;
+	font-size: 32px;
+	font-weight: 400;
+}
+.auto>.row>a{
+	color: #202020;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 20px 45px;
+	background-color: #e8e8e8;
+}
+.auto>.row>a.active{
+	color: #ffffff;
+	background-color: #f20e49;
+}
+.brands{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	margin-top: 60px;
+}
+.brand{
+	display: flex;
+}
+.brand>p{
+	color: #c6c6c6;
+	font-size: 24px;
+	font-weight: 400;
+}
+.models{
+	margin-left: 25px;
+}
+.models>p{
+	color: #202020;
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+.parts{
+	align-items: stretch;
+	margin-top: 90px;
+}
+.part{
+	width: 32%;
+	background-color: #f5f5f5;
+	padding-left: 45px;
+	padding-top: 40px;
+	cursor: pointer;
+	transition: 0.5s;
+	align-items: flex-end;
+}
+.part:hover{
+	background-color: #f20e49;
+}
+.part:hover .left>p{
+	color: #fff;
+}
+.part:hover .left>h2{
+	color: #fff;
+}
+.part>.left{
+	align-items: space-between;
+	margin-right: 40px;
+}
+.part>.left>p{
+	color: #868686;
+	font-size: 13px;
+	font-weight: 400;
+	margin-bottom: 50px;
+	transition: 0.5s;
+}
+.part>.left>p>span{
+	color: #d3d3d3;
+	transition: 0.5s;
+}
+.part>.left>h2{
+	margin-bottom: 20px;
+	color: #202020;
+	font-size: 32px;
+	font-weight: 400;
+	transition: 0.5s;
+}
+#skills{
+	background-color: #f5f5f5;
+	padding: 80px 0;
+}
+.skills>.row{
+	align-items: stretch;
+}
+.skill{
+	width: 32%;
+	border: 1px solid #eeeeee;
+	background-color: #ffffff;
+	padding: 40px;
+	margin-bottom: 20px;
+}
+.skill>h3{
+	margin-top: 30px;
+	color: #202020;
+	font-size: 16px;
+	font-weight: 700;
+}
+.skill>p{
+	margin-top: 20px;
+	color: #535353;
+	font-size: 13px;
+	font-weight: 400;
+}
+.first{
+	background: none;
+}
+.first>h2{
+	color: #202020;
+	font-size: 54px;
+	font-weight: 400;
+}
+.first>p{
+	color: #868686;
+	font-size: 13px;
+	font-weight: 400;
+	margin-top: 20px;
+}
+#see{
+	padding: 80px 0;
+}
+#see>.container{
+	background: url('../img/footer-bg.png');
+	background-size: cover;
+	background-repeat: repeat-x;
+	padding: 100px 0 100px 100px;
+}
+#see>.container>.left>h2{
+	color: #ffffff;
+	font-size: 54px;
+	font-weight: 400;
+}
+#see>.container>.left>p{
+	color: #dadada;
+	font-size: 16px;
+	font-weight: 400;
+	margin-top: 40px;
+	margin-bottom: 110px;
+}
+#see>.container>.left>a{
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 30px 100px;
+	background-color: #f20e49;
+}
+#footer{
+	padding: 80px 0;
+	border-top: 1px solid #eeeeee;
+}
+#footer>.container{
+	align-items: flex-start;
+	justify-content: space-between;
+}
+#footer>.container>.left{
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+#footer>.container>.left>.col{
+	margin-right: 100px;
+}
+#footer>.container h3{
+	color: #cccccc;
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 50px;
+}
+#footer>.container>.left a{
+	color: #202020;
+	font-size: 16px;
+	font-weight: 400;
+	transition: 0.5s;
+	margin-bottom: 25px;
+}
+#footer>.container>.left a:hover{
+	color: #f20e49;
+}
+.links{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.links>a{
+	margin-right: 40px;
+}
+.contact-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+.contact-container>.cont{
+	margin-left: 45px;
+	margin-bottom: 40px;
+}
+.contact-container>.cont:nth-child(1){
+	margin-left: 0;
+}
+.contact-container>.cont:nth-child(4){
+	margin-left: 0;
+}
+.contact-container>.cont>a{
+	color: #202020;
+	font-size: 16px;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+.contact-container>.cont>p{
+	color: #202020;
+	font-size: 13px;
+	font-weight: 400;
+}
+#footer-2{
+	background-color: #202020;
+	padding: 30px 0;
 }
