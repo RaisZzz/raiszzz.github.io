@@ -86,13 +86,10 @@ nav>ul>li>a{
 	margin-right: 35px;
 }
 .logo{
-	align-content: flex-start;
-	width: 100%;
-	margin-right: 80px;
-	cursor: pointer;
-}
-.logo>img{
-	width: 100%;
+	width: 222px;
+	height: 53px;
+	position: relative;
+	left: -100px;
 }
 .search>form{
 	margin-right: 30px;
