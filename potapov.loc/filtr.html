@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>
+<html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="ru"> <!--<![endif]-->
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Заголовок</title>
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="libs/animate/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script
+            src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"></script>
+    <!--[if lt IE 9]>
+    <script src="libs/html5shiv/es5-shim.min.js"></script>
+    <script src="libs/html5shiv/html5shiv.min.js"></script>
+    <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+    <script src="libs/respond/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="libs/slick/slick.js"></script>
+    <script src="js/common.js"></script>
+    <script src="libs/modernizr/modernizr.js"></script>
+
+</head>
+
+<body>
+<div class="container-fluid fil">
+    <div class="sidebar">
+
+
+        <div class="inside">
+            <div class="btn anime anime_all">
+                <div class="lines">
+                    <span></span><span></span><span></span>
+                </div>
+                <ul class="main">
+                    <li><a href="#">text</a></li>
+                    <li><a href="#">text</a></li>
+                    <li><a href="#">text</a></li>
+                </ul>
+
+            </div>
+
+            <img src="img/logo2.png" alt="">
+            <form action="">
+                <div class="top_side">
+                    <div class="hole_range">
+                        <p>Площадь участка</p>
+                        <div class="range">
+                            <div class="ram">
+                                <input type="text" placeholder="" class="start" readonly id="start">
+                                <input type="text" placeholder="" class="end" readonly id="end">
+                            </div>
+                        </div>
+
+                        <div id="slider-range"></div>
+
+                        <div class="hole_range">
+                            <p>Стоимость участка</p>
+                            <div class="range">
+                                <div class="ram">
+                                    <input type="text" placeholder="" class="start" readonly id="start2">
+                                    <input type="text" placeholder="" class="end" readonly id="end2">
+                                </div>
+                            </div>
+
+
+                            <div id="slider-range2"></div>
+                        </div>
+                        <div class="tog">
+                            <button>Показать <span> 31 </span> участок</button>
+                            <span><img src="img/delete.png" alt=""></span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="results">
+                    <p class="title">Доступно: <span>31</span> участок</p>
+                    <p class="sort">Сортировать: <span>по цене <img src="img/down_arrow.png" alt=""></span></p>
+                    <div class="column_results" id="filter_block">
+
+                        <div class="hidden">
+                            <div class="one_result">
+                                <img src="img/little_house.png" alt="">
+                                <div class="one_res">
+                                    <p data-key="price">3 960 000 руб.</p>
+                                    <span data-key="type">Двухсторонний таунхаус </span>
+                                </div>
+                                <p data-key="square">83.5 м. кв.</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="map_block">
+        <div class="arrow"></div>
+        <div class="popup_block">
+            <div class="close"></div>
+            <div class="cont">
+                <div class="top">
+                    <div class="name">Участок 91</div>
+                    <div class="status green">Свободен</div>
+                    <div class="status hidden yellow">Резерв</div>
+                    <div class="status hidden red">Занят</div>
+                </div>
+                <div class="info address">
+                    <span>Адрес объекта</span>
+                    <p>п. Потапово ул. Космонавтов, дом 91</p>
+                </div>
+                <div class="info square">
+                    <span>Площадь участка</span>
+                    <p>735 м. кв.</p>
+                </div>
+                <a href="#" class="lock">Записаться на просмотр</a>
+            </div>
+        </div>
+        <img src="img/full_map.svg" alt="" class="svg">
+        <div class="hidden tmp width"></div>
+        <div class="hidden tmp height"></div>
+    </div>
+
+
+</div>
+<div class="hidden"></div>
+
+<div class="loader">
+    <div class="loader_inner"></div>
+</div>
+</body>
+</html>
