@@ -50,7 +50,7 @@
 </head>
 
 <body>
-<div style="display: none;" id="hidden-content">
+<div id="hidden-content">
     <div class="hole_popup">
         <p>Начни строить <br> дом своей мечты </p>
         <form action="">
@@ -59,6 +59,7 @@
             <button>Записаться на просмотр</button>
         </form>
     </div>
+    <div class="pop-up-bg" onclick="$('#hidden-content').css('display', 'none');"></div>
 </div>
 <!--
 
@@ -317,7 +318,7 @@
         <div class="banner">
             <h2>Лучшие цены <br>
                 на старте продаж</h2>
-            <a href="">Выбрать участок</a>
+            <a onclick="$('#hidden-content').css('display', 'flex');">Выбрать участок</a>
         </div>
     </div>
 </div>
