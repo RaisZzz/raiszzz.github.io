@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="libs/slick/slick.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--[if lt IE 9]>
@@ -270,6 +271,33 @@
     <div class="loader_inner"></div>
 </div>
 
-
+<script src="libs/slick/slick.js"></script>
+<script>
+    $(".banners").slick({
+        autoplay: false,
+        infinite: true,
+        slidesToShow: 3,
+        // variableWidth: true,
+        slidesToScroll: 1,
+        prevArrow: '<div class="slider-arrow-prev"><img src="img/arrow-left-black.png" alt="" /></div>',
+        nextArrow: '<div class="slider-arrow-next"><img src="img/arrow-right-black.png" alt="" /></div>',
+        responsive: [
+            {
+                breakpoint: 993,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 641,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    });
+</script>
 </body>
 </html>
