@@ -703,6 +703,7 @@ a.call_phone:hover {
     background-color: #e3982a;
     font-size: 12px;
     font-family: "BL";
+    cursor: pointer;
     color: #fff;
 }
 
@@ -794,12 +795,31 @@ a.call_phone:hover {
 
 #hidden-content {
     padding: 0;
-    max-width: 405px;
     width: 100%;
+    z-index: 200;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+    position: fixed;
+    display: none;
+    justify-content: center;
 }
 
 .hole_popup {
     border-radius: 15px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.pop-up-bg{
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    opacity: 0.5;
 }
 
 .hole_popup form {
@@ -820,7 +840,7 @@ a.call_phone:hover {
 }
 
 .hole_popup form input {
-    width: 100%;
+    width: calc(100% - 40px);
     height: 40px;
     border: 1px solid #dcdcdc;
     background-color: #f6f6f6;
@@ -844,6 +864,7 @@ a.call_phone:hover {
 }
 
 .hole_popup p {
+    border-radius: 15px 15px 0 0;
     color: #fff;
     padding-left: 100px;
     background-image: url("../img/home.png");
@@ -952,7 +973,7 @@ a.call_phone:hover {
 }
 
 .one_inf {
-    max-width: 365px;
+    margin: 0 10px;
     width: 100%;
     background-color: #fff;
     box-shadow: 3px 4px 13px rgba(56, 56, 56, 0.19);
@@ -1044,15 +1065,13 @@ a.call_phone:hover {
 
 .fil {
     background-color: #fff;
-    min-height: 800px;
-    height: 888px;
 }
 
 .fil .sidebar {
     max-width: max-content;
-    padding-left: 70px;
+    padding-left: 20px;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: #fff;
 }
 
@@ -1237,7 +1256,7 @@ a.call_phone:hover {
 }
 
 .column_results {
-    max-height: 260px;
+    max-height: 240px;
     overflow-y: scroll;
 }
 

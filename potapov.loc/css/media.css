@@ -29,7 +29,6 @@
 
     .fil .sidebar {
         width: 100%;
-        max-width: 100%;
         box-sizing: border-box;
         height: auto;
     }
@@ -175,10 +174,6 @@
     .new_contact_block {
         padding: 0 15px;
         padding-top: 50px;
-    }
-
-    .map {
-        padding: 0 30px;
     }
 }
 
@@ -946,15 +941,14 @@
     .hole_popup p {
         padding-left: 80px;
         background-size: 50px;
+        border-radius: 10px 10px 0 0;
         background-position: 20px 30px;
         font-size: 20.6px;
         padding-right: 23px;
     }
 
     #hidden-content {
-        padding: 8px;
         background: transparent;
-        width: 100%;
     }
 
     #hidden-content .hole_popup {
