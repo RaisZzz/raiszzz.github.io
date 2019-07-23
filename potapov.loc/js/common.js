@@ -70,7 +70,6 @@ $(function () {
 
 var x = window.matchMedia("(max-width: 1201px)");
 
-if (x.matches) {
     $(".banners").slick({
         autoplay: false,
         infinite: true,
@@ -96,7 +95,6 @@ if (x.matches) {
             }
         ]
     });
-}
 var map_json = null;
 $(document).ready(function () {
     $('html.js .loader').remove();
