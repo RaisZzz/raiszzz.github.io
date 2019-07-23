@@ -47,26 +47,47 @@
     <script type="text/javascript" src="libs/slick/slick.js"></script>
     <script src="js/common.js"></script>
     <script src="libs/modernizr/modernizr.js"></script>
-    <style>
-        .fil{
-            flex-direction: row;
-        }
-        @media (max-width: 800px){
-            .fil{
-                flex-direction: column !important;
-            }
-            body{
-                overflow-y: scroll !important;
-            }
-            .sidebar{
-                margin: 0 auto;
-            }
-        }
-    </style>
 </head>
 
-<body style="overflow-y: hidden;">
+<body>
+<div class="grey-bg"></div>
+<div class="mobile-menu">
+    <nav>
+        <ul>
+            <li><a href="#">О поселке</a></li>
+            <li><a href="#">Расположение</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+    <a href="tel:+7 (985) 550-33-33">+7 (985) 550-33-33</a>
+</div>
 <div class="container-fluid fil">
+    <div class="map_block">
+        <div class="arrow"></div>
+        <div class="popup_block">
+            <div class="close"></div>
+            <div class="cont">
+                <div class="top">
+                    <div class="name">Участок 91</div>
+                    <div class="status green">Свободен</div>
+                    <div class="status hidden yellow">Резерв</div>
+                    <div class="status hidden red">Занят</div>
+                </div>
+                <div class="info address">
+                    <span>Адрес объекта</span>
+                    <p>п. Потапово ул. Космонавтов, дом 91</p>
+                </div>
+                <div class="info square">
+                    <span>Площадь участка</span>
+                    <p>735 м. кв.</p>
+                </div>
+                <a href="#" class="lock">Записаться на просмотр</a>
+            </div>
+        </div>
+        <img src="img/full_map.svg" alt="" class="svg">
+        <div class="hidden tmp width"></div>
+        <div class="hidden tmp height"></div>
+    </div>
     <div class="sidebar">
 
 
@@ -75,11 +96,6 @@
                 <div class="lines">
                     <span></span><span></span><span></span>
                 </div>
-                <ul class="main">
-                    <li><a href="#">text</a></li>
-                    <li><a href="#">text</a></li>
-                    <li><a href="#">text</a></li>
-                </ul>
 
             </div>
 
@@ -118,43 +134,11 @@
                                 <p data-key="square">83.5 м. кв.</p>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
             </form>
         </div>
-
     </div>
-
-    <div class="map_block">
-        <div class="arrow"></div>
-        <div class="popup_block">
-            <div class="close"></div>
-            <div class="cont">
-                <div class="top">
-                    <div class="name">Участок 91</div>
-                    <div class="status green">Свободен</div>
-                    <div class="status hidden yellow">Резерв</div>
-                    <div class="status hidden red">Занят</div>
-                </div>
-                <div class="info address">
-                    <span>Адрес объекта</span>
-                    <p>п. Потапово ул. Космонавтов, дом 91</p>
-                </div>
-                <div class="info square">
-                    <span>Площадь участка</span>
-                    <p>735 м. кв.</p>
-                </div>
-                <a href="#" class="lock">Записаться на просмотр</a>
-            </div>
-        </div>
-        <img src="img/full_map.svg" alt="" class="svg">
-        <div class="hidden tmp width"></div>
-        <div class="hidden tmp height"></div>
-    </div>
-
-
 </div>
 <div class="hidden"></div>
 
