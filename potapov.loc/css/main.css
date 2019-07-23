@@ -1039,6 +1039,10 @@ a.call_phone:hover {
     width: 100%;
 }
 
+.one_b>img{
+    height: 192px;
+}
+
 .banners .one_b .tt {
     padding-left: 50px;
     background-image: url("../img/tick.png");
