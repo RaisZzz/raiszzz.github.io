@@ -993,6 +993,7 @@
     }
 
     .heads_content .top_content .video_show {
+        width: 70px;
         right: 0;
         left: auto;
     }
@@ -1021,8 +1022,48 @@
         max-width: 100%;
     }
 }
-
-
+@media (max-width: 400px){
+    .heads_content .top_content .title{
+        font-size: 45px !important;
+    }
+    .heads_content .top_content .title>span{
+        font-size: 19px !important;
+    }
+    .heads_content .top_content .video_show{
+        right: -80px !important;
+    }
+    .heads_content .top_content .video_show:after{
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        bottom: 0;
+    }
+    .heads_content .top_content .video_show span{
+        font-size: 7px;
+        text-align: center;
+        bottom: 0;
+    }
+    .heads_content .top_content .video_show{
+        height: 55px;
+        bottom: 0;
+    }
+}
+@media (max-width: 375px){
+    .heads_content .top_content .video_show{
+        right: -60px !important;
+    }
+}
+@media (max-width: 350px){
+    .heads_content .top_content .video_show{
+        right: -50px !important;
+    }
+}
+@media (max-width: 340px){
+    .heads_content .top_content .video_show{
+        right: -30px !important;
+        top: -10px !important;
+    }
+}
 
 /* Hover-Effects (because prev frontend very stupid) */
 .btn.anime.anime_all{

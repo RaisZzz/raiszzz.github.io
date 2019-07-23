@@ -1550,7 +1550,7 @@ header.main_header .heads .right .select_zone {
     position: absolute;
     top: auto;
     left: 0;
-    bottom: 0;
+    bottom: -10px;
     right: 0;
     margin: auto;
     background-repeat: no-repeat;
