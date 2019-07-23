@@ -47,10 +47,25 @@
     <script type="text/javascript" src="libs/slick/slick.js"></script>
     <script src="js/common.js"></script>
     <script src="libs/modernizr/modernizr.js"></script>
-
+    <style>
+        .fil{
+            flex-direction: row;
+        }
+        @media (max-width: 800px){
+            .fil{
+                flex-direction: column !important;
+            }
+            body{
+                overflow-y: scroll !important;
+            }
+            .sidebar{
+                margin: 0 auto;
+            }
+        }
+    </style>
 </head>
 
-<body>
+<body style="overflow-y: hidden;">
 <div class="container-fluid fil">
     <div class="sidebar">
 
@@ -81,19 +96,6 @@
                         </div>
 
                         <div id="slider-range"></div>
-
-                        <div class="hole_range">
-                            <p>Стоимость участка</p>
-                            <div class="range">
-                                <div class="ram">
-                                    <input type="text" placeholder="" class="start" readonly id="start2">
-                                    <input type="text" placeholder="" class="end" readonly id="end2">
-                                </div>
-                            </div>
-
-
-                            <div id="slider-range2"></div>
-                        </div>
                         <div class="tog">
                             <button>Показать <span> 31 </span> участок</button>
                             <span><img src="img/delete.png" alt=""></span>
