@@ -123,7 +123,14 @@ $(document).ready(function () {
 
 });
 $(document).on('click', '.btn .lines', function () {
-    $(this).parents('.btn').toggleClass('show')
+    $(this).parents('.btn').toggleClass('show');
+    $('.mobile-menu').toggleClass('menu-visible');
+    $('.grey-bg').toggleClass('menu-visible');
+});
+$(document).on('click', '.burger', function () {
+    $(this).parents('.btn').toggleClass('show');
+    $('.mobile-menu').toggleClass('menu-visible');
+    $('.grey-bg').toggleClass('menu-visible');
 });
 
 function init_svg() {
