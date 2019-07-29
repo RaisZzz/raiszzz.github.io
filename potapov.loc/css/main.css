@@ -1038,10 +1038,10 @@ a.call_phone:hover {
 
 .banners .one_b {
     max-width: 270px;
-    width: 100%;
 }
 
 .one_b>img{
+    width: 100%;
     height: 192px;
 }
 
