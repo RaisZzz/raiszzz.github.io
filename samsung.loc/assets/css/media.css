@@ -1,4 +1,13 @@
 @media(max-width: 1219px){
+	.test-engine.test-140{
+		width: 666px !important;
+	}
+	#test>.container>h2{
+		font-size: 50px !important;
+	}
+	#test>.container>h3{
+		font-size: 30px !important;
+	}
 	.container{
 		width: 974px !important;
 	}
@@ -78,6 +87,15 @@
 	}
 }
 @media(max-width: 997px){
+	.test-engine.test-140{
+		width: 545px !important;
+	}
+	#test>.container>h2{
+		font-size: 40px !important;
+	}
+	#test>.container>h3{
+		font-size: 25px !important;
+	}
 	.container{
 		width: 744px !important;
 	}
@@ -150,6 +168,15 @@
 	}
 }
 @media(max-width: 767px){
+	.test-engine.test-140{
+		width: 420px !important;
+	}
+	#test>.container>h2{
+		font-size: 35px !important;
+	}
+	#test>.container>h3{
+		font-size: 25px !important;
+	}
 	.container{
 		width: 676px !important;
 	}
@@ -256,6 +283,15 @@
 	}
 }
 @media(max-width: 699px){
+	.test-engine.test-140{
+		width: 382px !important;
+	}
+	#test>.container>h2{
+		font-size: 35px !important;
+	}
+	#test>.container>h3{
+		font-size: 25px !important;
+	}
 	.container{
 		width: 100% !important;
 	}
@@ -413,6 +449,15 @@
 @media (max-width: 500px){
 	#mobile-slider p{
 		font-size: 8px !important;
+	}
+	.test-engine.test-140{
+		width: 273px !important;
+	}
+	#test>.container>h2{
+		font-size: 30px !important;
+	}
+	#test>.container>h3{
+		font-size: 20px !important;
 	}
 }
 @media (max-width: 450px){

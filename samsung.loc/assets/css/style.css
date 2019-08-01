@@ -431,7 +431,7 @@ h1{
 	background: none !important;
 }
 .test-engine.test-140{
-	width: 1048px !important;
+	width: 1048px;
 	margin: 0 auto !important;
 }
 .test-engine .test-img{
