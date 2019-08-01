@@ -407,6 +407,39 @@ h1{
 	background: #fff;
 	padding: 25px 80px;
 }
+/*Test*/
+#test{
+	padding: 100px 0;
+	background: url('../img/test-bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#test>.container>h2{
+	transition: 1s;
+	color: #ffffff;
+	font-size: 70px;
+	text-align: center;
+}
+#test>.container>h3{
+	font-size: 50px;
+	transition: 0.5s;
+	color: #ffffff;
+	text-align: center;
+}
+#test>.test-engine{
+	background: none !important;
+}
+.test-engine.test-140{
+	width: 1048px !important;
+	margin: 0 auto !important;
+}
+.test-engine .test-img{
+	width: 100% !important;
+}
+.test-engine .content-block{
+	max-width: none !important;
+}
 /*Choose*/
 #choose{
 	padding: 50px 0 100px 0;
