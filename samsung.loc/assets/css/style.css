@@ -434,11 +434,35 @@ h1{
 	width: 1048px;
 	margin: 0 auto !important;
 }
-.test-engine .test-img{
-	width: 100% !important;
+.content-block{
+	padding: 10px !important;
 }
 .test-engine .content-block{
 	max-width: none !important;
+}
+.question-number{
+	font-size: 1.5em !important;
+}
+.test-img{
+	display: flex !important;
+	width: 50% !important;
+	margin: 10px auto !important;
+}
+.content-title{
+	font-size: 21px;
+}
+.test-answer{
+	padding: 4px 0;
+	font-size: 18px;
+}
+.answer-text{
+	font-size: 1em;
+}
+.test-button{
+	margin: 2px 0;
+}
+.button-test{
+	font-size: 15px;
 }
 /*Choose*/
 #choose{
