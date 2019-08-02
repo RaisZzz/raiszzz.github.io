@@ -99,9 +99,13 @@ $(document).ready(function(){
 				$('#technology>.container>.blocks>.col:nth-child(3)').css('top', '0');
 
 			}
-			if ($(this).scrollTop() >= 3200) {
+			if ($(this).scrollTop() >= 2900) {
 				$('#gallery>.container>h2').css('opacity', '1');
 				$('#gallery>.container>h3').css('opacity', '1');
+			}
+			if ($(this).scrollTop() >= 3500) {
+				$('#test>.container>h2').css('opacity', '1');
+				$('#test>.container>h3').css('opacity', '1');
 			}
 			if ($(this).scrollTop() >= 3800) {
 				$('#choose>.container>h2').css('opacity', '1');

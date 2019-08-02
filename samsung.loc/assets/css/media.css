@@ -379,6 +379,12 @@
 	.container{
 		width: 100% !important;
 	}
+	#gallery{
+		margin-bottom: 0 !important;
+	}
+	.slick-list.draggable{
+		height: 200px !important;
+	}
 	.logo>img{
 		width: 123px !important;
 		height: 33px !important;
@@ -443,7 +449,7 @@
 	#left-arrow, #right-arrow{
 		width: 23px !important;
 		height: 100px !important;
-		top: 33% !important;
+		top: 43% !important;
 	}
 }
 @media (max-width: 500px){
@@ -462,7 +468,7 @@
 }
 @media (max-width: 450px){
 	#left-arrow, #right-arrow{
-		top: 25% !important;
+		top: 37% !important;
 		width: 15px !important;
 		height: 70px !important;
 	}
