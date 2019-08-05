@@ -2,6 +2,15 @@
 	.test-engine.test-140{
 		width: 666px !important;
 	}
+	#technology>.container{
+		top: 0 !important;
+	}
+	#timeline{
+		padding: 90px 0 150px 0 !important;
+	}
+	#timeline:after{
+		height: 100px !important;
+	}
 	#test>.container>h2{
 		font-size: 50px !important;
 	}
@@ -87,11 +96,20 @@
 	}
 }
 @media(max-width: 997px){
+	#gallery .slick-list{
+		height: 200px !important;
+	}
+	#gallery #left-arrow, #gallery #right-arrow{
+		top: 50% !important;
+	}
 	#technology>.container{
 		top: 0 !important;
 	}
 	.test-engine.test-140{
 		width: 545px !important;
+	}
+	#test{
+		padding: 50px 0 !important;
 	}
 	#test>.container>h2{
 		font-size: 40px !important;
@@ -295,6 +313,9 @@
 	.test-engine.test-140{
 		width: 382px !important;
 	}
+	#test{
+		padding: 30px 0 !important;
+	}
 	#test>.container>h2{
 		font-size: 35px !important;
 	}
@@ -479,6 +500,9 @@
 	}
 	#test>.container>h3{
 		font-size: 20px !important;
+	}
+	#left-arrow, #right-arrow{
+		top: 42.5% !important;
 	}
 }
 @media (max-width: 450px){
