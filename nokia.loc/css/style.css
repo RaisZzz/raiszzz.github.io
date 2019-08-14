@@ -15,7 +15,7 @@ body{
 }
 #header{
 	background: #103996;
-	padding-bottom: 84px;
+	padding-bottom: 83px;
 }
 #header svg{
 	width: 187px;
@@ -107,4 +107,45 @@ body{
 	font-weight: 700;
 	font-size: 28px;
 	margin-left: 20px;
+}
+#social .container{
+	display: flex;
+	justify-content: flex-end;
+}
+#social .soc-container{
+	width: 714px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 40px 100px;
+	background: #00C9FE;
+}
+#social h3{
+	color: #E5E5E5;
+	font-size: 60px;
+	font-weight: 400;
+	text-align: right;
+	margin-right: 100px;
+}
+#social .social{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#social .icon{
+	position: relative;
+	margin: 10px 0;
+}
+#social .icon a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+}
+#social i{
+	color: #e5e5e5;
+	font-size: 40px;
 }
