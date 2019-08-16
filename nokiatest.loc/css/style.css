@@ -201,6 +201,11 @@
 #rnd-replace-sidebar{
 	display: none !important;
 }
+#rnd-replace-promo-post-block1 img{
+	position: absolute;
+	left: -355px;
+	top: 740px;
+}
 #rnd-replace-content{
 	width: 100% !important;
 }
