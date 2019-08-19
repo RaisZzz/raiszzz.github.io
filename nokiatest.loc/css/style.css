@@ -1,25 +1,15 @@
-/*.rnd-replace-max-height-350>.my-container{
+.rnd-replace-max-height-350>.container{
+	position: relative;
+	width: 1196px;
+	margin: 0 auto;
+}
+.rnd-replace-max-height-350>.container>img{
 	position: fixed;
-}
-.u-bg-block{
+	width: 1764px;
 	top: 0;
-	background: #00C9FE;
+	transform: translateX(-200px);
+	z-index: -1;
 }
-.u-bg-block:nth-child(1){
-	width: 459px;
-	height: 739px;
-	left: 156px;
-}
-.u-bg-block:nth-child(2){
-	width: 668px;
-	height: 562px;
-	right: 0;
-}
-.u-bg-block:nth-child(3){
-	width: 306px;
-	height: 639px;
-	left: 361px;
-}*/
 
 /* Header */
 .my-container{
