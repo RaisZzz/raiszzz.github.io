@@ -32,11 +32,19 @@
 }
 #header{
 	background: #103996 !important;
+	padding-top: 57px;
 	padding-bottom: 83px;
+}
+#header .row{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 #header svg{
 	width: 187px;
-	margin-top: 57px;
+}
+#header .row img{
+	width: 100px;
 }
 #header h1{
 	margin-top: 40px;
@@ -77,6 +85,7 @@
 #header .cat .left .photos img:nth-child(2){
 	width: 395px;
 	margin-left: 200px;
+	display: inline-block;
 }
 #header .cat .left .desc{
 	background: #F26352;
@@ -125,6 +134,7 @@
 }
 #header .cat .right .smart img{
 	width: 50px;
+	height: 102px;
 }
 #header .cat .right .smart p{
 	color: #fff;
@@ -187,6 +197,7 @@
 
 
 
+
 .rnd-replace-holder.rnd-replace-no-hidden:nth-child(4){
 	margin-top: 1000px !important;
 }
@@ -244,24 +255,28 @@ html body #rnd-replace-wrapper>.rnd-replace-w1>.rnd-replace-w2>#rnd-replace-head
 	background: #F26352;
 	width: 1254px;
 	left: 300px;
+	top: 1114px;
+	z-index: 10;
 }
 #rnd-replace-promo-post-block3 .top-bg{
 	background: #F26352;
 	width: 1254px;
-	top: -85px;
+	top: 1062px;
 	z-index: -100 !important;
 	left: -280px;
 }
-#rnd-replace-promo-post-block2 img{
+#rnd-replace-promo-post-block2>img{
 	position: absolute;
 	right: -300px;
-	top: 120px;
+	top: 1116px;
+	z-index: 11;
 }
 .rnd-replace-post-promo h2{
 	color: #E5E5E5;
 	font-size: 80px;
 	font-weight: 400;
 	text-align: left;
+	z-index: 11;
 	text-transform: uppercase;
 	position: relative;
 }
@@ -271,7 +286,7 @@ html body #rnd-replace-wrapper>.rnd-replace-w1>.rnd-replace-w2>#rnd-replace-head
 }
 #rnd-replace-promo-post-block2 h2{
 	right: 393px;
-	top: 122px;
+	top: 1176px;
     transform: translateX(100%);
 }
 .bg-shadow{
@@ -332,6 +347,7 @@ html body .post:nth-child(6){
 	width: 934px;
 	flex-basis: 934px !important;
 	left: 263px;
+	margin-top: 954px !important;
 	flex-direction: row;
 }
 html body .post:nth-child(6) .list-post-title span{
@@ -373,6 +389,7 @@ html body .post:nth-child(10){
 	width: 934px;
 	flex-basis: 934px !important;
 	flex-direction: row;
+	margin-top: 900px !important;
 }
 html body .post:nth-child(10) .list-post-title span{
 	color: #fff !important;
@@ -491,4 +508,169 @@ html body .post:nth-child(6n+17){
 html body .post:nth-child(6n+18){
 	top: 30px;
 	left: -100px;
+}
+
+/* Photos */
+#photos{
+	background: #001135;
+	padding: 100px 0;
+}
+#photos h3{
+	text-transform: uppercase;
+	color: #E6E7E9;
+	font-size: 80px;
+	font-weight: 400;
+	text-align: left;
+	margin-left: 100px;
+}
+#photos .row{
+	display: flex;
+	align-items: center;
+	margin-left: 100px;
+}
+#photos .row p{
+	color: #fff;
+	padding: 0;
+	margin: 0 30px;
+	font-size: 25px;
+}
+#photos .row a{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 25px;
+	font-weight: 400;
+	text-decoration: none;
+}
+#photos .row a.active{
+	color: #F26352;
+}
+#photos .photos-slider{
+	display: none;
+	width: 1920px;
+	overflow: hidden;
+	position: relative;
+	margin-top: 85px;
+	left: -361px;
+}
+#photos .photos-slider.active{
+	display: block;
+}
+#photos .photos-btn{
+	display: flex;
+	justify-content: center;
+}
+#photos .photos-btn a{
+	color: #001135;
+	font-size: 25px;
+	background: #fff;
+	font-weight: 500;
+	text-decoration: none;
+	padding: 20px 40px;
+}
+#photos .photos-slider .slick-slide{
+	position: relative;
+}
+#photos .photos-slider .slick-list.draggable{
+	height: 424px;
+}
+#photos .photos-slider .slick-slide:nth-child(1), #photos .photos-slider .slick-slide:nth-child(7), #photos .photos-slider .slick-slide:nth-child(13), #photos .photos-slider .slick-slide:nth-child(19){
+	width: 285px !important;
+	top: 90px;
+}
+#photos .photos-slider .slick-slide:nth-child(2), #photos .photos-slider .slick-slide:nth-child(8), #photos .photos-slider .slick-slide:nth-child(14), #photos .photos-slider .slick-slide:nth-child(20){
+	width: 484px !important;
+	top: 30px;
+}
+#photos .photos-slider .slick-slide:nth-child(3), #photos .photos-slider .slick-slide:nth-child(9), #photos .photos-slider .slick-slide:nth-child(15), #photos .photos-slider .slick-slide:nth-child(21){
+	width: 218px !important;
+	top: 50px;
+}
+#photos .photos-slider .slick-slide:nth-child(4), #photos .photos-slider .slick-slide:nth-child(10), #photos .photos-slider .slick-slide:nth-child(16), #photos .photos-slider .slick-slide:nth-child(22){
+	width: 257px !important;
+	top: 130px;
+}
+#photos .photos-slider .slick-slide:nth-child(5), #photos .photos-slider .slick-slide:nth-child(11), #photos .photos-slider .slick-slide:nth-child(17), #photos .photos-slider .slick-slide:nth-child(23){
+	width: 389px !important;
+}
+#photos .photos-slider .slick-slide:nth-child(6), #photos .photos-slider .slick-slide:nth-child(12), #photos .photos-slider .slick-slide:nth-child(18), #photos .photos-slider .slick-slide:nth-child(24){
+	width: 288px !important;
+	top: 150px;
+}
+#smart-line{
+	position: relative;
+	padding: 60px 0;
+}
+#smart-line .arrows{
+	position: absolute;
+	top: calc(50% + 70px);
+	transform: translateY(-50%);
+	left: 0;
+	display: flex;
+	width: 100%;
+	justify-content: space-between !important;
+	align-items: center !important;
+	z-index: 100;
+}
+#smart-line .arrows img{
+	width: 54px;
+	height: 32px;
+	cursor: pointer;
+}
+#smart-line .arrows img:nth-child(1){
+	margin-left: 30px;
+}
+#smart-line .arrows img:nth-child(2){
+	margin-right: 30px;
+}
+#smart-line h2{
+	text-align: center;
+}
+#smart-line:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -361px;
+	z-index: -2;
+	width: 1920px;
+	height: 100%;
+	background: #001135;
+}
+#smart-line .fot-slide h3{
+	color: #fff;
+	font-weight: 500;
+	font-size: 40px;
+
+}
+#smart-line .fot-btn{
+	display: flex;
+	justify-content: center;
+}
+#smart-line .fot-btn a{
+	color: #001135;
+	font-size: 25px;
+	background: #fff;
+	font-weight: 500;
+	text-decoration: none;
+	padding: 20px 40px;
+}
+#smart-line .footer-slider:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 150px;
+	background: #F26352;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: -1;
+	left: 0;
+}
+#smart-line .slick-slide{
+	transform: scale(0.5);
+	transition: 0.5s;
+}
+#smart-line .slick-slide img{
+	width: 100%;
+}
+#smart-line .slick-center{
+	transform: scale(1) !important;
 }
