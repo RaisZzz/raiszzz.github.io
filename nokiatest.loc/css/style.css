@@ -2,12 +2,13 @@
 	position: relative;
 	width: 1196px;
 	margin: 0 auto;
+	border: none !important;
 }
 .rnd-replace-max-height-350>.container>img{
 	position: fixed;
 	width: 1764px;
 	top: 0;
-	transform: translateX(-200px);
+	transform: translateX(-160px);
 	z-index: -1;
 }
 
@@ -240,6 +241,7 @@ html body #rnd-replace-wrapper>.rnd-replace-w1>.rnd-replace-w2>#rnd-replace-head
 #rnd-replace-promo-post-block1 .top-bg{
 	background: #001135;
 	right: -370px;
+	top: 40px;
 }
 #rnd-replace-promo-post-block2 .top-bg{
 	background: #F26352;
@@ -258,7 +260,7 @@ html body #rnd-replace-wrapper>.rnd-replace-w1>.rnd-replace-w2>#rnd-replace-head
 #rnd-replace-promo-post-block2>img{
 	position: absolute;
 	right: -300px;
-	top: 1116px;
+	top: 1166px;
 	z-index: 11;
 }
 .rnd-replace-post-promo h2{
@@ -272,6 +274,7 @@ html body #rnd-replace-wrapper>.rnd-replace-w1>.rnd-replace-w2>#rnd-replace-head
 }
 #rnd-replace-promo-post-block1 h2{
 	right: 938px;
+	top: 40px;
     transform: translateX(100%);
 }
 #rnd-replace-promo-post-block2 h2{
