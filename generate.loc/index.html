@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Generate</title>
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Generate Keys</h1>
+	<div id="type">
+		<div class="container">
+			<h3>Choose type</h3>
+			<div class="row">
+				<div class="radio">
+					<p id="type1p" class="active">XXXX-XXXX-XXXX-XXXX</p>
+					<input type="radio" name="type" id="type1" checked>
+				</div>
+				<div class="radio">
+					<p id="type2p">your-key-XXXX-XXXX</p>
+					<input type="radio" name="type" id="type2">
+				</div>
+				<div class="radio">
+					<p id="type3p">XXXX-XXXX</p>
+					<input type="radio" name="type" id="type3">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="amount">
+		<div class="container">
+			<h3>Choose amount</h3>
+			<div class="row">
+				<input type="number" id="mount">
+			</div>
+		</div>
+	</div>
+	<div id="key">
+		<div class="container">
+			<h3>Your key</h3>
+			<div class="row">
+				<input type="text" id="key">
+			</div>
+		</div>
+	</div>
+	<div id="finish">
+		<div class="btn">
+			<a href="#">Start</a>
+		</div>
+	</div>
+	<div id="result">
+		<div class="container">
+			<textarea id="keyss"></textarea>
+		</div>
+	</div>
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  	<script src="./assets/js/main.js"></script>
+</body>
+</html>
