@@ -667,3 +667,133 @@ html body .post:nth-child(6n+18){
 #smart-line .slick-center{
 	transform: scale(1) !important;
 }
+
+
+/* Media */
+@media (max-width: 1220px){
+	#header svg{
+		width: 150px;
+	}
+	.my-container{
+		width: 974px;
+	}
+	#header .cat .left .photos img:nth-child(1){
+		width: 192px;
+		left: 35px;
+	}
+	#header .cat .left .photos img:nth-child(2){
+		width: 323px;
+		margin-left: 150px;
+		margin-top: -4px;
+	}
+	#header .cat .right .smart{
+		padding: 15px 20px;
+	}
+	#header .cat .right .smart img{
+		width: 42px;
+		height: 82px;
+	}
+	#header .cat .right .smart p{
+		font-size: 24px;
+		margin-left: 3px;
+	}
+	#header .cat .left .desc{
+		padding: 6px;
+		top: 46px;
+	}
+	#header .cat .left .desc h3{
+		font-size: 60px;
+	}
+	#header .cat .left .desc p{
+		margin-top: -35px;
+	}
+	#social h3{
+		font-size: 50px;
+		margin-right: 70px;
+	}
+	.top-bg{
+		width: 1320px;
+	}
+	.rnd-replace-post-promo h2{
+		left: -769px;
+	}
+	#rnd-replace-promo-post-block1 .top-bg{
+		top: -56px;
+	}
+	#rnd-replace-promo-post-block1 h2{
+		top: 0;
+	}
+	html body .post{
+		flex-basis: 306px;
+	}
+	html body .post:nth-child(2){
+		width: 778px !important;
+		flex-basis: 778px !important;
+		left: 210px;
+	}
+	html body .post:nth-child(2) .visual, .post:nth-child(2) .rnd-replace-visual, .post:nth-child(2) .rnd-replace-visual img{
+		width: 435px !important;
+	}
+	html body .post:nth-child(2) .description{
+		width: 313px;
+	}
+	html body .post:nth-child(3){
+		left: 339px;
+	}
+	html body .post:nth-child(4){
+		left: 360px;
+	}
+	html body .post:nth-child(3) img, html body .post:nth-child(3) .rnd-replace-visual, html body .post:nth-child(3) .description{
+		width: 306px;
+	}
+	html body .post:nth-child(4) img, html body .post:nth-child(4) .rnd-replace-visual, html body .post:nth-child(4) .description{
+		width: 306px;
+	}
+	#photos{
+		padding: 40px 0;
+	}
+	#photos h3{
+		font-size: 60px;
+	}
+	#photos .row a{
+		font-size: 22px;
+	}
+	#photos .photos-btn a{
+		font-size: 20px;
+	}
+	#rnd-replace-promo-post-block2 .top-bg{
+		top: 904px;
+	}
+	html body .post:nth-child(6){
+		margin-top: 690px !important;
+	}
+	#rnd-replace-promo-post-block2 h2{
+		font-size: 50px;
+	}
+	html body .post:nth-child(6){
+		width: 778px !important;
+		flex-basis: 778px !important;
+		left: 210px;
+	}
+	html body .post:nth-child(6) .visual, .post:nth-child(6) .rnd-replace-visual, .post:nth-child(6) .rnd-replace-visual img{
+		width: 435px !important;
+	}
+	html body .post:nth-child(6) .description{
+		width: 313px;
+	}
+	html body .post:nth-child(7){
+		left: 339px;
+	}
+	html body .post:nth-child(8){
+		left: 360px;
+	}
+	html body .post:nth-child(7) img, html body .post:nth-child(7) .rnd-replace-visual, html body .post:nth-child(7) .description{
+		width: 306px;
+	}
+	html body .post:nth-child(8) img, html body .post:nth-child(8) .rnd-replace-visual, html body .post:nth-child(8) .description{
+		width: 306px;
+	}
+	#smart-line h2{
+		left: 0;
+	}
+}
