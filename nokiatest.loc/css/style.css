@@ -677,6 +677,9 @@ html body .post:nth-child(6n+18){
 	.my-container{
 		width: 974px;
 	}
+	.container{
+		width: 974px !important;
+	}
 	#header .cat .left .photos img:nth-child(1){
 		width: 192px;
 		left: 35px;
@@ -795,5 +798,65 @@ html body .post:nth-child(6n+18){
 	}
 	#smart-line h2{
 		left: 0;
+	}
+	#smart-line{
+		margin-top: 40px;
+		padding: 60px 0 160px 0;
+	}
+	#smart-line .arrows img:nth-child(1){
+		margin-left: 15px;
+	}
+	#smart-line .arrows img:nth-child(2){
+		margin-right: 15px;
+	}
+	#rnd-replace-promo-post-block3 .top-bg{
+		width: 1076px;
+		z-index: 100 !important;
+		top: 1000px;
+	}
+	html body .post:nth-child(10){
+		width: 748px;
+    	flex-basis: 748px !important;
+	}
+	html body .post:nth-child(10) .visual, .post:nth-child(10) .rnd-replace-visual, .post:nth-child(10) .rnd-replace-visual img{
+		width: 435px !important;
+		height: 318px !important;
+	}
+	html body .post:nth-child(10) .description{
+		width: 286px !important;
+		margin-top: 3% !important;
+	}
+	html body .post:nth-child(12){
+		left: 100px;
+	}
+	html body .post:nth-child(11) img, html body .post:nth-child(11) .rnd-replace-visual, html body .post:nth-child(11) .description{
+		width: 306px;
+	}
+	html body .post:nth-child(12) img, html body .post:nth-child(12) .rnd-replace-visual, html body .post:nth-child(12) .description{
+		width: 306px;
+	}
+	html body .post:nth-child(6n+14) .description{
+		width: 306px;
+	}
+	html body .post:nth-child(6n+15) .description{
+		width: 306px;
+	}
+	html body .post:nth-child(6n+17) img, html body .post:nth-child(6n+17) .rnd-replace-visual, html body .post:nth-child(6n+17) .description{
+		width: 306px;
+	}
+	html body .post:nth-child(6n+18) img, html body .post:nth-child(6n+18) .rnd-replace-visual, html body .post:nth-child(6n+18) .description{
+		width: 306px;
+	}
+	html body .post:nth-child(6n+13){
+		margin-top: 60px !important;
+	}
+	html body .post:nth-child(6n+14){
+		left: 300px;
+	}
+	html body .post:nth-child(6n+15){
+		left: 330px;
+	}
+	html body .post:nth-child(6n+18){
+		left: 110px;
 	}
 }
