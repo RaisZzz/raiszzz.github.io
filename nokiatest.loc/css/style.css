@@ -767,6 +767,9 @@ html body .post:nth-child(6n+18){
 	#rnd-replace-promo-post-block2 .top-bg{
 		top: 904px;
 	}
+	#rnd-replace-promo-post-block1 img{
+		top: 685px;
+	}
 	html body .post:nth-child(6){
 		margin-top: 690px !important;
 	}
@@ -861,5 +864,9 @@ html body .post:nth-child(6n+18){
 	}
 	html body .post:nth-child(6n+18){
 		left: 110px;
+	}
+	.page-nav{
+		position: relative;
+		top: 300px;
 	}
 }
