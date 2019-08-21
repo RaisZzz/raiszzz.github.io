@@ -803,6 +803,9 @@ html body .post:nth-child(6n+18){
 		margin-top: 40px;
 		padding: 60px 0 160px 0;
 	}
+	#smart-line .arrows{
+		top: calc(50% + 25px);
+	}
 	#smart-line .arrows img:nth-child(1){
 		margin-left: 15px;
 	}
