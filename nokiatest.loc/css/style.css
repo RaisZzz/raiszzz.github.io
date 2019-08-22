@@ -1047,6 +1047,9 @@ html body .post:nth-child(6n+18){
 		left: -240px;
 		top: 964px;
 	}
+	#rnd-replace-promo-post-block2>img{
+		right: -270px;
+	}
 	#smart-line h2{
 		left: 0;
 		font-size: 50px;
