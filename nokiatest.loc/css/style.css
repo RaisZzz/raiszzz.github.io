@@ -11,7 +11,9 @@
 	transform: translateX(-160px);
 	z-index: -1;
 }
-
+html body .post .visual, .post .rnd-replace-visual, .post .rnd-replace-visual img{
+	height: auto !important;
+}
 /* Header */
 .my-container{
 	width: 1196px;
@@ -212,7 +214,7 @@
 #rnd-replace-promo-post-block1 img{
 	position: absolute;
 	left: -355px;
-	top: 740px;
+	top: 770px;
 }
 #rnd-replace-content{
 	width: 100% !important;
@@ -314,18 +316,20 @@ html body .post:nth-child(2) .description p{
 html body .post:nth-child(2) .description{
 	height: auto !important;
 	padding: 0 !important;
-	margin-top: 12% !important;
+	margin-top: 2% !important;
 	width: 400px;
 }
 html body .post:nth-child(2) .visual, .post:nth-child(2) .rnd-replace-visual, .post:nth-child(2) .rnd-replace-visual img{
 	width: 535px !important;
-	height: 389px !important;
+	height: auto !important;
 }
 html body .post:nth-child(3) img, html body .post:nth-child(3) .rnd-replace-visual, html body .post:nth-child(3) .description{
 	width: 380px;
+	height: auto !important;
 }
 html body .post:nth-child(4) img, html body .post:nth-child(4) .rnd-replace-visual, html body .post:nth-child(4) .description{
 	width: 380px;
+	height: auto !important;
 }
 html body .post:nth-child(3){
 	top: 30px;
@@ -361,13 +365,15 @@ html body .post:nth-child(6) .rnd-replace-visual{
 }
 html body .post:nth-child(6) .visual, .post:nth-child(6) .rnd-replace-visual, .post:nth-child(6) .rnd-replace-visual img{
 	width: 535px !important;
-	height: 389px !important;
+	height: auto !important;
 }
 html body .post:nth-child(7) img, html body .post:nth-child(7) .rnd-replace-visual, html body .post:nth-child(7) .description{
 	width: 380px;
+	height: auto !important;
 }
 html body .post:nth-child(8) img, html body .post:nth-child(8) .rnd-replace-visual, html body .post:nth-child(8) .description{
 	width: 380px;
+	height: auto !important;
 }
 html body .post:nth-child(7){
 	top: 30px;
@@ -402,13 +408,15 @@ html body .post:nth-child(10) .rnd-replace-visual{
 }
 html body .post:nth-child(10) .visual, .post:nth-child(10) .rnd-replace-visual, .post:nth-child(10) .rnd-replace-visual img{
 	width: 535px !important;
-	height: 389px !important;
+	height: auto !important;
 }
 html body .post:nth-child(11) img, html body .post:nth-child(11) .rnd-replace-visual, html body .post:nth-child(11) .description{
 	width: 380px;
+	height: auto !important;
 }
 html body .post:nth-child(12) img, html body .post:nth-child(12) .rnd-replace-visual, html body .post:nth-child(12) .description{
 	width: 380px;
+	height: auto !important;
 }
 html body .post:nth-child(11){
 	top: 30px;
@@ -486,20 +494,22 @@ html body .post:nth-child(6n+16) .rnd-replace-visual{
 }
 html body .post:nth-child(6n+16) .visual, .post:nth-child(6n+16) .rnd-replace-visual, .post:nth-child(6n+16) .rnd-replace-visual img{
 	width: 535px !important;
-	height: 389px !important;
+	height: auto !important;
 }
 html body .post:nth-child(6n+17) img, html body .post:nth-child(6n+17) .rnd-replace-visual, html body .post:nth-child(6n+17) .description{
 	width: 380px;
+	height: auto !important;
 }
 html body .post:nth-child(6n+18) img, html body .post:nth-child(6n+18) .rnd-replace-visual, html body .post:nth-child(6n+18) .description{
 	width: 380px;
+	height: auto !important;
 }
 html body .post:nth-child(6n+17){
-	top: 30px;
+	top: 90px;
 	left: 80px;
 }
 html body .post:nth-child(6n+18){
-	top: 30px;
+	top: 90px;
 	left: -100px;
 }
 
@@ -958,6 +968,7 @@ html body .post:nth-child(6n+18){
 		width: 595px !important;
 		flex-basis: 595px !important;
 		left: 146px;
+		margin-top: 785px !important;
 	}
 	html body .post:nth-child(2) .visual, .post:nth-child(2) .rnd-replace-visual, .post:nth-child(2) .rnd-replace-visual img{
 		width: 337px !important;
@@ -1013,9 +1024,15 @@ html body .post:nth-child(6n+18){
 	html body .post:nth-child(6n+18) img, html body .post:nth-child(6n+18) .rnd-replace-visual, html body .post:nth-child(6n+18) .description{
 		width: 236px;
 	}
+	html body .post:nth-child(11){
+		top: 50px !important;
+	}
+	html body .post:nth-child(12){
+		top: 50px !important;
+	}
 	#photos{
 		padding: 40px 0;
-		margin-top: 100px;
+		margin-top: 185px;
 	}
 	#photos h3{
 		font-size: 50px;
@@ -1032,15 +1049,12 @@ html body .post:nth-child(6n+18){
 		padding: 15px 30px;
 	}
 	#rnd-replace-promo-post-block2 .top-bg{
-		top: 933px;
+		top: 1017px;
 		left: 170px;
 		width: 782px;
 	}
 	#rnd-replace-promo-post-block1 img{
 		top: 685px;
-	}
-	html body .post:nth-child(6){
-		margin-top: 725px !important;
 	}
 	#rnd-replace-promo-post-block2 h2{
 		font-size: 50px;
