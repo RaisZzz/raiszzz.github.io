@@ -3083,17 +3083,41 @@ $4.onInit("jQuery slick",function($,_){
 	$("#day-photos").slick({
 		slidesToShow: 6,
 		adaptiveHeight: true,
-		arrows: false	
+		arrows: false,
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 4
+				}
+			}
+		]
 	});
 	$("#night-photos").slick({
 		slidesToShow: 6,
 		adaptiveHeight: true,
-		arrows: false	
+		arrows: false,
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 4
+				}
+			}
+		]
 	});
 	$("#sport-photos").slick({
 		slidesToShow: 6,
 		adaptiveHeight: true,
-		arrows: false	
+		arrows: false,
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 4
+				}
+			}
+		]
 	});
 	$(".footer-slider").slick({
 		slidesToShow: 3,
