@@ -991,14 +991,14 @@ html body .post:nth-child(6n+18){
 	}
 	html body .post:nth-child(7){
 		left: 247px;
-		top: 70px;
+		top: 0px;
 	}
 	html body .post:nth-child(4){
 		left: 265px;
 	}
 	html body .post:nth-child(8){
 		left: 265px;
-		top: 70px;
+		top: 0px;
 	}
 	html body .post:nth-child(3) img, html body .post:nth-child(3) .rnd-replace-visual, html body .post:nth-child(3) .description{
 		width: 236px;
@@ -1018,6 +1018,12 @@ html body .post:nth-child(6n+18){
 	html body .post:nth-child(12) img, html body .post:nth-child(12) .rnd-replace-visual, html body .post:nth-child(12) .description{
 		width: 236px;
 	}
+	html body .post:nth-child(7) .description, html body .post:nth-child(8) .description{
+		top: -60px;
+	}
+	html body .post:nth-child(6n+16) .description{
+		margin-top: 5% !important;
+	}
 	html body .post:nth-child(6n+14) .description{
 		width: 236px;
 	}
@@ -1031,10 +1037,16 @@ html body .post:nth-child(6n+18){
 		width: 236px;
 	}
 	html body .post:nth-child(11){
-		top: 50px !important;
+		top: 20px !important;
 	}
 	html body .post:nth-child(12){
-		top: 50px !important;
+		top: 20px !important;
+	}
+	html body .post:nth-child(11) .description, html body .post:nth-child(12) .description{
+		top: -50px;
+	}
+	html body .post:nth-child(6n+17) .description, html body .post:nth-child(6n+18) .description{
+		top: -50px;
 	}
 	#photos{
 		padding: 40px 0;
@@ -1058,6 +1070,7 @@ html body .post:nth-child(6n+18){
 		top: 1017px;
 		left: 170px;
 		width: 782px;
+		height: 503px;
 	}
 	#rnd-replace-promo-post-block1 img{
 		top: 685px;
@@ -1068,14 +1081,17 @@ html body .post:nth-child(6n+18){
 		top: 1025px;
 	}
 	#rnd-replace-promo-post-block2>img{
-		right: -270px;
+		right: -190px;
+		top: 1050px;
+		width: 160px;
+		height: 331px;
 	}
 	#smart-line h2{
 		left: 0;
 		font-size: 50px;
 	}
 	#smart-line{
-		margin-top: 80px;
+		margin-top: 0;
 		padding: 60px 0 100px 0;
 	}
 	#smart-line .arrows{
@@ -1094,6 +1110,7 @@ html body .post:nth-child(6n+18){
 		width: 818px;
 		z-index: 100 !important;
 		top: 800px;
+		height: 530px;
 		left: -190px;
 	}
 	html body .post:nth-child(10){
@@ -1132,6 +1149,7 @@ html body .post:nth-child(6n+18){
 	}
 	html body .post:nth-child(6n+16):before{
 		width: 818px;
+		height: 450px;
 		top: -65px;
 		left: -160px;
 	}
@@ -1245,52 +1263,52 @@ html body .post:nth-child(6n+18){
 		width: 305px !important;
 	}
 	html body .post:nth-child(2) .description{
-		width: 238px;
+		width: 218px;
 	}
 	html body .post:nth-child(6) .description{
-		width: 238px;
+		width: 218px;
 	}
 	html body .post:nth-child(3){
 		left: 170px;
 	}
 	html body .post:nth-child(7){
-		left: 247px;
+		left: 237px;
 	}
 	html body .post:nth-child(4){
 		left: 193px;
 	}
 	html body .post:nth-child(8){
-		left: 265px;
+		left: 255px;
 	}
 	html body .post:nth-child(3) img, html body .post:nth-child(3) .rnd-replace-visual, html body .post:nth-child(3) .description{
-		width: 236px;
+		width: 214px;
 	}
 	html body .post:nth-child(4) img, html body .post:nth-child(4) .rnd-replace-visual, html body .post:nth-child(4) .description{
-		width: 236px;
+		width: 214px;
 	}
 	html body .post:nth-child(7) img, html body .post:nth-child(7) .rnd-replace-visual, html body .post:nth-child(7) .description{
-		width: 236px;
+		width: 214px;
 	}
 	html body .post:nth-child(8) img, html body .post:nth-child(8) .rnd-replace-visual, html body .post:nth-child(8) .description{
-		width: 236px;
+		width: 214px;
 	}
 	html body .post:nth-child(11) img, html body .post:nth-child(11) .rnd-replace-visual, html body .post:nth-child(11) .description{
-		width: 236px;
+		width: 214px;
 	}
 	html body .post:nth-child(12) img, html body .post:nth-child(12) .rnd-replace-visual, html body .post:nth-child(12) .description{
-		width: 236px;
+		width: 214px;
 	}
 	html body .post:nth-child(6n+14) .description{
-		width: 236px;
+		width: 214px;
 	}
 	html body .post:nth-child(6n+15) .description{
-		width: 236px;
+		width: 214px;
 	}
 	html body .post:nth-child(6n+17) img, html body .post:nth-child(6n+17) .rnd-replace-visual, html body .post:nth-child(6n+17) .description{
-		width: 236px;
+		width: 214px;
 	}
 	html body .post:nth-child(6n+18) img, html body .post:nth-child(6n+18) .rnd-replace-visual, html body .post:nth-child(6n+18) .description{
-		width: 236px;
+		width: 214px;
 	}
 	html body .post:nth-child(11){
 		top: 50px !important;
@@ -1318,6 +1336,7 @@ html body .post:nth-child(6n+18){
 	}
 	#photos .photos-slider{
 		width: 768px !important;
+		left: -45px !important;
 	}
 	#photos .photos-slider .slick-slide:nth-child(1), #photos .photos-slider .slick-slide:nth-child(7), #photos .photos-slider .slick-slide:nth-child(13), #photos .photos-slider .slick-slide:nth-child(19){
 		width: 276px !important;
@@ -1424,4 +1443,5 @@ html body .post:nth-child(6n+18){
 		position: relative;
 		top: -55px;
 	}
+
 }
