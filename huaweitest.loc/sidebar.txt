@@ -1,0 +1,21 @@
+<div class="smart">
+  <h2>Huawei P30</h2>
+  <div class="row">
+    <img src="../img/smart-1.png" alt="">
+    <div class="smart-desc">
+      <h3>Процессор</h3>
+      <p>Kirin 980</p>
+      <h3>Процессор</h3>
+      <p>Kirin 980</p>
+      <h3>Процессор</h3>
+      <p>Kirin 980</p>
+      <h3>Процессор</h3>
+      <p>Kirin 980</p>
+      <h3>Процессор</h3>
+      <p>Kirin 980</p>
+    </div>
+  </div>
+  <div class="smart-btn">
+    <a href="#">Подробнее</a>
+  </div>
+</div>
