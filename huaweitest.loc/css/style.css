@@ -8,15 +8,13 @@ body{
 	margin-top: 24px;
 	height: 300px !important;
 }
-.link:nth-child(5)>svg:nth-child(3) {
-    display: none;
-}
 #brand-2{
 	position: absolute;
 	top: 0;
 	left: 0;
 	opacity: 0;
-	width: 100%;
+	width: 107px;
+	height: 80px;
 }
 .link:hover #brand-1{
 	opacity: 0;
