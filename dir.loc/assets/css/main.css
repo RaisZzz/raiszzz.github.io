@@ -194,3 +194,73 @@ body{
 	color: #000000;
 	text-transform: uppercase;
 }
+#head .right .terminal{
+	position: relative;
+	margin-left: 15px;
+}
+#head .right .terminal>a{
+	position: absolute;
+	top: 50px;
+	right: 100px;
+	color: #000;
+	font-size: 14px;
+	font-weight: normal;
+}
+#head .right .terminal .btn{
+	position: absolute;
+	width: 100%;
+	top: 350px;
+	left: 0;
+	display: flex;
+	justify-content: center;
+}
+#head .right .terminal .btn a{
+	width: 251px;
+	font-size: 17px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	background: #2597AD;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	padding: 18px 0;
+}
+#head .right .terminal .slider-arrows{
+	position: absolute;
+	top: 250px;
+	left: -30px;
+	width: calc(100% + 50px);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#head .right .terminal .slider-arrows svg{
+	background: #2697AD;
+	width: 47px;
+	cursor: pointer;
+	height: 47px;
+	padding: 10px;
+	border-radius: 50%;
+}
+#head .right .terminal .slider{
+	position: absolute;
+	top: 170px;
+	left: 63px;
+	width: 324px;
+}
+#head .right .terminal .slider .slide{
+	display: flex;
+	justify-content: center;
+}
+#head .right .terminal .slider .slide h2{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 28px;
+	font-weight: 900;
+	color: #000;
+	width: 275px;
+}
+#head .right .terminal img{
+	width: 100%;
+}
