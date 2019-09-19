@@ -5,6 +5,15 @@ $(document).ready(function(){
 	$('#timeline>.container>p').css('opacity', '1');
 	var news = $('#technology>.container>.blocks>.col>.block>.img>img').width();
 	$('#technology>.container>.blocks>.col>.block>.img>img').css({'height':news+'px'});
+
+	var xhr = new XMLHttpRequest();
+
+	xhr.open('GET', '/js/test.json', false);
+
+	xhr.send();
+
+	alert( xhr.responseText );
+
 	$('#header-slider').slick({
 		infinite: true,
 		centerMode: true,
@@ -25,6 +34,12 @@ $(document).ready(function(){
 		prevArrow: $('#mobile-left-arrow'),
 		nextArrow: $('#mobile-right-arrow')
 	});
+	$('.tech-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		prevArrow: $('#tech-left-arrow'),
+		nextArrow: $('#tech-right-arrow')
+	});
 	$('.footer-slider').slick({
 		infinite: true,
 		centerMode: false,
@@ -33,7 +48,7 @@ $(document).ready(function(){
 		prevArrow: $('#footer-left-arrow'),
 		nextArrow: $('#footer-right-arrow')
 	});
-	const slider = $(".slider");
+	var slider = $(".slider");
 	slider.on('wheel', (function(e) {
 		e.preventDefault();
 		if (e.originalEvent.deltaY < 0) {
@@ -91,12 +106,14 @@ $(document).ready(function(){
 				$('#technology>.container>h2').css('opacity', '1');
 			}
 			if ($(this).scrollTop() >= 1500) {
-				$('#technology>.container>.blocks>.col:nth-child(1)').css('opacity', '1');
-				$('#technology>.container>.blocks>.col:nth-child(1)').css('top', '0');
-				$('#technology>.container>.blocks>.col:nth-child(2)').css('opacity', '1');
-				$('#technology>.container>.blocks>.col:nth-child(2)').css('bottom', '0');
-				$('#technology>.container>.blocks>.col:nth-child(3)').css('opacity', '1');
-				$('#technology>.container>.blocks>.col:nth-child(3)').css('top', '0');
+				$('#technology>.container .blocks>.col:nth-child(1)').css('opacity', '1');
+				$('#technology>.container .blocks>.col:nth-child(1)').css('top', '0');
+				$('#technology>.container .blocks>.col:nth-child(2)').css('opacity', '1');
+				$('#technology>.container .blocks>.col:nth-child(2)').css('bottom', '0');
+				$('#technology>.container .blocks>.block').css('opacity', '1');
+				$('#technology>.container .blocks>.block').css('top', '0');
+				$('#technology>.container .blocks>.col:nth-child(4)').css('opacity', '1');
+				$('#technology>.container .blocks>.col:nth-child(4)').css('bottom', '0');
 
 			}
 			if ($(this).scrollTop() >= 2900) {
