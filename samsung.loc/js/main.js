@@ -6,14 +6,6 @@ $(document).ready(function(){
 	var news = $('#technology>.container>.blocks>.col>.block>.img>img').width();
 	$('#technology>.container>.blocks>.col>.block>.img>img').css({'height':news+'px'});
 
-	var xhr = new XMLHttpRequest();
-
-	xhr.open('GET', '/js/test.json', false);
-
-	xhr.send();
-
-	alert( xhr.responseText );
-
 	$('#header-slider').slick({
 		infinite: true,
 		centerMode: true,

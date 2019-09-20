@@ -353,7 +353,7 @@ h1{
 	top: -200px;
 }
 #technology>.container .slick-list.draggable{
-	height: 1000px !important;
+	height: 645px !important;
 }
 .tech-slider-arrows{
 	position: absolute;
@@ -390,7 +390,7 @@ h1{
 	transition: 1s;
 	position: relative;
 	opacity: 0;
-	width: calc( 25% - 20px);
+	width: 201px;
 }
 #technology>.container .blocks>.col:nth-child(1){
 	top: 400px;
@@ -402,8 +402,8 @@ h1{
 	bottom: 400px;
 }
 #technology>.container .blocks>.block{
-	width: 100%;
-	margin-top: 50px;
+	width: 394px;
+	margin-top: 25px;
 	position: relative;
 	opacity: 0;
 	transition: 0.5s;
@@ -417,19 +417,21 @@ h1{
 	height: 100%;
 }
 #technology>.container .blocks>.block>.img{
-	width: 100%;
+	width: 394px;
+	height: 474px;
 }
 #technology>.container .blocks>.block>.img>img{
-	width: 100%;
+	width: 394px;
+	height: 474px;
 }
 #technology>.container .blocks>.block>h3{
-	font-size: 25px;
-	margin-top: 13px;
+	font-size: 15px;
+	margin-top: 9px;
 	color: #ffffff;
 }
 #technology>.container .blocks>.col>.block{
 	width: 100%;
-	margin-top: 40px;
+	margin-top: 15px;
 	position: relative;
 }
 #technology>.container .blocks>.col>.block>a{
@@ -440,14 +442,16 @@ h1{
 	height: 100%;
 }
 #technology>.container .blocks>.col>.block>.img{
-	width: 100%;
+	width: 201px;
+	height: 201px;
 }
 #technology>.container .blocks>.col>.block>.img>img{
-	width: 100%;
+	width: 201px;
+	height: 201px;
 }
 #technology>.container .blocks>.col>.block>h3{
-	font-size: 25px;
-	margin-top: 13px;
+	font-size: 15px;
+	margin-top: 9px;
 	color: #ffffff;
 }
 #technology>.container>.btn{
