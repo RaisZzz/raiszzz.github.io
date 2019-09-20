@@ -30,7 +30,17 @@ $(document).ready(function(){
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		prevArrow: $('#tech-left-arrow'),
-		nextArrow: $('#tech-right-arrow')
+		nextArrow: $('#tech-right-arrow'),
+		responsive: [
+			{
+				breakpoint: 699,
+				settings: {
+					accessibility: false,
+					draggable: false,
+					touchMove: false
+				}
+			}
+		]
 	});
 	$('.footer-slider').slick({
 		infinite: true,
@@ -108,18 +118,18 @@ $(document).ready(function(){
 				$('#technology>.container .blocks>.col:nth-child(4)').css('bottom', '0');
 
 			}
-			if ($(this).scrollTop() >= 2900) {
+			if ($(this).scrollTop() >= 2400) {
 				$('#gallery>.container>h2').css('opacity', '1');
 				$('#gallery>.container>h3').css('opacity', '1');
 			}
-			if ($(this).scrollTop() >= 3500) {
+			if ($(this).scrollTop() >= 3100) {
 				$('#test>.container>h2').css('opacity', '1');
 				$('#test>.container>h3').css('opacity', '1');
 			}
-			if ($(this).scrollTop() >= 3800) {
+			if ($(this).scrollTop() >= 3500) {
 				$('#choose>.container>h2').css('opacity', '1');
 			}
-			if ($(this).scrollTop() >= 4800) {
+			if ($(this).scrollTop() >= 4500) {
 				$('#footer>.container>h2').css('opacity', '1');
 			}
 		}

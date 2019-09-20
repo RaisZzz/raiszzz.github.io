@@ -1,4 +1,29 @@
 @media(max-width: 1219px){
+	html body #technology>.container .slick-list.draggable{
+		height: 520px !important;
+	}
+	.tech-slider-arrows img{
+		width: 33px;
+		height: 142px;
+	}
+	#technology>.container .blocks>.block>.img{
+		width: 327px !important;
+		height: 392px !important;
+	}
+	#technology>.container .blocks>.block{
+		width: 327px !important;
+	}
+	#technology>.container .blocks>.col>.block>.img{
+		width: 167px !important;
+		height: 167px !important;
+	}
+	#technology>.container .blocks>.col{
+		width: 167px !important;
+	}
+	#technology>.container .blocks>.block>h3, #technology>.container .blocks>.col>.block>h3{
+		font-size: 11px !important;
+		margin-top: 7px;
+	}
 	.test-engine.test-140{
 		width: 666px !important;
 	}
@@ -101,6 +126,31 @@
 	}
 }
 @media(max-width: 997px){
+	html body #technology>.container .slick-list.draggable{
+		height: 520px !important;
+	}
+	.tech-slider-arrows img{
+		width: 25px !important;
+		height: 103px !important;
+	}
+	#technology>.container .blocks>.block>.img{
+		width: 300px !important;
+		height: 383px !important;
+	}
+	#technology>.container .blocks>.block{
+		width: 300px !important;
+	}
+	#technology>.container .blocks>.col>.block>.img{
+		width: 163px !important;
+		height: 163px !important;
+	}
+	#technology>.container .blocks>.col{
+		width: 163px !important;
+	}
+	#technology>.container .blocks>.block>h3, #technology>.container .blocks>.col>.block>h3{
+		font-size: 11px !important;
+		margin-top: 7px;
+	}
 	#gallery .slick-list{
 		height: 200px !important;
 	}
@@ -203,6 +253,24 @@
 	}
 }
 @media(max-width: 767px){
+	html body #technology>.container .slick-list.draggable{
+		height: 520px !important;
+	}
+	.tech-slider-arrows img{
+		width: 21px !important;
+		height: 90px !important;
+	}
+	#technology>.container .blocks>.col>.block>.img{
+		width: 173px !important;
+		height: 173px !important;
+	}
+	#technology>.container .blocks>.col{
+		width: 173px !important;
+	}
+	#technology>.container .blocks>.col>.block>h3{
+		font-size: 11px !important;
+		margin-top: 6px;
+	}
 	.test-engine.test-140{
 		width: 420px !important;
 	}
@@ -328,6 +396,16 @@
 	}
 }
 @media(max-width: 699px){
+	html body #technology>.container .slick-list.draggable{
+		height: 670px !important;
+	}
+	#technology>.container .blocks>.col>.block>.img{
+		width: 251px !important;
+		height: 251px !important;
+	}
+	#technology>.container .blocks>.col{
+		width: 251px !important;
+	}
 	.test-engine.test-140{
 		width: 382px !important;
 	}
@@ -442,6 +520,16 @@
 	}
 }
 @media(max-width: 582px){
+	html body #technology>.container .slick-list.draggable{
+		height: 550px !important;
+	}
+	#technology>.container .blocks>.col>.block>.img{
+		width: 180px !important;
+		height: 180px !important;
+	}
+	#technology>.container .blocks>.col{
+		width: 180px !important;
+	}
 	.container{
 		width: 100% !important;
 	}
