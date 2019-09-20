@@ -4,5 +4,6 @@ $(document).ready(function(){
 		slidesToScroll: 1,
 		prevArrow: $('#prev-arrow'),
 		nextArrow: $('#next-arrow')
-	})
+	});
+	$('#main').fullpage();
 });
