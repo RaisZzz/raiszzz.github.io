@@ -5,8 +5,10 @@ $(document).ready(function(){
 		prevArrow: $('#prev-arrow'),
 		nextArrow: $('#next-arrow')
 	});
-	$('#main').fullpage();
-		$('.trigger').on('click', function(){
+	$.scrollify({
+		section : ".fullpage"
+	});
+	$('.trigger').on('click', function(){
 		$('.modal-wrapper').toggleClass('open');
 		$('.overlay').toggleClass('block');
 		$('#main').toggleClass('blur');

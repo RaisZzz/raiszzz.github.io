@@ -8,6 +8,7 @@
 body{
 	font-family: 'Exo 2', sans-serif;
 	background: #F3FDFF;
+	overflow-x: hidden;
 }
 .container{
 	width: 1570px;
@@ -369,8 +370,18 @@ body{
 	margin-top: 10px;
 }
 #list-desc-info>.row>.col.active{
-	background: #2697AD;
-	border-radius: 10px;
+	position: relative;
+}
+.col.active:before {
+    content: '';
+    width: 1000px;
+    height: 100%;
+    background: #2697AD;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 10px;
 }
 #list-desc-info>.row>.col.active>.hr{
 	color: #fff;
