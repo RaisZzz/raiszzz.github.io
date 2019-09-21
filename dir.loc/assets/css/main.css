@@ -374,7 +374,7 @@ body{
 }
 .col.active:before {
     content: '';
-    width: 1000px;
+    width: 100%;
     height: 100%;
     background: #2697AD;
     position: absolute;
