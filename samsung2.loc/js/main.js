@@ -124,7 +124,7 @@ $(document).ready(function(){
 						<div class="img">
 							<img src="https:${block.img}" alt="">
 						</div>
-						<h3>${block.title}и</h3>
+						<h3>${block.title}</h3>
 					</div>
 				`);
 			});
