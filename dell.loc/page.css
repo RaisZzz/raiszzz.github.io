@@ -1,0 +1,185 @@
+.page-top {
+    width: 100%;
+    position: relative;
+}
+.page-reviews>.holder-no-hidden>h2{
+    text-align: right;
+    position: relative;
+    top: -270px;
+    color: #fff;
+    font-size: 80px;
+    text-shadow: 0 0 30px black;
+}
+.page-top>img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.page-reviews {
+    background-color: #fff;
+}
+.page-reviews,
+.page-characteristics {
+    padding: 80px 0;
+    font-family: Arial, sans-serif;
+}
+.page-reviews-relative {
+    position: relative;
+    z-index: 1;
+    top: -100px;
+}
+.page-reviews-title {
+    margin-bottom: 60px;
+    font-size: 50px;
+    color: rgb(0, 114, 188);
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+.page-reviews-item {
+    width: 660px;
+    position: relative;
+    padding-left: 180px;
+    min-height: 160px;
+}
+.page-reviews-item + .page-reviews-item {
+    margin-top: 55px;
+}
+.page-reviews-image {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+.page-reviews-text {
+    font-size: 35px;
+    line-height: 1.2;
+    color: rgb(255, 255, 255);
+    position: relative;
+    margin-bottom: 34px;
+}
+.page-reviews-text:after {
+    content: '';
+    position: absolute;
+    bottom: -29px;
+    left: 0;
+    border-bottom: 29px solid transparent;
+    border-left: 29px solid #333;
+}
+.page-reviews-author a {
+    text-decoration: underline;
+}
+.page-reviews-author a:hover {
+    text-decoration: none;
+}
+.page-reviews-text span {
+    display: inline-block;
+    background-color: #333;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+.page-reviews-text span:first-child {
+    padding-top: 3px;
+}
+.page-reviews-text span:last-child {
+    padding-bottom: 3px;
+}
+.page-absolute-title {
+    position: absolute;
+    top: -300px;
+    left: 50%;
+    transform: translateX(-55%);
+    color: #ffffff;
+    font-size: 72px;
+    text-shadow: 0px 1px 53.2px rgba(48, 51, 58, 0.39);
+}
+.page-reviews-absolute-image {
+    position: absolute;
+    right: -300px;
+    bottom: -40px;
+    width: 653px;
+    width: 67%;
+}
+.page-reviews-absolute-image-mobile {
+    display: none;
+}
+.page-reviews-triangle-1,
+.page-reviews-triangle-2 {
+    position: absolute;
+    z-index: -1;
+}
+
+.page-reviews-triangle-1 {
+    left: -370px;
+    bottom: 0;
+}
+.page-reviews-triangle-2 {
+    right: -395px;
+    bottom: 0;
+}
+
+.page-characteristics {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.page-characteristics-item + .page-characteristics-item {
+    margin-top: 40px;
+}
+.page-characteristics-item {
+    position: relative;
+    min-height: 260px;
+}
+.page-characteristics-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.page-characteristics-info {
+    position: absolute;
+    left: 285px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.page-characteristics-text {
+    font-size: 35px;
+    line-height: 1.2;
+}
+.page-characteristics-author {
+    font-size: 14px;
+    margin-top: 1em;
+}
+.page-characteristics-author a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.page-characteristics-author a:hover {
+    text-decoration: none;
+}
+
+
+/* Test */
+.btn.btn-foot {
+    background: #ffaa05;
+    color: #ffffff!important;
+}
+.page-characteristics{
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
