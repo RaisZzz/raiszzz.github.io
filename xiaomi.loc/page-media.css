@@ -120,6 +120,11 @@
     }
     .page-reviews-relative {
         padding-top: 400px;
+        top: -25px !important;
+    }
+    .page-reviews>.holder-no-hidden>h2{
+        font-size: 35px;
+        top: -110px;
     }
     .page-reviews-absolute-image{
         display: block;
