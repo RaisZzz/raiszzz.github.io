@@ -1,0 +1,21 @@
+.black-bg{
+	background: rgba(0, 0, 0, 0.97) !important;
+}
+.white-bg{
+	background: #fff !important;
+}
+.white-text{
+	color: #fff !important;
+}
+.black-text{
+	color: #000 !important;
+}
+.white-text:before{
+	background: #fff !important;
+}
+.white-text:hover span{
+	color: #fff !important;
+}
+.white-img{
+	filter: contrast(0);
+}
