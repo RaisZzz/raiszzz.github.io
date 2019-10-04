@@ -1,6 +1,9 @@
 #rnd-replace-main{
 	padding: 0 0 24px 0 !important;
 }
+.slider-news{
+	margin: 0 !important;
+}
 .realme-row{
 	display: flex;
 	justify-content: space-between;
@@ -33,6 +36,7 @@
 }
 #twocolumns, #rnd-replace-twocolumns{
 	background: none !important;
+	top: -20px;
 }
 .realme-container{
 	position: relative;
