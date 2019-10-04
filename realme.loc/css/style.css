@@ -1,0 +1,65 @@
+#rnd-replace-main{
+	padding: 0 0 24px 0 !important;
+}
+.realme-row{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.realme-row img:nth-child(1){
+	width: 252px;
+	height: 42px;
+}
+.realme-row img:nth-child(2){
+	width: 181px;
+	height: 142px;
+}
+.realme-row h3{
+	font-size: 40px;
+	font-weight: 400;
+	color: #ffffff;
+	line-height: 50px;
+}
+.realme-row img:nth-child(4){
+	width: 198px;
+	height: 82px;
+	align-self: flex-start;
+}
+#realme-bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+#twocolumns, #rnd-replace-twocolumns{
+	background: none !important;
+}
+.realme-container{
+	position: relative;
+	width: 1196px;
+	margin: 0 auto;
+}
+.realme-container img{
+	position: absolute;
+	height: 535px;
+}
+.realme-container img:nth-child(1){
+	left: -290px;
+	top: 200px;
+	width: 262px;
+}
+.realme-container img:nth-child(2){
+	left: -245px;
+	top: 821px;
+	width: 189px;
+}
+.realme-container img:nth-child(3){
+	right: -290px;
+	top: 200px;
+	width: 262px;
+}
+.realme-container img:nth-child(4){
+	right: -245px;
+	top: 821px;
+	width: 189px;
+}
