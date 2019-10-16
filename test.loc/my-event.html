@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ABV expo</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/assets.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullpage.js@2.9.7/dist/jquery.fullpage.min.js"></script>
+    <script src="./js/script.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header" id="header">
+        <div class="container clearfix">
+          <div class="header__logo"><a class="logo" href="./index.html"></a></div>
+          <div class="header__search">
+            <form class="search" action="">
+              <input class="search__input" type="text" placeholder="Поиск...">
+              <button class="search__btn" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div><a class="header__btn button button-gray" href="#">Личный кабинет</a><a class="header__link" href="">Контакты</a><a class="header__link" href="E">Правовая информация</a>
+          <div class="header__adaptive-actions">
+            <button class="search-toggle" type="button"><span class="fa fa-search"></span><span class="fa fa-times-circle"></span></button><a class="action-link" href="#"><i class="fa fa-university" aria-hidden="true"></i></a><a class="action-link" href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a><a class="action-link" href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </header>
+      <button class="menu-toggle" type="button"><span class="fa fa-bars"></span></button>
+      <div class="menu">
+        <div class="menu__list">
+          <div class="menu__item"><a class="menu__link active" href="./calendar-grid.html">Календарь мероприятий</a></div>
+          <div class="menu__item"><a class="menu__link" href="./about-history.html">О компании</a></div>
+          <div class="menu__item"><a class="menu__link" href="#">Портфолио</a></div>
+          <div class="menu__item"><a class="menu__link" href="#">Партнерство</a></div>
+          <div class="menu__item"><a class="menu__link" href="./news.html">Новости</a></div>
+          <div class="menu__item"><a class="menu__link" href="#">Правовая информация</a></div>
+          <div class="menu__item"><a class="menu__link" href="./contacts.html">Контакты</a></div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="container">
+          <h1 class="page-title text-center">Личный кабинет</h1>
+        </div>
+        <div class="personal-menu">
+          <div class="personal-menu__col"><a class="personal-menu__link" href="./private-information.html">Личная информация</a></div>
+          <div class="personal-menu__col"><a class="personal-menu__link" href="./personal-information.html">Профессиональная информация</a></div>
+          <div class="personal-menu__col"><a class="personal-menu__link active" href="./my-event.html">Мои мероприятия</a></div>
+        </div>
+        <div class="container">
+          <div class="my-event">
+            <div class="my-event__box">
+              <div class="my-event__title">Образовательная научно-практическая конференция с международным участием «Снегиревские чтения»</div>
+              <div class="my-event__base">
+                <div class="my-event__base-key">Регистрационный взнос</div>
+                <div class="my-event__base-value">1500 рублей</div>
+              </div>
+              <div class="my-event__list-title">Дополнительные услуги</div>
+              <div class="my-event__list">
+                <table>
+                  <tr>
+                    <td>
+                      <div class="my-event__name">Cборник тезисов конгресса</div>
+                    </td>
+                    <td class="counter">
+                      <button class="counter__btn" type="button"><span class="fa fa-minus"></span></button>
+                      <input class="counter__input" type="text" readonly value="0">
+                      <button class="counter__btn" type="button"><span class="fa fa-plus"></span></button>
+                    </td>
+                    <td class="my-event__price">1000 рублей</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="my-event__name">А.Ю. Горбатый "Руководство для врачей менеджеров"</div>
+                    </td>
+                    <td class="counter">
+                      <button class="counter__btn" type="button"><span class="fa fa-minus"></span></button>
+                      <input class="counter__input" type="text" readonly value="0">
+                      <button class="counter__btn" type="button"><span class="fa fa-plus"></span></button>
+                    </td>
+                    <td class="my-event__price">1000 рублей</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="my-event__name">Билет на банкет</div>
+                    </td>
+                    <td class="counter">
+                      <button class="counter__btn" type="button"><span class="fa fa-minus"></span></button>
+                      <input class="counter__input" type="text" readonly value="0">
+                      <button class="counter__btn" type="button"><span class="fa fa-plus"></span></button>
+                    </td>
+                    <td class="my-event__price">1000 рублей</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="my-event__box-bottom">
+                <div class="my-event__total-price"><span>ИТОГО:</span><span>1500 рублей</span></div>
+                <button class="button button-primary" type="button">Оплатить</button>
+              </div>
+            </div>
+            <div class="my-event__img-line">
+              <div class="my-event__img-item"><img class="my-event__img" src="./images/temp/calendar_1.jpg" alt=""></div>
+              <div class="my-event__img-item"><img class="my-event__img" src="./images/temp/calendar_2.jpg" alt=""></div>
+              <div class="my-event__img-item"><img class="my-event__img" src="./images/temp/calendar_3.jpg" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer" id="footer">
+        <div class="container clearfix">
+          <div class="footer__lang drop-box">
+            <div class="drop-box__btn">RUS</div>
+            <div class="drop-box__drop">
+              <div class="drop-box__item"><a class="drop-box__link" href="#">RUS</a></div>
+              <div class="drop-box__item"><a class="drop-box__link" href="#">EN</a></div>
+            </div>
+          </div>
+          <div class="footer__links">
+            <div><a href="tel:+74959888992">+7 (495) 988-89-92</a></div>
+            <div><a href="mailto:info@abvexpo.ru">info@abvexpo.ru</a></div>
+          </div>
+          <div class="footer__address"><a href="#">Москва, Каширское шоссе, д. 24, стр. 15</a></div>
+          <div class="footer__copy">© 2019 ООО "Конгресс-оператор "АБВ-экспо"<br>Все права защищены</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

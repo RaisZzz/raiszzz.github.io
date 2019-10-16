@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ABV expo</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/assets.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullpage.js@2.9.7/dist/jquery.fullpage.min.js"></script>
+    <script src="./js/script.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header" id="header">
+        <div class="container clearfix">
+          <div class="header__logo"><a class="logo" href="./index.html"></a></div>
+          <div class="header__search">
+            <form class="search" action="">
+              <input class="search__input" type="text" placeholder="Поиск...">
+              <button class="search__btn" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div><a class="header__btn button button-gray" href="#">Личный кабинет</a><a class="header__link" href="">Контакты</a><a class="header__link" href="E">Правовая информация</a>
+          <div class="header__adaptive-actions">
+            <button class="search-toggle" type="button"><span class="fa fa-search"></span><span class="fa fa-times-circle"></span></button><a class="action-link" href="#"><i class="fa fa-university" aria-hidden="true"></i></a><a class="action-link" href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a><a class="action-link" href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </header>
+      <button class="menu-toggle" type="button"><span class="fa fa-bars"></span></button>
+      <div class="menu">
+        <div class="menu__list">
+          <div class="menu__item"><a class="menu__link active" href="./calendar-grid.html">Календарь мероприятий</a></div>
+          <div class="menu__item"><a class="menu__link" href="./about-history.html">О компании</a></div>
+          <div class="menu__item"><a class="menu__link" href="#">Портфолио</a></div>
+          <div class="menu__item"><a class="menu__link" href="#">Партнерство</a></div>
+          <div class="menu__item"><a class="menu__link" href="./news.html">Новости</a></div>
+          <div class="menu__item"><a class="menu__link" href="#">Правовая информация</a></div>
+          <div class="menu__item"><a class="menu__link" href="./contacts.html">Контакты</a></div>
+        </div>
+      </div>
+      <div class="contacts">
+        <div class="contacts__col">
+          <div class="contacts__info">
+            <div class="page-title">Контакты</div><strong>Адрес:</strong> Москва, Каширское шоссе, д. 24, стр.15, НИИ канцерогенеза<br><strong>Почтовый адрес:</strong> 115409, Москва, а/я № 8<br><a href="tel:+74959888992"><strong>Тел.:</strong>+7 (495) 988-89-92</a><br><a href="mailto:info@abvexpo.ru"><strong>E-mail:</strong> info@abvexpo.ru</a>
+            <div class="contacts__form">
+              <form class="form form_contacts">
+                <div class="form__title">Если у вас остались вопросы<br>или вы хотите помочь нам стать лучше:</div>
+                <div class="form__field">
+                  <textarea class="form__textarea" placeholder="Ваш вопрос"></textarea>
+                </div>
+                <div class="form__field">
+                  <input class="form__input" type="text" placeholder="Контакты для обратной связи" required>
+                </div>
+                <div class="form__btn">
+                  <button class="button button-primary validation-btn" type="submit">Отправить</button>
+                </div>
+              </form>
+            </div>
+            <div class="contacts__social"><span>Мы также есть в социальных сетях:</span><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-youtube"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+          </div>
+        </div>
+        <div class="contacts__col">
+          <div id="map"></div>
+        </div>
+        <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+        <script type="text/javascript">
+          ymaps.ready(init);
+          function init() {
+            var myPlacemark = [55.653681, 37.6422693];
+            var map = new ymaps.Map("map", {
+              center: myPlacemark,
+              zoom: 14
+            });
+            map.controls.add(
+                new ymaps.control.ZoomControl()
+            );
+            map.behaviors.disable('scrollZoom');
+            var myGeoObject = new ymaps.GeoObject();
+            map.geoObjects
+                .add(myGeoObject)
+                .add(new ymaps.Placemark(myPlacemark, {
+                  balloonContent: 'Москва, Каширское шоссе, д. 24, стр.15'
+                }, {
+                  preset: 'islands#dotIcon',
+                  iconColor: '#735184'
+                }));
+          }
+          
+        </script>
+      </div>
+      <div class="footer" id="footer">
+        <div class="container clearfix">
+          <div class="footer__lang drop-box">
+            <div class="drop-box__btn">RUS</div>
+            <div class="drop-box__drop">
+              <div class="drop-box__item"><a class="drop-box__link" href="#">RUS</a></div>
+              <div class="drop-box__item"><a class="drop-box__link" href="#">EN</a></div>
+            </div>
+          </div>
+          <div class="footer__links">
+            <div><a href="tel:+74959888992">+7 (495) 988-89-92</a></div>
+            <div><a href="mailto:info@abvexpo.ru">info@abvexpo.ru</a></div>
+          </div>
+          <div class="footer__address"><a href="#">Москва, Каширское шоссе, д. 24, стр. 15</a></div>
+          <div class="footer__copy">© 2019 ООО "Конгресс-оператор "АБВ-экспо"<br>Все права защищены</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

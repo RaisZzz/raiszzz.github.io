@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ABV expo</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/assets.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullpage.js@2.9.7/dist/jquery.fullpage.min.js"></script>
+    <script src="./js/script.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header" id="header">
+        <div class="container clearfix">
+          <div class="header__logo"><a class="logo" href="./index.html"></a></div>
+          <div class="header__search">
+            <form class="search" action="">
+              <input class="search__input" type="text" placeholder="Поиск...">
+              <button class="search__btn" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div><a class="header__btn button button-gray" href="#">Личный кабинет</a><a class="header__link" href="">Контакты</a><a class="header__link" href="E">Правовая информация</a>
+          <div class="header__adaptive-actions">
+            <button class="search-toggle" type="button"><span class="fa fa-search"></span><span class="fa fa-times-circle"></span></button><a class="action-link" href="#"><i class="fa fa-university" aria-hidden="true"></i></a><a class="action-link" href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a><a class="action-link" href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </header>
+      <button class="menu-toggle" type="button"><span class="fa fa-bars"></span></button>
+      <div class="menu">
+        <div class="menu__list">
+          <div class="menu__item"><a class="menu__link active" href="./calendar-grid.html">Календарь мероприятий</a></div>
+          <div class="menu__item"><a class="menu__link" href="./about-history.html">О компании</a></div>
+          <div class="menu__item"><a class="menu__link" href="#">Портфолио</a></div>
+          <div class="menu__item"><a class="menu__link" href="#">Партнерство</a></div>
+          <div class="menu__item"><a class="menu__link" href="./news.html">Новости</a></div>
+          <div class="menu__item"><a class="menu__link" href="#">Правовая информация</a></div>
+          <div class="menu__item"><a class="menu__link" href="./contacts.html">Контакты</a></div>
+        </div>
+      </div>
+      <div class="main-bg">
+        <div class="register">
+          <div class="register__line">
+            <div class="register__left">
+              <form class="form form_register">
+                <div class="form-section current">
+                  <div class="register__title register__title_first">Основная информация</div>
+                  <div class="form-section__inner"><a class="form__avatar-link js-open-modal" href="#upload-modal">
+                      <div class="avatar"><img class="avatar__img" src="./images/empty-avatar.png" alt=""></div></a>
+                    <div class="form__fop-line">
+                      <div class="form__field">
+                        <input class="form__input" type="text" placeholder="Фамилия*" required>
+                      </div>
+                      <div class="form__field">
+                        <input class="form__input" type="text" placeholder="Имя*" required>
+                      </div>
+                      <div class="form__field">
+                        <input class="form__input" type="text" placeholder="Отчество*" required>
+                      </div>
+                    </div>
+                    <div class="form__field">
+                      <div class="form__select">
+                        <select class="selectpicker-no-search" data-placeholder="Пол" required>
+                          <option>Мужской</option>
+                          <option>Женский</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form__field">
+                      <input class="form__input" type="email" placeholder="E-mail" required>
+                    </div>
+                    <div class="form__field">
+                      <input class="form__input phone-mask" type="text" placeholder="Мобильный телефон" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-section">
+                  <div class="register__title">Дополнительная информация</div>
+                  <div class="form-section__inner">
+                    <div class="form__field">
+                      <div class="form__select">
+                        <select class="selectpicker" data-placeholder="Специальность*" required>
+                          <option></option>
+                          <option>Вариант 1</option>
+                          <option>Вариант 2</option>
+                          <option>Вариант 3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form__field">
+                      <div class="form__select">
+                        <select class="selectpicker" data-placeholder="Специализация*" required>
+                          <option></option>
+                          <option>Вариант 1</option>
+                          <option>Вариант 2</option>
+                          <option>Вариант 3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form__field">
+                      <div class="form__select">
+                        <select class="selectpicker" data-placeholder="Место работы" required>
+                          <option></option>
+                          <option>Вариант 1</option>
+                          <option>Вариант 2</option>
+                          <option>Вариант 3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form__field">
+                      <input class="form__input" type="text" placeholder="Должность">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-section">
+                  <div class="register__title">Адрес</div>
+                  <div class="form-section__inner">
+                    <div class="form__field">
+                      <div class="form__select">
+                        <select class="selectpicker" data-placeholder="Страна*" required>
+                          <option></option>
+                          <option>Россия</option>
+                          <option>Украина</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form__field">
+                      <div class="form__select">
+                        <select class="selectpicker" data-placeholder="Регион*" required>
+                          <option></option>
+                          <option>Москва</option>
+                          <option>Киев</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form__field">
+                      <div class="form__select">
+                        <select class="selectpicker" data-placeholder="Город*" required>
+                          <option></option>
+                          <option>Москва</option>
+                          <option>Киев</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form__field">
+                      <input class="form__input" type="text" placeholder="Почтовый индекс">
+                    </div>
+                    <div class="form__place-line">
+                      <div class="form__field form__field_street">
+                        <input class="form__input" type="text" placeholder="Улица">
+                      </div>
+                      <div class="form__field form__field_other">
+                        <input class="form__input" type="text" placeholder="Дом">
+                      </div>
+                      <div class="form__field form__field_other">
+                        <input class="form__input" type="text" placeholder="Кв">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-section">
+                  <div class="register__title">Последний шаг!</div>
+                  <div class="form-section__inner">
+                    <div class="form__field">
+                      <input class="form__input" id="password" type="password" placeholder="Пароль" required>
+                    </div>
+                    <div class="form__field">
+                      <input class="form__input" type="password" placeholder="Повторите пароль" required data-parsley-equalto="#password">
+                    </div>
+                    <div class="form__checkbox-line">
+                      <div class="form__checkbox">
+                        <div class="checkbox">
+                          <input class="checkbox__input" id="agree" type="checkbox">
+                          <label class="checkbox__label" for="agree">
+                            <div class="checkbox__icon"></div>
+                            <div class="checkbox__text">Я даю согласие на обработку персональных данных</div>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form__checkbox">
+                        <div class="checkbox">
+                          <input class="checkbox__input" id="want" type="checkbox">
+                          <label class="checkbox__label" for="want">
+                            <div class="checkbox__icon"></div>
+                            <div class="checkbox__text">Я хочу получать e-mail рассылку о мероприятиях и изменениях</div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__navigation form-navigation">
+                  <button class="previous form-previous pull-left" type="button">Предыдущий шаг</button>
+                  <button class="next form-next pull-right" type="button">Следующий шаг</button>
+                  <button class="button button-primary form-send pull-right" type="submit">Регистрация</button><span class="clearfix"></span>
+                </div>
+              </form>
+            </div>
+            <div class="register__right">
+              <div class="register__step-list">
+                <div class="register__step active step">
+                  <div class="register__number">1</div>
+                  <div class="register__name">Основная обязательная<br>информация</div>
+                  <div class="register__text">Заполните основные поля регистрации, указав свое полное имя, пол, e-mail, номер телефона.</div>
+                </div>
+                <div class="register__step step">
+                  <div class="register__number">2</div>
+                  <div class="register__name">Дополнительная<br>информация</div>
+                  <div class="register__text">Заполните основные поля регистрации, указав свое полное имя, пол, e-mail, номер телефона.</div>
+                </div>
+                <div class="register__step step">
+                  <div class="register__number">3</div>
+                  <div class="register__name">Адрес</div>
+                  <div class="register__text">Если Вы хотите получать издания АБВ-пресс, заполните поля с подробным адресом.</div>
+                </div>
+                <div class="register__step step">
+                  <div class="register__number">4</div>
+                  <div class="register__name">Последний<br>шаг!</div>
+                  <div class="register__text">Чтобы легко управлять своей информацией на нашем сайте, создайте пароль.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer" id="footer">
+        <div class="container clearfix">
+          <div class="footer__lang drop-box">
+            <div class="drop-box__btn">RUS</div>
+            <div class="drop-box__drop">
+              <div class="drop-box__item"><a class="drop-box__link" href="#">RUS</a></div>
+              <div class="drop-box__item"><a class="drop-box__link" href="#">EN</a></div>
+            </div>
+          </div>
+          <div class="footer__links">
+            <div><a href="tel:+74959888992">+7 (495) 988-89-92</a></div>
+            <div><a href="mailto:info@abvexpo.ru">info@abvexpo.ru</a></div>
+          </div>
+          <div class="footer__address"><a href="#">Москва, Каширское шоссе, д. 24, стр. 15</a></div>
+          <div class="footer__copy">© 2019 ООО "Конгресс-оператор "АБВ-экспо"<br>Все права защищены</div>
+        </div>
+      </div>
+      <div class="popup popup_upload mfp-hide" id="upload-modal">
+        <button class="popup__close js-close-modal" type="button"></button>
+        <div class="popup__title">Загрузка фотографии</div>
+        <div class="popup__text">Вы можете загрузить изображение<br>в формате JPG, GIF или PNG</div>
+        <form class="form">
+          <div class="upload-field">
+            <input class="upload-field__input" id="upload-filed" type="file" multiple="false">
+            <div class="upload-field__img-box"><img class="upload-field__img" src="./images/empty-avatar.png" alt=""></div>
+            <label class="button button-primary upload-field__label upload-field__btn" for="upload-filed">Выбрать файл</label>
+            <button class="button button-primary upload-field__submit upload-field__btn" type="submit">Сохранить</button>
+          </div>
+        </form>
+        <div class="popup__other-text">Если у Вас возникают проблемы с загрузкой,<br>попробуйте выбрать фотографию меньшего размера.</div>
+      </div>
+    </div>
+  </body>
+</html>
