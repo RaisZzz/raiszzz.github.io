@@ -11,6 +11,9 @@ body{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	background-image: url('../img/bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .container{
 	width: 100%;
@@ -22,6 +25,7 @@ body{
 	margin: 0 auto;
 	border: 3px solid #111;
 	background: #fff;
+	box-shadow: 0 0 15px 0.5px rgba(0,0,0,0.5);
 }
 .row{
 	display: flex;
@@ -39,6 +43,10 @@ body{
 	margin: 0 20px;
 	cursor: pointer;
 	transition: 0.5s;
+	box-shadow: 0 0 15px 0.5px rgba(0,0,0,0.5);
+}
+.color:hover{
+	opacity: 0.5;
 }
 .color.picked{
 	border: 3px solid #fff;
@@ -54,6 +62,7 @@ body{
 	width: 100%;
 	position: relative;
 	bottom: 10px;
+	box-shadow: 0 0 15px 0.5px rgba(0,0,0,0.5);
 }
 .size input::-webkit-slider-thumb{
 	-webkit-appearance: none;

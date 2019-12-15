@@ -49,6 +49,7 @@ $('#color-1').on('click', function(){
 	$('#color-3').removeClass('picked');
 	$('#color-4').removeClass('picked');
 	$('#color-5').removeClass('picked');
+	$('#color-6').removeClass('picked');
 });
 $('#color-2').on('click', function(){
 	picked_color = document.getElementById('color-2').getAttribute('data-color');
@@ -57,6 +58,7 @@ $('#color-2').on('click', function(){
 	$('#color-3').removeClass('picked');
 	$('#color-4').removeClass('picked');
 	$('#color-5').removeClass('picked');
+	$('#color-6').removeClass('picked');
 });
 $('#color-3').on('click', function(){
 	picked_color = document.getElementById('color-3').getAttribute('data-color');
@@ -65,6 +67,7 @@ $('#color-3').on('click', function(){
 	$('#color-2').removeClass('picked');
 	$('#color-4').removeClass('picked');
 	$('#color-5').removeClass('picked');
+	$('#color-6').removeClass('picked');
 });
 $('#color-4').on('click', function(){
 	picked_color = document.getElementById('color-4').getAttribute('data-color');
@@ -73,6 +76,7 @@ $('#color-4').on('click', function(){
 	$('#color-2').removeClass('picked');
 	$('#color-3').removeClass('picked');
 	$('#color-5').removeClass('picked');
+	$('#color-6').removeClass('picked');
 });
 $('#color-5').on('click', function(){
 	picked_color = document.getElementById('color-5').getAttribute('data-color');
@@ -81,6 +85,16 @@ $('#color-5').on('click', function(){
 	$('#color-2').removeClass('picked');
 	$('#color-3').removeClass('picked');
 	$('#color-4').removeClass('picked');
+	$('#color-6').removeClass('picked');
+});
+$('#color-6').on('click', function(){
+	picked_color = document.getElementById('color-6').getAttribute('data-color');
+	$('#color-6').addClass('picked');
+	$('#color-1').removeClass('picked');
+	$('#color-2').removeClass('picked');
+	$('#color-3').removeClass('picked');
+	$('#color-4').removeClass('picked');
+	$('#color-5').removeClass('picked');
 });
 
 // Picked size
