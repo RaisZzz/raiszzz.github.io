@@ -130,3 +130,37 @@ body{
 	background: #F86300;
 	transform: translateY(-50%);
 }
+@media(max-width: 1120px){
+	.calculator{
+		grid-template-columns: 1fr;
+		width: 100%;
+	}
+	.calculator .input:last-child{
+		grid-column-start: 1;
+	}
+	.calculator .input:first-child{
+		margin-right: 0;
+	}
+	.calculator .input:nth-child(2n){
+		margin-left: 0;
+	}
+	.calculator input[type="range"]{
+		width: 100%;
+	}
+	.calculator .range span{
+		width: 35px;
+	}
+	.calculator .range{
+		margin-bottom: 0px;
+	}
+	.calculator .input{
+		margin-bottom: 30px;
+	}
+	.calculator .input:last-child{
+		margin-bottom: 0;
+	}
+	.calculator .submit input[type="submit"]{
+		margin-left: 0;
+		margin-top: 0;
+	}
+}
