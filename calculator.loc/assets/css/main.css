@@ -134,6 +134,7 @@ body{
 	.calculator{
 		grid-template-columns: 1fr;
 		width: 100%;
+		padding: 40px;
 	}
 	.calculator .input:last-child{
 		grid-column-start: 1;
