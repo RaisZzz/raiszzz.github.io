@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Calculator</title>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+	<form class="calculator">
+		<div class="input">
+			<label for="summ">Сумма (руб.)</label>
+			<span class="value">1002960</span>
+			<div class="range">
+				<span></span>
+				<input id="summ" name="summ" type="range" min="1" max="20000000" value="1002960">
+			</div>
+		</div>
+		<div class="input">
+			<label for="time">Срок (месяц)</label>
+			<span class="value">3</span>
+			<div class="range">
+				<span></span>
+				<input id="time" name="time" type="range" min="1" max="26" value="3">
+			</div>
+		</div>
+		<div class="input">
+			<label>Сумма комиссии</label>
+			<span class="value"><span>5 700</span> ₽</span>
+		</div>
+		<div class="input">
+			<label>Ставка (%)</label>
+			<span id="rate" class="value">4,09</span>
+		</div>
+		<div class="input submit">
+			<input type="submit" value="Начать сейчас">
+		</div>
+	</form>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
