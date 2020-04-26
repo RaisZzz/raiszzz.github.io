@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function(){
 	let rate_val = document.getElementById('rate');
 
 	input_range.forEach(elem => {
+		elem.parentNode.querySelector('span').style.width = elem.offsetWidth/elem.max*elem.value + 'px';
+		
 		elem.addEventListener('input', function(){
 			let range_line = elem.parentNode.querySelector('span');
 			let range_val = elem.parentNode.parentNode.querySelector('.value');
