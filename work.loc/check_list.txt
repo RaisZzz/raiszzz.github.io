@@ -1,0 +1,5 @@
+5. Drag'n'drop
+8. Localisation
+under question ? 9. Kill Ilya
+
+При драгндропе сделать так, чтобы было видно, на какое место переместится абзац
