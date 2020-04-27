@@ -34,7 +34,15 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 31px;
 	margin-top: 10px;
+	border: none;
 	font-weight: 200;
+	outline: none;
+}
+.calculator .input .value::-webkit-outer-spin-button,
+.calculator .input .value::-webkit-inner-spin-button {
+	display: none;
+	-webkit-appearance: none;
+	margin: 0;
 }
 .calculator .input:first-child{
 	margin-right: 35px;
