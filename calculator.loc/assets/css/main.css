@@ -173,4 +173,7 @@ body{
 		margin-left: 0;
 		margin-top: 0;
 	}
+	.calculator .input .value{
+		width: 100%;
+	}
 }
