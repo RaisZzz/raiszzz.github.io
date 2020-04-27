@@ -5,6 +5,9 @@
 	box-sizing: border-box;
 	list-style: none;
 }
+body{
+	font-family: 'Baloo Paaji 2', cursive;
+}
 main{
 	width: 100%;
 	height: 100vh;
@@ -18,6 +21,7 @@ main{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	overflow: hidden;
 }
 main:before{
 	content: '';
@@ -35,8 +39,16 @@ h1{
 	text-align: center;
 	color: #fff;
 	font-size: 60px;
-	z-index: 1;
+	z-index: 0;
 	position: relative;
+}
+.help{
+	color: #000;
+	font-weight: 400;
+	font-size: 21px;
+	text-align: center;
+	position: relative;
+	z-index: 0;
 }
 .circle-container{
 	position: absolute;
@@ -56,33 +68,38 @@ h1{
 	width: 350px;
 	height: 350px;
 	border: 1px solid rgba(255,255,255,0.8);
+	z-index: 10;
 }
 .circle:nth-child(2){
 	width: 500px;
 	height: 500px;
 	border: 1px solid rgba(255,255,255,0.7);
+	z-index: 9;
 }
 .circle:nth-child(3){
 	width: 650px;
 	height: 650px;
 	border: 1px solid rgba(255,255,255,0.6);
+	z-index: 8;
 }
 .circle:nth-child(4){
 	width: 800px;
 	height: 800px;
 	border: 1px solid rgba(255,255,255,0.5);
+	z-index: 7;
 }
 .circle:nth-child(5){
 	width: 950px;
 	height: 950px;
 	border: 1px solid rgba(255,255,255,0.4);
+	z-index: 6;
 }
 .circle .icon{
 	position: absolute;
 	top: 0;
 	left: 50%;
 	height: 25px;
-	z-index: 999;
+	z-index: 0;
 	cursor: pointer;
 }
 .circle .icon:after{
@@ -108,4 +125,34 @@ h1{
 	z-index: 11;
 	cursor: pointer;
 	position: relative;
+}
+.circle .icon .desc{
+	position: absolute;
+	top: -10px;
+	left: calc(100% + 10px);
+	max-width: none;
+	min-width: 400px;
+	background: #fff;
+	border-radius: 10px;
+	padding: 20px;
+	z-index: 999;
+	transition: 0.5s;
+	box-shadow: 0 0 7px 1px rgba(0,0,0,0.3);
+	transform: translateX(100vw);
+	opacity: 0;
+}
+.circle .icon .desc.active{
+	transform: none;
+	opacity: 1;
+}
+.desc_name{
+	font-weight: bold;
+	font-size: 25px;
+	padding: 0;
+	line-height: 20px;
+}
+.desc_desc{
+	font-weight: 400;
+	font-size: 17px;
+	margin-top: 10px;
 }
