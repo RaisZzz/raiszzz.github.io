@@ -942,6 +942,10 @@ function getRate(time, summ){
 
 document.addEventListener('DOMContentLoaded', function(){
 
+	$('#summ_input').mask('## ### ###', {
+		reverse: true
+	});
+
 	let input_range = document.querySelectorAll('.calculator input[type="range"]');
 	let rate_val = document.getElementById('rate');
 	let comission = document.getElementById('commission');
@@ -957,7 +961,20 @@ document.addEventListener('DOMContentLoaded', function(){
 			let rate = getRate(time, summ);
 
 			range_line.style.width = elem.offsetWidth/elem.max*elem.value + 'px';
-			range_val.value = elem.value;
+
+			if(elem.value >= 1 && elem.value < 1000){
+				range_val.value = elem.value;
+			}else if(elem.value >= 1000 && elem.value < 10000){
+				range_val.value = elem.value.substring(0, elem.value.length-3) + ' ' + elem.value.substring(1, elem.value.length);
+			}else if(elem.value >= 10000 && elem.value < 100000){
+				range_val.value = elem.value.substring(0, elem.value.length-3) + ' ' + elem.value.substring(2, elem.value.length);
+			}else if(elem.value >= 100000 && elem.value < 1000000){
+				range_val.value = elem.value.substring(0, elem.value.length-3) + ' ' + elem.value.substring(3, elem.value.length);
+			}else if(elem.value >= 1000000 && elem.value < 10000000){
+				range_val.value = elem.value.substring(0, elem.value.length-6) + ' ' + elem.value.substring(1, elem.value.length-3) + ' ' + elem.value.substring(4, elem.value.length);
+			}else if(elem.value >= 10000000 && elem.value < 100000000){
+				range_val.value = elem.value.substring(0, elem.value.length-6) + ' ' + elem.value.substring(2, elem.value.length-3) + ' ' + elem.value.substring(5, elem.value.length);
+			}
 			
 			comission.innerHTML = Math.ceil(summ*rate/100/365*time *100)/100;
 			rate_val.innerHTML = rate;
@@ -965,10 +982,13 @@ document.addEventListener('DOMContentLoaded', function(){
 		});
 	});
 
-	document.querySelectorAll('.calculator input[type="number"]').forEach(elem => {
+	document.querySelectorAll('.calculator input[type="text"]').forEach(elem => {
 		elem.addEventListener('input', function(){
+			if(elem.value < 1){
+				elem.value = 1;
+			}
+			elem.value = elem.value.replace(/[^-0-9]/gim,'');
 			let range = elem.parentNode.querySelector('.range').querySelector('input[type="range"]');
-			console.log(elem.value + ' - ' + elem.max);
 			if(Number(elem.value) > Number(elem.max)){
 				elem.value = elem.max;
 			}
@@ -988,6 +1008,19 @@ document.addEventListener('DOMContentLoaded', function(){
 			comission.innerHTML = Math.ceil(summ*rate/100/365*time *100)/100;
 			rate_val.innerHTML = rate;
 
+			if(elem.value >= 1 && elem.value < 1000){
+				elem.value = elem.value;
+			}else if(elem.value >= 1000 && elem.value < 10000){
+				elem.value = elem.value.substring(0, elem.value.length-3) + ' ' + elem.value.substring(1, elem.value.length);
+			}else if(elem.value >= 10000 && elem.value < 100000){
+				elem.value = elem.value.substring(0, elem.value.length-3) + ' ' + elem.value.substring(2, elem.value.length);
+			}else if(elem.value >= 100000 && elem.value < 1000000){
+				elem.value = elem.value.substring(0, elem.value.length-3) + ' ' + elem.value.substring(3, elem.value.length);
+			}else if(elem.value >= 1000000 && elem.value < 10000000){
+				elem.value = elem.value.substring(0, elem.value.length-6) + ' ' + elem.value.substring(1, elem.value.length-3) + ' ' + elem.value.substring(4, elem.value.length);
+			}else if(elem.value >= 10000000 && elem.value < 100000000){
+				elem.value = elem.value.substring(0, elem.value.length-6) + ' ' + elem.value.substring(2, elem.value.length-3) + ' ' + elem.value.substring(5, elem.value.length);
+			}
 		});
 	});
 });

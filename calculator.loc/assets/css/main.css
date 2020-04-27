@@ -37,6 +37,7 @@ body{
 	border: none;
 	font-weight: 200;
 	outline: none;
+	width: calc(100% - 67px);
 }
 .calculator .input .value::-webkit-outer-spin-button,
 .calculator .input .value::-webkit-inner-spin-button {
