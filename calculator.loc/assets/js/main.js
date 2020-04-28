@@ -1112,6 +1112,14 @@ document.addEventListener('DOMContentLoaded', function(){
 				}
 			});
 
+			let rate = getRate(time.value, summ.value);
+			let comission = document.getElementById('commission');
+			let rate_val = document.getElementById('rate');
+			console.log(summ.value + ' ' + rate + ' ' + time.value);
+			
+			comission.innerHTML = Math.ceil(summ.value*rate/100/365*time.value *100)/100;
+			rate_val.innerHTML = rate;
+
 		});
 	});
 
