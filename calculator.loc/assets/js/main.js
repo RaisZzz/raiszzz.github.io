@@ -961,7 +961,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			let rate = getRate(time, summ);
 
 			if(elem.max <= 10){
-				range_line.style.width = elem.offsetWidth/elem.max*elem.value - 25 + 'px';
+				range_line.style.width = elem.offsetWidth/elem.max*elem.value - elem.offsetWidth/100 * 12 + 'px';
 			}else{
 				range_line.style.width = elem.offsetWidth/elem.max*elem.value + 'px';
 			}
@@ -1008,7 +1008,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			let rate = getRate(time, summ);
 
 			if(elem.max <= 10){
-				range_line.style.width = elem.offsetWidth/elem.max*elem.value - 25 + 'px';
+				range_line.style.width = elem.offsetWidth/elem.max*elem.value - elem.offsetWidth/100 * 12 + 'px';
 			}else{
 				range_line.style.width = elem.offsetWidth/elem.max*elem.value + 'px';
 			}
@@ -1106,7 +1106,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 			document.querySelectorAll('.range').forEach(elem => {
 				if(elem.querySelector('input').max <= 10){
-					elem.querySelector('span').style.width = elem.querySelector('input').offsetWidth/elem.querySelector('input').max*elem.querySelector('input').value - 20 + 'px';
+					elem.querySelector('span').style.width = elem.querySelector('input').offsetWidth/elem.querySelector('input').max*elem.querySelector('input').value - elem.offsetWidth/100 * 12 + 'px';
 				}else{
 					elem.querySelector('span').style.width = elem.querySelector('input').offsetWidth/elem.querySelector('input').max*elem.querySelector('input').value + 'px';
 				}
