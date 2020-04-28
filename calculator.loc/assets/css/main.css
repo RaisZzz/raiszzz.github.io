@@ -109,7 +109,7 @@ body{
 	justify-content: center;
 	align-items: center;
 }
-.calculator .submit input[type="submit"]{
+.calculator .submit p{
 	background: #F86300;
 	color: #fff;
 	border: none;
@@ -123,7 +123,7 @@ body{
 	transition: 0.5s;
 	margin-top: 40px;
 }
-.calculator .submit input[type="submit"]:hover{
+.calculator .submit p:hover{
 	opacity: 0.7;
 }
 .calculator .range{
@@ -225,7 +225,7 @@ body{
 	.calculator .input:last-child{
 		margin-bottom: 0;
 	}
-	.calculator .submit input[type="submit"]{
+	.calculator .submit p{
 		margin-left: 0;
 		margin-top: 0;
 	}
