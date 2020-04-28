@@ -31,7 +31,7 @@ function getRate(time, summ){
 			rate = 3.88;
 		}else if(summ >= 10000000 && summ < 20000000){
 			rate = 3.88;
-		}else if(summ == 20000000){
+		}else if(summ >= 20000000){
 			rate = 3.88;
 		}
 
@@ -67,7 +67,7 @@ function getRate(time, summ){
 			rate = 3.87;
 		}else if(summ >= 10000000 && summ < 20000000){
 			rate = 3.87;
-		}else if(summ == 20000000){
+		}else if(summ >= 20000000){
 			rate = 3.87;
 		}
 
@@ -103,7 +103,7 @@ function getRate(time, summ){
 			rate = 3.86;
 		}else if(summ >= 10000000 && summ < 20000000){
 			rate = 3.86;
-		}else if(summ == 20000000){
+		}else if(summ >= 20000000){
 			rate = 3.86;
 		}
 
@@ -139,7 +139,7 @@ function getRate(time, summ){
 			rate = 3.86;
 		}else if(summ >= 10000000 && summ < 20000000){
 			rate = 3.86;
-		}else if(summ == 20000000){
+		}else if(summ >= 20000000){
 			rate = 3.86;
 		}
 
@@ -175,7 +175,7 @@ function getRate(time, summ){
 			rate = 3.86;
 		}else if(summ >= 10000000 && summ < 20000000){
 			rate = 3.86;
-		}else if(summ == 20000000){
+		}else if(summ >= 20000000){
 			rate = 3.86;
 		}
 
@@ -211,7 +211,7 @@ function getRate(time, summ){
 			rate = 3.85;
 		}else if(summ >= 10000000 && summ < 20000000){
 			rate = 3.85;
-		}else if(summ == 20000000){
+		}else if(summ >= 20000000){
 			rate = 3.85;
 		}
 
@@ -247,7 +247,7 @@ function getRate(time, summ){
 			rate = 3.85;
 		}else if(summ >= 10000000 && summ < 20000000){
 			rate = 3.85;
-		}else if(summ == 20000000){
+		}else if(summ >= 20000000){
 			rate = 3.85;
 		}
 
@@ -283,7 +283,7 @@ function getRate(time, summ){
 			rate = 3.85;
 		}else if(summ >= 10000000 && summ < 20000000){
 			rate = 3.85;
-		}else if(summ == 20000000){
+		}else if(summ >= 20000000){
 			rate = 3.85;
 		}
 
@@ -319,7 +319,7 @@ function getRate(time, summ){
 			rate = 3.85;
 		}else if(summ >= 10000000 && summ < 20000000){
 			rate = 3.85;
-		}else if(summ == 20000000){
+		}else if(summ >= 20000000){
 			rate = 3.85;
 		}
 
@@ -355,7 +355,7 @@ function getRate(time, summ){
 			rate = 3.84;
 		}else if(summ >= 10000000 && summ < 20000000){
 			rate = 3.84;
-		}else if(summ == 20000000){
+		}else if(summ >= 20000000){
 			rate = 3.84;
 		}
 
@@ -391,7 +391,7 @@ function getRate(time, summ){
 			rate = 3.83;
 		}else if(summ >= 10000000 && summ < 20000000){
 			rate = 3.83;
-		}else if(summ == 20000000){
+		}else if(summ >= 20000000){
 			rate = 3.83;
 		}
 
@@ -427,7 +427,7 @@ function getRate(time, summ){
 			rate = 3.82;
 		}else if(summ >= 10000000 && summ < 20000000){
 			rate = 3.82;
-		}else if(summ == 20000000){
+		}else if(summ >= 20000000){
 			rate = 3.82;
 		}
 
@@ -463,7 +463,7 @@ function getRate(time, summ){
 			rate = 3.82;
 		}else if(summ >= 10000000 && summ < 20000000){
 			rate = 3.82;
-		}else if(summ == 20000000){
+		}else if(summ >= 20000000){
 			rate = 3.82;
 		}
 
@@ -499,7 +499,7 @@ function getRate(time, summ){
 			rate = 3.83;
 		}else if(summ >= 10000000 && summ < 20000000){
 			rate = 3.83;
-		}else if(summ == 20000000){
+		}else if(summ >= 20000000){
 			rate = 3.83;
 		}
 
@@ -535,7 +535,7 @@ function getRate(time, summ){
 			rate = 3.84;
 		}else if(summ >= 10000000 && summ < 20000000){
 			rate = 3.84;
-		}else if(summ == 20000000){
+		}else if(summ >= 20000000){
 			rate = 3.84;
 		}
 
@@ -571,7 +571,7 @@ function getRate(time, summ){
 			rate = 3.84;
 		}else if(summ >= 10000000 && summ < 20000000){
 			rate = 3.84;
-		}else if(summ == 20000000){
+		}else if(summ >= 20000000){
 			rate = 3.84;
 		}
 
@@ -607,7 +607,7 @@ function getRate(time, summ){
 			rate = 3.85;
 		}else if(summ >= 10000000 && summ < 20000000){
 			rate = 3.85;
-		}else if(summ == 20000000){
+		}else if(summ >= 20000000){
 			rate = 3.85;
 		}
 
@@ -643,7 +643,7 @@ function getRate(time, summ){
 			rate = 3.85;
 		}else if(summ >= 10000000 && summ < 20000000){
 			rate = 3.85;
-		}else if(summ == 20000000){
+		}else if(summ >= 20000000){
 			rate = 3.85;
 		}
 
@@ -679,7 +679,7 @@ function getRate(time, summ){
 			rate = 3.86;
 		}else if(summ >= 10000000 && summ < 20000000){
 			rate = 3.86;
-		}else if(summ == 20000000){
+		}else if(summ >= 20000000){
 			rate = 3.86;
 		}
 
@@ -715,7 +715,7 @@ function getRate(time, summ){
 			rate = 3.87;
 		}else if(summ >= 10000000 && summ < 20000000){
 			rate = 3.87;
-		}else if(summ == 20000000){
+		}else if(summ >= 20000000){
 			rate = 3.87;
 		}
 
@@ -751,7 +751,7 @@ function getRate(time, summ){
 			rate = 3.87;
 		}else if(summ >= 10000000 && summ < 20000000){
 			rate = 3.87;
-		}else if(summ == 20000000){
+		}else if(summ >= 20000000){
 			rate = 3.87;
 		}
 
@@ -787,7 +787,7 @@ function getRate(time, summ){
 			rate = 3.88;
 		}else if(summ >= 10000000 && summ < 20000000){
 			rate = 3.88;
-		}else if(summ == 20000000){
+		}else if(summ >= 20000000){
 			rate = 3.88;
 		}
 
@@ -823,7 +823,7 @@ function getRate(time, summ){
 			rate = 3.88;
 		}else if(summ >= 10000000 && summ < 20000000){
 			rate = 3.88;
-		}else if(summ == 20000000){
+		}else if(summ >= 20000000){
 			rate = 3.88;
 		}
 
@@ -859,7 +859,7 @@ function getRate(time, summ){
 			rate = 3.89;
 		}else if(summ >= 10000000 && summ < 20000000){
 			rate = 3.89;
-		}else if(summ == 20000000){
+		}else if(summ >= 20000000){
 			rate = 3.89;
 		}
 
@@ -895,7 +895,7 @@ function getRate(time, summ){
 			rate = 3.90;
 		}else if(summ >= 10000000 && summ < 20000000){
 			rate = 3.90;
-		}else if(summ == 20000000){
+		}else if(summ >= 20000000){
 			rate = 3.90;
 		}
 
@@ -931,7 +931,7 @@ function getRate(time, summ){
 			rate = 3.90;
 		}else if(summ >= 10000000 && summ < 20000000){
 			rate = 3.90;
-		}else if(summ == 20000000){
+		}else if(summ >= 20000000){
 			rate = 3.90;
 		}
 
@@ -960,7 +960,11 @@ document.addEventListener('DOMContentLoaded', function(){
 			let time = document.getElementById('time').value;
 			let rate = getRate(time, summ);
 
-			range_line.style.width = elem.offsetWidth/elem.max*elem.value + 'px';
+			if(elem.max <= 10){
+				range_line.style.width = elem.offsetWidth/elem.max*elem.value - 25 + 'px';
+			}else{
+				range_line.style.width = elem.offsetWidth/elem.max*elem.value + 'px';
+			}
 
 			if(elem.value >= 1 && elem.value < 1000){
 				range_val.value = elem.value;
@@ -1003,7 +1007,11 @@ document.addEventListener('DOMContentLoaded', function(){
 
 			let rate = getRate(time, summ);
 
-			range_line.style.width = elem.offsetWidth/elem.max*elem.value + 'px';
+			if(elem.max <= 10){
+				range_line.style.width = elem.offsetWidth/elem.max*elem.value - 25 + 'px';
+			}else{
+				range_line.style.width = elem.offsetWidth/elem.max*elem.value + 'px';
+			}
 			
 			comission.innerHTML = Math.ceil(summ*rate/100/365*time *100)/100;
 			rate_val.innerHTML = rate;
@@ -1023,4 +1031,88 @@ document.addEventListener('DOMContentLoaded', function(){
 			}
 		});
 	});
+
+	let fffz_id = 'fffz'; // 44-ФЗ id
+	let ttffz_id = 'ttffz'; // 223-ФЗ id
+	let oeffz_id = 'oeffz'; // 185-ФЗ/615-ПП id
+	let execution_id = 'execution'; // Исполнение id
+	let prepaid_id = 'prepaid'; // Аванс id
+	let participation_id = 'participation'; // Участие id
+	let liabilities_id = 'liabilities'; // Обязательства id
+
+	document.querySelectorAll('.calculator .numbers_mark input[type="radio"]').forEach(elem => {
+		elem.addEventListener('input', function(){
+			if(elem.id == oeffz_id){
+				document.getElementById(liabilities_id).disabled = 1;
+			}else{
+				document.getElementById(liabilities_id).disabled = 0;
+			}
+		});
+	});
+
+	document.querySelectorAll('.calculator input[type="radio"]').forEach(elem => {
+		elem.addEventListener('change', function(){
+			let number_mark = document.querySelector('.calculator .numbers_mark input:checked');
+			let product_type = document.querySelector('.calculator .product_types input:checked');
+			let summ_input = document.getElementById('summ_input');
+			let summ = document.getElementById('summ');
+			let time_input = document.getElementById('time_input');
+			let time = document.getElementById('time');
+
+			if(number_mark.id == fffz_id || number_mark.id == ttffz_id){
+				if(product_type.id == execution_id || product_type.id == prepaid_id){
+					summ_input.max = 40000000;
+					summ.max = 40000000;
+					time_input.max = 60;
+					time.max = 60;
+				}else if(product_type.id == participation_id){
+					summ_input.max = 20000000;
+					summ.max = 20000000;
+					time_input.max = 5;
+					time.max = 5;
+				}else if(product_type.id == liabilities_id){
+					summ_input.max = 20000000;
+					summ.max = 10000000;
+					time_input.max = 37;
+					time.max = 37;
+				}
+			}else if(number_mark.id == oeffz_id){
+				if(product_type.id == execution_id || product_type.id == prepaid_id){
+					summ_input.max = 40000000;
+					summ.max = 40000000;
+					time_input.max = 60;
+					time.max = 60;
+				}else if(product_type.id == participation_id){
+					summ_input.max = 20000000;
+					summ.max = 20000000;
+					time_input.max = 5;
+					time.max = 5;
+				}else if(product_type.id == liabilities_id){
+					summ_input.max = 0;
+					summ.max = 0;
+					time_input.max = 0;
+					time.max = 0;
+				}
+			}
+
+			if(summ.value >= summ.max){
+				summ.value = summ.max;
+				summ_input.value = summ.max.substring(0, summ.max.length - 6) + ' ' + summ.max.substring(2, summ.max.length - 3) + ' ' + summ.max.substring(5, summ.max.length);
+			}
+			if(time.value >= time.max){
+				time.value = time.max;
+				time_input.value = time.max;
+			}
+
+			document.querySelectorAll('.range').forEach(elem => {
+				if(elem.querySelector('input').max <= 10){
+					elem.querySelector('span').style.width = elem.querySelector('input').offsetWidth/elem.querySelector('input').max*elem.querySelector('input').value - 20 + 'px';
+				}else{
+					elem.querySelector('span').style.width = elem.querySelector('input').offsetWidth/elem.querySelector('input').max*elem.querySelector('input').value + 'px';
+				}
+			});
+
+		});
+	});
+
 });
