@@ -219,6 +219,9 @@ body{
 	margin-left: 10px;
 	padding-top: 5px;
 }
+#map{
+	height: 660px;
+}
 .show_price_area{
 	margin-bottom: 8px;
 	display: flex;
