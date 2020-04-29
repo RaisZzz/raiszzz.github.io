@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./assets/css/main.css">
+	<title>Map</title>
+</head>
+<body>
+	<div class="container">
+		<div class="map-wrapper">
+			<div class="map-left">
+				<label for="address">Адрес</label>
+				<input type="text" class="address" id="address">
+				<label>Доставка</label>
+				<div class="delivery_types">
+					<div class="delivery-type">
+						<div class="delivery-type-input">
+							<label for="courier">Курьером</label>
+							<input type="radio" name="delivery" id="courier">
+						</div>
+					</div>
+					<div class="delivery-type active">
+						<div class="delivery-type-input">
+							<label for="car">Машиной</label>
+							<input type="radio" name="delivery" id="car" checked>
+						</div>
+						<div class="sub-delivery-type">
+							<div class="delivery-input">
+								<label for="z_f">0.5</label>
+								<input type="radio" name="sub-delivery" id="z_f">
+								<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+								width="157.000000pt" height="109.000000pt" viewBox="0 0 157.000000 109.000000"
+								preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,109.000000) scale(0.100000,-0.100000)"
+								fill="#000000" stroke="none"><path d="M252 774 c-21 -15 -22 -20 -22 -195 0 -177 6 -219 33 -219 7 0 18 15
+								25 33 14 38 46 57 97 57 62 0 106 -25 119 -68 7 -22 8 -22 270 -22 l262 0 16
+								33 c31 66 117 73 176 16 18 -17 32 -35 32 -40 0 -5 20 -9 45 -9 l45 0 0 83 c0
+								74 -3 86 -22 104 -34 31 -96 59 -163 74 -50 10 -68 21 -110 62 -27 27 -76 62
+								-107 78 l-57 29 -308 0 c-263 0 -312 -2 -331 -16z"/><path d="M359 400 c-28 -16 -43 -64 -28 -92 28 -53 71 -62 113 -23 33 31 34
+								74 3 103 -24 23 -61 28 -88 12z"/><path d="M1102 387 c-31 -33 -29 -80 4 -106 34 -27 57 -26 88 2 36 32 39 74 6
+								107 -27 27 -71 26 -98 -3z"/></g></svg>
+							</div>
+							<div class="delivery-input">
+								<label for="o_f">1.5</label>
+								<input type="radio" name="sub-delivery" id="o_f" checked>
+								<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+								width="157.000000pt" height="109.000000pt" viewBox="0 0 157.000000 109.000000"
+								preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,109.000000) scale(0.100000,-0.100000)"
+								fill="#000000" stroke="none"><path d="M252 774 c-21 -15 -22 -20 -22 -195 0 -177 6 -219 33 -219 7 0 18 15
+								25 33 14 38 46 57 97 57 62 0 106 -25 119 -68 7 -22 8 -22 270 -22 l262 0 16
+								33 c31 66 117 73 176 16 18 -17 32 -35 32 -40 0 -5 20 -9 45 -9 l45 0 0 83 c0
+								74 -3 86 -22 104 -34 31 -96 59 -163 74 -50 10 -68 21 -110 62 -27 27 -76 62
+								-107 78 l-57 29 -308 0 c-263 0 -312 -2 -331 -16z"/><path d="M359 400 c-28 -16 -43 -64 -28 -92 28 -53 71 -62 113 -23 33 31 34
+								74 3 103 -24 23 -61 28 -88 12z"/><path d="M1102 387 c-31 -33 -29 -80 4 -106 34 -27 57 -26 88 2 36 32 39 74 6
+								107 -27 27 -71 26 -98 -3z"/></g></svg>
+							</div>
+							<div class="delivery-input">
+								<label for="t_f">3.5</label>
+								<input type="radio" name="sub-delivery" id="t_f">
+								<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+								width="157.000000pt" height="109.000000pt" viewBox="0 0 157.000000 109.000000"
+								preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,109.000000) scale(0.100000,-0.100000)"
+								fill="#000000" stroke="none"><path d="M252 774 c-21 -15 -22 -20 -22 -195 0 -177 6 -219 33 -219 7 0 18 15
+								25 33 14 38 46 57 97 57 62 0 106 -25 119 -68 7 -22 8 -22 270 -22 l262 0 16
+								33 c31 66 117 73 176 16 18 -17 32 -35 32 -40 0 -5 20 -9 45 -9 l45 0 0 83 c0
+								74 -3 86 -22 104 -34 31 -96 59 -163 74 -50 10 -68 21 -110 62 -27 27 -76 62
+								-107 78 l-57 29 -308 0 c-263 0 -312 -2 -331 -16z"/><path d="M359 400 c-28 -16 -43 -64 -28 -92 28 -53 71 -62 113 -23 33 31 34
+								74 3 103 -24 23 -61 28 -88 12z"/><path d="M1102 387 c-31 -33 -29 -80 4 -106 34 -27 57 -26 88 2 36 32 39 74 6
+								107 -27 27 -71 26 -98 -3z"/></g></svg>
+							</div>
+							<div class="delivery-input">
+								<label for="five">5</label>
+								<input type="radio" name="sub-delivery" id="five">
+								<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+								width="157.000000pt" height="109.000000pt" viewBox="0 0 157.000000 109.000000"
+								preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,109.000000) scale(0.100000,-0.100000)"
+								fill="#000000" stroke="none"><path d="M252 774 c-21 -15 -22 -20 -22 -195 0 -177 6 -219 33 -219 7 0 18 15
+								25 33 14 38 46 57 97 57 62 0 106 -25 119 -68 7 -22 8 -22 270 -22 l262 0 16
+								33 c31 66 117 73 176 16 18 -17 32 -35 32 -40 0 -5 20 -9 45 -9 l45 0 0 83 c0
+								74 -3 86 -22 104 -34 31 -96 59 -163 74 -50 10 -68 21 -110 62 -27 27 -76 62
+								-107 78 l-57 29 -308 0 c-263 0 -312 -2 -331 -16z"/><path d="M359 400 c-28 -16 -43 -64 -28 -92 28 -53 71 -62 113 -23 33 31 34
+								74 3 103 -24 23 -61 28 -88 12z"/><path d="M1102 387 c-31 -33 -29 -80 4 -106 34 -27 57 -26 88 2 36 32 39 74 6
+								107 -27 27 -71 26 -98 -3z"/></g></svg>
+							</div>
+							<div class="delivery-input">
+								<label for="ten">10</label>
+								<input type="radio" name="sub-delivery" id="ten">
+								<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+								width="157.000000pt" height="109.000000pt" viewBox="0 0 157.000000 109.000000"
+								preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,109.000000) scale(0.100000,-0.100000)"
+								fill="#000000" stroke="none"><path d="M252 774 c-21 -15 -22 -20 -22 -195 0 -177 6 -219 33 -219 7 0 18 15
+								25 33 14 38 46 57 97 57 62 0 106 -25 119 -68 7 -22 8 -22 270 -22 l262 0 16
+								33 c31 66 117 73 176 16 18 -17 32 -35 32 -40 0 -5 20 -9 45 -9 l45 0 0 83 c0
+								74 -3 86 -22 104 -34 31 -96 59 -163 74 -50 10 -68 21 -110 62 -27 27 -76 62
+								-107 78 l-57 29 -308 0 c-263 0 -312 -2 -331 -16z"/><path d="M359 400 c-28 -16 -43 -64 -28 -92 28 -53 71 -62 113 -23 33 31 34
+								74 3 103 -24 23 -61 28 -88 12z"/><path d="M1102 387 c-31 -33 -29 -80 4 -106 34 -27 57 -26 88 2 36 32 39 74 6
+								107 -27 27 -71 26 -98 -3z"/></g></svg>
+							</div>
+						</div>
+					</div>
+					<div class="delivery-type">
+						<div class="delivery-type-input">
+							<label for="manipulator">Манипулятором</label>
+							<input type="radio" name="delivery" id="manipulator">
+						</div>
+						<div class="sub-delivery-type">
+							<div class="delivery-input">
+								<label for="man_ten">10</label>
+								<input type="radio" id="man_ten" checked>
+								<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+								width="157.000000pt" height="109.000000pt" viewBox="0 0 157.000000 109.000000"
+								preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,109.000000) scale(0.100000,-0.100000)"
+								fill="#000000" stroke="none"><path d="M252 774 c-21 -15 -22 -20 -22 -195 0 -177 6 -219 33 -219 7 0 18 15
+								25 33 14 38 46 57 97 57 62 0 106 -25 119 -68 7 -22 8 -22 270 -22 l262 0 16
+								33 c31 66 117 73 176 16 18 -17 32 -35 32 -40 0 -5 20 -9 45 -9 l45 0 0 83 c0
+								74 -3 86 -22 104 -34 31 -96 59 -163 74 -50 10 -68 21 -110 62 -27 27 -76 62
+								-107 78 l-57 29 -308 0 c-263 0 -312 -2 -331 -16z"/><path d="M359 400 c-28 -16 -43 -64 -28 -92 28 -53 71 -62 113 -23 33 31 34
+								74 3 103 -24 23 -61 28 -88 12z"/><path d="M1102 387 c-31 -33 -29 -80 4 -106 34 -27 57 -26 88 2 36 32 39 74 6
+								107 -27 27 -71 26 -98 -3z"/></g></svg>
+							</div>
+						</div>
+					</div>
+				</div>
+				<label>Вид доставки</label>
+				<div class="delivery_prems">
+					<div class="delivery-prem">
+						<h3><span class="open">+</span><span class="close">-</span> Акция: после 20:00</h3>
+						<div class="delivery-prem-desc">
+							<p>Доставка осуществляется с 20:00 до 04:00 (первый интервал - 20:00-00:00, последний - 00:00-04:00). Минимальная сумма заказа: 2000 руб. Максимальный общий вес товаров в доставке: 100 кг, максимальная длина: 3 метра.</p>
+						</div>
+					</div>
+					<div class="delivery-prem">
+						<h3><span class="open">+</span><span class="close">-</span> В течении дня</h3>
+						<div class="delivery-prem-desc">
+							<p>Этот вид доставки производится в интервалы 9:00-18:00, 13:00-22:00, 15:00-24:00. С 8:00 до 15:00 Вы можете оформить доставку на текущий день, а после 15:00 - на следующий.</p>
+						</div>
+					</div>
+					<div class="delivery-prem">
+						<h3><span class="open">+</span><span class="close">-</span> Стандартная (за 4 часа)</h3>
+						<div class="delivery-prem-desc">
+							<p>Осуществляется круглосуточно.</p>
+						</div>
+					</div>
+					<div class="delivery-prem">
+						<h3><span class="open">+</span><span class="close">-</span> Точно ко времени</h3>
+						<div class="delivery-prem-desc">
+							<p>Осуществляется круглосуточно к желаемому времени, но не раньше, чем через 5 часов с момента заказа.</p>
+						</div>
+					</div>
+					<div class="delivery-prem">
+						<h3><span class="open">+</span><span class="close">-</span> Курьерская доставка</h3>
+						<div class="delivery-prem-desc">
+							<p>Осуществляется внутри МКАД. При заказе до 15.00 – доставка "день в день". При заказе после 15.00 – доставка на следующий день с 9.00 до 15.00 или с 15.00 до 22.00.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="map-right">
+				<div class="show_price_area">
+					<div class="input">
+						<input type="checkbox" id="price_area" name="price_area" checked>
+						<span></span>
+					</div>
+					<label for="price_area">Показать зоны стоимости</label>
+				</div>
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adaea451a72451b4eb239e4cc1916dbc3b18b11b9abe27e0f50f83de1a47f1132&amp;width=100%25&amp;height=660&amp;lang=ru_RU&amp;scroll=true"></script>
+			</div>
+		</div>
+	</div>
+	<script src="./assets/js/main.js"></script>
+</body>
+</html>
