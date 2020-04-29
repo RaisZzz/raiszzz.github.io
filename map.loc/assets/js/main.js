@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function(){
 			opacity: 0.5,
 			strokeWidth: 5
 		});
-		myMap.geoObjects.add(courier_geo);
 		let car_geo_one = new ymaps.GeoObject({
 			geometry: {
 				type: "Polygon",
@@ -46,7 +45,8 @@ document.addEventListener('DOMContentLoaded', function(){
 			opacity: 0.5,
 			strokeWidth: 5
 		});
-		myMap.geoObjects.add(courier_geo);
+		
+		myMap.geoObjects.add(car_geo_one);
 
 		// Price Area Toggle
 		let price_toggle = document.getElementById('price_area');
