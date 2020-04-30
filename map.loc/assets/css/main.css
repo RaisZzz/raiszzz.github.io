@@ -223,7 +223,7 @@ body{
 	display: block;
 }
 .map-right{
-	width: 80%;
+	width: calc(80% - 10px);
 	margin-left: 10px;
 	padding-top: 5px;
 }
