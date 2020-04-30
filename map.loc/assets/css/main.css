@@ -169,6 +169,10 @@ body{
 	border-bottom: 1px dotted #000;
 	margin-bottom: -1px;
 }
+.delivery-prem.active:hover h3{
+	border-bottom: 1px dotted #000;
+	margin-bottom: 7px;
+}
 .delivery_prems .delivery-prem:last-child{
 	border-bottom: none;
 }
