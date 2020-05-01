@@ -290,3 +290,20 @@ body{
 	margin-left: 8px;
 	font-size: 18px;
 }
+@media (max-width: 1208px){
+	.container{
+		width: 100%;
+	}
+}
+@media (max-width: 1024px){
+	.map-wrapper{
+		flex-direction: column;
+	}
+	.map-left{
+		width: 100%;
+	}
+	.map-right{
+		width: 100%;
+		margin-left: 0;
+	}
+}
