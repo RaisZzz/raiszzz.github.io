@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="./assets/css/main.css">
 	<title>Map</title>
 	<script src="https://api-maps.yandex.ru/2.1?apikey=af79659d-de2f-4b4d-83a1-7f9cbd7767ba&lang=ru_RU"
-  type="text/javascript"></script>
+	type="text/javascript"></script>
 </head>
 <body>
 	<div class="container">
@@ -20,18 +20,18 @@
 					<div class="delivery-type">
 						<div class="delivery-type-input">
 							<label for="courier">Курьером</label>
-							<input type="radio" name="delivery" id="courier">
+							<input type="radio" name="delivery" id="courier" data-geo="courier">
 						</div>
 					</div>
 					<div class="delivery-type active">
 						<div class="delivery-type-input">
 							<label for="car">Машиной</label>
-							<input type="radio" name="delivery" id="car" checked>
+							<input type="radio" name="delivery" id="car" checked data-geo="car_two">
 						</div>
 						<div class="sub-delivery-type">
 							<div class="delivery-input">
 								<label for="z_f">0.5</label>
-								<input type="radio" name="sub-delivery" id="z_f">
+								<input type="radio" name="sub-delivery" id="z_f" data-geo="car_one">
 								<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
 								width="157.000000pt" height="109.000000pt" viewBox="0 0 157.000000 109.000000"
 								preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,109.000000) scale(0.100000,-0.100000)"
@@ -45,7 +45,7 @@
 							</div>
 							<div class="delivery-input">
 								<label for="o_f">1.5</label>
-								<input type="radio" name="sub-delivery" id="o_f" checked>
+								<input type="radio" name="sub-delivery" id="o_f" checked data-geo="car_two">
 								<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
 								width="203.000000pt" height="115.000000pt" viewBox="0 0 203.000000 115.000000"
 								preserveAspectRatio="xMidYMid meet">
@@ -67,7 +67,7 @@
 							</div>
 							<div class="delivery-input">
 								<label for="t_f">3.5</label>
-								<input type="radio" name="sub-delivery" id="t_f">
+								<input type="radio" name="sub-delivery" id="t_f" data-geo="car_three">
 								<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
 								width="208.000000pt" height="112.000000pt" viewBox="0 0 208.000000 112.000000"
 								preserveAspectRatio="xMidYMid meet">
@@ -88,7 +88,7 @@
 							</div>
 							<div class="delivery-input">
 								<label for="five">5</label>
-								<input type="radio" name="sub-delivery" id="five">
+								<input type="radio" name="sub-delivery" id="five" data-geo="car_four">
 								<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
 								width="236.000000pt" height="133.000000pt" viewBox="0 0 236.000000 133.000000"
 								preserveAspectRatio="xMidYMid meet">
@@ -110,7 +110,7 @@
 							</div>
 							<div class="delivery-input">
 								<label for="ten">10</label>
-								<input type="radio" name="sub-delivery" id="ten">
+								<input type="radio" name="sub-delivery" id="ten" data-geo="car_five">
 								<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
 								width="285.000000pt" height="123.000000pt" viewBox="0 0 285.000000 123.000000"
 								preserveAspectRatio="xMidYMid meet">
@@ -138,7 +138,7 @@
 					<div class="delivery-type">
 						<div class="delivery-type-input">
 							<label for="manipulator">Манипулятором</label>
-							<input type="radio" name="delivery" id="manipulator">
+							<input type="radio" name="delivery" id="manipulator" data-geo="manipulator">
 						</div>
 						<div class="sub-delivery-type">
 							<div class="delivery-input">
