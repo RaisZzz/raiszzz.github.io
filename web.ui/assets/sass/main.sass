@@ -1,0 +1,344 @@
+@import colors
+*
+  padding: 0
+  margin: 0
+  list-style: none
+  box-sizing: border-box
+  text-decoration: none
+body
+  background: $mainbg
+  font-family: 'SF UI Display Light', sans-serif
+  color: #fff
+.container
+  width: 1440px
+  margin: 0 auto
+header
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 99
+  padding: 14px 0
+  backdrop-filter: blur(10px)
+  .container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 0 120px
+    .logo
+      display: flex
+      align-items: center
+      &-icon
+        width: 67px
+        height: auto
+      &-name
+        text-transform: uppercase
+        margin-left: 2px
+        background: -webkit-linear-gradient(left, #54B8FF, #54B8FF, #BCDDF5)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        font-size: 24px
+        font-family: 'SF UI Display Medium', sans-serif
+    .logo-desc
+      margin-right: auto
+      margin-left: 18px
+      font-size: 12px
+      line-height: 16px
+      span
+        color: #F8B932
+        text-transform: uppercase
+    .menu
+      margin-right: 32px
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      height: 100%
+      ul
+        display: flex
+        align-items: center
+        height: 100%
+        li
+          margin-right: 24px
+          display: flex
+          height: 100%
+          &:last-child
+            margin-right: 0
+          a
+            color: #fff
+            position: relative
+            font-size: 14px
+            line-height: 22px
+            &:before
+              content: ''
+              position: absolute
+              top: -25px
+              left: 0
+              width: 100%
+              height: 2px
+              background: #2F80ED
+              transition: 0.5s
+              transform: translateY(-100%)
+            &:hover:before
+              transform: none
+    .signup_btn
+      cursor: pointer
+      outline: none
+      color: #fff
+      font-size: 14px
+      line-height: 22px
+      padding: 10px 25px
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 91.41%, rgba(255, 255, 255, 0.2) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 11.72%), linear-gradient(180deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(278.48deg, #559A79 0%, #24719D 48.44%, #33379C 100%), linear-gradient(97.3deg, #2F80ED 0%, #D0596A 100%), #FF7800
+      background-blend-mode: overlay, overlay, normal, normal, normal, normal
+      mix-blend-mode: normal
+      border: 1px solid rgba(255, 255, 255, 0.24)
+      border-radius: 32px
+      transition: 0.5s
+      &:hover
+        border-color: rgba(0,0,0,0)
+// Head
+.head
+  margin-top: 80px
+  text-align: center
+  .container
+    padding: 70px 240px
+    border-radius: 30px
+    background-image: url('../img/head_bg.png')
+    background-position: center
+    background-size: cover
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.5)
+    h4
+      font-family: 'SF UI Display Ultralight', sans-serif
+      text-transform: uppercase
+      letter-spacing: 1.11em
+      padding-left: 1.11em
+      font-size: 17px
+      line-height: 52px
+      margin-bottom: 52px
+    h3
+      font-family: 'SF UI Display Ultralight', sans-serif
+      font-size: 60px
+      line-height: 120px
+    h2
+      font-family: 'SF UI Display Heavy', sans-serif
+      position: relative
+      font-size: 106px
+      line-height: 120px
+      top: -20px
+      span
+        position: relative
+        &:before
+          content: 'UX'
+          font-family: 'SF UI Display Ultralight', sans-serif
+          font-size: 20px
+          position: absolute
+          top: -15px
+          left: 50%
+          transform: translateX(-50%)
+        &:after
+          content: 'UI'
+          font-family: 'SF UI Display Ultralight', sans-serif
+          font-size: 20px
+          position: absolute
+          bottom: -30px
+          left: 50%
+          transform: translateX(-50%)
+    .description
+      font-size: 24px
+      line-height: 32px
+      margin-top: 18px
+      margin-bottom: 49px
+    .prems
+      display: grid
+      grid-template-columns: repeat(5, 1fr)
+      .prem
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 24px 28px
+        background: #ffffff
+        border-radius: 16px
+        margin: 0 4px
+        transition: 0.5s
+        &:first-child
+          margin-left: 0
+        &:last-child
+          margin-right: 0
+        &-icon
+          min-width: 48px
+          height: auto
+          margin-left: -13px
+          transition: 0.5s
+        &-name
+          color: #000
+          font-size: 14px
+          line-height: 22px
+          text-align: left
+          margin-left: 12px
+          transition: 0.5s
+        &:hover
+          background: $mainbg
+          .prem-name
+            color: #ffffff
+    .ava
+      margin: 52px auto 24px auto
+      $ava: 64px
+      width: $ava
+      height: $ava
+    .author
+      font-size: 20px
+      line-height: 32px
+// For who
+.forwho
+  margin-top: 70px
+  .container
+    width: 1000px
+    h2
+      text-align: center
+      font-family: 'SF UI Display Bold', sans-serif
+      font-size: 56px
+      line-height: 67px
+      margin-bottom: 60px
+      span
+        color: #F8B932
+    .forwho-blocks
+      display: grid
+      grid-template-columns: repeat(3, 1fr)
+      margin-top: 100px
+      .forwho-block
+        position: relative
+        margin: 0 70px 80px 70px
+        &:nth-child(3n-2)
+          margin-left: 0
+        &:nth-child(3n)
+          margin-right: 0
+        &:nth-child(3n-1)
+          margin-left: 35px
+          margin-right: 35px
+        span
+          position: absolute
+          top: 0
+          left: 50%
+          transform: translate(-50%, -50%)
+          color: #F2F2F2
+          opacity: 0.1
+          font-size: 137px
+          line-height: 163px
+          z-index: -1
+        img
+          width: 100%
+          height: auto
+        p
+          text-align: center
+          font-size: 17px
+          line-height: 26px
+          margin-top: 15px
+// Prices
+.prices
+  margin-top: 90px
+  .container
+    background: $pricesbg
+    padding: 100px 170px 100px 170px
+    border-radius: 32px
+    position: relative
+    h2
+      font-size: 56px
+      line-height: 67px
+      margin-bottom: 32px
+      span
+        color: #F8B932
+    .cost
+      color: #E0E0E0
+      font-size: 24px
+      line-height: 32px
+      margin-bottom: 90px
+    .prices-list li
+      margin-bottom: 30px
+      p
+        font-size: 17px
+        line-height: 26px
+        color: #BDBDBD
+        strong
+          color: #ffffff
+          font-size: 18px
+    .bg
+      position: absolute
+      bottom: -4px
+      left: 50%
+      transform: translateX(-50%)
+      width: 100%
+      &:after
+        width: 620px
+        height: 620px
+        content: ''
+        position: absolute
+        top: 50%
+        margin-top: 40px
+        right: 170px
+        transform: translateY(-50%)
+        background: #F2C94C
+        border-radius: 50%
+        z-index: -1
+      img
+        width: 100%
+        height: auto
+      p
+        position: absolute
+        top: 50%
+        right: 170px
+        margin-right: 40px
+        margin-top: 40px
+        transform: translateY(-50%)
+        max-width: 172px
+        font-size: 24px
+        line-height: 32px
+        color: #000
+        strong
+          font-family: 'SF UI Display Medium', sans-serif
+// Course
+.course
+  position: relative
+  .container
+    h2
+      margin-top: 100px
+      text-align: center
+      font-size: 56px
+      line-height: 67px
+      font-family: 'SF UI Display Bold', sans-serif
+      span
+        color: #F8B932
+        font-family: 'SF UI Display Semibold', sans-serif
+    .courses
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-top: 30px
+      img
+        width: 23%
+        position: relative
+        &:first-child
+          left: 0
+          z-index: 9
+        &:nth-child(2)
+          z-index: 8
+          left: -100px
+        &:nth-child(3)
+          z-index: 7
+          left: -200px
+        &:nth-child(4)
+          z-index: 6
+          left: -300px
+        &:nth-child(5)
+          z-index: 5
+          left: -400px
+        &:nth-child(6)
+          z-index: 4
+          left: -500px
+  .bg
+    position: absolute
+    top: -50px
+    left: 0
+    width: 100%
+    z-index: -1
+    img
+      width: 100%
+      height: auto
