@@ -7,10 +7,14 @@ ul[class]
   list-style: none
 a
   text-decoration: none
+html
+  overflow-x: hidden
 body
+  overflow-x: hidden
   background: $mainbg
   font-family: 'SF UI Display', sans-serif
   color: #fff
+  min-width: 350px
 .container
   width: 1440px
   margin: 0 auto
@@ -292,7 +296,7 @@ header
 // Course
 .course
   position: relative
-  overflow-x: hidden
+  overflow: hidden
   .container
     .title
       margin-top: 100px
@@ -304,14 +308,15 @@ header
         color: #F8B932
         font-weight: 600
     .courses
-      display: flex
-      align-items: center
-      justify-content: space-between
+      display: grid
+      grid-template-columns: repeat(6, 1fr)
       margin-top: 30px
       width: 100%
       li
-        min-width: 23%
+        min-width: 165%
         position: relative
+        display: flex
+        align-items: center
         img
           width: 100%
           height: auto
@@ -320,19 +325,19 @@ header
           z-index: 9
         &:nth-child(2)
           z-index: 8
-          left: -100px
+          left: -9%
         &:nth-child(3)
           z-index: 7
-          left: -200px
+          left: -18%
         &:nth-child(4)
           z-index: 6
-          left: -300px
+          left: -17%
         &:nth-child(5)
           z-index: 5
-          left: -400px
+          left: -36%
         &:nth-child(6)
           z-index: 4
-          left: -500px
+          left: -35%
   .bg
     position: absolute
     top: -50px

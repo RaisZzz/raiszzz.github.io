@@ -1,0 +1,49 @@
+@media screen and (max-width: 1440px) { .container { width: 100%; padding: 0 20px; }
+  .head .container { padding: 30px 140px; } }
+@media screen and (max-width: 1275px) { header .container { padding: 0 20px; }
+  .head .container .start { margin-bottom: 0; }
+  .prices .container { padding: 50px 50px 0; }
+  .prices .container .prices-list { padding-bottom: 50px; }
+  .prices .container .bg:after { right: 80px; }
+  .prices .container .bg p { right: 90px; } }
+@media screen and (max-width: 1190px) { .head .container { padding: 30px 20px; } }
+@media screen and (max-width: 1100px) { .logo-desc { display: none; }
+  .menu { margin-left: auto; }
+  .prices .container .bg:after { right: 3%; width: 450px; height: 450px; margin-top: 10px; }
+  .prices .container .bg p { right: 4%; font-size: 20px; margin-top: 10px; } }
+@media screen and (max-width: 1000px) { .for_who .container { width: 100%; padding: 0 20px; }
+  .for_who .container .for_who-blocks { grid-template-columns: repeat(2, 1fr); } }
+@media screen and (max-width: 950px) { .head .container .advantages { grid-template-columns: repeat(3, 1fr); }
+  .head .container .advantages .advantage { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; } }
+@media screen and (max-width: 900px) { .logo-name { display: none; }
+  .prices .container .bg p { margin-right: 10px; } }
+@media screen and (max-width: 768px) { header { display: none; }
+  .head { margin-top: 0; }
+  .head .container { border-radius: 0 0 30px 30px; padding-bottom: 80px; background-image: url("../img/mobile_head_bg.png"); }
+  .head .container .start { font-size: 17px; letter-spacing: 2px; padding-left: 2px; text-transform: none; }
+  .head .container .online { font-size: 30px; }
+  .head .container .web_design { font-size: 51px; line-height: 120px; top: -60px; }
+  .head .container .web_design span:before { font-size: 10px; }
+  .head .container .web_design span:after { font-size: 10px; bottom: -23px; }
+  .head .container .description { margin-top: -45px; }
+  .head .container .advantages { grid-template-columns: 1fr; grid-row-gap: 15px; }
+  .for_who .container h2 { font-size: 42px; margin-bottom: 40px; }
+  .for_who .container .for_who-blocks { margin-top: 40px; grid-template-columns: 1fr; grid-row-gap: 60px; }
+  .prices { padding: 0; }
+  .prices .container { padding-bottom: 700px; }
+  .prices .container .top { font-size: 32px; line-height: 48px; }
+  .prices .container .cost { margin-bottom: 30px; }
+  .prices .container .bg { position: absolute; bottom: -60px; overflow: hidden; border-radius: 50%; width: 780px; height: 780px; }
+  .prices .container .bg img { position: absolute; left: -30px; bottom: 0; }
+  .prices .container .bg:after { left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 780px; height: 780px; }
+  .prices .container .bg p { right: 0; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); top: 70px; text-align: center; font-size: 24px; max-width: 256px; }
+  .course .container .title span { color: #fff; font-weight: 700; }
+  .course .container .courses { display: grid; grid-template-columns: repeat(2, 1fr); margin-bottom: -300px; }
+  .course .container .courses li { width: 135%; }
+  .course .container .courses li:nth-child(2n) { left: -17.5%; }
+  .course .container .courses li:nth-child(2n-1) { left: 0; }
+  .course .container .courses li:nth-child(3) { top: -150px; z-index: 9; }
+  .course .container .courses li:nth-child(4) { top: -150px; z-index: 8; }
+  .course .container .courses li:nth-child(5) { top: -300px; z-index: 11; }
+  .course .container .courses li:nth-child(6) { top: -300px; z-index: 10; }
+  .course .bg { top: 200px; } }
