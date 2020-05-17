@@ -1,6 +1,10 @@
-* { padding: 0; margin: 0; list-style: none; -webkit-box-sizing: border-box; box-sizing: border-box; text-decoration: none; }
+* { padding: 0; margin: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-body { background: #0A0F1B; font-family: "SF UI Display Light", sans-serif; color: #fff; }
+ul[class] { list-style: none; }
+
+a { text-decoration: none; }
+
+body { background: #0A0F1B; font-family: "SF UI Display", sans-serif; color: #fff; }
 
 .container { width: 1440px; margin: 0 auto; }
 
@@ -11,7 +15,7 @@ header { position: fixed; top: 0; left: 0; width: 100%; z-index: 99; padding: 14
 header .container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 0 120px; }
 header .container .logo { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 header .container .logo-icon { width: 67px; height: auto; }
-header .container .logo-name { text-transform: uppercase; margin-left: 2px; background: -webkit-linear-gradient(left, #54B8FF, #54B8FF, #BCDDF5); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 24px; font-family: "SF UI Display Medium", sans-serif; }
+header .container .logo-name { text-transform: uppercase; margin-left: 2px; background: -webkit-linear-gradient(left, #54B8FF, #54B8FF, #BCDDF5); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 24px; }
 header .container .logo-desc { margin-right: auto; margin-left: 18px; font-size: 12px; line-height: 16px; }
 header .container .logo-desc span { color: #F8B932; text-transform: uppercase; }
 header .container .menu { margin-right: 32px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 100%; }
@@ -24,34 +28,29 @@ header .container .menu ul li a:hover:before { -webkit-transform: none; transfor
 
 .head { margin-top: 80px; text-align: center; }
 .head .container { padding: 70px 240px; border-radius: 30px; background-image: url("../img/head_bg.png"); background-position: center; background-size: cover; -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5); box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5); }
-.head .container .start { font-family: "SF UI Display Ultralight", sans-serif; text-transform: uppercase; letter-spacing: 1.11em; padding-left: 1.11em; font-size: 17px; line-height: 52px; margin-bottom: 52px; }
-.head .container .online { font-family: "SF UI Display Ultralight", sans-serif; font-size: 60px; line-height: 120px; }
-.head .container .web_design { font-family: "SF UI Display Heavy", sans-serif; position: relative; font-size: 106px; line-height: 120px; top: -20px; }
+.head .container .start { font-weight: 300; text-transform: uppercase; letter-spacing: 1.11em; padding-left: 1.11em; font-size: 17px; line-height: 52px; margin-bottom: 52px; }
+.head .container .online { font-size: 60px; line-height: 120px; font-weight: 300; }
+.head .container .web_design { position: relative; font-size: 106px; font-weight: 800; line-height: 120px; top: -20px; }
 .head .container .web_design span { position: relative; }
-.head .container .web_design span:before { content: "UX"; font-family: "SF UI Display Ultralight", sans-serif; font-size: 20px; position: absolute; top: -15px; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
-.head .container .web_design span:after { content: "UI"; font-family: "SF UI Display Ultralight", sans-serif; font-size: 20px; position: absolute; bottom: -30px; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+.head .container .web_design span:before { content: "UX"; font-weight: 300; font-size: 20px; position: absolute; top: -15px; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+.head .container .web_design span:after { content: "UI"; font-weight: 300; font-size: 20px; position: absolute; bottom: -30px; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 .head .container .description { font-size: 24px; line-height: 32px; margin-top: 18px; margin-bottom: 49px; }
-.head .container .advantages { display: grid; grid-template-columns: repeat(5, 1fr); }
-.head .container .advantages .advantage { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 24px 28px; background: #ffffff; border-radius: 16px; margin: 0 4px; -webkit-transition: 0.5s; transition: 0.5s; }
-.head .container .advantages .advantage:first-child { margin-left: 0; }
-.head .container .advantages .advantage:last-child { margin-right: 0; }
+.head .container .advantages { display: grid; grid-template-columns: repeat(5, 1fr); grid-column-gap: 8px; }
+.head .container .advantages .advantage { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 24px 28px; background: #ffffff; border-radius: 16px; -webkit-transition: 0.5s; transition: 0.5s; }
 .head .container .advantages .advantage-icon { min-width: 48px; height: auto; margin-left: -13px; -webkit-transition: 0.5s; transition: 0.5s; }
 .head .container .advantages .advantage-name { color: #000; font-size: 14px; line-height: 22px; text-align: left; margin-left: 12px; -webkit-transition: 0.5s; transition: 0.5s; }
 .head .container .advantages .advantage:hover { background: #0A0F1B; }
-.head .container .advantages .advantage:hover .prem-name { color: #ffffff; }
+.head .container .advantages .advantage:hover .advantage-name { color: #ffffff; }
 .head .container .avatar { margin: 52px auto 24px auto; width: 64px; height: 64px; }
 .head .container .author { font-size: 20px; line-height: 32px; }
 
 .for_who { margin-top: 70px; }
 .for_who .container { width: 1000px; }
-.for_who .container h2 { text-align: center; font-family: "SF UI Display Bold", sans-serif; font-size: 56px; line-height: 67px; margin-bottom: 60px; }
+.for_who .container h2 { text-align: center; font-weight: 700; font-size: 56px; line-height: 67px; margin-bottom: 60px; }
 .for_who .container h2 span { color: #F8B932; }
-.for_who .container .for_who-blocks { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 100px; }
-.for_who .container .for_who-blocks .for_who-block { position: relative; margin: 0 70px 80px 70px; }
-.for_who .container .for_who-blocks .for_who-block:nth-child(3n-2) { margin-left: 0; }
-.for_who .container .for_who-blocks .for_who-block:nth-child(3n) { margin-right: 0; }
-.for_who .container .for_who-blocks .for_who-block:nth-child(3n-1) { margin-left: 35px; margin-right: 35px; }
-.for_who .container .for_who-blocks .for_who-block span { position: absolute; top: 0; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); color: #F2F2F2; opacity: 0.1; font-size: 137px; line-height: 163px; z-index: -1; }
+.for_who .container .for_who-blocks { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 100px; grid-column-gap: 120px; grid-row-gap: 40px; }
+.for_who .container .for_who-blocks .for_who-block { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; height: 100%; padding-top: 70px; }
+.for_who .container .for_who-blocks .for_who-block span { position: absolute; top: 0; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); color: #F2F2F2; opacity: 0.1; font-size: 137px; line-height: 163px; z-index: -1; }
 .for_who .container .for_who-blocks .for_who-block img { width: 100%; height: auto; }
 .for_who .container .for_who-blocks .for_who-block p { text-align: center; font-size: 17px; line-height: 26px; margin-top: 15px; }
 
@@ -66,11 +65,11 @@ header .container .menu ul li a:hover:before { -webkit-transform: none; transfor
 .prices .container .bg:after { width: 620px; height: 620px; content: ""; position: absolute; top: 50%; margin-top: 40px; right: 170px; -webkit-transform: translateY(-50%); transform: translateY(-50%); background: #F2C94C; border-radius: 50%; z-index: -1; }
 .prices .container .bg img { width: 100%; height: auto; }
 .prices .container .bg p { position: absolute; top: 50%; right: 170px; margin-right: 40px; margin-top: 40px; -webkit-transform: translateY(-50%); transform: translateY(-50%); max-width: 172px; font-size: 24px; line-height: 32px; color: #000; }
-.prices .container .bg p strong { font-family: "SF UI Display Medium", sans-serif; }
+.prices .container .bg p strong { font-weight: 500; }
 
 .course { position: relative; }
-.course .container .title { margin-top: 100px; text-align: center; font-size: 56px; line-height: 67px; font-family: "SF UI Display Bold", sans-serif; }
-.course .container .title span { color: #F8B932; font-family: "SF UI Display Semibold", sans-serif; }
+.course .container .title { margin-top: 100px; text-align: center; font-size: 56px; line-height: 67px; font-weight: 700; }
+.course .container .title span { color: #F8B932; font-weight: 600; }
 .course .container .courses { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-top: 30px; width: 100%; }
 .course .container .courses li { min-width: 23%; position: relative; }
 .course .container .courses li img { width: 100%; height: auto; }

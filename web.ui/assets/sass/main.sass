@@ -2,12 +2,14 @@
 *
   padding: 0
   margin: 0
-  list-style: none
   box-sizing: border-box
+ul[class]
+  list-style: none
+a
   text-decoration: none
 body
   background: $mainbg
-  font-family: 'SF UI Display Light', sans-serif
+  font-family: 'SF UI Display', sans-serif
   color: #fff
 .container
   width: 1440px
@@ -53,7 +55,6 @@ header
         -webkit-background-clip: text
         -webkit-text-fill-color: transparent
         font-size: 24px
-        font-family: 'SF UI Display Medium', sans-serif
     .logo-desc
       margin-right: auto
       margin-left: 18px
@@ -107,7 +108,7 @@ header
     background-size: cover
     box-shadow: 0 0 10px 1px rgba(0,0,0,0.5)
     .start
-      font-family: 'SF UI Display Ultralight', sans-serif
+      font-weight: 300
       text-transform: uppercase
       letter-spacing: 1.11em
       padding-left: 1.11em
@@ -115,20 +116,20 @@ header
       line-height: 52px
       margin-bottom: 52px
     .online
-      font-family: 'SF UI Display Ultralight', sans-serif
       font-size: 60px
       line-height: 120px
+      font-weight: 300
     .web_design
-      font-family: 'SF UI Display Heavy', sans-serif
       position: relative
       font-size: 106px
+      font-weight: 800
       line-height: 120px
       top: -20px
       span
         position: relative
         &:before
           content: 'UX'
-          font-family: 'SF UI Display Ultralight', sans-serif
+          font-weight: 300
           font-size: 20px
           position: absolute
           top: -15px
@@ -136,7 +137,7 @@ header
           transform: translateX(-50%)
         &:after
           content: 'UI'
-          font-family: 'SF UI Display Ultralight', sans-serif
+          font-weight: 300
           font-size: 20px
           position: absolute
           bottom: -30px
@@ -150,6 +151,7 @@ header
     .advantages
       display: grid
       grid-template-columns: repeat(5, 1fr)
+      grid-column-gap: 8px
       .advantage
         display: flex
         align-items: center
@@ -157,12 +159,7 @@ header
         padding: 24px 28px
         background: #ffffff
         border-radius: 16px
-        margin: 0 4px
         transition: 0.5s
-        &:first-child
-          margin-left: 0
-        &:last-child
-          margin-right: 0
         &-icon
           min-width: 48px
           height: auto
@@ -177,7 +174,7 @@ header
           transition: 0.5s
         &:hover
           background: $mainbg
-          .prem-name
+          .advantage-name
             color: #ffffff
     .avatar
       margin: 52px auto 24px auto
@@ -194,7 +191,7 @@ header
     width: 1000px
     h2
       text-align: center
-      font-family: 'SF UI Display Bold', sans-serif
+      font-weight: 700
       font-size: 56px
       line-height: 67px
       margin-bottom: 60px
@@ -204,21 +201,20 @@ header
       display: grid
       grid-template-columns: repeat(3, 1fr)
       margin-top: 100px
+      grid-column-gap: 120px
+      grid-row-gap: 40px
       .for_who-block
         position: relative
-        margin: 0 70px 80px 70px
-        &:nth-child(3n-2)
-          margin-left: 0
-        &:nth-child(3n)
-          margin-right: 0
-        &:nth-child(3n-1)
-          margin-left: 35px
-          margin-right: 35px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        height: 100%
+        padding-top: 70px
         span
           position: absolute
           top: 0
           left: 50%
-          transform: translate(-50%, -50%)
+          transform: translateX(-50%)
           color: #F2F2F2
           opacity: 0.1
           font-size: 137px
@@ -294,7 +290,7 @@ header
         line-height: 32px
         color: #000
         strong
-          font-family: 'SF UI Display Medium', sans-serif
+          font-weight: 500
 // Course
 .course
   position: relative
@@ -304,10 +300,10 @@ header
       text-align: center
       font-size: 56px
       line-height: 67px
-      font-family: 'SF UI Display Bold', sans-serif
+      font-weight: 700
       span
         color: #F8B932
-        font-family: 'SF UI Display Semibold', sans-serif
+        font-weight: 600
     .courses
       display: flex
       align-items: center
