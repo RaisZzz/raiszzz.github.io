@@ -30,17 +30,15 @@ header .container .menu ul li a:hover:before { -webkit-transform: none; transfor
 .head .container { padding: 70px 240px; border-radius: 30px; background-image: url("../img/head_bg.png"); background-position: center; background-size: cover; -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5); box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5); }
 .head .container .start { font-weight: 300; text-transform: uppercase; letter-spacing: 1.11em; padding-left: 1.11em; font-size: 17px; line-height: 52px; margin-bottom: 52px; }
 .head .container .online { font-size: 60px; line-height: 120px; font-weight: 300; }
-.head .container .web_design { position: relative; font-size: 106px; font-weight: 800; line-height: 120px; top: -20px; }
+.head .container .web_design { position: relative; font-size: 106px; line-height: 120px; top: -20px; font-family: "ALS Schlange Sans", sans-serif; font-weight: 700; }
 .head .container .web_design span { position: relative; }
 .head .container .web_design span:before { content: "UX"; font-weight: 300; font-size: 20px; position: absolute; top: -15px; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 .head .container .web_design span:after { content: "UI"; font-weight: 300; font-size: 20px; position: absolute; bottom: -30px; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 .head .container .description { font-size: 24px; line-height: 32px; margin-top: 18px; margin-bottom: 49px; }
 .head .container .advantages { display: grid; grid-template-columns: repeat(5, 1fr); grid-column-gap: 8px; }
-.head .container .advantages .advantage { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 24px 28px; background: #ffffff; border-radius: 16px; -webkit-transition: 0.5s; transition: 0.5s; }
+.head .container .advantages .advantage { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 24px 28px; background-image: url("../img/svg/advantage-bg.svg"); background-size: cover; background-position: center; border-radius: 16px; }
 .head .container .advantages .advantage-icon { min-width: 48px; height: auto; margin-left: -13px; -webkit-transition: 0.5s; transition: 0.5s; }
 .head .container .advantages .advantage-name { color: #000; font-size: 14px; line-height: 22px; text-align: left; margin-left: 12px; -webkit-transition: 0.5s; transition: 0.5s; }
-.head .container .advantages .advantage:hover { background: #0A0F1B; }
-.head .container .advantages .advantage:hover .advantage-name { color: #ffffff; }
 .head .container .avatar { margin: 52px auto 24px auto; width: 64px; height: 64px; }
 .head .container .author { font-size: 20px; line-height: 32px; }
 
@@ -67,7 +65,7 @@ header .container .menu ul li a:hover:before { -webkit-transform: none; transfor
 .prices .container .bg p { position: absolute; top: 50%; right: 170px; margin-right: 40px; margin-top: 40px; -webkit-transform: translateY(-50%); transform: translateY(-50%); max-width: 172px; font-size: 24px; line-height: 32px; color: #000; }
 .prices .container .bg p strong { font-weight: 500; }
 
-.course { position: relative; }
+.course { position: relative; overflow-x: hidden; }
 .course .container .title { margin-top: 100px; text-align: center; font-size: 56px; line-height: 67px; font-weight: 700; }
 .course .container .title span { color: #F8B932; font-weight: 600; }
 .course .container .courses { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-top: 30px; width: 100%; }
@@ -79,5 +77,5 @@ header .container .menu ul li a:hover:before { -webkit-transform: none; transfor
 .course .container .courses li:nth-child(4) { z-index: 6; left: -300px; }
 .course .container .courses li:nth-child(5) { z-index: 5; left: -400px; }
 .course .container .courses li:nth-child(6) { z-index: 4; left: -500px; }
-.course .bg { position: absolute; top: -50px; left: 0; width: 100%; z-index: -1; }
+.course .bg { position: absolute; top: -50px; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); width: 1920px; overflow-x: hidden; z-index: -1; }
 .course .bg img { width: 100%; height: auto; }

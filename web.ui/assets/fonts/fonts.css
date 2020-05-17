@@ -40,3 +40,12 @@
     font-weight: 900;
     src: local('SF UI Display Black'), url('sf-ui-display-black-58646a6b80d5a.woff') format('woff');
 }
+@font-face {
+    font-family: 'ALS Schlange Sans';
+    src: local('ALS Schlange Sans Bold'), local('ALS-Schlange-Sans-Bold'),
+    url('ALSSchlangesans-Bold.woff2') format('woff2'),
+    url('ALSSchlangesans-Bold.woff') format('woff'),
+    url('ALSSchlangesans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}

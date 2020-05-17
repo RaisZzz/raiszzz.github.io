@@ -122,9 +122,10 @@ header
     .web_design
       position: relative
       font-size: 106px
-      font-weight: 800
       line-height: 120px
       top: -20px
+      font-family: 'ALS Schlange Sans', sans-serif
+      font-weight: 700
       span
         position: relative
         &:before
@@ -157,9 +158,10 @@ header
         align-items: center
         justify-content: space-between
         padding: 24px 28px
-        background: #ffffff
+        background-image: url('../img/svg/advantage-bg.svg')
+        background-size: cover
+        background-position: center
         border-radius: 16px
-        transition: 0.5s
         &-icon
           min-width: 48px
           height: auto
@@ -172,10 +174,6 @@ header
           text-align: left
           margin-left: 12px
           transition: 0.5s
-        &:hover
-          background: $mainbg
-          .advantage-name
-            color: #ffffff
     .avatar
       margin: 52px auto 24px auto
       $avatar: 64px
@@ -294,6 +292,7 @@ header
 // Course
 .course
   position: relative
+  overflow-x: hidden
   .container
     .title
       margin-top: 100px
@@ -337,8 +336,10 @@ header
   .bg
     position: absolute
     top: -50px
-    left: 0
-    width: 100%
+    left: 50%
+    transform: translateX(-50%)
+    width: 1920px
+    overflow-x: hidden
     z-index: -1
     img
       width: 100%
