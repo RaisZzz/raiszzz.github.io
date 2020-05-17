@@ -12,6 +12,21 @@ body
 .container
   width: 1440px
   margin: 0 auto
+.signup_btn
+  cursor: pointer
+  outline: none
+  color: #fff
+  font-size: 14px
+  line-height: 22px
+  padding: 10px 25px
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 91.41%, rgba(255, 255, 255, 0.2) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 11.72%), linear-gradient(180deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(278.48deg, #559A79 0%, #24719D 48.44%, #33379C 100%), linear-gradient(97.3deg, #2F80ED 0%, #D0596A 100%), #FF7800
+  background-blend-mode: overlay, overlay, normal, normal, normal, normal
+  mix-blend-mode: normal
+  border: 1px solid rgba(255, 255, 255, 0.24)
+  border-radius: 32px
+  transition: 0.5s
+  &:hover
+    border-color: rgba(0,0,0,0)
 header
   position: fixed
   top: 0
@@ -80,21 +95,6 @@ header
               transform: translateY(-100%)
             &:hover:before
               transform: none
-    .signup_btn
-      cursor: pointer
-      outline: none
-      color: #fff
-      font-size: 14px
-      line-height: 22px
-      padding: 10px 25px
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 91.41%, rgba(255, 255, 255, 0.2) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 11.72%), linear-gradient(180deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(278.48deg, #559A79 0%, #24719D 48.44%, #33379C 100%), linear-gradient(97.3deg, #2F80ED 0%, #D0596A 100%), #FF7800
-      background-blend-mode: overlay, overlay, normal, normal, normal, normal
-      mix-blend-mode: normal
-      border: 1px solid rgba(255, 255, 255, 0.24)
-      border-radius: 32px
-      transition: 0.5s
-      &:hover
-        border-color: rgba(0,0,0,0)
 // Head
 .head
   margin-top: 80px
@@ -106,7 +106,7 @@ header
     background-position: center
     background-size: cover
     box-shadow: 0 0 10px 1px rgba(0,0,0,0.5)
-    h4
+    .start
       font-family: 'SF UI Display Ultralight', sans-serif
       text-transform: uppercase
       letter-spacing: 1.11em
@@ -114,11 +114,11 @@ header
       font-size: 17px
       line-height: 52px
       margin-bottom: 52px
-    h3
+    .online
       font-family: 'SF UI Display Ultralight', sans-serif
       font-size: 60px
       line-height: 120px
-    h2
+    .web_design
       font-family: 'SF UI Display Heavy', sans-serif
       position: relative
       font-size: 106px
@@ -147,10 +147,10 @@ header
       line-height: 32px
       margin-top: 18px
       margin-bottom: 49px
-    .prems
+    .advantages
       display: grid
       grid-template-columns: repeat(5, 1fr)
-      .prem
+      .advantage
         display: flex
         align-items: center
         justify-content: space-between
@@ -179,16 +179,16 @@ header
           background: $mainbg
           .prem-name
             color: #ffffff
-    .ava
+    .avatar
       margin: 52px auto 24px auto
-      $ava: 64px
-      width: $ava
-      height: $ava
+      $avatar: 64px
+      width: $avatar
+      height: $avatar
     .author
       font-size: 20px
       line-height: 32px
 // For who
-.forwho
+.for_who
   margin-top: 70px
   .container
     width: 1000px
@@ -200,11 +200,11 @@ header
       margin-bottom: 60px
       span
         color: #F8B932
-    .forwho-blocks
+    .for_who-blocks
       display: grid
       grid-template-columns: repeat(3, 1fr)
       margin-top: 100px
-      .forwho-block
+      .for_who-block
         position: relative
         margin: 0 70px 80px 70px
         &:nth-child(3n-2)
@@ -240,10 +240,11 @@ header
     padding: 100px 170px 100px 170px
     border-radius: 32px
     position: relative
-    h2
+    .top
       font-size: 56px
       line-height: 67px
       margin-bottom: 32px
+      text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
       span
         color: #F8B932
     .cost
@@ -253,19 +254,19 @@ header
       margin-bottom: 90px
     .prices-list li
       margin-bottom: 30px
-      p
-        font-size: 17px
-        line-height: 26px
-        color: #BDBDBD
-        strong
-          color: #ffffff
-          font-size: 18px
+      font-size: 17px
+      line-height: 26px
+      color: #BDBDBD
+      strong
+        color: #ffffff
+        font-size: 18px
     .bg
       position: absolute
       bottom: -4px
       left: 50%
       transform: translateX(-50%)
       width: 100%
+      z-index: 0
       &:after
         width: 620px
         height: 620px
@@ -298,7 +299,7 @@ header
 .course
   position: relative
   .container
-    h2
+    .title
       margin-top: 100px
       text-align: center
       font-size: 56px
@@ -312,9 +313,13 @@ header
       align-items: center
       justify-content: space-between
       margin-top: 30px
-      img
-        width: 23%
+      width: 100%
+      li
+        min-width: 23%
         position: relative
+        img
+          width: 100%
+          height: auto
         &:first-child
           left: 0
           z-index: 9
