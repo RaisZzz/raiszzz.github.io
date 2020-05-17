@@ -39,7 +39,7 @@
   .prices .container .bg p { right: 0; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); top: 70px; text-align: center; font-size: 24px; max-width: 256px; }
   .course .container .title span { color: #fff; font-weight: 700; }
   .course .container .courses { display: grid; grid-template-columns: repeat(2, 1fr); margin-bottom: -300px; }
-  .course .container .courses li { width: 135%; }
+  .course .container .courses li { min-width: 135%; }
   .course .container .courses li:nth-child(2n) { left: -17.5%; }
   .course .container .courses li:nth-child(2n-1) { left: 0; }
   .course .container .courses li:nth-child(3) { top: -150px; z-index: 9; }
