@@ -27,9 +27,14 @@
   .head .container .web_design span:after { font-size: 10px; bottom: -23px; }
   .head .container .description { margin-top: -45px; }
   .head .container .advantages { grid-template-columns: 1fr; grid-row-gap: 15px; }
-  .head .container .advantages .advantage { background: #fff; }
+  .head .container .advantages .advantage { background-image: url("../img/svg/advantage-mobile-bg.svg"); }
   .for_who .container h2 { font-size: 42px; margin-bottom: 40px; }
   .for_who .container .for_who-blocks { margin-top: 40px; grid-template-columns: 1fr; grid-row-gap: 60px; }
+  .for_who .container .for_who-blocks .for_who-block:nth-child(1) span { left: calc(100% + 20px); -webkit-transform: translateX(-100%); transform: translateX(-100%); }
+  .for_who .container .for_who-blocks .for_who-block:nth-child(3) span { top: -40px; left: calc(50% + 15px); }
+  .for_who .container .for_who-blocks .for_who-block:nth-child(4) span { top: 25px; left: calc(50% - 35px); }
+  .for_who .container .for_who-blocks .for_who-block:nth-child(5) span { top: 60px; left: calc(50% + 70px); }
+  .for_who .container .for_who-blocks .for_who-block:nth-child(6) span { top: 40px; left: calc(50% - 50px); }
   .prices { padding: 0; }
   .prices .container { padding-bottom: 700px; }
   .prices .container .top { font-size: 32px; line-height: 48px; }
