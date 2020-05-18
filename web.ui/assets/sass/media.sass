@@ -162,21 +162,34 @@
         margin-bottom: -300px
         li
           min-width: 135%
-          &:nth-child(2n)
-            left: -17.5%
-          &:nth-child(2n-1)
+          &:nth-child(1)
             left: 0
+            z-index: 2
+          &:nth-child(2)
+            left: -17.5%
+            z-index: 1
           &:nth-child(3)
-            top: -150px
-            z-index: 9
+            top: -300px
+            grid-row-start: 3
+            grid-row-end: 4
+            left: 0
+            z-index: 10
           &:nth-child(4)
             top: -150px
-            z-index: 8
+            grid-column-start: 1
+            grid-column-end: 2
+            left: 0
           &:nth-child(5)
-            top: -300px
-            z-index: 11
+            top: -150px
+            grid-column-start: 2
+            grid-column-end: 3
+            grid-row-start: 2
+            grid-row-end: 3
+            left: -17.5%
+            z-index: 3
           &:nth-child(6)
             top: -300px
-            z-index: 10
+            z-index: 6
+            left: -17.5%
     .bg
       top: 200px

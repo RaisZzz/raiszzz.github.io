@@ -41,7 +41,7 @@ header .container .menu ul li a:hover:before { -webkit-transform: none; transfor
 .head .container .advantages .advantage { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 24px 28px; background-image: url("../img/svg/advantage-bg.svg"); background-size: cover; background-position: center; border-radius: 16px; }
 .head .container .advantages .advantage-icon { min-width: 48px; height: auto; margin-left: -13px; -webkit-transition: 0.5s; transition: 0.5s; }
 .head .container .advantages .advantage-name { color: #000; font-size: 14px; line-height: 22px; text-align: left; margin-left: 12px; -webkit-transition: 0.5s; transition: 0.5s; }
-.head .container .avatar { margin: 52px auto 24px auto; width: 64px; height: 64px; }
+.head .container .avatar { margin: 52px auto 24px auto; width: 64px; height: 64px; border-radius: 50%; }
 .head .container .author { font-size: 20px; line-height: 32px; }
 
 .for_who { margin-top: 70px; }

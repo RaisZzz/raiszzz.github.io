@@ -46,10 +46,10 @@
   .course .container .title span { color: #fff; font-weight: 700; }
   .course .container .courses { display: grid; grid-template-columns: repeat(2, 1fr); margin-bottom: -300px; }
   .course .container .courses li { min-width: 135%; }
-  .course .container .courses li:nth-child(2n) { left: -17.5%; }
-  .course .container .courses li:nth-child(2n-1) { left: 0; }
-  .course .container .courses li:nth-child(3) { top: -150px; z-index: 9; }
-  .course .container .courses li:nth-child(4) { top: -150px; z-index: 8; }
-  .course .container .courses li:nth-child(5) { top: -300px; z-index: 11; }
-  .course .container .courses li:nth-child(6) { top: -300px; z-index: 10; }
+  .course .container .courses li:nth-child(1) { left: 0; z-index: 2; }
+  .course .container .courses li:nth-child(2) { left: -17.5%; z-index: 1; }
+  .course .container .courses li:nth-child(3) { top: -300px; grid-row-start: 3; grid-row-end: 4; left: 0; z-index: 10; }
+  .course .container .courses li:nth-child(4) { top: -150px; grid-column-start: 1; grid-column-end: 2; left: 0; }
+  .course .container .courses li:nth-child(5) { top: -150px; grid-column-start: 2; grid-column-end: 3; grid-row-start: 2; grid-row-end: 3; left: -17.5%; z-index: 3; }
+  .course .container .courses li:nth-child(6) { top: -300px; z-index: 6; left: -17.5%; }
   .course .bg { top: 200px; } }
