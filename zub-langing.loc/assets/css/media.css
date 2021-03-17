@@ -1,0 +1,326 @@
+@media (max-width: 1440px) {
+	.container {
+		width: 100%;
+		padding: 0 20px;
+	}
+	.menu .container {
+		padding: 20px;
+	}
+	.prices-container {
+		width: 100%;
+		padding: 40px;
+	}
+	.pluses-row {
+		overflow: hidden;
+	}
+}
+@media (max-width: 1250px) {
+	.banner {
+		padding: 80px 0;
+	}
+}
+@media (max-width: 1110px) {
+	.prices-list {
+		min-height: 500px;
+	}
+	.main-doctors-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media (max-width: 1070px) {
+	.header .container {
+		flex-direction: column;
+	}
+	.header-mobile-bottom {
+		margin-top: 20px;
+	}
+	.header-logo {
+		margin-right: 0;
+	}
+	.header-adress,
+	.header-phone {
+		margin-right: 20px;
+	}
+	.services .container {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+@media (max-width: 950px) {
+	.banner {
+		padding: 50px 0;
+	}
+	.banner-video-btn {
+		transform: none;
+		bottom: 0;
+		right: 0;
+	}
+	.banner-video-btn svg {
+		width: 130px;
+	}
+	.contact-block {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	.contact-appointment {
+		grid-column-start: 4;
+	}
+}
+@media (max-width: 850px) {
+	.prices-category {
+		display: none;
+	}
+	.prices-table {
+		width: 100%;
+		display: none;
+		position: relative;
+		transform: none;
+	}
+	.prices-table.active {
+		display: block;
+	}
+	.prices-list {
+		min-height: auto;
+	}
+	.title {
+		font-size: 25px;
+	}
+	.description {
+		font-size: 16px;
+	}
+	.doctors-top {
+		margin-bottom: 20px;
+	}
+	.doctors-btns {
+		flex-direction: column;
+		align-items: flex-end;
+	}
+	.all_doctors {
+		margin-top: 10px;
+	}
+}
+@media (max-width: 820px) {
+	.header {
+		padding: 20px 0;
+	}
+	.header-adresses,
+	.header-phone,
+	.header-appointment {
+		display: none;
+	}
+	.header .container {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.header-mobile-bottom {
+		margin-top: 0;
+		width: auto;
+	}
+	.logo-text {
+		margin-left: 12.7px;
+		font-size: 12px;
+	}
+	.menu-btn {
+		display: flex;
+	}
+	.menu {
+		display: none;
+	}
+	.mobile-phone {
+		display: block;
+	}
+	.mobile-phone .header-phone {
+		display: flex;
+	}
+	.map-list-choose {
+		width: 100%;
+	}
+	.map-choose-mobile {
+		display: flex;
+		margin-right: 0;
+	}
+	.prices-select {
+		display: block;
+	}
+	.banner {
+		padding: 30px 0;
+	}
+	.banner-title {
+		font-size: 30px;
+		margin-bottom: 15px;
+	}
+	.banner-description {
+		margin-bottom: 245px;
+	}
+	.banner-video-btn {
+		left: 50%;
+		transform: translateX(-50%);
+		width: 130px;
+		height: 152px;
+	}
+	.appointment-btn {
+		width: 100%;
+		font-size: 18px;
+	}
+	.services {
+		margin-top: 20px;
+	}
+	.services .container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.service-card {
+		min-height: 210px;
+	}
+	.service-card-title {
+		font-size: 18px;
+	}
+	.map {
+		height: auto;
+		overflow: visible;
+	}
+	.map-list {
+		position: relative;
+		top: 0;
+		left: 0;
+		background: #FFFFFF;
+		box-shadow: 0px 2px 5px rgba(180, 180, 180, 0.35);
+		border-radius: 10px;
+	}
+	.map-list-choose.active + .map-list-item-info {
+		display: grid;
+	}
+	.pluses-bg {
+		display: none;
+	}
+	.pluses-grid {
+		grid-template-columns: 1fr;
+	}
+	.prices-container {
+		border-radius: 0;
+	}
+	.prices-top {
+		flex-direction: column;
+	}
+	.prices-col {
+		margin-bottom: 10px;
+	}
+	.doctors-top {
+		flex-direction: column;
+	}
+	.doctors-btns {
+		margin-top: 10px;
+		flex-direction: row;
+	}
+	.all_doctors {
+		width: 100%;
+	}
+	.reviews-top {
+		flex-direction: column;
+	}
+	.reviews-btns {
+		margin-top: 10px;
+		flex-direction: column;
+	}
+	.reviews-choose {
+		margin-bottom: 10px;
+		width: 100%;
+		margin-right: 0;
+	}
+	.reviews-choose-btn,
+	.reviews-choose-bg {
+		width: 50%;
+	}
+	.all_reviews {
+		width: 100%;
+		text-align: center;
+	}
+	.reviews-main {
+		flex-direction: column;
+	}
+	.reviews-slider-control {
+		display: none;
+	}
+	.reviews-card {
+		margin-top: 0;
+		width: 100%;
+		max-width: 100%;
+		padding: 30px;
+	}
+	.reviews-card-title,
+	.reviews-card-description,
+	.appointment-btn {
+		max-width: 250px;
+	}
+	.services-footer-grid {
+		margin-top: 40px;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 10px;
+	}
+	.services-footer-description {
+		display: none;
+	}
+	.services-footer-item {
+		flex-direction: column;
+		background: #FFFFFF;
+		box-shadow: 0px 2px 5px rgba(180, 180, 180, 0.35);
+		border-radius: 20px;
+	}
+	.services-footer-info {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+	.services-item-icon {
+		filter: none;
+	}
+	.footer-links {
+		display: none;
+	}
+	.footer-social {
+		margin-right: auto;
+	}
+	.footer-links-mobile {
+		display: grid;
+	}
+	.doctors-slider-control {
+		display: none;
+	}
+	.main-doctors-grid {
+		grid-template-columns: 1fr;
+	}
+	.video {
+		width: 70%;
+		height: 30%;
+	}
+	.about-row {
+		flex-direction: column;
+	}
+	.about-main {
+		margin-right: 0;
+		margin-bottom: 40px;
+	}
+	.about-form {
+		width: 100%;
+		max-width: none;
+	}
+	.contact-block {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.contact-appointment {
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 4;
+	}
+	.contact-appointment .appointment-btn {
+		width: 100%;
+		max-width: none;
+	}
+}
+@media (max-width: 555px) {
+	.doctor-card.swiper-slide-active {
+		width: 70% !important;
+	}
+	.reviews-main .swiper-slide {
+		transition: 0.3s;
+	}
+	.reviews-main .swiper-slide-active {
+		width: 70% !important;
+	}
+}
