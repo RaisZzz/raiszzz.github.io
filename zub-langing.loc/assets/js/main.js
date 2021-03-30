@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+	const clientWidth = document.documentElement.clientWidth;
 	// Attention
 	const attentionBtn = document.getElementById("attention-open");
 	const attention = document.getElementById("attention");
@@ -35,6 +36,21 @@ document.addEventListener("DOMContentLoaded", function() {
 		const buttons = document.querySelectorAll(".map-list-choose[data-id]");
 		buttons.forEach(btn => {
 			btn.addEventListener("click", function() {
+				const pay = document.getElementById("pay");
+				const plug = document.getElementById("pay-plug");
+				const form = document.getElementById("pay-form");
+				const name = document.getElementById("pay-form-name");
+				const metro = btn.querySelector(".map-list-title").innerHTML;
+				if (clientWidth > 820) {
+					if(pay) {
+						if(plug) {
+							plug.remove();
+							form.classList.add("active");
+						}
+						name.innerHTML = metro;
+					}
+				}
+
 				const id = btn.dataset.id;
 				buttons.forEach(btn => btn.classList.remove("active"));
 				btn.classList.add("active");
@@ -76,7 +92,6 @@ document.addEventListener("DOMContentLoaded", function() {
 			map_choose();
 		});
 	}
-	const clientWidth = document.documentElement.clientWidth;
 	if (clientWidth > 820) {
 		map();
 	}
@@ -87,22 +102,24 @@ document.addEventListener("DOMContentLoaded", function() {
 	const mapBtn = document.getElementById("adress-map");
 	const mapBg = document.getElementById("map-choose-bg");
 	const mapList = document.getElementById("map-list");
-	listBtn.addEventListener("click", function() {
-		mapBg.style.transform = "translateX(0%)";
-		listBtn.style.color = "#fff";
-		mapBtn.style.color = "#464646";
-		document.querySelectorAll(".ymaps-2-1-78-map")[0].remove();
-		document.getElementById("map").style.height = "auto";
-		mapList.style.display = "block";
-	});
-	mapBtn.addEventListener("click", function() {
-		mapBg.style.transform = "translateX(100%)";
-		mapBtn.style.color = "#fff";
-		listBtn.style.color = "#464646";
-		document.getElementById("map").style.height = "590px";
-		map();
-		mapList.style.display = "none";
-	});
+	if(listBtn) {
+		listBtn.addEventListener("click", function() {
+			mapBg.style.transform = "translateX(0%)";
+			listBtn.style.color = "#fff";
+			mapBtn.style.color = "#464646";
+			document.querySelectorAll(".ymaps-2-1-78-map")[0].remove();
+			document.getElementById("map").style.height = "auto";
+			mapList.style.display = "block";
+		});
+		mapBtn.addEventListener("click", function() {
+			mapBg.style.transform = "translateX(100%)";
+			mapBtn.style.color = "#fff";
+			listBtn.style.color = "#464646";
+			document.getElementById("map").style.height = "590px";
+			map();
+			mapList.style.display = "none";
+		});
+	}
 
 	// Prices
 	const pricesList = document.querySelectorAll(".prices-item-btn[data-table]");
@@ -118,6 +135,10 @@ document.addEventListener("DOMContentLoaded", function() {
 			btn.addEventListener("click", function() {
 				const id = btn.dataset.table;
 				const table = document.querySelector(".prices-table[data-table='" + id + "']");
+				let height = table.clientHeight;
+				const initialHeight = document.querySelectorAll(".prices-list")[0].clientHeight;
+				if(height < initialHeight) {height = initialHeight};
+				document.querySelectorAll(".prices-list")[0].style.height = height + "px";
 				
 				tables.forEach(table => table.classList.remove("active"));
 				table.classList.add("active");
@@ -172,7 +193,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	}
 
 	// Reviews Slider
-	const reviewsSlider = new Swiper('.reviews-slider', {
+	const reviewsSlider = new Swiper('.reviews-slider:not(.non-slider)', {
 		loop: true,
 		slidesPerView: 1,
 		spaceBetween: 20,
@@ -197,7 +218,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			});
 			slider.classList.add("active");
 			// Reviews Slider
-			const reviewsSlider = new Swiper('.reviews-slider[data-choose="' + id + '"]', {
+			const reviewsSlider = new Swiper('.reviews-slider:not(.non-slider)[data-choose="' + id + '"]', {
 				loop: true,
 				slidesPerView: 1,
 				spaceBetween: 20,
@@ -227,4 +248,18 @@ document.addEventListener("DOMContentLoaded", function() {
 			}
 		}
 	});
+
+	// Prices page
+	const pricesContBtns = document.querySelectorAll(".prices-table-container-info");
+	if(pricesContBtns) {
+		pricesContBtns.forEach(btn => {
+			btn.addEventListener("click", function() {
+				btn.classList.toggle("active");
+				let height = btn.parentNode.parentNode.clientHeight;
+				const initialHeight = document.querySelectorAll(".prices-list")[0].clientHeight;
+				if(height < initialHeight) {height = initialHeight};
+				document.querySelectorAll(".prices-list")[0].style.height = height + "px";
+			});
+		});
+	}
 });
