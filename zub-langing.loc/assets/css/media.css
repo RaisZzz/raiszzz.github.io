@@ -477,3 +477,22 @@
 		grid-template-columns: 1fr;
 	}
 }
+@media (max-width: 460px) {
+	.services-footer-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.header-mobile-bottom {
+		flex-direction: column;
+		align-items: flex-end;
+	}
+	.menu-btn {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+	.footer-logo {
+		margin-right: 10px;
+	}
+	.footer-social {
+		margin-right: 10px;
+	}
+}

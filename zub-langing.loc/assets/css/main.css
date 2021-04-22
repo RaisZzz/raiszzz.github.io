@@ -15,7 +15,6 @@ a:hover {
 }
 body {
 	font-family: 'Rubik', sans-serif;
-	min-width: 460px;
 }
 .popup .form-row {
 	display: flex;
