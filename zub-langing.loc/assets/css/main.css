@@ -15,6 +15,119 @@ a:hover {
 }
 body {
 	font-family: 'Rubik', sans-serif;
+	min-width: 460px;
+}
+.popup .form-row {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px !important;
+}
+.popup input[type="radio"] {
+	margin-right: 12px;
+	max-width: 18px;
+	max-height: 18px;
+	margin-bottom: 0 !important;
+}
+.form-row label {
+	margin-bottom: 0;
+}
+.form-row input:first-child {
+	margin-right: 10px;
+}
+.form-row input:last-child {
+	margin-left: 10px;
+}
+.form-row select:first-child {
+	margin-right: 10px;
+}
+.form-row select:last-child {
+	margin-left: 10px;
+}
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0,0,0,0.5);
+	z-index: 9;
+}
+.popup form {
+	display: flex;
+	flex-direction: column;
+	max-width: 460px;
+	background: #fff;
+	border-radius: 7px;
+	padding: 30px;
+	max-height: calc(100vh - 80px);
+	overflow-y: scroll;
+}
+.popup input {
+	margin-bottom: 20px;
+	width: 100%;
+	border: 1px solid #CCCCCC;
+	border-radius: 7px;
+	padding: 10px 20px;
+	color: #999999;
+	font-size: 16px;
+	font-weight: 400;
+	transition: 0.3s;
+	background: #fff;
+	outline: none;
+}
+.popup input:hover {
+	background: rgba(255, 255, 255, 0.7);
+	border-color: #999999;
+}
+.popup input:focus {
+	border-color: #0098E9;
+}
+.popup select {
+	margin-bottom: 20px;
+	width: 100%;
+	border: 1px solid #CCCCCC;
+	border-radius: 7px;
+	padding: 10px 20px;
+	color: #999999;
+	font-size: 16px;
+	font-weight: 400;
+	transition: 0.3s;
+	background: #fff;
+	outline: none;
+}
+.popup select:hover {
+	background: rgba(255, 255, 255, 0.7);
+	border-color: #999999;
+}
+.popup select:focus {
+	border-color: #0098E9;
+}
+.popup textarea {
+	width: 100%;
+	border: 1px solid #CCCCCC;
+	border-radius: 7px;
+	padding: 10px 20px;
+	color: #999999;
+	font-size: 16px;
+	font-weight: 400;
+	transition: 0.3s;
+	background: #fff;
+	outline: none;
+	resize: none;
+	min-height: 100px;
+}
+.popup textarea:hover {
+	background: rgba(255, 255, 255, 0.7);
+	border-color: #999999;
+}
+.popup textarea:focus {
+	border-color: #0098E9;
+}
+.popup .appointment-btn {
+	margin-top: 20px;
 }
 .container {
 	width: 1218px;
@@ -156,7 +269,7 @@ body {
 }
 .attention-btn {
 	position: absolute;
-	top: 12px;
+	top: 13px;
 	right: 8px;
 	background: none;
 	border: none;
@@ -1564,9 +1677,11 @@ html body ymaps .ymaps-2-1-78-balloon {
 	display: flex;
 	margin-top: 40px;
 }
-.form-checkbox input[type="checkbox"] {
+.form-checkbox input {
 	min-width: 24px;
 	min-height: 24px;
+	width: 24px;
+	height: 24px;
 	margin-right: 12px;
 }
 .form-checkbox p {
