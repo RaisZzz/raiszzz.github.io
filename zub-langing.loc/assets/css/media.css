@@ -463,6 +463,12 @@
 		grid-template-columns: 1fr;
 	}
 }
+@media (max-width: 580px) {
+	.close-popup {
+		right: 10px;
+		transform: translateY(-100%);
+	}
+}
 @media (max-width: 555px) {
 	.doctor-card.swiper-slide-active {
 		width: 70% !important;
@@ -494,5 +500,12 @@
 	}
 	.footer-social {
 		margin-right: 10px;
+	}
+	.mobile-phone.active {
+		top: 131px;
+	}
+	.mobile-menu {
+		top: 191px;
+		height: calc(100% - 191px);
 	}
 }

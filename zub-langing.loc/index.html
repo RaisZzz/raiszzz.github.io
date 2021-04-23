@@ -12,8 +12,14 @@
     </script>
 </head>
 <body>
-	<!-- <div class="popup" id="doctor-question">
+	<div class="popup" id="doctor-question">
 		<div class="popup-container">
+			<svg class="close-popup" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve"><g><g><path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
+			L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
+			c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
+			l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
+			L284.286,256.002z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
 			<form action="#">
 				<legend class="title">Задать вопрос</legend>
 				<input type="text" placeholder="Ваше имя">
@@ -26,9 +32,15 @@
 				<button class="appointment-btn" type="submit">Отправить вопрос</button>
 			</form>
 		</div>
-	</div> -->
-	<!-- <div class="popup" id="appointment-popup">
+	</div>
+	<div class="popup" id="appointment-popup">
 		<div class="popup-container">
+			<svg class="close-popup" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve"><g><g><path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
+			L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
+			c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
+			l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
+			L284.286,256.002z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
 			<form action="#">
 				<legend class="title">Запись на приём</legend>
 				<input type="text" placeholder="Фамилия*">
@@ -47,9 +59,15 @@
 				<button class="appointment-btn" type="submit">Сохранить</button>
 			</form>
 		</div>
-	</div> -->
-	<!-- <div class="popup" id="callback-popup">
+	</div>
+	<div class="popup" id="callback-popup">
 		<div class="popup-container">
+			<svg class="close-popup" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve"><g><g><path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
+			L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
+			c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
+			l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
+			L284.286,256.002z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
 			<form action="#">
 				<legend class="title">Заказать звонок</legend>
 				<input type="text" placeholder="ФИО*">
@@ -63,17 +81,58 @@
 					<input name="call" id="call_later" type="radio">
 					<label for="call_later" class="about-text">Позвонить в заданное время</label>
 				</div>
+				<div class="form-row callback-date" id="callback-date">
+					<input type="date" placeholder="Дата приёма">
+					<input type="text" placeholder="Время приёма">
+				</div>
 				<div class="form-checkbox">
 					<p>Нажимая кнопку "Отправить" я даю своё согласие на обработку моих персональных данных на условиях <a href="#">Соглашения об обработке персональных данных</a></p>
 				</div>
 				<button class="appointment-btn" type="submit">Отправить</button>
 			</form>
 		</div>
-	</div> -->
-	<!-- <div class="popup" id="appointment-two-popup">
+	</div>
+	<div class="popup" id="mail-popup">
 		<div class="popup-container">
+			<svg class="close-popup" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve"><g><g><path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
+			L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
+			c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
+			l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
+			L284.286,256.002z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
 			<form action="#">
-				<legend class="title">Запись на прием</legend>
+				<legend class="title">Отправить письмо главврачу</legend>
+				<div class="form-row">
+					<input type="text" placeholder="Ваше имя">
+					<input type="text" placeholder="Номер телефона">
+				</div>
+				<div class="form-row">
+					<input type="text" placeholder="Ваше email">
+					<select>
+						<option value="1" selected disabled>Филиал</option>
+					</select>
+				</div>
+				<textarea placeholder="Комментарий (необязательно)"></textarea>
+				<p class="about-text">Защита от автоматического заполнения</p>
+				<p class="about-text">Введите слово с картинки*:</p>
+				<input type="text">
+				<div class="form-checkbox">
+					<p>Нажимая кнопку "Отправить" я даю своё согласие на обработку моих персональных данных на условиях <a href="#">Соглашения об обработке персональных данных</a></p>
+				</div>
+				<button class="appointment-btn" type="submit">Отправить</button>
+			</form>
+		</div>
+	</div>
+	<div class="popup" id="review-popup">
+		<div class="popup-container">
+			<svg class="close-popup" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve"><g><g><path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
+			L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
+			c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
+			l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
+			L284.286,256.002z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+			<form action="#">
+				<legend class="title">Оставить отзыв</legend>
 				<div class="form-row">
 					<input type="text" placeholder="Ваше имя">
 					<select>
@@ -81,25 +140,50 @@
 					</select>
 				</div>
 				<div class="form-row">
-					<input type="text" placeholder="Номер телефона">
 					<input type="text" placeholder="Ваш email">
-				</div>
-				<p class="about-text">Когда вам позвонить?</p>
-				<div class="form-row">
-					<input name="call" id="call_now" type="radio" checked>
-					<label for="call_now" class="about-text">Позвонить сейчас</label>
+					<select>
+						<option value="1" selected disabled>Врач</option>
+					</select>
 				</div>
 				<div class="form-row">
-					<input name="call" id="call_later" type="radio">
-					<label for="call_later" class="about-text">Позвонить в заданное время</label>
+					<input type="text" placeholder="Номер телефона">
+					<select>
+						<option value="1" selected disabled>Услуга</option>
+					</select>
 				</div>
+				<div class="form-row">
+					<input type="date" placeholder="Дата приёма">
+					<input type="text" placeholder="Время приёма">
+				</div>
+				<p class="about-text">Ваша оценка врача</p>
+				<div class="review-rating popup-rating">
+					<svg class="review-star" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M11.0489 2.92705C11.3483 2.00574 12.6517 2.00574 12.9511 2.92705L14.4697 7.60081C14.6035 8.01284 14.9875 8.2918 15.4207 8.2918H20.335C21.3037 8.2918 21.7065 9.53141 20.9228 10.1008L16.947 12.9894C16.5966 13.244 16.4499 13.6954 16.5838 14.1074L18.1024 18.7812C18.4017 19.7025 17.3472 20.4686 16.5635 19.8992L12.5878 17.0106C12.2373 16.756 11.7627 16.756 11.4122 17.0106L7.43648 19.8992C6.65276 20.4686 5.59828 19.7025 5.89763 18.7812L7.41623 14.1074C7.55011 13.6954 7.40345 13.244 7.05296 12.9894L3.07722 10.1008C2.29351 9.53141 2.69628 8.2918 3.66501 8.2918H8.57929C9.01252 8.2918 9.39647 8.01284 9.53035 7.60081L11.0489 2.92705Z" fill="#E8E8E8"></path>
+					</svg>
+					<svg class="review-star" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M11.0489 2.92705C11.3483 2.00574 12.6517 2.00574 12.9511 2.92705L14.4697 7.60081C14.6035 8.01284 14.9875 8.2918 15.4207 8.2918H20.335C21.3037 8.2918 21.7065 9.53141 20.9228 10.1008L16.947 12.9894C16.5966 13.244 16.4499 13.6954 16.5838 14.1074L18.1024 18.7812C18.4017 19.7025 17.3472 20.4686 16.5635 19.8992L12.5878 17.0106C12.2373 16.756 11.7627 16.756 11.4122 17.0106L7.43648 19.8992C6.65276 20.4686 5.59828 19.7025 5.89763 18.7812L7.41623 14.1074C7.55011 13.6954 7.40345 13.244 7.05296 12.9894L3.07722 10.1008C2.29351 9.53141 2.69628 8.2918 3.66501 8.2918H8.57929C9.01252 8.2918 9.39647 8.01284 9.53035 7.60081L11.0489 2.92705Z" fill="#E8E8E8"></path>
+					</svg>
+					<svg class="review-star" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M11.0489 2.92705C11.3483 2.00574 12.6517 2.00574 12.9511 2.92705L14.4697 7.60081C14.6035 8.01284 14.9875 8.2918 15.4207 8.2918H20.335C21.3037 8.2918 21.7065 9.53141 20.9228 10.1008L16.947 12.9894C16.5966 13.244 16.4499 13.6954 16.5838 14.1074L18.1024 18.7812C18.4017 19.7025 17.3472 20.4686 16.5635 19.8992L12.5878 17.0106C12.2373 16.756 11.7627 16.756 11.4122 17.0106L7.43648 19.8992C6.65276 20.4686 5.59828 19.7025 5.89763 18.7812L7.41623 14.1074C7.55011 13.6954 7.40345 13.244 7.05296 12.9894L3.07722 10.1008C2.29351 9.53141 2.69628 8.2918 3.66501 8.2918H8.57929C9.01252 8.2918 9.39647 8.01284 9.53035 7.60081L11.0489 2.92705Z" fill="#E8E8E8"></path>
+					</svg>
+					<svg class="review-star" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M11.0489 2.92705C11.3483 2.00574 12.6517 2.00574 12.9511 2.92705L14.4697 7.60081C14.6035 8.01284 14.9875 8.2918 15.4207 8.2918H20.335C21.3037 8.2918 21.7065 9.53141 20.9228 10.1008L16.947 12.9894C16.5966 13.244 16.4499 13.6954 16.5838 14.1074L18.1024 18.7812C18.4017 19.7025 17.3472 20.4686 16.5635 19.8992L12.5878 17.0106C12.2373 16.756 11.7627 16.756 11.4122 17.0106L7.43648 19.8992C6.65276 20.4686 5.59828 19.7025 5.89763 18.7812L7.41623 14.1074C7.55011 13.6954 7.40345 13.244 7.05296 12.9894L3.07722 10.1008C2.29351 9.53141 2.69628 8.2918 3.66501 8.2918H8.57929C9.01252 8.2918 9.39647 8.01284 9.53035 7.60081L11.0489 2.92705Z" fill="#E8E8E8"></path>
+					</svg>
+					<svg class="review-star" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M11.0489 2.92705C11.3483 2.00574 12.6517 2.00574 12.9511 2.92705L14.4697 7.60081C14.6035 8.01284 14.9875 8.2918 15.4207 8.2918H20.335C21.3037 8.2918 21.7065 9.53141 20.9228 10.1008L16.947 12.9894C16.5966 13.244 16.4499 13.6954 16.5838 14.1074L18.1024 18.7812C18.4017 19.7025 17.3472 20.4686 16.5635 19.8992L12.5878 17.0106C12.2373 16.756 11.7627 16.756 11.4122 17.0106L7.43648 19.8992C6.65276 20.4686 5.59828 19.7025 5.89763 18.7812L7.41623 14.1074C7.55011 13.6954 7.40345 13.244 7.05296 12.9894L3.07722 10.1008C2.29351 9.53141 2.69628 8.2918 3.66501 8.2918H8.57929C9.01252 8.2918 9.39647 8.01284 9.53035 7.60081L11.0489 2.92705Z" fill="#E8E8E8"></path>
+					</svg>
+				</div>
+				<textarea placeholder="Комментарий (необязательно)"></textarea>
+				<p class="about-text">Защита от автоматического заполнения</p>
+				<p class="about-text">Введите слово с картинки*:</p>
+				<input type="text">
 				<div class="form-checkbox">
 					<p>Нажимая кнопку "Отправить" я даю своё согласие на обработку моих персональных данных на условиях <a href="#">Соглашения об обработке персональных данных</a></p>
 				</div>
 				<button class="appointment-btn" type="submit">Отправить</button>
 			</form>
 		</div>
-	</div> -->
+	</div>
 	<div class="video-container" id="video-container">
 		<button class="video-close" id="video-close"><svg class="video-close-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 viewBox="0 0 409.806 409.806" style="enable-background:new 0 0 409.806 409.806;" xml:space="preserve"><g><g><path d="M228.929,205.01L404.596,29.343c6.78-6.548,6.968-17.352,0.42-24.132c-6.548-6.78-17.352-6.968-24.132-0.42
@@ -134,7 +218,7 @@ c6.387-6.614,6.387-17.099,0-23.712L228.929,205.01z"/></g></g><g></g><g></g><g></
 				<path d="M14.6667 3.6665H16.5C16.9862 3.6665 17.4526 3.86681 17.7964 4.22336C18.1402 4.57991 18.3334 5.0635 18.3334 5.56774V18.8764C18.3334 19.3806 18.1402 19.8642 17.7964 20.2208C17.4526 20.5773 16.9862 20.7776 16.5 20.7776H5.50002C5.01379 20.7776 4.54747 20.5773 4.20366 20.2208C3.85984 19.8642 3.66669 19.3806 3.66669 18.8764V5.56774C3.66669 5.0635 3.85984 4.57991 4.20366 4.22336C4.54747 3.86681 5.01379 3.6665 5.50002 3.6665H7.33335" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 				<path d="M13.75 1.22217H8.24998C7.74372 1.22217 7.33331 1.63257 7.33331 2.13883V3.97217C7.33331 4.47843 7.74372 4.88883 8.24998 4.88883H13.75C14.2562 4.88883 14.6666 4.47843 14.6666 3.97217V2.13883C14.6666 1.63257 14.2562 1.22217 13.75 1.22217Z" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 				</svg>
-				<p class="mobile-menu-title">Записаться на прием</p>
+				<p class="mobile-menu-title open-appointment">Записаться на прием</p>
 				<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<g clip-path="url(#clip0)">
 				<path d="M1.75 10.5L6.25 6L1.75 1.5" stroke="#464646" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -151,7 +235,7 @@ c6.387-6.614,6.387-17.099,0-23.712L228.929,205.01z"/></g></g><g></g><g></g><g></
 				<path d="M3.66665 3.6665H18.3333C19.3416 3.6665 20.1666 4.4915 20.1666 5.49984V16.4998C20.1666 17.5082 19.3416 18.3332 18.3333 18.3332H3.66665C2.65831 18.3332 1.83331 17.5082 1.83331 16.4998V5.49984C1.83331 4.4915 2.65831 3.6665 3.66665 3.6665Z" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 				<path d="M20.1666 5.5L11 11.9167L1.83331 5.5" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 				</svg>
-				<p class="mobile-menu-title">Письмо главврачу</p>
+				<p class="mobile-menu-title mail-open">Письмо главврачу</p>
 				<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<g clip-path="url(#clip0)">
 				<path d="M1.75 10.5L6.25 6L1.75 1.5" stroke="#464646" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -224,10 +308,10 @@ c6.387-6.614,6.387-17.099,0-23.712L228.929,205.01z"/></g></g><g></g><g></g><g></
 					</svg>
 					<div class="column">
 						<a class="phone-link" href="tel:+74950328942">+7 495 032 89 42</a>
-						<a class="callback-link" href="#">Перезвоните мне</a>
+						<a class="callback-link callback-open" href="#">Перезвоните мне</a>
 					</div>
 				</div>
-				<a class="appointment-btn header-appointment" href="#">
+				<a class="appointment-btn header-appointment open-appointment" href="#">
 					<svg class="appointment-icon" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<g clip-path="url(#clip0)">
 					<path d="M12 3.5H13.5C13.8978 3.5 14.2794 3.66389 14.5607 3.95561C14.842 4.24733 15 4.643 15 5.05556V15.9444C15 16.357 14.842 16.7527 14.5607 17.0444C14.2794 17.3361 13.8978 17.5 13.5 17.5H4.5C4.10218 17.5 3.72064 17.3361 3.43934 17.0444C3.15804 16.7527 3 16.357 3 15.9444V5.05556C3 4.643 3.15804 4.24733 3.43934 3.95561C3.72064 3.66389 4.10218 3.5 4.5 3.5H6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -260,7 +344,7 @@ c6.387-6.614,6.387-17.099,0-23.712L228.929,205.01z"/></g></g><g></g><g></g><g></
 					<a class="phone-link" href="tel:+74950328942">+7 495 032 89 42</a>
 				</div>
 			</div>
-			<a class="callback-link" href="#">Перезвоните мне</a>
+			<a class="callback-link callback-open" href="#">Перезвоните мне</a>
 		</div>
 	</section>
 	<section class="menu">
@@ -286,7 +370,7 @@ c6.387-6.614,6.387-17.099,0-23.712L228.929,205.01z"/></g></g><g></g><g></g><g></
 			<div class="banner-info">
 				<h1 class="banner-title">Стоматология «ZUB.RU» —<br>нам доверяют!</h1>
 				<p class="banner-description">Стоматология может быть комфортной. Мы стараемся найти индивидуальный подход к каждому пациенту. Все манипуляциии проводятся на современном оборудовании под контролем высококлассных врачей.</p>
-				<button href="#" class="appointment-btn">Записаться на прием</button>
+				<button href="#" class="appointment-btn open-appointment">Записаться на прием</button>
 				<a class="banner-video-btn" href="#" id="banner-video-btn">
 					<svg width="152" height="152" viewBox="0 0 152 152" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<g filter="url(#filter0_b)">
@@ -981,7 +1065,7 @@ c6.387-6.614,6.387-17.099,0-23.712L228.929,205.01z"/></g></g><g></g><g></g><g></
 					<p class="description">В клиниках организован контроль качества обслуживания.<br>Врачебная комиссия оценивает эффективность работы каждого врача</p>
 				</div>
 				<div class="doctors-btns">
-					<button class="appointment-btn">Вопрос к доктору</button>
+					<button class="appointment-btn question-open">Вопрос к доктору</button>
 					<button class="sign-in-btn all_doctors">Все доктора</button>
 				</div>
 			</div>
@@ -1536,7 +1620,7 @@ c6.387-6.614,6.387-17.099,0-23.712L228.929,205.01z"/></g></g><g></g><g></g><g></
 				<div class="reviews-card">
 					<h3 class="reviews-card-title">Для нас<br>очень важно<br>Ваше мнение</h3>
 					<p class="reviews-card-description">Мы постоянно работаем над качеством наших услуг. Расскажите о своих впечатлениях о сотрудничестве с ZUB.RU</p>
-					<a href="#" class="appointment-btn">Оставить отзыв</a>
+					<a class="appointment-btn review-open">Оставить отзыв</a>
 				</div>
 			</div>
 		</div>
@@ -1638,7 +1722,7 @@ c6.387-6.614,6.387-17.099,0-23.712L228.929,205.01z"/></g></g><g></g><g></g><g></
 					<path d="M3.66665 3.6665H18.3333C19.3416 3.6665 20.1666 4.4915 20.1666 5.49984V16.4998C20.1666 17.5082 19.3416 18.3332 18.3333 18.3332H3.66665C2.65831 18.3332 1.83331 17.5082 1.83331 16.4998V5.49984C1.83331 4.4915 2.65831 3.6665 3.66665 3.6665Z" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 					<path d="M20.1666 5.5L11 11.9167L1.83331 5.5" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 					</svg>
-					<a class="footer-mail-link" href="#">Письмо главврачу</a>
+					<a class="footer-mail-link mail-open">Письмо главврачу</a>
 				</div>
 			</div>
 			<ul class="footer-links">

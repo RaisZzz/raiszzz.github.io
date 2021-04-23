@@ -262,4 +262,75 @@ document.addEventListener("DOMContentLoaded", function() {
 			});
 		});
 	}
+
+	// Popups
+	const appointmentPopup = document.getElementById("appointment-popup");
+	const callbackPopup = document.getElementById("callback-popup");
+	const questionPopup = document.getElementById("doctor-question");
+	const reviewPopup = document.getElementById("review-popup");
+	const mailPopup = document.getElementById("mail-popup");
+	document.querySelectorAll(".close-popup").forEach(close => {
+		close.addEventListener("click", function() {
+			close.parentNode.parentNode.classList.remove("active");
+		});
+	});
+	document.querySelectorAll(".open-appointment").forEach(btn => {
+		btn.addEventListener("click", function() {
+			appointmentPopup.classList.add("active");
+		});
+	});
+	document.querySelectorAll(".callback-open").forEach(btn => {
+		btn.addEventListener("click", function() {
+			callbackPopup.classList.add("active");
+		});
+	});
+	document.querySelectorAll(".question-open").forEach(btn => {
+		btn.addEventListener("click", function() {
+			questionPopup.classList.add("active");
+		});
+	});
+	document.querySelectorAll(".review-open").forEach(btn => {
+		btn.addEventListener("click", function() {
+			reviewPopup.classList.add("active");
+		});
+	});
+	document.querySelectorAll(".mail-open").forEach(btn => {
+		btn.addEventListener("click", function() {
+			mailPopup.classList.add("active");
+		});
+	});
+
+	const popupStars = document.querySelectorAll(".popup-rating .review-star");
+	function stars() {
+		popupStars.forEach(star => {
+			star.classList.remove("active");
+		});
+	}
+	popupStars.forEach(function(star, index) {
+		star.addEventListener("mouseover", function() {
+			for (let i = 0; i < index; i++) {
+				popupStars[i].classList.add("active");
+			}
+		});
+		star.addEventListener("mouseout", stars);
+		star.addEventListener("click", function() {
+			popupStars.forEach(star => {
+				star.removeEventListener("mouseout", stars);
+				star.classList.remove("active");
+			});
+			for (let i = 0; i <= index; i++) {
+				popupStars[i].classList.add("active");
+			}
+		});
+	});
+
+	const callNow = document.getElementById("call_now");
+	const callLater = document.getElementById("call_later");
+	const callbackDate = document.getElementById("callback-date");
+	callLater.addEventListener("click", function() {
+		callbackDate.classList.add("active");
+	});
+	callNow.addEventListener("click", function() {
+		callbackDate.classList.remove("active");
+	});
 });
