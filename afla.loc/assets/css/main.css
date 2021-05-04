@@ -1,0 +1,152 @@
+@font-face {
+	font-family: "Bebas";
+	src: url("../fonts/BebasNeue-Regular.ttf") format("opentype");
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+a[class] {
+	text-decoration: none;
+}
+ul[class] {
+	list-style: none; 
+}
+body {
+	font-family: sans-serif;
+}
+h1 {
+	font-family: Bebas;
+}
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+.license-form {
+	border: 7px solid #EBEBEB;
+	padding: 15px;
+	position: relative;
+}
+.license-form:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #F8F8F8;
+	z-index: -2;
+}
+.license-type {
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+.license-label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+	cursor: pointer;
+}
+.license-radio {
+	width: 20px;
+	height: 20px;
+	margin-right: 20px;
+}
+.license-radio:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background: #EBF4F7;
+	border: 2px solid #BAD8E3;
+	transition: 0.3s;
+	opacity: 0;
+}
+.license-radio:checked:before {
+	opacity: 1;
+}
+.license-title {
+	text-transform: uppercase;
+	font-family: Bebas;
+	font-size: 24px;
+	margin-right: 100px;
+	color: #7B7B7B;
+}
+.license-price {
+	color: #7E7E7E;
+}
+.form-line {
+	width: 100%;
+	height: 1px;
+	border: none;
+	background: #D6D6D6;
+}
+.license-count {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 20px 0;
+}
+.count-text {
+	margin-right: 10px;
+	font-size: 14px;
+	color: #000;
+}
+.count-select {
+	width: 60px;
+	height: 25px;
+	outline: none;
+}
+.license-total {
+	text-align: center;
+	font-family: Bebas;
+	font-size: 30px;
+	color: #777777;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+.total-text {
+	margin-right: 5px;
+}
+.total-number {
+	color: #3388A8;
+}
+.license-buy {
+	display: flex;
+	margin: 0 auto;
+	border: none;
+	color: #fff;
+	background: #33A845;
+	border: 1px solid #33A845;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding: 15px 40px;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: 0.3s;
+	margin-bottom: 30px;
+}
+.license-buy:hover {
+	background: none;
+	color: #33A845;
+}
+.license-plan {
+	text-align: center;
+	margin-bottom: 20px;
+	color: #3388A8;
+	font-size: 16px;
+}

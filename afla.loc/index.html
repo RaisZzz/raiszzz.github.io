@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AFLA</title>
+	<link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+	<div class="container">
+		<form class="license-form" action="#">
+			<div class="license-type">
+				<label class="license-label" for="license-1"></label>
+				<input data-plan="1" data-price="13" name="license" class="license-radio" type="radio" id="license-1" checked>
+				<p class="license-title">License plan #1</p>
+				<p class="license-price">$13 per license</p>
+			</div>
+			<div class="license-type">
+				<label class="license-label" for="license-2"></label>
+				<input data-plan="2" data-price="22" name="license" class="license-radio" type="radio" id="license-2">
+				<p class="license-title">License plan #2</p>
+				<p class="license-price">$22 per license</p>
+			</div>
+			<div class="license-type">
+				<label class="license-label" for="license-3"></label>
+				<input data-plan="3" data-price="34" name="license" class="license-radio" type="radio" id="license-3">
+				<p class="license-title">License plan #3</p>
+				<p class="license-price">$34 per license</p>
+			</div>
+			<hr class="form-line">
+			<div class="license-count">
+				<p class="count-text">Number of licenses:</p>
+				<select id="license-count" class="count-select">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<hr class="form-line">
+			<div class="license-total">
+				<p class="total-text">Total:</p>
+				<p class="total-number">$<span id="license-total"></span><sup>US</sup></p>
+			</div>
+			<input class="license-buy" type="submit" value="Buy now">
+			<p class="license-plan">Selected plan: #<span id="selected-plan"></span></p>
+		</form>
+	</div>
+	<script src="./assets/js/main.js"></script>
+</body>
+</html>
