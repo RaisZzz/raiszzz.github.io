@@ -2,139 +2,170 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Flating</title>
-	<!-- Style -->
-	<link rel="stylesheet" href="assets/css/main.css">
-	<!-- Adaptive -->
-	<link rel="stylesheet" href="assets/css/adaptive.css">
-	<!-- Font Poppins -->
-	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet">
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rais | Portfolio</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
-	<section id="sidebar">
+	<nav class="menu" id="menu">
+		<a href="#" class="logo">R.</a>
+		<ul>
+			<li><button class="menu-btn" id="menu-btn">menu</button></li>
+			<li><a class="menu-item" data-to="head">Main.</a></li>
+			<li><a class="menu-item" data-to="works">Works.</a></li>
+			<li><a class="menu-item" data-to="about">About.</a></li>
+			<li><a class="menu-item" data-to="contacts">Contacts.</a></li>
+		</ul>
+	</nav>
+	<section class="head" id="head">
 		<div class="container">
-			<a href="#header" class="logo scrollto">SDS</a>
-			<hr style="margin-top: 50px;">
-			<nav>
-				<ul>
-					<li><a class="scrollto" href="#description">Work</a></li>
-					<li><a class="scrollto" href="#comment">About</a></li>
-					<li><a class="scrollto" href="#blog">Portfolio</a></li>
-					<li><a class="scrollto" href="#contact">Contact</a></li>
-				</ul>
-			</nav>
-			<hr style="margin-bottom: 50px;">
-			<i class="fas fa-search"></i>
-		</div>
-	</section>
-	<header id="header">
-		<div class="container">
-			<h1>Title Of The Page</h1>
-			<h4>Subtitle</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pharetra turpis tristique nisi laoreet gravida. Sed sed orci ut ante pellentesque efficitur id ac erat. Morbi metus metus, dictum sed arcu at, interdum porttitor erat.</p>
-			<a href="#" class="button">Button</a>
-		</div>
-	</header>
-	<section id="description">
-		<div class="container">
-			<div class="card">
-				<i class="fas fa-image"></i>
-				<h3>Photos</h3>
-				<p>Vestibulum suscipit tortor magna, quis pellentesque arcu volutpat ac. Tempus leo erat, sit amet ullamcorper nisl.</p>
-				<a href="#" class="button">Button</a>
-			</div>
-			<div class="card">
-				<i class="fas fa-video"></i>
-				<h3>Videos</h3>
-				<p>Vestibulum suscipit tortor magna, quis pellentesque arcu volutpat ac. Tempus leo erat, sit amet ullamcorper nisl.</p>
-				<a href="#" class="button">Button</a>
-			</div>
-			<div class="card">
-				<i class="fas fa-download"></i>
-				<h3>Downloads</h3>
-				<p>Vestibulum suscipit tortor magna, quis pellentesque arcu volutpat ac. Tempus leo erat, sit amet ullamcorper nisl.</p>
-				<a href="#" class="button">Button</a>
-			</div>
-		</div>
-	</section>
-	<section id="comment">
-		<div class="container">
-			<img src="assets/img/quote.png" alt="">
-			<h4>In hac habitasse platea dictumst. Phasellus finibus ipsum enim, non pretium massa mattis non. Curabitur ut tempus ex. Nunc dictum est enim, consectetur convallis odio mollis tempus!</h4>
-			<p>Jim Gordon <span>(GCPD)</span></p>
-		</div>
-	</section>
-	<section id="blog">
-		<div class="container">
-			<h2>Portfolio</h2>
-			<div class="posts">
-				<div class="post">
-					<div class="img">
-						<img src="assets/img/posts/1.jpg" alt="">
-					</div>
-					<div class="description">
-						<h3>Title of a post</h3>
-						<p>In hac habitasse platea dictumst. Phasellus finibus ipsum enim, non pretium massa mattis non. Curabitur ut tempus ex. Nunc dictum est enim, consectetur convallis odio mollis tempus.</p>
-						<a href="#" class="button">Read more</a>
-					</div>
-				</div>
-				<div class="post">
-					<div class="img">
-						<img src="assets/img/posts/2.jpg" alt="">
-					</div>
-					<div class="description">
-						<h3>Title of a post</h3>
-						<p>In hac habitasse platea dictumst. Phasellus finibus ipsum enim, non pretium massa mattis non. Curabitur ut tempus ex. Nunc dictum est enim, consectetur convallis odio mollis tempus.</p>
-						<a href="#" class="button">Read more</a>
-					</div>
-				</div>
-				<div class="post">
-					<div class="img">
-						<img src="assets/img/posts/3.jpg" alt="">
-					</div>
-					<div class="description">
-						<h3>Title of a post</h3>
-						<p>In hac habitasse platea dictumst. Phasellus finibus ipsum enim, non pretium massa mattis non. Curabitur ut tempus ex. Nunc dictum est enim, consectetur convallis odio mollis tempus.</p>
-						<a href="#" class="button">Read more</a>
-					</div>
+			<h1 class="head-title">Rais.<div class="head-line">Portfolio.<span style="font-size: 18px;">(beta)</span></div></h1>
+			<div class="head-bottom">
+				<p class="copyright">© Rais - 2021.</p>
+				<button class="head-next-btn" id="head-next-btn"><svg width="34" height="53" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0.183 0 33.634 53" fill="#fffcf4"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="53" viewBox="2 1 33 52.001"><path paint-order="stroke fill markers" fill-rule="evenodd" d="M15.2 1V41.3L6.71 33.5 2 37.835l16.5 15.166L35 37.835 30.282 33.5 21.8 41.3V1h-6.6z"/></svg></svg></button>
+				<div class="head-social">
+					<a class="head-social-item" href="https://vk.com/raiszzz1" target="_blank">
+						<svg class="head-social-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						viewBox="0 0 511.962 511.962" style="enable-background:new 0 0 511.962 511.962;" xml:space="preserve">
+						<g><g><path d="M507.399,370.471c-1.376-2.304-9.888-20.8-50.848-58.816c-42.88-39.808-37.12-33.344,14.528-102.176
+						c31.456-41.92,44.032-67.52,40.096-78.464c-3.744-10.432-26.88-7.68-26.88-7.68l-76.928,0.448c0,0-5.696-0.768-9.952,1.76
+						c-4.128,2.496-6.784,8.256-6.784,8.256s-12.192,32.448-28.448,60.032c-34.272,58.208-48,61.28-53.6,57.664
+						c-13.024-8.416-9.76-33.856-9.76-51.904c0-56.416,8.544-79.936-16.672-86.016c-8.384-2.016-14.528-3.36-35.936-3.584
+						c-27.456-0.288-50.72,0.096-63.872,6.528c-8.768,4.288-15.52,13.856-11.392,14.4c5.088,0.672,16.608,3.104,22.72,11.424
+						c7.904,10.72,7.616,34.848,7.616,34.848s4.544,66.4-10.592,74.656c-10.4,5.664-24.64-5.888-55.2-58.72
+						c-15.648-27.04-27.488-56.96-27.488-56.96s-2.272-5.568-6.336-8.544c-4.928-3.616-11.84-4.768-11.84-4.768l-73.152,0.448
+						c0,0-10.976,0.32-15.008,5.088c-3.584,4.256-0.288,13.024-0.288,13.024s57.28,133.984,122.112,201.536
+						c59.488,61.92,127.008,57.856,127.008,57.856h30.592c0,0,9.248-1.024,13.952-6.112c4.352-4.672,4.192-13.44,4.192-13.44
+						s-0.608-41.056,18.464-47.104c18.784-5.952,42.912,39.68,68.48,57.248c19.328,13.28,34.016,10.368,34.016,10.368l68.384-0.96
+						C488.583,400.807,524.359,398.599,507.399,370.471z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+					</a>
 				</div>
 			</div>
 		</div>
+		<video class="head-bg" autoplay="true" loop="true" muted="muted" width="100%" height="100%">
+			<source src="./assets/video/head-bg.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+		</video>
 	</section>
-	<footer id="contact">
+	<section class="works" id="works">
 		<div class="container">
-			<div class="left">
-				<nav>
-					<ul>
-						<li><a class="scrollto" href="#description">Work</a></li>
-						<li><a class="scrollto" href="#comment">About</a></li>
-						<li><a class="scrollto" href="#blog">Portfolio</a></li>
-						<li><a class="scrollto" href="#contact">Contact</a></li>
-					</ul>
-				</nav>
-				<p>(c) 2018 NAME. All rights reserved.</p>
+			<h2 class="title">Works.</h2>
+			<div class="works-container">
+				<div class="work">
+					<div class="work-info">
+						<h3 class="work-title">Samsung.</h3>
+						<p class="work-description">Samsung promo site.</p>
+						<a class="work-link" href="https://raiszzz.github.io/samsung.loc/" target="_blank">Go to web-site.</a>
+					</div>
+					<a href="https://raiszzz.github.io/samsung.loc/" target="_blank" class="work-picture">
+						<img src="./assets/img/works/samsung.png" alt="">
+					</a>
+				</div>
+				<div class="work">
+					<div class="work-info">
+						<h3 class="work-title">Nokia.</h3>
+						<p class="work-description">Nokia promo site.</p>
+						<a class="work-link" href="https://raiszzz.github.io/nokiatest.loc/" target="_blank">Go to web-site.</a>
+					</div>
+					<a href="https://raiszzz.github.io/nokiatest.loc/" target="_blank" class="work-picture">
+						<img src="./assets/img/works/nokia.jpg" alt="">
+					</a>
+				</div>
+				<div class="work">
+					<div class="work-info">
+						<h3 class="work-title">Medosmotry.</h3>
+						<p class="work-description">Site for a private hospital.</p>
+						<a class="work-link" href="http://medosmotri.tw1.ru/" target="_blank">Go to web-site.</a>
+					</div>
+					<a href="http://raistest.ffox.site/medosmotry.loc/" target="_blank" class="work-picture">
+						<img src="./assets/img/works/medosmotry.jpg" alt="">
+					</a>
+				</div>
+				<div class="work">
+					<div class="work-info">
+						<h3 class="work-title">Canvas.</h3>
+						<p class="work-description">JS todo canvas project.</p>
+						<a class="work-link" href="https://raiszzz.github.io/work.loc/" target="_blank">Go to web-site.</a>
+					</div>
+					<a href="https://raiszzz.github.io/work.loc/" target="_blank" class="work-picture">
+						<img src="./assets/img/works/canvas.jpg" alt="">
+					</a>
+				</div>
+				<div class="work">
+					<div class="work-info">
+						<h3 class="work-title">UI.</h3>
+						<p class="work-description">Site for web design course.</p>
+						<a class="work-link" href="https://raiszzz.github.io/web.ui/" target="_blank">Go to web-site.</a>
+					</div>
+					<a href="https://raiszzz.github.io/web.ui/" target="_blank" class="work-picture">
+						<img src="./assets/img/works/web.jpg" alt="">
+					</a>
+				</div>
+				<div class="work">
+					<div class="work-info">
+						<h3 class="work-title">Calculator.</h3>
+						<p class="work-description">Mini business calculator.</p>
+						<a class="work-link" href="https://raiszzz.github.io/calculator.loc/" target="_blank">Go to web-site.</a>
+					</div>
+					<a href="https://raiszzz.github.io/calculator.loc/" target="_blank" class="work-picture">
+						<img src="./assets/img/works/calculator.jpg" alt="">
+					</a>
+				</div>
+				<div class="work">
+					<div class="work-info">
+						<h3 class="work-title">Error.</h3>
+						<p class="work-description">404 page.</p>
+						<a class="work-link" href="https://raiszzz.github.io/error.loc/error.html" target="_blank">Go to web-site.</a>
+					</div>
+					<a href="https://raiszzz.github.io/error.loc/error.html" target="_blank" class="work-picture">
+						<img src="./assets/img/works/404.jpg" alt="">
+					</a>
+				</div>
 			</div>
-			<div class="social">
-				<i class="fab fa-facebook-f"></i>
-				<i class="fab fa-twitter"></i>
-				<i class="fab fa-instagram"></i>
+			<div class="work-alert">
+				<p>Scroll</p> 
+				<div class="work-scroll-icon">
+					<div class="scroll-line"></div>
+					<div class="scroll-arrow-top"></div>
+					<div class="scroll-arrow-bottom"></div>
+				</div>
 			</div>
 		</div>
-	</footer>
-	<!-- JQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<!-- Scroll -->
-	<script>
-		jQuery(document).ready(function() {
-			jQuery("a.scrollto").click(function () {
-				elementClick = jQuery(this).attr("href")
-				destination = jQuery(elementClick).offset().top;
-				jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1100);
-				return false;
-			});
-		});
-	</script>
+	</section>
+	<section class="about" id="about">
+		<div class="container">
+			<h2 class="title">About.</h2>
+			<div class="about-main">
+				<div class="about-pic">
+					<img src="./assets/img/about-pic.jpg" alt="">
+				</div>
+				<div class="about-desc">
+					<h3 class="about-title">Pavel R.</h3>
+					<p class="about-description">Frontend-developer</p>
+				</div>
+			</div>
+			<p class="about-info">My stack: HTML5, CSS3, JS, JQuery, Vue, Vuex, Pug, Sass, Less, Scss.</p>
+		</div>
+	</section>
+	<section class="contacts" id="contacts">
+		<div class="container">
+			<h2 class="title">Contacts.</h2>
+			<div class="about-main">
+				<div class="about-pic">
+					<img src="./assets/img/contacts-pic.jpg" alt="">
+				</div>
+				<div class="about-desc">
+					<h3 class="about-title">Contact me.</h3>
+					<p class="about-description">
+						VK: <a href="https://vk.com/raiszzz1">vk.com/raiszzz1</a><br>
+						Phone: <a href="tel:+79806890566">+7(980)689-05-66</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="./assets/js/main.js"></script>
 </body>
 </html>
