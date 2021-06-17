@@ -1,0 +1,326 @@
+@import 'colors.sass'
+@font-face
+	font-family: 'Gilroy'
+	src: local('Gilroy Regular'), local('Gilroy-Regular'), url('../fonts/Gilroy-Regular.woff2') format('woff2'), url('../fonts/Gilroy-Regular.woff') format('woff'), url('../fonts/Gilroy-Regular.ttf') format('truetype')
+	font-weight: 400
+	font-style: normal
+@font-face
+	font-family: 'Gilroy'
+	src: local('Gilroy Medium'), local('Gilroy-Medium'), url('../fonts/Gilroy-Medium.woff2') format('woff2'), url('../fonts/Gilroy-Medium.woff') format('woff'), url('../fonts/Gilroy-Medium.ttf') format('truetype')
+	font-weight: 500
+	font-style: normal
+@font-face
+	font-family: 'Gilroy'
+	src: local('Gilroy Bold'), local('Gilroy-Bold'), url('../fonts/Gilroy-Bold.woff2') format('woff2'), url('../fonts/Gilroy-Bold.woff') format('woff'), url('../fonts/Gilroy-Bold.ttf') format('truetype')
+	font-weight: 700
+	font-style: normal
+*
+	padding: 0
+	margin: 0
+	box-sizing: border-box
+a[class]
+	text-decoration: none
+ul[class]
+	list-style: none
+body
+	font-family: 'Gilroy'
+.container
+	width: 1650px
+	margin: 0 auto
+.button
+	color: #fff
+	font-size: 22px
+	font-weight: 700
+	background: linear-gradient(90deg, #46746E -15.79%, #4CB0A3 115.79%)
+	border-radius: 3px
+	display: flex
+	align-items: center
+	justify-content: center
+	padding: 26px 56px 29px 61px
+	border: none
+	outline: none
+	cursor: pointer
+	&__icon
+		width: 25px
+		height: auto
+		margin-left: 12px
+.title
+	color: $main
+	font-size: 40px
+	font-weight: 700
+	&.title__white
+		color: #fff
+.header
+	padding: 30px 0
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 9
+	.container
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+	&__logo
+		width: 270.14px
+		height: auto
+	&__phone
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		margin-top: 26px
+		&-icon
+			width: 20px
+			height: auto
+			margin-right: 20px
+		&-link
+			color: $main
+			font-weight: 500
+			font-size: 20px
+.banner
+	padding-top: 43px
+	background-image: url('../img/banner-bg.png')
+	background-size: cover
+	position: relative
+	overflow: hidden
+	&__bg
+		position: absolute
+		bottom: 0
+		left: 0
+		width: auto
+		height: 28.28px
+		min-width: 100%
+		z-index: 9
+		transform: translateY(50%)
+	.container
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		padding-left: 160px
+	&__picture
+		width: 517px
+		margin-right: 157px
+		position: relative
+		z-index: 7
+	&__info
+		width: 100%
+		position: relative
+		z-index: 7
+		&-description
+			color: $main
+			font-size: 36px
+			font-weight: 500
+			margin-bottom: 41px
+			margin-top: 200px
+			margin-left: 4px
+		&-title
+			color: $main
+			font-size: 107px
+			font-weight: 700
+			margin-bottom: 61px
+		&-row
+			display: flex
+			align-items: center
+			margin-left: 7px
+		&-cost
+			color: $second
+			font-size: 105px
+			font-weight: 500
+			margin-right: 133px
+			span
+				font-size: 40px
+				margin-right: -17px
+	&__strukture
+		display: flex
+		align-items: center
+		margin-top: -7px
+		&-icon
+			width: 110px
+			height: auto
+			margin-right: 30px
+		&-name
+			font-size: 40px
+			font-weight: 500
+			color: $second
+	&__button
+		margin-top: 68px
+		margin-left: 6px
+	&__background
+		&-first
+			position: absolute
+			top: 224px
+			left: -8px
+			height: auto
+			z-index: 1
+			width: 1189px
+			height: 1192.23px
+		&-second
+			position: absolute
+			width: 305px
+			height: 306px
+			top: 0
+			right: -58px
+			z-index: 1
+.char
+	padding-top: 146px
+	padding-bottom: 280px
+	position: relative
+	.container
+		padding-left: 140px
+	&__title
+		margin-bottom: 70px
+	&__row
+		display: flex
+		margin-bottom: 103px
+		&:nth-child(2)
+			.char__item:nth-child(2) b
+				position: relative
+				top: -7px
+		&:nth-child(3)
+			.char__item:nth-child(1)
+				margin-right: 314px
+	&__item
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		justify-content: flex-start
+		margin-right: 275px
+		&-icon
+			width: 70px
+			max-height: 70px
+			margin-bottom: 32px
+		&-info
+			color: $main
+			font-size: 24px
+			font-weight: 500
+	&__bg
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		height: auto
+		z-index: -1
+	&:before
+		content: ''
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		height: 701.73px
+		background: $second
+		z-index: -1
+.description
+	background: $second
+	position: relative
+	padding-bottom: 155px
+	.container
+		padding-left: 140px
+	&__title
+		position: relative
+		top: -72px
+	&__text
+		color: #fff
+		font-size: 20px
+		font-weight: 400
+		line-height: 34px
+		margin-top: -4px
+		margin-bottom: 115px
+		padding-right: 700px
+	&__subtitle
+		color: #fff
+		font-size: 26px
+		font-weight: 700
+		margin-bottom: 67px
+	&__list
+		display: grid
+		grid-template-columns: repeat(3, 397px)
+		grid-gap: 80px 22px
+	&__item
+		display: flex
+		align-items: center
+		&-icon
+			width: 70px
+			max-height: 71px
+			margin-right: 30px
+		&-title
+			color: #fff
+			font-size: 26px
+			font-weight: 500
+.catalog
+	.container
+		padding-left: 140px
+	&__title
+		margin-top: 173px
+		margin-bottom: 55px
+	&__colors
+		display: flex
+		align-items: center
+		margin-left: 6px
+		&-btn
+			width: 35px
+			height: 35px
+			transform: rotate(45deg)
+			border: 3px solid #fff
+			outline: none
+			cursor: pointer
+			position: relative
+			margin-right: 37.5px
+			&:before
+				content: ''
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				width: 38px
+				height: 38px
+				z-index: -1
+				opacity: 0
+				transition: 0.3s
+			&.active
+				&:before
+					opacity: 1
+			&__black
+				$bg: #000
+				background: $bg
+				&:before
+					border: 3px solid $bg
+			&__grey
+				$bg: #888888
+				background: $bg
+				&:before
+					border: 3px solid $bg
+			&__purple
+				$bg: #19398B
+				background: $bg
+				&:before
+					border: 3px solid $bg
+			&__blue
+				$bg: #69BDFA
+				background: $bg
+				&:before
+					border: 3px solid $bg
+			&__green
+				$bg: #27B836
+				background: $bg
+				&:before
+					border: 3px solid $bg
+			&__yellow
+				$bg: #B4B05B
+				background: $bg
+				&:before
+					border: 3px solid $bg
+			&__red
+				$bg: #DF2626
+				background: $bg
+				&:before
+					border: 3px solid $bg
+			&__brown
+				$bg: #875B42
+				background: $bg
+				&:before
+					border: 3px solid $bg
+			&__white
+				$bg: #fff
+				background: $bg
+				&:before
+					border: 3px solid $bg
