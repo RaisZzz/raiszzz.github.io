@@ -1,0 +1,612 @@
+html body {
+	overflow-x: hidden;
+}
+#rnd-replace-main {
+	padding-top: 0 !important;
+}
+#rnd-replace-twocolumns {
+	background: none;
+}
+.krnd-replace-visual.rnd-replace-visual p{
+	height: 620px !important;
+}
+.krnd-replace-visual.rnd-replace-visual,
+article.post {
+	height: auto !important;
+}
+html body #rnd-replace-wrapper>.rnd-replace-w1>.rnd-replace-w2>#rnd-replace-header+#rnd-replace-main#rnd-replace-main#rnd-replace-main#rnd-replace-main {
+	background: #003534 !important;
+}
+.huawei-slick-slider {
+	width: 1196px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.huawei-slick-slide {
+	margin-bottom: 20px;
+}
+.huawei-slick-slide img {
+	width: 100% !important;
+	max-width: 100% !important;
+}
+.huawei-slick-arrows {
+	position: absolute;
+	height: 0;
+	top: calc(50% - 90px);
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 1196px;
+}
+.huawei-prev-arrow {
+	margin-left: 40px;
+	cursor: pointer;
+}
+.huawei-next-arrow {
+	margin-right: 40px;
+	cursor: pointer;
+}
+.huawei-prev-arrow path,
+.huawei-next-arrow path {
+	transition: 0.5s;
+}
+.huawei-prev-arrow:hover path,
+.huawei-next-arrow:hover path {
+	stroke: #CF0A2C;
+}
+.huawei-slick-slider .slick-dots {
+	position: absolute;
+	bottom: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	list-style: none;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+}
+.huawei-slick-slider .slick-dots li {
+	transition: 0.5s;
+	width: 8px;
+	height: 8px;
+	background: #FFFFFF;
+	border: 1px solid #BABDBE;
+	border-radius: 50%;
+	margin: 0 10px;
+}
+.huawei-slick-slider .slick-dots li button {
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+.huawei-slick-slider .slick-dots li.slick-active {
+	transform: scale(1.75);
+	background: #CF0A2C;
+	border: none;
+}
+.huawei-social {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 0 !important;
+	border: none;
+	padding: 80px 0;
+}
+.huawei-links {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.huawei-links a,
+.page-nav a {
+	line-height: 0;
+	width: 46px;
+	height: 46px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #00B419;
+	border-radius: 50%;
+	margin-right: 14px;
+	transition: 0.5s;
+	color: #fff;
+}
+.huawei-links a:last-child,
+.page-nav li:last-child a {
+	margin-right: 0;
+}
+.huawei-links a:hover,
+.page-nav a:hover,
+.page-nav li.active a {
+	background: #CF0A2C;
+}
+.huawei-links a svg {
+	width: 100%;
+}
+.huawei-links a svg path {
+	fill: #00B419;
+	transition: 0.5s;
+}
+.huawei-links a:hover {
+	background: #00B419;
+}
+.huawei-links a:hover svg path {
+	fill: #fff;
+}
+.infinix-nav {
+	margin-bottom: 80px;
+	height: auto;
+	display: flex;
+}
+.infinix-nav ul {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 40px;
+	padding: 0;
+	list-style: none;
+}
+.infinix-nav ul li a {
+	color: #00B419;
+	font-size: 50px;
+	font-weight: 300;
+	text-decoration: none;
+	transition: 0.5s;
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+}
+.infinix-nav ul li a:after {
+	content: '';
+	position: absolute;
+	bottom: -30px;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #00B419;
+	transition: 0.5s;
+}
+.infinix-nav ul li a:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	z-index: 0;
+	transform: translateY(-50%);
+	background: #00B419;
+	filter: blur(20px);
+	opacity: 0;
+	transition: 0.5s;
+	z-index: -1;
+}
+.infinix-nav ul li.active a,
+.infinix-nav ul li:hover a {
+	color: #fff;
+}
+.infinix-nav ul li.active a:after,
+.infinix-nav ul li:hover a:after {
+	background: #fff;
+}
+.infinix-nav ul li.active a:before,
+.infinix-nav ul li:hover a:before {
+	opacity: 1;
+}
+.rnd-replace-side-box {
+	padding: 0 0 0 20px !important;
+	margin-bottom: 25px;
+}
+.huawei-side-banner img {
+	width: 100%;
+}
+.infinix-card {
+	padding: 25px 15px;
+	background: #fff;
+}
+.infinix-title {
+	text-align: center;
+	color: #000;
+	font-size: 28px;
+	font-weight: 300;
+	margin: 0;
+}
+.infinix-photo {
+	margin: 20px 0;
+	position: relative;
+	height: 220px;
+	width: 100%;
+}
+.infinix-photo-front {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: auto;
+	height: 100%;
+	transform: translateX(-50%);
+	transition: 0.5s;
+}
+.infinix-photo-back {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: auto;
+	height: 100%;
+	transform: translateX(-50%);
+	transition: 0.5s;
+	opacity: 0;
+}
+.infinix-card:hover .infinix-photo-front {
+	opacity: 0;
+}
+.infinix-card:hover .infinix-photo-back {
+	opacity: 1;
+}
+.infinix-desc {
+	display: flex;
+	align-items: center;
+	margin-bottom: 5px;
+	font-weight: 300;
+}
+.infinix-desc-title {
+	color: #00B419;
+	width: 100px;
+	margin: 0 10px 0 0;
+	font-size: 12px;
+}
+.infinix-desc-info {
+	color: #000;
+	margin: 0;
+	font-size: 16px;
+}
+.infinix-more-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+.infinix-more {
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 300;
+	text-transform: uppercase;
+	padding: 8px 40px;
+	font-size: 12px;
+	background: #00B419;
+	border-radius: 4px;
+}
+
+@media (max-width: 1219px) {
+	.huawei-slick-slider {
+		width: 100vw;
+	}
+	.huawei-slick-slide {
+		margin-bottom: 70px;
+	}
+	.huawei-slick-arrows {
+		width: 100%;
+	}
+	.huawei-slick-arrows svg {
+		width: 15px;
+		height: auto;
+	}
+	.huawei-social {
+		margin-bottom: 70px;
+	}
+	.huawei-nav ul {
+		margin-bottom: 70px;
+	}
+	.huawei-social p {
+		font-size: 14px;
+		margin-right: 24px;
+	}
+	.huawei-links a {
+		width: 38px;
+		height: 38px;
+		margin-right: 12px;
+	}
+	.huawei-nav ul {
+		height: 56px;
+		border-radius: 10px;
+	}
+	.huawei-nav ul li {
+		font-size: 16px;
+		margin: 0 18px;
+	}
+	.huawei-nav ul li:nth-child(1):after {
+		width: 180px;
+		height: 143px;
+	}
+	.huawei-nav ul li:nth-child(2):after {
+		width: 167px;
+		height: 138px;
+	}
+	.huawei-nav ul li:nth-child(3):after {
+		width: 168px;
+		height: 138px;
+	}
+	.huawei-nav ul li:nth-child(4):after {
+		width: 167px;
+		height: 137px;
+	}
+	.huawei-nav ul li:nth-child(5):after {
+		width: 168px;
+		height: 138px;
+	}
+	.huawei-nav ul li:nth-child(6):after {
+		width: 184px;
+		height: 152px;
+	}
+}
+@media (max-width: 997px) {
+	.huawei-slick-slide {
+		margin-bottom: 50px;
+	}
+	.huawei-slick-slider .slick-dots {
+		bottom: 53px;
+	}
+	.huawei-slick-slider .slick-dots li {
+		width: 6px;
+		height: 6px;
+	}
+	.huawei-slick-slider .slick-dots li.slick-active {
+		transform: scale(2);
+	}
+	.huawei-slick-arrows {
+		top: calc(50% - 100px);
+	}
+	.huawei-slick-arrows svg {
+		width: 13px;
+		height: auto;
+	}
+	.huawei-social {
+		margin-bottom: 50px;
+	}
+	.huawei-nav ul {
+		margin-bottom: 60px;
+	}
+	.huawei-social p {
+		font-size: 10px;
+		margin-right: 19px;
+	}
+	.huawei-links a {
+		width: 26px;
+		height: 26px;
+		margin-right: 10px;
+	}
+	.huawei-links a svg {
+		transform: scale(0.6);
+	}
+	.huawei-nav ul {
+		height: 42px;
+		border-radius: 10px;
+	}
+	.huawei-nav ul li {
+		font-size: 12px;
+		margin: 0 10px;
+	}
+	.huawei-nav ul li:nth-child(1):after {
+		width: 136.68px;
+		height: 107.82px;
+	}
+	.huawei-nav ul li:nth-child(2):after {
+		width: 126.72px;
+		height: 103.97px;
+	}
+	.huawei-nav ul li:nth-child(3):after {
+		width: 127.48px;
+		height: 103.98px;
+	}
+	.huawei-nav ul li:nth-child(4):after {
+		width: 127.05px;
+		height: 102.98px;
+	}
+	.huawei-nav ul li:nth-child(5):after {
+		width: 127.48px;
+		height: 103.98px;
+	}
+	.huawei-nav ul li:nth-child(6):after {
+		width: 140.17px;
+		height: 114.11px;
+	}
+}
+@media (max-width: 699px) {
+	.huawei-slick-slide {
+		margin-bottom: 75px;
+	}
+	.huawei-slick-slider .slick-dots {
+		bottom: 33px;
+	}
+	.huawei-slick-slider .slick-dots li.slick-active {
+		transform: scale(3);
+	}
+	.huawei-slick-arrows svg {
+		width: 10px;
+		height: auto;
+	}
+	.huawei-social {
+		margin-bottom: 50px;
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+	.huawei-nav ul {
+		margin-bottom: 60px;
+		height: 38px;
+		border-radius: 8px;
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+	.huawei-nav ul li {
+		margin: 0 12px;
+	}
+	.huawei-nav ul li:nth-child(1):after {
+		width: 121.65px;
+		height: 96.87px;
+	}
+	.huawei-nav ul li:nth-child(2):after {
+		width: 112.89px;
+		height: 93.5px;
+	}
+	.huawei-nav ul li:nth-child(3):after {
+		width: 113.57px;
+		height: 93.5px;
+	}
+	.huawei-nav ul li:nth-child(4):after {
+		width: 112.8px;
+		height: 92.9px;
+	}
+	.huawei-nav ul li:nth-child(5):after {
+		width: 113.57px;
+		height: 93.5px;
+	}
+	.huawei-nav ul li:nth-child(6):after {
+		width: 124.23px;
+		height: 103.11px;
+	}
+}
+@media (max-width: 461px) {
+	.huawei-slick-arrows {
+		top: 15%;
+	}
+	.huawei-slick-slide {
+		margin-bottom: 80px;
+	}
+	.huawei-slick-slider .slick-dots {
+		bottom: 43px;
+	}
+	.huawei-slick-slider .slick-dots li {
+		border: none;
+	}
+	.huawei-slick-slider .slick-dots li.slick-active {
+		transform: scale(2);
+	}
+	.huawei-social {
+		margin-bottom: 60px;
+		flex-direction: column;
+	}
+	.huawei-social p {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+	.huawei-nav ul {
+		height: 88%;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.huawei-nav ul li {
+		margin: 0;
+		width: 100%;
+	}
+	.huawei-nav ul li:nth-child(1):after {
+		top: -200%;
+		width: 121.65px;
+		height: 96.87px;
+		margin-top: -12%;
+		margin-left: -3%;
+	}
+	.huawei-nav ul li:nth-child(2):after {
+		top: -200%;
+		width: 130.94px;
+		height: 108.45px;
+		margin-top: -12%;
+		margin-left: -5%;
+	}
+	.huawei-nav ul li:nth-child(3):after {
+		width: 134.1px;
+		height: 110.44px;
+		margin-top: -12%;
+		margin-left: 4%;
+	}
+	.huawei-nav ul li:nth-child(4):after {
+		top: 300%;
+		width: 113px;
+		height: 99px;
+		margin-top: 12%;
+		margin-left: 4%;
+	}
+	.huawei-nav ul li:nth-child(5):after {
+		width: 123.71px;
+		height: 101.85px;
+		margin-top: 12%;
+		margin-left: 3%;
+	}
+	.huawei-nav ul li:nth-child(6):after {
+		top: 300%;
+		width: 124.23px;
+		height: 103.11px;
+		margin-top: 12%;
+	}
+	.huawei-nav ul li.active:after {
+		top: 50% !important;
+	}
+	.huawei-nav ul li:hover:after {
+		top: 50% !important;
+	}
+}
+@media (max-width: 400px) {
+	.huawei-links {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-gap: 10px;
+	}
+	.huawei-links a {
+		margin: 0;
+	}
+	.huawei-links a:nth-child(6),
+	.huawei-links a:nth-child(7),
+	.huawei-links a:nth-child(8),
+	.huawei-links a:nth-child(9) {
+		transform: translateX(75%);
+	}
+	.huawei-slick-arrows {
+		top: 12%;
+	}
+}
+@media (max-width: 319px) {
+	.huawei-slick-arrows {
+		top: 10%;
+	}
+	.huawei-nav ul li:nth-child(1):after {
+		width: 105.73px;
+		height: 84.19px;
+		margin-top: -12%;
+		margin-left: -3%;
+	}
+	.huawei-nav ul li:nth-child(2):after {
+		width: 97.72px;
+		height: 80.94px;
+		margin-top: -12%;
+		margin-left: -5%;
+	}
+	.huawei-nav ul li:nth-child(3):after {
+		width: 97.96px;
+		height: 80.68px;
+		margin-top: -12%;
+		margin-left: 4%;
+	}
+	.huawei-nav ul li:nth-child(4):after {
+		width: 99px;
+		height: 87px;
+		margin-top: 12%;
+		margin-left: 4%;
+	}
+	.huawei-nav ul li:nth-child(5):after {
+		width: 111.32px;
+		height: 91.65px;
+		margin-top: 12%;
+		margin-left: 3%;
+	}
+	.huawei-nav ul li:nth-child(6):after {
+		width: 110.95px;
+		height: 92.09px;
+		margin-top: 12%;
+	}
+}
