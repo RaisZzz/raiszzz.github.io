@@ -17,76 +17,68 @@ article.post {
 html body #rnd-replace-wrapper>.rnd-replace-w1>.rnd-replace-w2>#rnd-replace-header+#rnd-replace-main#rnd-replace-main#rnd-replace-main#rnd-replace-main {
 	background: #003534 !important;
 }
-.huawei-slick-slider {
-	width: 1196px;
+.infinix-slide {
+	position: relative;
+}
+.infinix-slide-link {
 	position: absolute;
 	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
 }
-.huawei-slick-slide {
-	margin-bottom: 20px;
+.infinix-slide-image {
+	width: 100%;
+	height: auto;
 }
-.huawei-slick-slide img {
-	width: 100% !important;
-	max-width: 100% !important;
-}
-.huawei-slick-arrows {
+.infinix-arrows {
 	position: absolute;
+	top: 40%;
+	left: 40px;
+	width: calc(100% - 80px);
 	height: 0;
-	top: calc(50% - 90px);
-	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translateY(-50%);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	width: 1196px;
 }
-.huawei-prev-arrow {
-	margin-left: 40px;
+.infinix-arrow {
 	cursor: pointer;
 }
-.huawei-next-arrow {
-	margin-right: 40px;
-	cursor: pointer;
-}
-.huawei-prev-arrow path,
-.huawei-next-arrow path {
+.infinix-arrow path {
 	transition: 0.5s;
+	stroke: #808788;
 }
-.huawei-prev-arrow:hover path,
-.huawei-next-arrow:hover path {
-	stroke: #CF0A2C;
+.infinix-arrow:hover path {
+	stroke: #00B419;
 }
-.huawei-slick-slider .slick-dots {
-	position: absolute;
-	bottom: 40px;
-	left: 50%;
-	transform: translateX(-50%);
+.slick-dots {
 	display: flex;
-	list-style: none;
 	align-items: center;
 	justify-content: center;
-	padding: 0;
+	list-style: none;
+	margin: -36px 0 0 0;
+	position: relative;
+	z-index: 99;
 }
-.huawei-slick-slider .slick-dots li {
-	transition: 0.5s;
-	width: 8px;
-	height: 8px;
-	background: #FFFFFF;
-	border: 1px solid #BABDBE;
+.slick-dots li {
+	width: 12px;
+	height: 12px;
 	border-radius: 50%;
-	margin: 0 10px;
+	background: rgba(128, 135, 136, 0.7);
+	transition: 0.5s;
+	margin-right: 35px;
 }
-.huawei-slick-slider .slick-dots li button {
+.slick-dots li.slick-active,
+.slick-dots li:hover {
+	background: #fff;
+}
+.slick-dots li button {
 	width: 100%;
 	height: 100%;
 	opacity: 0;
-}
-.huawei-slick-slider .slick-dots li.slick-active {
-	transform: scale(1.75);
-	background: #CF0A2C;
-	border: none;
+	cursor: pointer;
 }
 .huawei-social {
 	display: flex;
@@ -125,7 +117,7 @@ html body #rnd-replace-wrapper>.rnd-replace-w1>.rnd-replace-w2>#rnd-replace-head
 	background: #CF0A2C;
 }
 .huawei-links a svg {
-	width: 100%;
+	width: 65%;
 }
 .huawei-links a svg path {
 	fill: #00B419;
@@ -285,328 +277,115 @@ html body #rnd-replace-wrapper>.rnd-replace-w1>.rnd-replace-w2>#rnd-replace-head
 }
 
 @media (max-width: 1219px) {
-	.huawei-slick-slider {
-		width: 100vw;
-	}
-	.huawei-slick-slide {
-		margin-bottom: 70px;
-	}
-	.huawei-slick-arrows {
-		width: 100%;
-	}
-	.huawei-slick-arrows svg {
-		width: 15px;
-		height: auto;
-	}
 	.huawei-social {
-		margin-bottom: 70px;
-	}
-	.huawei-nav ul {
-		margin-bottom: 70px;
-	}
-	.huawei-social p {
-		font-size: 14px;
-		margin-right: 24px;
+		padding: 60px 0;
 	}
 	.huawei-links a {
 		width: 38px;
 		height: 38px;
 		margin-right: 12px;
 	}
-	.huawei-nav ul {
-		height: 56px;
-		border-radius: 10px;
+	.infinix-nav {
+		margin-bottom: 60px;
+	}	
+	.infinix-nav ul li a {
+		font-size: 40px;
 	}
-	.huawei-nav ul li {
-		font-size: 16px;
-		margin: 0 18px;
+	.infinix-nav ul li a:after {
+		bottom: -20px;
 	}
-	.huawei-nav ul li:nth-child(1):after {
-		width: 180px;
-		height: 143px;
-	}
-	.huawei-nav ul li:nth-child(2):after {
-		width: 167px;
-		height: 138px;
-	}
-	.huawei-nav ul li:nth-child(3):after {
-		width: 168px;
-		height: 138px;
-	}
-	.huawei-nav ul li:nth-child(4):after {
-		width: 167px;
-		height: 137px;
-	}
-	.huawei-nav ul li:nth-child(5):after {
-		width: 168px;
-		height: 138px;
-	}
-	.huawei-nav ul li:nth-child(6):after {
-		width: 184px;
-		height: 152px;
+	.infinix-nav ul li a:before {
+		width: 80px;
+		height: 80px;
 	}
 }
 @media (max-width: 997px) {
-	.huawei-slick-slide {
-		margin-bottom: 50px;
-	}
-	.huawei-slick-slider .slick-dots {
-		bottom: 53px;
-	}
-	.huawei-slick-slider .slick-dots li {
-		width: 6px;
-		height: 6px;
-	}
-	.huawei-slick-slider .slick-dots li.slick-active {
-		transform: scale(2);
-	}
-	.huawei-slick-arrows {
-		top: calc(50% - 100px);
-	}
-	.huawei-slick-arrows svg {
-		width: 13px;
-		height: auto;
-	}
 	.huawei-social {
-		margin-bottom: 50px;
-	}
-	.huawei-nav ul {
-		margin-bottom: 60px;
-	}
-	.huawei-social p {
-		font-size: 10px;
-		margin-right: 19px;
+		padding: 60px 0;
 	}
 	.huawei-links a {
-		width: 26px;
-		height: 26px;
-		margin-right: 10px;
+		width: 32px;
+		height: 32px;
+		margin-right: 16px;
 	}
-	.huawei-links a svg {
-		transform: scale(0.6);
+	.infinix-nav {
+		margin-bottom: 60px;
+	}	
+	.infinix-nav ul li a {
+		font-size: 30px;
 	}
-	.huawei-nav ul {
-		height: 42px;
-		border-radius: 10px;
+	.infinix-nav ul li a:after {
+		bottom: -15px;
 	}
-	.huawei-nav ul li {
-		font-size: 12px;
-		margin: 0 10px;
+	.infinix-nav ul li a:before {
+		width: 60px;
+		height: 60px;
 	}
-	.huawei-nav ul li:nth-child(1):after {
-		width: 136.68px;
-		height: 107.82px;
+	.infinix-arrows {
+		left: 30px;
+		width: calc(100% - 60px);
+		top: 35%;
 	}
-	.huawei-nav ul li:nth-child(2):after {
-		width: 126.72px;
-		height: 103.97px;
+	.infinix-arrow {
+		width: 15px;
 	}
-	.huawei-nav ul li:nth-child(3):after {
-		width: 127.48px;
-		height: 103.98px;
+	.slick-dots {
+		margin-top: -26px;
 	}
-	.huawei-nav ul li:nth-child(4):after {
-		width: 127.05px;
-		height: 102.98px;
-	}
-	.huawei-nav ul li:nth-child(5):after {
-		width: 127.48px;
-		height: 103.98px;
-	}
-	.huawei-nav ul li:nth-child(6):after {
-		width: 140.17px;
-		height: 114.11px;
+	.slick-dots li {
+		width: 8px;
+		height: 8px;
+		margin-right: 20px;
 	}
 }
-@media (max-width: 699px) {
-	.huawei-slick-slide {
-		margin-bottom: 75px;
-	}
-	.huawei-slick-slider .slick-dots {
-		bottom: 33px;
-	}
-	.huawei-slick-slider .slick-dots li.slick-active {
-		transform: scale(3);
-	}
-	.huawei-slick-arrows svg {
-		width: 10px;
-		height: auto;
-	}
+@media (max-width: 767px) {
 	.huawei-social {
-		margin-bottom: 50px;
-		margin-right: 20px;
-		margin-left: 20px;
+		padding: 40px 0;
 	}
-	.huawei-nav ul {
-		margin-bottom: 60px;
-		height: 38px;
-		border-radius: 8px;
-		margin-right: 20px;
-		margin-left: 20px;
+	.huawei-links a {
+		width: 28px;
+		height: 28px;
+		margin-right: 12px;
 	}
-	.huawei-nav ul li {
-		margin: 0 12px;
+	.infinix-nav {
+		margin-bottom: 40px;
+	}	
+	.infinix-nav ul li a {
+		font-size: 26px;
 	}
-	.huawei-nav ul li:nth-child(1):after {
-		width: 121.65px;
-		height: 96.87px;
+	.infinix-nav ul li a:after {
+		bottom: -10px;
 	}
-	.huawei-nav ul li:nth-child(2):after {
-		width: 112.89px;
-		height: 93.5px;
+	.infinix-nav ul li a:before {
+		width: 50px;
+		height: 50px;
 	}
-	.huawei-nav ul li:nth-child(3):after {
-		width: 113.57px;
-		height: 93.5px;
-	}
-	.huawei-nav ul li:nth-child(4):after {
-		width: 112.8px;
-		height: 92.9px;
-	}
-	.huawei-nav ul li:nth-child(5):after {
-		width: 113.57px;
-		height: 93.5px;
-	}
-	.huawei-nav ul li:nth-child(6):after {
-		width: 124.23px;
-		height: 103.11px;
+	.infinix-arrows {
+		left: 20px;
+		width: calc(100% - 40px);
 	}
 }
-@media (max-width: 461px) {
-	.huawei-slick-arrows {
-		top: 15%;
+@media (max-width: 700px) {
+	.infinix-nav ul {
+		grid-template-columns: 1fr;
 	}
-	.huawei-slick-slide {
-		margin-bottom: 80px;
+	.rnd-replace-holder {
+		padding: 0 20px !important;
+		width: calc(100% - 40px);
 	}
-	.huawei-slick-slider .slick-dots {
-		bottom: 43px;
+	.infinix-arrows {
+		top: 25%;
+		left: 10px;
+		width: calc(100% - 20px);
 	}
-	.huawei-slick-slider .slick-dots li {
-		border: none;
-	}
-	.huawei-slick-slider .slick-dots li.slick-active {
-		transform: scale(2);
-	}
-	.huawei-social {
-		margin-bottom: 60px;
-		flex-direction: column;
-	}
-	.huawei-social p {
-		margin-right: 0;
-		margin-bottom: 10px;
-	}
-	.huawei-nav ul {
-		height: 88%;
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-	}
-	.huawei-nav ul li {
-		margin: 0;
-		width: 100%;
-	}
-	.huawei-nav ul li:nth-child(1):after {
-		top: -200%;
-		width: 121.65px;
-		height: 96.87px;
-		margin-top: -12%;
-		margin-left: -3%;
-	}
-	.huawei-nav ul li:nth-child(2):after {
-		top: -200%;
-		width: 130.94px;
-		height: 108.45px;
-		margin-top: -12%;
-		margin-left: -5%;
-	}
-	.huawei-nav ul li:nth-child(3):after {
-		width: 134.1px;
-		height: 110.44px;
-		margin-top: -12%;
-		margin-left: 4%;
-	}
-	.huawei-nav ul li:nth-child(4):after {
-		top: 300%;
-		width: 113px;
-		height: 99px;
-		margin-top: 12%;
-		margin-left: 4%;
-	}
-	.huawei-nav ul li:nth-child(5):after {
-		width: 123.71px;
-		height: 101.85px;
-		margin-top: 12%;
-		margin-left: 3%;
-	}
-	.huawei-nav ul li:nth-child(6):after {
-		top: 300%;
-		width: 124.23px;
-		height: 103.11px;
-		margin-top: 12%;
-	}
-	.huawei-nav ul li.active:after {
-		top: 50% !important;
-	}
-	.huawei-nav ul li:hover:after {
-		top: 50% !important;
+}
+@media (max-width: 550px) {
+	.infinix-arrows {
+		top: 22%;
 	}
 }
 @media (max-width: 400px) {
-	.huawei-links {
-		display: grid;
-		grid-template-columns: repeat(5, 1fr);
-		grid-gap: 10px;
-	}
-	.huawei-links a {
-		margin: 0;
-	}
-	.huawei-links a:nth-child(6),
-	.huawei-links a:nth-child(7),
-	.huawei-links a:nth-child(8),
-	.huawei-links a:nth-child(9) {
-		transform: translateX(75%);
-	}
-	.huawei-slick-arrows {
-		top: 12%;
-	}
-}
-@media (max-width: 319px) {
-	.huawei-slick-arrows {
-		top: 10%;
-	}
-	.huawei-nav ul li:nth-child(1):after {
-		width: 105.73px;
-		height: 84.19px;
-		margin-top: -12%;
-		margin-left: -3%;
-	}
-	.huawei-nav ul li:nth-child(2):after {
-		width: 97.72px;
-		height: 80.94px;
-		margin-top: -12%;
-		margin-left: -5%;
-	}
-	.huawei-nav ul li:nth-child(3):after {
-		width: 97.96px;
-		height: 80.68px;
-		margin-top: -12%;
-		margin-left: 4%;
-	}
-	.huawei-nav ul li:nth-child(4):after {
-		width: 99px;
-		height: 87px;
-		margin-top: 12%;
-		margin-left: 4%;
-	}
-	.huawei-nav ul li:nth-child(5):after {
-		width: 111.32px;
-		height: 91.65px;
-		margin-top: 12%;
-		margin-left: 3%;
-	}
-	.huawei-nav ul li:nth-child(6):after {
-		width: 110.95px;
-		height: 92.09px;
-		margin-top: 12%;
+	.infinix-arrows {
+		top: 16%;
 	}
 }
