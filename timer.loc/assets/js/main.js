@@ -6,8 +6,8 @@ const endDate = new Date(startDate.setMonth(startDate.getMonth()+ totalDate));
 startDate = new Date(2021, 11, 1);
 const exDate = new Date(startDate.setMonth(startDate.getMonth() + totalDate/2));
 startDate = new Date(2021, 11, 1);
-const exDateLast = (exDate - startDate) / 86400000;
-const endDateLast = (endDate - startDate) / 86400000;
+const exDateLast = (exDate - nowDate) / 86400000;
+const endDateLast = (endDate - nowDate) / 86400000;
 
 document.addEventListener("DOMContentLoaded", function() {
 	const startDateDOM = document.getElementById("start-date");
