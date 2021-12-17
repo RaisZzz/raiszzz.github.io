@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
 		let rightTextDOM = parent.querySelector(".compare-slider__info .compare-slider__info-right");
 		grap.onmousedown = function(e) {
 			grap.style.transform = "none";
-			move(e);
 			function move(e) {
 				let bounds = parent.getBoundingClientRect();
 				let x = e.clientX - bounds.left;
@@ -49,10 +48,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 		grap.ontouchstart = function(e) {
 			grap.style.transform = "none";
-			move(e);
 			function move(e) {
 				let bounds = parent.getBoundingClientRect();
-				let x = e.clientX - bounds.left;
+				let x = e.changedTouches[0].clientX - bounds.left;
 				if (x < 0) {
 					grap.style.left = 0;
 					afterImage.style.clip = "rect(auto, auto, auto, 0)";
