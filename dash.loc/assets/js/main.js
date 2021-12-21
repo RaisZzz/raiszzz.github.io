@@ -627,4 +627,16 @@ const dolyaDiagramLast_labels = [
         document.getElementById('dolyaDiagram'),
         dolyaDiagramLast_config
     );
+
+    document.querySelectorAll(".main-choice").forEach(select => {
+        new Choices(select, {
+            loadingText: 'Загрузка...',
+            noResultsText: 'Результатов нет.',
+            noChoicesText: 'Нет опций для выбора.',
+            itemSelectText: '',
+            classNames: {
+                containerOuter: 'main-choice choices'
+            }
+        });
+    });
 });
