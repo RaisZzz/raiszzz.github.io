@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
+    Chart.register(ChartDataLabels);
+
 	$('.date-input').daterangepicker({
     "locale": {
         "format": "MM.DD.YYYY г.",
@@ -71,13 +73,31 @@ document.addEventListener("DOMContentLoaded", function() {
                 'rgb(255, 205, 86)',
                 '#2ecc71'
             ],
-            data: [3, 10, 20, 1],
+            data: [3, 10, 20, 5],
         }]
     };
     const zub_config = {
         type: 'pie',
         data: zub_data,
-        options: {}
+        options: {
+            plugins: {
+                datalabels: {
+                  formatter: (value, ctx) => {
+                        let sum = 0;
+                        let dataArr = ctx.chart.data.datasets[0].data;
+                        dataArr.map(data => {
+                            sum += data;
+                        });
+                        let percentage = (value*100 / sum).toFixed(2)+"%";
+                        return percentage;
+                    },
+                    color: '#000',
+                    font: {
+                        size: "22px"
+                    }
+                }
+            }
+        }
     };
     const zubChart = new Chart(
         document.getElementById('zub_chart'),
@@ -99,13 +119,31 @@ document.addEventListener("DOMContentLoaded", function() {
                 'rgb(255, 205, 86)',
                 '#2ecc71'
             ],
-            data: [30, 2, 10, 7],
+            data: [30, 11, 10, 7],
         }]
     };
     const poly_config = {
         type: 'pie',
         data: poly_data,
-        options: {}
+        options: {
+            plugins: {
+                datalabels: {
+                  formatter: (value, ctx) => {
+                        let sum = 0;
+                        let dataArr = ctx.chart.data.datasets[0].data;
+                        dataArr.map(data => {
+                            sum += data;
+                        });
+                        let percentage = (value*100 / sum).toFixed(2)+"%";
+                        return percentage;
+                    },
+                    color: '#000',
+                    font: {
+                        size: "22px"
+                    }
+                }
+            }
+        }
     };
     const polyChart = new Chart(
         document.getElementById('poly_chart'),
@@ -127,13 +165,31 @@ document.addEventListener("DOMContentLoaded", function() {
                 'rgb(255, 205, 86)',
                 '#2ecc71'
             ],
-            data: [30, 2, 10, 7],
+            data: [30, 10, 10, 7],
         }]
     };
     const pediatr_config = {
         type: 'pie',
         data: pediatr_data,
-        options: {}
+        options: {
+            plugins: {
+                datalabels: {
+                  formatter: (value, ctx) => {
+                        let sum = 0;
+                        let dataArr = ctx.chart.data.datasets[0].data;
+                        dataArr.map(data => {
+                            sum += data;
+                        });
+                        let percentage = (value*100 / sum).toFixed(2)+"%";
+                        return percentage;
+                    },
+                    color: '#000',
+                    font: {
+                        size: "22px"
+                    }
+                }
+            }
+        }
     };
     const pediatrChart = new Chart(
         document.getElementById('pediatr_chart'),
@@ -169,6 +225,9 @@ document.addEventListener("DOMContentLoaded", function() {
         maintainAspectRatio: false,
         plugins: {
             legend: {
+                display: false
+            },
+            datalabels: {
                 display: false
             }
         },
@@ -212,6 +271,9 @@ document.addEventListener("DOMContentLoaded", function() {
         plugins: {
             legend: {
                 display: false
+            },
+            datalabels: {
+                display: false
             }
         },
         layout: {
@@ -228,7 +290,7 @@ document.addEventListener("DOMContentLoaded", function() {
     salary.forEach(sal => {
         setTimeout(() => {
             sal.style.height = sal.parentNode.parentNode.parentNode.clientHeight + 47 + "px";
-        }, 1000)
+        }, 2000)
     });
 
 
@@ -258,13 +320,31 @@ document.addEventListener("DOMContentLoaded", function() {
                 'rgb(255, 205, 86)',
                 '#2ecc71'
             ],
-            data: [3, 10, 20, 1],
+            data: [10, 10, 20, 15],
         }]
     };
     const pose_zub_config = {
         type: 'pie',
         data: pose_zub_data,
-        options: {}
+        options: {
+            plugins: {
+                datalabels: {
+                  formatter: (value, ctx) => {
+                        let sum = 0;
+                        let dataArr = ctx.chart.data.datasets[0].data;
+                        dataArr.map(data => {
+                            sum += data;
+                        });
+                        let percentage = (value*100 / sum).toFixed(2)+"%";
+                        return percentage;
+                    },
+                    color: '#000',
+                    font: {
+                        size: "22px"
+                    }
+                }
+            }
+        }
     };
     const pose_zubChart = new Chart(
         document.getElementById('pose_zub_chart'),
@@ -286,13 +366,31 @@ document.addEventListener("DOMContentLoaded", function() {
                 'rgb(255, 205, 86)',
                 '#2ecc71'
             ],
-            data: [3, 10, 20, 1],
+            data: [8, 10, 20, 25],
         }]
     };
     const pose_poly_config = {
         type: 'pie',
         data: pose_poly_data,
-        options: {}
+        options: {
+            plugins: {
+                datalabels: {
+                  formatter: (value, ctx) => {
+                        let sum = 0;
+                        let dataArr = ctx.chart.data.datasets[0].data;
+                        dataArr.map(data => {
+                            sum += data;
+                        });
+                        let percentage = (value*100 / sum).toFixed(2)+"%";
+                        return percentage;
+                    },
+                    color: '#000',
+                    font: {
+                        size: "22px"
+                    }
+                }
+            }
+        }
     };
     const pose_polyChart = new Chart(
         document.getElementById('pose_poly_chart'),
@@ -346,7 +444,19 @@ document.addEventListener("DOMContentLoaded", function() {
       data: neprihdata,
       options: {
         responsive: true,
-        maintainAspectRatio: false
+        maintainAspectRatio: false,
+            plugins: {
+                datalabels: {
+                  formatter: (value) => {
+                        let percentage = value+"%";
+                        return percentage;
+                    },
+                    color: '#000',
+                    font: {
+                        size: "22px"
+                    }
+                }
+            }
       }
     };
     const neprihChart = new Chart(
@@ -380,13 +490,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 'rgb(54, 162, 235)',
                 'rgb(255, 205, 86)',
                 '#2ecc71',
-                'purple',
+                '#badc58',
                 'pink',
-                'blue',
+                '#686de0',
                 'red',
                 'green'
             ],
-            data: [3, 10, 20, 1, 2, 93, 1, 9, 10],
+            data: [10, 10, 20, 19, 20, 23, 11, 9, 10],
         }]
     };
     const dolyaDiagram_config = {
@@ -394,8 +504,20 @@ document.addEventListener("DOMContentLoaded", function() {
         data: dolyaDiagram_data,
         options: {
             plugins: {
-                labels: {
-
+                datalabels: {
+                  formatter: (value, ctx) => {
+                        let sum = 0;
+                        let dataArr = ctx.chart.data.datasets[0].data;
+                        dataArr.map(data => {
+                            sum += data;
+                        });
+                        let percentage = (value*100 / sum).toFixed(2)+"%";
+                        return percentage;
+                    },
+                    color: '#000',
+                    font: {
+                        size: "18px"
+                    }
                 }
             }
         }
@@ -431,7 +553,19 @@ document.addEventListener("DOMContentLoaded", function() {
       data: ltvOnedata,
       options: {
         responsive: true,
-        maintainAspectRatio: false
+        maintainAspectRatio: false,
+        plugins: {
+                datalabels: {
+                  formatter: (value) => {
+                        let percentage = value+"%";
+                        return percentage;
+                    },
+                    color: '#000',
+                    font: {
+                        size: "22px"
+                    }
+                }
+            }
       }
     };
     const ltvOneChart = new Chart(
@@ -463,7 +597,19 @@ document.addEventListener("DOMContentLoaded", function() {
       data: ltvTwodata,
       options: {
         responsive: true,
-        maintainAspectRatio: false
+        maintainAspectRatio: false,
+        plugins: {
+                datalabels: {
+                  formatter: (value) => {
+                        let percentage = value+"%";
+                        return percentage;
+                    },
+                    color: '#000',
+                    font: {
+                        size: "22px"
+                    }
+                }
+            }
       }
     };
     const ltvTwoChart = new Chart(
@@ -495,7 +641,19 @@ document.addEventListener("DOMContentLoaded", function() {
       data: ltvThridtdata,
       options: {
         responsive: true,
-        maintainAspectRatio: false
+        maintainAspectRatio: false,
+        plugins: {
+                datalabels: {
+                  formatter: (value) => {
+                        let percentage = value+"%";
+                        return percentage;
+                    },
+                    color: '#000',
+                    font: {
+                        size: "22px"
+                    }
+                }
+            }
       }
     };
     const ltvThridtChart = new Chart(
@@ -603,13 +761,13 @@ const dolyaDiagramLast_labels = [
                 'rgb(54, 162, 235)',
                 'rgb(255, 205, 86)',
                 '#2ecc71',
-                'purple',
+                '#badc58',
                 'pink',
-                'blue',
+                '#686de0',
                 'red',
                 'green'
             ],
-            data: [3, 10, 20, 1, 2, 93, 1, 9, 10],
+            data: [10, 10, 20, 10, 7, 10, 15, 9, 10],
         }]
     };
     const dolyaDiagramLast_config = {
@@ -617,8 +775,20 @@ const dolyaDiagramLast_labels = [
         data: dolyaDiagramLast_data,
         options: {
             plugins: {
-                labels: {
-
+                datalabels: {
+                  formatter: (value, ctx) => {
+                        let sum = 0;
+                        let dataArr = ctx.chart.data.datasets[0].data;
+                        dataArr.map(data => {
+                            sum += data;
+                        });
+                        let percentage = (value*100 / sum).toFixed(2)+"%";
+                        return percentage;
+                    },
+                    color: '#000',
+                    font: {
+                        size: "18px"
+                    }
                 }
             }
         }
@@ -638,5 +808,26 @@ const dolyaDiagramLast_labels = [
                 containerOuter: 'main-choice choices'
             }
         });
+    });
+
+
+    const tables = document.querySelectorAll(".main-table-list");
+    tables.forEach(table => {
+        if(table.clientHeight > 500) {
+            const tableHead = document.createElement("div");
+            tableHead.className = "custom-table-header";
+            tableHead.style.height = table.querySelector("thead").clientHeight + "px";
+            const tableHeadElementsDOM = table.querySelectorAll("thead td");
+            for(let i = 0; i < tableHeadElementsDOM.length; i++) {
+                const text = tableHeadElementsDOM[i].innerHTML;
+                const width = tableHeadElementsDOM[i].clientWidth;
+                const tableTdElement = document.createElement("div");
+                tableTdElement.className = "custom-table-header-td";
+                tableTdElement.innerHTML = text;
+                tableTdElement.style.width = width + "px";
+                tableHead.append(tableTdElement);
+            }
+            table.parentNode.parentNode.prepend(tableHead);
+        }
     });
 });

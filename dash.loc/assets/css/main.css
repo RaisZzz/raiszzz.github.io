@@ -283,6 +283,23 @@ body {
 	overflow-y: scroll;
 	margin-bottom: 20px;
 }
+.main-table-list-custom {
+	position: relative;
+	width: 100%;
+}
+.custom-table-header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	background-color: var(--grey);
+	z-index: 99;
+}
+.main-table-list-custom-orange .custom-table-header {
+	background-color: #f18d2a;
+}
 .main-table-list-container-salary {
 	padding-bottom: 50px;
 }
@@ -293,7 +310,8 @@ body {
 .main-table-list thead {
 	background-color: var(--grey);
 }
-.main-table-list thead td {
+.main-table-list thead td,
+.custom-table-header-td {
 	border: none;
 	font-size: 16px;
 	padding: 10px;
