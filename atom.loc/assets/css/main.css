@@ -18,11 +18,16 @@ ul[class] {
 	width: 100%;
 	border: 5px solid #B9E931;
 }
+html {
+	min-width: 1903px;
+}
 body {
+	min-width: 1903px;
 	padding: 20px;
 	background-color: #000000;
 	color: #fff;
 	font-family: 'DraughtsmanARegular';
+	width: 100%;
 }
 .s0{
 	fill: none;
