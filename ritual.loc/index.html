@@ -25,19 +25,27 @@
 			<p class="header__description">Городская ритуальная служба<br>в Москве и области</p>
 			<div class="header__phone">
 				<div class="header__phone-row">
-					<img src="./assets/svg/phone.svg" alt="" class="header__phone-icon">
+					<svg class="header__phone-icon"><use xlink:href="./assets/svg/phone.svg#phone" /></svg>
+					<a href="tel:+74951816647">
+						<svg class="header__phone-icon-mobile"><use xlink:href="./assets/svg/phone.svg#mobile-phone" /></svg>
+					</a>
 					<a href="tel:+74951816647" class="header__phone-link">+7 (495) 181 66 47</a>
 				</div>
 				<p class="header__phone-time">Круглосуточно</p>
 			</div>
 			<div class="header__line"></div>
 			<img src="./assets/img/experience.png" alt="" class="header__experience">
+			<button class="header__menu-btn" id="menu-btn">
+				<img src="./assets/svg/burder.svg" alt="" class="header__menu-btn-icon">
+			</button>
 		</div>
 	</section>
 	<!-- Header end -->
 	<!-- Menu start -->
-	<section class="menu">
+	<section class="menu" id="menu">
 		<div class="container">
+			<img src="./assets/img/experience.png" alt="" class="header__experience">
+			<img src="./assets/svg/menu-close.svg" alt="" class="menu-close" id="menu-close">
 			<nav>
 				<ul class="menu-list">
 					<li class="menu-list__item"><a href="#" class="menu-list__item-link">О компании</a></li>
@@ -109,13 +117,19 @@
 			<div class="planes-wrapper">
 				<div data-index="1" class="planes-grid active">
 					<div class="planes-grid__item">
-						<div class="planes-stars">
-							<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+						<div class="planes-stars-name">
+							<div class="planes-stars">
+								<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+							</div>
+							<p class="planes__name">Базовый</p>
 						</div>
-						<p class="planes__name">Базовый</p>
-						<p class="planes__price">5 000 ₽</p>
-						<p class="planes__credit">Рассрочка 0%</p>
-						<p class="planes__credit-count">500 ₽/мес.</p>
+						<div class="planes-price-credit">
+							<p class="planes__price">5 000 ₽</p>
+							<div class="planes-credit-wrapper">
+								<p class="planes__credit">Рассрочка 0%</p>
+								<p class="planes__credit-count">500 ₽/мес.</p>
+							</div>
+						</div>
 						<ul>
 							<li class="planes__option">Гроб деревянный двухкрышечный</li>
 							<li class="planes__option">Похоронный комплект атласный с золотом: подушка, покрывало, постель, тапочки</li>
@@ -126,88 +140,103 @@
 						<a href="#" class="planes__link">Заказать</a>
 					</div>
 					<div class="planes-grid__item">
-						<div class="planes-stars">
-							<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
-							<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+						<div class="planes-stars-name">
+							<div class="planes-stars">
+								<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+								<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+							</div>
+							<p class="planes__name">Базовый</p>
 						</div>
-						<p class="planes__name">Расширенный</p>
-						<p class="planes__price">26 000 ₽</p>
-						<p class="planes__credit">Рассрочка 0%</p>
-						<p class="planes__credit-count">2 600 ₽/мес.</p>
+						<div class="planes-price-credit">
+							<p class="planes__price">5 000 ₽</p>
+							<div class="planes-credit-wrapper">
+								<p class="planes__credit">Рассрочка 0%</p>
+								<p class="planes__credit-count">500 ₽/мес.</p>
+							</div>
+						</div>
 						<ul>
 							<li class="planes__option">Гроб деревянный двухкрышечный</li>
 							<li class="planes__option">Похоронный комплект атласный с золотом: подушка, покрывало, постель, тапочки</li>
 							<li class="planes__option">Корзина заказная</li>
-							<li class="planes__option">Лента траурная заказная 2 шт.</li>
-							<li class="planes__option">Перевозка к месту кремации (микроавтобус Mercedes)</li>
+							<li class="planes__option">Лента траурная заказная<br>2 шт.</li>
 							<li class="planes__option">Доставка предметов ритуала</li>
 						</ul>
 						<a href="#" class="planes__link">Заказать</a>
 					</div>
 					<div class="planes-grid__item">
-						<div class="planes-stars">
-							<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
-							<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
-							<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+						<div class="planes-stars-name">
+							<div class="planes-stars">
+								<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+								<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+								<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+							</div>
+							<p class="planes__name">Базовый</p>
 						</div>
-						<p class="planes__name">Особый</p>
-						<p class="planes__price">26 000 ₽</p>
-						<p class="planes__credit">Рассрочка 0%</p>
-						<p class="planes__credit-count">2 600 ₽/мес.</p>
+						<div class="planes-price-credit">
+							<p class="planes__price">5 000 ₽</p>
+							<div class="planes-credit-wrapper">
+								<p class="planes__credit">Рассрочка 0%</p>
+								<p class="planes__credit-count">500 ₽/мес.</p>
+							</div>
+						</div>
 						<ul>
 							<li class="planes__option">Гроб деревянный двухкрышечный</li>
 							<li class="planes__option">Похоронный комплект атласный с золотом: подушка, покрывало, постель, тапочки</li>
 							<li class="planes__option">Корзина заказная</li>
-							<li class="planes__option">Лента траурная заказная 2 шт.</li>
-							<li class="planes__option">Перевозка к месту кремации (микроавтобус Mercedes)</li>
+							<li class="planes__option">Лента траурная заказная<br>2 шт.</li>
 							<li class="planes__option">Доставка предметов ритуала</li>
 						</ul>
 						<a href="#" class="planes__link">Заказать</a>
 					</div>
 					<div class="planes-grid__item">
-						<div class="planes-stars">
-							<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
-							<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
-							<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
-							<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+						<div class="planes-stars-name">
+							<div class="planes-stars">
+								<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+								<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+								<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+								<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+							</div>
+							<p class="planes__name">Базовый</p>
 						</div>
-						<p class="planes__name">Престиж</p>
-						<p class="planes__price">26 000 ₽</p>
-						<p class="planes__credit">Рассрочка 0%</p>
-						<p class="planes__credit-count">2 600 ₽/мес.</p>
+						<div class="planes-price-credit">
+							<p class="planes__price">5 000 ₽</p>
+							<div class="planes-credit-wrapper">
+								<p class="planes__credit">Рассрочка 0%</p>
+								<p class="planes__credit-count">500 ₽/мес.</p>
+							</div>
+						</div>
 						<ul>
 							<li class="planes__option">Гроб деревянный двухкрышечный</li>
 							<li class="planes__option">Похоронный комплект атласный с золотом: подушка, покрывало, постель, тапочки</li>
 							<li class="planes__option">Корзина заказная</li>
-							<li class="planes__option">Лента траурная заказная 2 шт.</li>
-							<li class="planes__option">Перевозка к месту кремации (микроавтобус Mercedes)</li>
+							<li class="planes__option">Лента траурная заказная<br>2 шт.</li>
 							<li class="planes__option">Доставка предметов ритуала</li>
 						</ul>
 						<a href="#" class="planes__link">Заказать</a>
 					</div>
 					<div class="planes-grid__item">
-						<div class="planes-stars">
-							<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
-							<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
-							<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
-							<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
-							<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+						<div class="planes-stars-name">
+							<div class="planes-stars">
+								<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+								<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+								<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+								<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+								<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+							</div>
+							<p class="planes__name">Базовый</p>
 						</div>
-						<p class="planes__name">Премиум</p>
-						<p class="planes__price">26 000 ₽</p>
-						<p class="planes__credit">Рассрочка 0%</p>
-						<p class="planes__credit-count">2 600 ₽/мес.</p>
+						<div class="planes-price-credit">
+							<p class="planes__price">5 000 ₽</p>
+							<div class="planes-credit-wrapper">
+								<p class="planes__credit">Рассрочка 0%</p>
+								<p class="planes__credit-count">500 ₽/мес.</p>
+							</div>
+						</div>
 						<ul>
 							<li class="planes__option">Гроб деревянный двухкрышечный</li>
 							<li class="planes__option">Похоронный комплект атласный с золотом: подушка, покрывало, постель, тапочки</li>
 							<li class="planes__option">Корзина заказная</li>
-							<li class="planes__option">Лента траурная заказная 2 шт.</li>
-							<li class="planes__option">Перевозка к месту кремации (микроавтобус Mercedes)</li>
-							<li class="planes__option">Доставка предметов ритуала</li>
-							<li class="planes__option">Доставка предметов ритуала</li>
-							<li class="planes__option">Доставка предметов ритуала</li>
-							<li class="planes__option">Доставка предметов ритуала</li>
-							<li class="planes__option">Доставка предметов ритуала</li>
+							<li class="planes__option">Лента траурная заказная<br>2 шт.</li>
 							<li class="planes__option">Доставка предметов ритуала</li>
 						</ul>
 						<a href="#" class="planes__link">Заказать</a>
@@ -215,13 +244,19 @@
 				</div>
 				<div data-index="2" class="planes-grid">
 					<div class="planes-grid__item">
-						<div class="planes-stars">
-							<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+						<div class="planes-stars-name">
+							<div class="planes-stars">
+								<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+							</div>
+							<p class="planes__name">Базовый</p>
 						</div>
-						<p class="planes__name">Кремация</p>
-						<p class="planes__price">5 000 ₽</p>
-						<p class="planes__credit">Рассрочка 0%</p>
-						<p class="planes__credit-count">500 ₽/мес.</p>
+						<div class="planes-price-credit">
+							<p class="planes__price">5 000 ₽</p>
+							<div class="planes-credit-wrapper">
+								<p class="planes__credit">Рассрочка 0%</p>
+								<p class="planes__credit-count">500 ₽/мес.</p>
+							</div>
+						</div>
 						<ul>
 							<li class="planes__option">Гроб деревянный двухкрышечный</li>
 							<li class="planes__option">Похоронный комплект атласный с золотом: подушка, покрывало, постель, тапочки</li>
@@ -232,83 +267,104 @@
 						<a href="#" class="planes__link">Заказать</a>
 					</div>
 					<div class="planes-grid__item">
-						<div class="planes-stars">
-							<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
-							<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+						<div class="planes-stars-name">
+							<div class="planes-stars">
+								<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+								<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+							</div>
+							<p class="planes__name">Базовый</p>
 						</div>
-						<p class="planes__name">Кремация</p>
-						<p class="planes__price">26 000 ₽</p>
-						<p class="planes__credit">Рассрочка 0%</p>
-						<p class="planes__credit-count">2 600 ₽/мес.</p>
+						<div class="planes-price-credit">
+							<p class="planes__price">5 000 ₽</p>
+							<div class="planes-credit-wrapper">
+								<p class="planes__credit">Рассрочка 0%</p>
+								<p class="planes__credit-count">500 ₽/мес.</p>
+							</div>
+						</div>
 						<ul>
 							<li class="planes__option">Гроб деревянный двухкрышечный</li>
 							<li class="planes__option">Похоронный комплект атласный с золотом: подушка, покрывало, постель, тапочки</li>
 							<li class="planes__option">Корзина заказная</li>
-							<li class="planes__option">Лента траурная заказная 2 шт.</li>
-							<li class="planes__option">Перевозка к месту кремации (микроавтобус Mercedes)</li>
+							<li class="planes__option">Лента траурная заказная<br>2 шт.</li>
 							<li class="planes__option">Доставка предметов ритуала</li>
 						</ul>
 						<a href="#" class="planes__link">Заказать</a>
 					</div>
 					<div class="planes-grid__item">
-						<div class="planes-stars">
-							<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
-							<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
-							<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+						<div class="planes-stars-name">
+							<div class="planes-stars">
+								<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+								<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+								<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+							</div>
+							<p class="planes__name">Базовый</p>
 						</div>
-						<p class="planes__name">Кремация</p>
-						<p class="planes__price">26 000 ₽</p>
-						<p class="planes__credit">Рассрочка 0%</p>
-						<p class="planes__credit-count">2 600 ₽/мес.</p>
+						<div class="planes-price-credit">
+							<p class="planes__price">5 000 ₽</p>
+							<div class="planes-credit-wrapper">
+								<p class="planes__credit">Рассрочка 0%</p>
+								<p class="planes__credit-count">500 ₽/мес.</p>
+							</div>
+						</div>
 						<ul>
 							<li class="planes__option">Гроб деревянный двухкрышечный</li>
 							<li class="planes__option">Похоронный комплект атласный с золотом: подушка, покрывало, постель, тапочки</li>
 							<li class="planes__option">Корзина заказная</li>
-							<li class="planes__option">Лента траурная заказная 2 шт.</li>
-							<li class="planes__option">Перевозка к месту кремации (микроавтобус Mercedes)</li>
+							<li class="planes__option">Лента траурная заказная<br>2 шт.</li>
 							<li class="planes__option">Доставка предметов ритуала</li>
 						</ul>
 						<a href="#" class="planes__link">Заказать</a>
 					</div>
 					<div class="planes-grid__item">
-						<div class="planes-stars">
-							<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
-							<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
-							<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
-							<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+						<div class="planes-stars-name">
+							<div class="planes-stars">
+								<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+								<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+								<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+								<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+							</div>
+							<p class="planes__name">Базовый</p>
 						</div>
-						<p class="planes__name">Кремация</p>
-						<p class="planes__price">26 000 ₽</p>
-						<p class="planes__credit">Рассрочка 0%</p>
-						<p class="planes__credit-count">2 600 ₽/мес.</p>
+						<div class="planes-price-credit">
+							<p class="planes__price">5 000 ₽</p>
+							<div class="planes-credit-wrapper">
+								<p class="planes__credit">Рассрочка 0%</p>
+								<p class="planes__credit-count">500 ₽/мес.</p>
+							</div>
+						</div>
 						<ul>
 							<li class="planes__option">Гроб деревянный двухкрышечный</li>
 							<li class="planes__option">Похоронный комплект атласный с золотом: подушка, покрывало, постель, тапочки</li>
 							<li class="planes__option">Корзина заказная</li>
-							<li class="planes__option">Лента траурная заказная 2 шт.</li>
-							<li class="planes__option">Перевозка к месту кремации (микроавтобус Mercedes)</li>
+							<li class="planes__option">Лента траурная заказная<br>2 шт.</li>
 							<li class="planes__option">Доставка предметов ритуала</li>
 						</ul>
 						<a href="#" class="planes__link">Заказать</a>
 					</div>
 					<div class="planes-grid__item">
-						<div class="planes-stars">
-							<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
-							<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
-							<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
-							<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
-							<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+						<div class="planes-stars-name">
+							<div class="planes-stars">
+								<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+								<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+								<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+								<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+								<img src="./assets/svg/star.svg" alt="" class="planes-stars__item">
+							</div>
+							<p class="planes__name">Базовый</p>
 						</div>
-						<p class="planes__name">Кремация</p>
-						<p class="planes__price">26 000 ₽</p>
-						<p class="planes__credit">Рассрочка 0%</p>
-						<p class="planes__credit-count">2 600 ₽/мес.</p>
+						<div class="planes-price-credit">
+							<p class="planes__price">5 000 ₽</p>
+							<div class="planes-credit-wrapper">
+								<p class="planes__credit">Рассрочка 0%</p>
+								<p class="planes__credit-count">500 ₽/мес.</p>
+							</div>
+						</div>
 						<ul>
 							<li class="planes__option">Гроб деревянный двухкрышечный</li>
 							<li class="planes__option">Похоронный комплект атласный с золотом: подушка, покрывало, постель, тапочки</li>
 							<li class="planes__option">Корзина заказная</li>
-							<li class="planes__option">Лента траурная заказная 2 шт.</li>
-							<li class="planes__option">Перевозка к месту кремации (микроавтобус Mercedes)</li>
+							<li class="planes__option">Лента траурная заказная<br>2 шт.</li>
+							<li class="planes__option">Доставка предметов ритуала</li>
 						</ul>
 						<a href="#" class="planes__link">Заказать</a>
 					</div>
@@ -534,13 +590,14 @@
 				<input type="submit" class="questions__form-submit" value="Получить консультацию">
 			</form>
 		</div>
+		<img src="./assets/img/questions-bg-mobile.png" alt="" class="questions-bg-mobile">
 	</section>
 	<!-- Questions end -->
 	<!-- Services start -->
 	<section class="services">
 		<div class="container">
 			<h3 class="title black">Дополнительные услуги</h3>
-			<div class="services-grid">
+			<div class="services-grid" id="services-list">
 				<a href="#" class="services-grid__item">
 					<svg class="services-grid__item-icon"><use xlink:href="./assets/svg/services.svg#services-1"/></svg>
 					<p class="services-grid__item-title">Беспроцентная<br>рассрочка</p>
@@ -622,6 +679,10 @@
 					<p class="services-grid__item-title">Беспроцентная<br>рассрочка</p>
 				</a>
 			</div>
+			<button class="all__btn" id="services-all">
+				Показать все (<span>20</span>)<br>
+				<img src="./assets/svg/down-arrow.svg" alt="" class="all__btn-icon">
+			</button>
 		</div>
 	</section>
 	<!-- Services end -->
@@ -666,7 +727,7 @@
 	<section class="catalog">
 		<div class="container">
 			<h3 class="title black">Каталог ритуальных товаров</h3>
-			<div class="catalog-grid">
+			<div class="catalog-grid" id="catalog-list">
 				<a href="#" class="catalog-grid__item">
 					<svg class="catalog-grid__item-icon"><use xlink:href="./assets/svg/catalog.svg#catalog-1"></use></svg>
 					<div class="catalog-grid__item-right">
@@ -778,6 +839,10 @@
 					</div>
 				</a>
 			</div>
+			<button class="all__btn" id="catalog-all">
+				Показать все (<span>20</span>)<br>
+				<img src="./assets/svg/down-arrow.svg" alt="" class="all__btn-icon">
+			</button>
 		</div>
 	</section>
 	<!-- Catalog end	-->
@@ -957,7 +1022,7 @@
 				<p class="contacts__title">Контактный телефон</p>
 				<a href="tel:+74951819807" class="contacts__value">+7 (495) 181 98 07</a>
 				<p class="contacts__title">Электронная почта</p>
-				<a href="mailto:info@ritual.ru" class="contacts__value">info@ritual.ru</a>
+				<a href="mailto:info@ritual.ru" class="contacts__value contacts__mail">info@ritual.ru</a>
 				<p class="contacts__title">Дополнительные пункты</p>
 				<ul class="contacts__address-list">
 					<li class="contacts__address">Москва, Госпитальная пл., 3, стр. 16</li>
@@ -969,7 +1034,7 @@
 				</ul>
 			</div>
 		</div>
-		<iframe class="contacts-map" src="https://yandex.ru/map-widget/v1/-/CCUy6HQOpD" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
+		<iframe id="map" class="contacts-map" src="https://yandex.ru/map-widget/v1/-/CCUy6HQOpD" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
 	</section>
 	<!-- Contacts end -->
 	<!-- Call start -->

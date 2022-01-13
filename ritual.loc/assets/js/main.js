@@ -1,4 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
+	const windowWidth = document.documentElement.clientWidth;
+
+	// Menu mobile
+	const menu = document.getElementById('menu');
+	const menuBtn = document.getElementById('menu-btn');
+	const menuClose = document.getElementById('menu-close');
+	menuBtn.addEventListener('click', function() {
+		menu.classList.add('active');
+	});
+	menuClose.addEventListener('click', function() {
+		menu.classList.remove('active');
+	});
 	// Planes logic
 	const planesButtons = document.querySelectorAll('.planes__choose-button');
 	const planes = document.querySelectorAll('.planes-grid');
@@ -54,8 +66,19 @@ document.addEventListener('DOMContentLoaded', function() {
 			const index = btn.dataset.index;
 			helpTexts.forEach(text => text.classList.remove('active'));
 			document.querySelector('.help__text-item[data-index="' + index + '"]').classList.add('active');
+
+			if(windowWidth <= 950) {
+				const helpBtnActive = document.querySelector('.help__choose-button.active');
+				const helpTextActive = document.querySelector('.help__text-item.active');
+				helpBtnActive.after(helpTextActive);
+			}
 		});
 	});
+	if(windowWidth <= 950) {
+		const helpBtnActive = document.querySelector('.help__choose-button.active');
+		const helpTextActive = document.querySelector('.help__text-item.active');
+		helpBtnActive.after(helpTextActive);
+	}
 
 	// Accordion logic
 	const accordionBtns = document.querySelectorAll('.accordion-list__item-button');
@@ -67,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	// Command slider
 	const commandSlider = new Swiper('.command-slider', {
-		slidesPerView: 4,
+		slidesPerView: 1.2,
 		spaceBetween: 16,
 		loop: true,
 		pagination: {
@@ -77,11 +100,16 @@ document.addEventListener('DOMContentLoaded', function() {
 			nextEl: '.command-slider__next',
 			prevEl: '.command-slider__prev',
 		},
+		breakpoints: {
+			950: {
+				slidesPerView: 4
+			}
+		}
 	});
 
 	// Reviews slider
 	const reviewsSlider = new Swiper('.reviews-slider', {
-		slidesPerView: 2,
+		slidesPerView: 1.2,
 		spaceBetween: 16,
 		loop: true,
 		pagination: {
@@ -91,5 +119,32 @@ document.addEventListener('DOMContentLoaded', function() {
 			nextEl: '.reviews-slider__next',
 			prevEl: '.reviews-slider__prev',
 		},
+		breakpoints: {
+			950: {
+				slidesPerView: 2
+			}
+		}
 	});
+
+	// Services all btn
+	const servicesList = document.getElementById('services-list');
+	const servicesAllBtn = document.getElementById('services-all');
+	servicesAllBtn.addEventListener('click', function() {
+		servicesList.classList.add('active');
+		servicesAllBtn.remove();
+	});
+
+	// Catalog all btn
+	const catalogList = document.getElementById('catalog-list');
+	const catalogAllBtn = document.getElementById('catalog-all');
+	catalogAllBtn.addEventListener('click', function() {
+		catalogList.classList.add('active');
+		catalogAllBtn.remove();
+	});
+
+	// Map in mobile
+	const map = document.getElementById('map');
+	if(windowWidth <= 950) {
+		map.style.height = windowWidth + 'px';
+	}
 });
