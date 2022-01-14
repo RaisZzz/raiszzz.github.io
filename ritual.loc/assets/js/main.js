@@ -11,6 +11,22 @@ document.addEventListener('DOMContentLoaded', function() {
 	menuClose.addEventListener('click', function() {
 		menu.classList.remove('active');
 	});
+
+	// Menu scroll to
+	const menuItems = document.querySelectorAll('.menu-list__item-link');
+	menuItems.forEach(item => {
+		item.addEventListener('click', function(e) {
+			e.preventDefault();
+			const id = item.dataset.href;
+			const block = document.querySelector(id);
+			const top = block.offsetTop;
+			window.scrollTo({
+				top: top,
+				behavior: 'smooth'
+			});
+			menu.classList.remove('active');
+		});
+	});
 	// Planes logic
 	const planesButtons = document.querySelectorAll('.planes__choose-button');
 	const planes = document.querySelectorAll('.planes-grid');
