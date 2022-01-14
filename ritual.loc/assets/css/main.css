@@ -248,6 +248,16 @@ body {
 .banner-form {
 	width: 100%;
 	flex: 1;
+	position: relative;
+}
+.banner-bg-mobile {
+	display: none;
+	position: absolute;
+	top: -24px;
+	left: 50%;
+	width: 50%;
+	transform: translate(-50%, -100%);
+	z-index: 0;
 }
 .banner-form__title {
 	font-weight: 500;
