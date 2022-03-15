@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>RAIS | Frontend разработчик</title>
+	<link rel="stylesheet" href="./assets/css/main.css">
+	<link rel="icon" type="image/png" href="./assets/img/logo.png">
+</head>
+<body>
+	<section class="header">
+		<div class="container">
+			<img src="./assets/svg/logo.svg" alt="" class="logo">
+			<ul class="menu">
+				<li class="menu__item active">
+					<a data-to="#banner" class="menu__item-link">
+						<span class="menu__item-link-primary">Г</span>
+						<span class="menu__item-link-secondary">Главная</span>
+					</a>
+				</li>
+				<li class="menu__item">
+					<a data-to="#about" class="menu__item-link">
+						<span class="menu__item-link-primary">О</span>
+						<span class="menu__item-link-secondary">Обо мне</span>
+					</a>
+				</li>
+				<li class="menu__item">
+					<a data-to="#portfolio" class="menu__item-link">
+						<span class="menu__item-link-primary">П</span>
+						<span class="menu__item-link-secondary">Портфолио</span>
+					</a>
+				</li>
+				<li class="menu__item">
+					<a data-to="#contacts" class="menu__item-link">
+						<span class="menu__item-link-primary">К</span>
+						<span class="menu__item-link-secondary">Контакты</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="banner" id="banner">
+		<div class="banner-bg-gradient"></div>
+		<div class="container">
+			<div class="banner-info">
+				<h1 class="banner-info__title" id="bannerTitle">
+					<span class="banner-info__title-wrapper">
+						<span class="banner-info__title-first">Разработка</span>	
+					</span>
+					<span class="banner-info__title-wrapper banner-info__title-wrapper-last">
+						<span class="banner-info__title-last">Сайтов</span>
+					</span>
+				</h1>
+				<p class="banner-info__description" id="bannerText">Быстро. Качественно. <span class="secondary-text">С любовью.</span></p>
+			</div>
+		</div>
+	</section>
+	<section class="about" id="about">
+		<div class="container">
+			<div class="about-left">
+				<div class="about-info">
+					<h3 class="about-info__title" id="aboutTitle">Обо мне</h3>
+					<img id="aboutIcon" class="about-info__icon" src="./assets/svg/triangle.svg" alt="">
+				</div>
+				<p class="about__text" id="aboutText">Я - Павел. Занимаюсь разработкой сайтов с 2017 года. Работал в компаниях 4PDA и Belberry. Мой стек технологий: HTML5, CSS3, JS, jQuery, Sass, Pug.</p>
+				<a href="#portfolio" class="about__btn">Примеры работ</a>
+			</div>
+			<div class="about-bg" id="aboutBg">
+				<div class="about-bg__item"></div>
+				<div class="about-bg__item primary"></div>
+				<div class="about-bg__item"></div>
+				<div class="about-bg__item"></div>
+				<div class="about__photo-wrapper" id="aboutPhoto">
+					<img src="./assets/img/about-photo.png" alt="" class="about__photo">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="portfolio" id="portfolio">
+		<div class="container">
+			<img class="portfolio__icon" id="portfolioIcon" src="./assets/svg/portfolio.svg" alt="">
+			<div class="portfolio__title-wrapper">
+				<h3 class="portfolio__title" id="portfolioTitle">Портфолио</h3>
+				<div class="portfolio__title-underline-wrapper" id="portfolioTitleUnderline">
+					<img class="portfolio__title-underline" src="./assets/svg/underline-wave.svg" alt="">
+				</div>
+			</div>
+			<div class="portfolio-grid">
+				<article class="portfolio-grid__item">
+					<a class="portfolio-grid__item-link" href="#"></a>
+					<p class="portfolio-grid__item-title"><span class="secondary-text">design</span> for Building company</p>
+					<img src="./assets/img/portfolio/1.png" alt="" class="portfolio-grid__item-picture">
+				</article>
+				<article class="portfolio-grid__item">
+					<a class="portfolio-grid__item-link" href="#"></a>
+					<p class="portfolio-grid__item-title"><span class="secondary-text">design</span> for Building company</p>
+					<img src="./assets/img/portfolio/1.png" alt="" class="portfolio-grid__item-picture">
+				</article>
+				<article class="portfolio-grid__item">
+					<a class="portfolio-grid__item-link" href="#"></a>
+					<p class="portfolio-grid__item-title"><span class="secondary-text">design</span> for Building company</p>
+					<img src="./assets/img/portfolio/1.png" alt="" class="portfolio-grid__item-picture">
+				</article>
+				<article class="portfolio-grid__item">
+					<a class="portfolio-grid__item-link" href="#"></a>
+					<p class="portfolio-grid__item-title"><span class="secondary-text">design</span> for Building company</p>
+					<img src="./assets/img/portfolio/1.png" alt="" class="portfolio-grid__item-picture">
+				</article>
+				<div class="portfolio__btn-wrapper">
+					<a href="#" class="portfolio__btn" id="portfolioBtn">Смотреть все работы</a>
+				</div>
+			</div>
+			<div class="portfolio-waves" id="portfolioWaves">
+				<svg class="portfolio-waves__item"><use xlink:href="./assets/svg/wave.svg#wave"></use></svg>
+				<svg class="portfolio-waves__item"><use xlink:href="./assets/svg/wave.svg#wave"></use></svg>
+				<svg class="portfolio-waves__item primary"><use xlink:href="./assets/svg/wave.svg#wave"></use></svg>
+				<svg class="portfolio-waves__item"><use xlink:href="./assets/svg/wave.svg#wave"></use></svg>
+			</div>
+		</div>
+	</section>
+	<section class="contacts" id="contacts">
+		<svg class="contacts__icon" id="contactsIcon" width="530" height="286" viewBox="0 0 530 286" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M4 225L-11 249H4H19L4 225Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M32 248L47 224L32 224L17 224L32 248Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M60 225L45 249H60H75L60 225Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M88 248L103 224L88 224L73 224L88 248Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M115 225L100 249H115H130L115 225Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M143 248L158 224L143 224L128 224L143 248Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M2.80818 211L17.7412 187L2.80818 187L-12.1249 187L2.80818 211Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M29.6876 188L14.7545 212H29.6876H44.6206L29.6876 188Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M57.5624 211L72.4955 187L57.5624 187L42.6294 187L57.5624 211Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M85.4376 188L70.5045 212H85.4376H100.371L85.4376 188Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M113.313 211L128.246 187L113.313 187L98.3795 187L113.313 211Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M140.192 188L125.259 212H140.192H155.125L140.192 188Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M168.067 211L183 187L168.067 187L153.134 187L168.067 211Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M-1.06696 150L-16 174H-1.06696H13.8661L-1.06696 150Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M26.8082 173L41.7412 149L26.8082 149L11.8751 149L26.8082 173Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M53.6876 150L38.7545 174H53.6876H68.6206L53.6876 150Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M81.5624 173L96.4955 149L81.5624 149L66.6294 149L81.5624 173Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M109.438 150L94.5045 174H109.438H124.371L109.438 150Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M137.313 173L152.246 149L137.313 149L122.38 149L137.313 173Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M164.192 150L149.259 174H164.192H179.125L164.192 150Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M192.067 173L207 149L192.067 149L177.134 149L192.067 173Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M9 283L24 259L9 259L-6 259L9 283Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M37 260L22 284H37H52L37 260Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M65 283L80 259L65 259L50 259L65 283Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M92 260L77 284H92H107L92 260Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M120 283L135 259L120 259L105 259L120 283Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M48 78L33 102H48H63L48 78Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M76 101L91 77L76 77L61 77L76 101Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M103 78L88 102H103H118L103 78Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M131 101L146 77L131 77L116 77L131 101Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M159 78L144 102H159H174L159 78Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M187 101L202 77L187 77L172 77L187 101Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M214 78L199 102H214H229L214 78Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M242 101L257 77L242 77L227 77L242 101Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M73.933 41L59 65H73.933H88.8661L73.933 41Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M101.808 64L116.741 40L101.808 40L86.8751 40L101.808 64Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M128.688 41L113.755 65H128.688H143.621L128.688 41Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M156.562 64L171.495 40L156.562 40L141.629 40L156.562 64Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M184.438 41L169.505 65H184.438H199.371L184.438 41Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M212.313 64L227.246 40L212.313 40L197.38 40L212.313 64Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M239.192 41L224.259 65H239.192H254.125L239.192 41Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M267.067 64L282 40L267.067 40L252.134 40L267.067 64Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M97.933 3L83 27H97.933H112.866L97.933 3Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M125.808 26L140.741 2L125.808 2L110.875 2L125.808 26Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M152.688 3L137.755 27L152.688 27H167.621L152.688 3Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M180.562 26L195.495 2L180.562 2L165.629 2L180.562 26Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M208.438 3L193.505 27H208.438H223.371L208.438 3Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M236.313 26L251.246 2L236.313 2L221.38 2L236.313 26Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M263.192 3L248.259 27L263.192 27H278.125L263.192 3Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M291.067 26L306 2L291.067 2L276.134 2L291.067 26Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M25 113L10 137H25H40L25 113Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M53 136L68 112L53 112L38 112L53 136Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M80 113L65 137H80H95L80 113Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M108 136L123 112L108 112L93 112L108 136Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M136 113L121 137H136H151L136 113Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M164 136L179 112L164 112L149 112L164 136Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M191 113L176 137H191H206L191 113Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M219 136L234 112L219 112L204 112L219 136Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M170 225L155 249H170H185L170 225Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M198 248L213 224L198 224L183 224L198 248Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M225 225L210 249H225H240L225 225Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M253 248L268 224L253 224L238 224L253 248Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M281 225L266 249H281H296L281 225Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M309 248L324 224L309 224L294 224L309 248Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M336 225L321 249H336H351L336 225Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M364 248L379 224L364 224L349 224L364 248Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M195.933 188L181 212H195.933H210.866L195.933 188Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M223.808 211L238.741 187L223.808 187L208.875 187L223.808 211Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M250.688 188L235.755 212H250.688H265.621L250.688 188Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M278.562 211L293.495 187L278.562 187L263.629 187L278.562 211Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M306.438 188L291.505 212H306.438H321.371L306.438 188Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M334.313 211L349.246 187L334.313 187L319.38 187L334.313 211Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M361.192 188L346.259 212H361.192H376.125L361.192 188Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M389.067 211L404 187L389.067 187L374.134 187L389.067 211Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M219.933 150L205 174H219.933H234.866L219.933 150Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M247.808 173L262.741 149L247.808 149L232.875 149L247.808 173Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M274.688 150L259.755 174H274.688H289.621L274.688 150Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M302.562 173L317.495 149L302.562 149L287.629 149L302.562 173Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M330.438 150L315.505 174H330.438H345.371L330.438 150Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M358.313 173L373.246 149L358.313 149L343.38 149L358.313 173Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M385.192 150L370.259 174H385.192H400.125L385.192 150Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M413.067 173L428 149L413.067 149L398.134 149L413.067 173Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M147 260L132 284H147H162L147 260Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M175 283L190 259L175 259L160 259L175 283Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M202 260L187 284H202H217L202 260Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M230 283L245 259L230 259L215 259L230 283Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M258 260L243 284H258H273L258 260Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M286 283L301 259L286 259L271 259L286 283Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M313 260L298 284H313H328L313 260Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M341 283L356 259L341 259L326 259L341 283Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M269 78L254 102H269H284L269 78Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M297 101L312 77L297 77L282 77L297 101Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M324 78L309 102H324H339L324 78Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M352 101L367 77L352 77L337 77L352 101Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M380 78L365 102H380H395L380 78Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M408 101L423 77L408 77L393 77L408 101Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M435 78L420 102H435H450L435 78Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M463 101L478 77L463 77L448 77L463 101Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M294.933 41L280 65H294.933H309.866L294.933 41Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M322.808 64L337.741 40L322.808 40L307.875 40L322.808 64Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M349.688 41L334.755 65H349.688H364.621L349.688 41Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M377.562 64L392.495 40L377.562 40L362.629 40L377.562 64Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M405.438 41L390.505 65H405.438H420.371L405.438 41Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M433.313 64L448.246 40L433.313 40L418.38 40L433.313 64Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M460.192 41L445.259 65H460.192H475.125L460.192 41Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M488.067 64L503 40L488.067 40L473.134 40L488.067 64Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M318.933 3L304 27H318.933H333.866L318.933 3Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M346.808 26L361.741 2L346.808 2L331.875 2L346.808 26Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M373.688 3L358.755 27L373.688 27H388.621L373.688 3Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M401.562 26L416.495 2L401.562 2L386.629 2L401.562 26Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M429.438 3L414.505 27H429.438H444.371L429.438 3Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M457.313 26L472.246 2L457.313 2L442.38 2L457.313 26Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M484.192 3L469.259 27L484.192 27H499.125L484.192 3Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M512.067 26L527 2L512.067 2L497.134 2L512.067 26Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M246 113L231 137H246H261L246 113Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M274 136L289 112L274 112L259 112L274 136Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M301 113L286 137H301H316L301 113Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M329 136L344 112L329 112L314 112L329 136Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M357 113L342 137H357H372L357 113Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M385 136L400 112L385 112L370 112L385 136Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M412 113L397 137H412H427L412 113Z" stroke="#308FFF" stroke-width="3"/>
+			<path d="M440 136L455 112L440 112L425 112L440 136Z" stroke="#308FFF" stroke-width="3"/>
+		</svg>
+		<div class="container">
+			<h3 class="contacts__title" id="contactsTitle"><span class="secondary-text">К</span>онтакт<span class="secondary-text">ы</span></h3>
+			<p class="contacts__description" id="contactsDescription">Contact me in social or phone. Contact me in social or phone. Contact me in social or phone. Contact me in social or phone. Contact me in social or phone. </p>
+			<div class="contacts-grid" id="contactsGrid">
+				<a href="tel:+79016890578" class="contacts-grid__item"><span class="secondary-text">+7</span> (901) 689 05-78</a>
+				<a target="_blank" href="https://vk.com/raiszzz1" class="contacts-grid__item"><span class="secondary-text">vk.com/</span>raiszzz1</a>
+				<a target="_blank" href="https://t.me/raissound" class="contacts-grid__item"><span class="secondary-text">t.me/</span>raissound</a>
+				<a target="_blank" href="https://behance.net/raiszzz" class="contacts-grid__item"><span class="secondary-text">behance.net/</span>raiszzz</a>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+	<script src="./assets/js/main.js"></script>
+</body>
+</html>
