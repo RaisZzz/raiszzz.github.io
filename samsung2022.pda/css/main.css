@@ -23,6 +23,7 @@ a[class] {
 }
 body {
     font-family: 'SamsungSharpSans', serif;
+    overflow-x: hidden;
 }
 /* title */
 .title-row {
@@ -48,6 +49,9 @@ body {
     border: 1px solid #000;
     border-radius: 20px;
     transition: 0.3s;
+}
+.title-link.mobile {
+    display: none;
 }
 .title-link:hover {
     background-color: #000;
@@ -107,6 +111,17 @@ body {
 }
 .top-slider__item-image {
     width: 100%;
+}
+.top-slider__item {
+    position: relative;
+}
+.top-slider__item-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
 }
 .top-slider__buttons {
     position: absolute;
@@ -215,6 +230,9 @@ body {
     grid-gap: 40px;
 }
 .banners__item {
+    width: 100%;
+}
+.banners__item-image {
     width: 100%;
 }
 /* News */
@@ -463,6 +481,9 @@ body {
     opacity: 0.2;
     transition: 0.3s;
 }
+.photos-slider .photos-slider__item {
+    height: 580px !important;
+}
 .photos-slider__item.swiper-slide-active {
     opacity: 1;
 }
@@ -531,10 +552,18 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
-    z-index: 1;
+    z-index: 3;
     stroke: #000;
     fill: #fff;
     border-radius: 50%;
+}
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 .video-play:hover {
     fill: #000;
@@ -583,6 +612,7 @@ body {
     flex-direction: column;
     padding: 40px;
     background-color: #F4F4F4;
+    color: #000;
 }
 .posts-info__title {
     font-size: 24px;
@@ -668,4 +698,754 @@ body {
 .videos__item-video {
     width: 100%;
     height: 100%;
+}
+
+/* media */
+@media screen and (max-width: 1219px) {
+    .container {
+        width: 987px;
+    }
+    .header {
+        margin: 40px 0;
+    }
+    .header__logo-link {
+        margin-right: 30px;
+    }
+    .header__logo {
+        width: 88px;
+    }
+    .header__menu {
+        gap: 30px;
+    }
+    .header__menu-item-link {
+        font-size: 18px;
+    }
+    .header__samsung-logo {
+        width: 158px;
+    }
+    .top-slider-section {
+        margin-bottom: 60px;
+    }
+
+    .menu,
+    .banners {
+        margin-bottom: 80px;
+    }
+
+    .menu-list {
+        grid-gap: 3px;
+    }
+    .menu-list__item-link {
+        font-size: 14px;
+    }
+    .menu-list__item-icon.samsung {
+        margin-bottom: 35px;
+    }
+    .menu-list__item-icon {
+        transform: scale(0.8);
+        margin-bottom: 20px;
+    }
+    .banners .container {
+        grid-gap: 35px;
+    }
+    .title-row {
+        margin-bottom: 40px;
+    }
+    .news-grid__item-image-wrapper {
+        margin-bottom: 15px;
+    }
+    .news-grid__item-link {
+        font-size: 14px;
+    }
+
+    .news,
+    .reviews,
+    .articles,
+    .models,
+    .photos,
+    .video-section,
+    .text-section,
+    .posts,
+    .image-section,
+    .videos {
+        margin-bottom: 120px;
+    }
+
+    .reviews-grid__item-link {
+        font-size: 16px;
+    }
+    .reviews-grid__item-image-wrapper {
+        margin-bottom: 15px;
+    }
+    .articles-grid__item-image-wrapper {
+        min-width: 220px;
+        width: 220px;
+        height: 165px;
+    }
+    .models-grid__item:nth-child(1) .models-grid__item-image-wrapper {
+        margin-bottom: 15px;
+    }
+    .models-grid {
+        grid-template-rows: repeat(2, 237px);
+    }
+    .models-grid__item:nth-child(1) {
+        padding: 30px 30px 20px 30px;
+    }
+    .photos-slider {
+        transform: scale(0.65);
+        width: 154%;
+        margin-left: -27%;
+        margin-top: -110px;
+        margin-bottom: -100px;
+    }
+    .photos-slider-mini .photos-slider__item {
+        height: 65px;
+    }
+    .photos-slider-mini {
+        height: 95px;
+    }
+    .photos-slider-counter {
+        width: 65px;
+    }
+    .posts .container {
+        grid-template-rows: repeat(2, 370px);
+    }
+    .videos .container {
+        grid-template-rows: repeat(2, 167px);
+    }
+}
+@media screen and (max-width: 997px) {
+    .container {
+        width: 748px;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .title-link {
+        font-size: 10px;
+    }
+    .header {
+        margin: 30px 0;
+    }
+    .header__logo-link {
+        margin-right: 25px;
+    }
+    .header__logo {
+        width: 70px;
+    }
+    .header__menu {
+        gap: 25px;
+    }
+    .header__menu-item-link {
+        font-size: 14px;
+    }
+    .header__samsung-logo {
+        width: 125px;
+    }
+    .top-slider-section {
+        margin-bottom: 40px;
+    }
+
+    .menu,
+    .banners {
+        margin-bottom: 60px;
+    }
+
+    .menu-list {
+        grid-gap: 3px;
+    }
+    .menu-list__item-link {
+        font-size: 12px;
+        padding: 10px 0;
+    }
+    .menu-list__item-icon.samsung {
+        margin-bottom: 27px;
+    }
+    .menu-list__item-icon {
+        transform: scale(0.61);
+        margin-bottom: 12px;
+    }
+    .banners .container {
+        grid-gap: 30px;
+    }
+    .title-row {
+        margin-bottom: 30px;
+    }
+    .news-grid {
+        grid-gap: 30px;
+    }
+    .news-grid__item-image-wrapper {
+        margin-bottom: 10px;
+        height: 124px;
+    }
+    .news-grid__item:nth-child(3n+2) .news-grid__item-image-wrapper {
+        height: 269px;
+    }
+    .news-grid__item-link {
+        font-size: 14px;
+    }
+    .news-grid__item:nth-child(3n+2) .news-grid__item-link {
+        font-size: 20px;
+    }
+
+    .news,
+    .reviews,
+    .articles,
+    .models,
+    .photos,
+    .video-section,
+    .text-section,
+    .posts,
+    .image-section,
+    .videos {
+        margin-bottom: 100px;
+    }
+
+    .reviews-grid {
+        grid-gap: 30px;
+    }
+    .reviews-grid__item-link {
+        font-size: 14px;
+    }
+    .reviews-grid__item-image-wrapper {
+        margin-bottom: 10px;
+        height: 124px;
+    }
+    .articles-grid {
+        grid-gap: 30px;
+    }
+    .articles-grid__item-image-wrapper {
+        min-width: 164px;
+        width: 164px;
+        height: 124px;
+        margin-bottom: 0;
+    }
+    .articles-grid__item-title {
+        font-size: 14px;
+        margin-right: 30px;
+    }
+    .models-grid {
+        grid-gap: 30px;
+        grid-template-rows: repeat(2, 230px);
+    }
+    .models-grid__item-title {
+        font-size: 14px;
+    }
+    .models-grid__item:nth-child(1) .models-grid__item-image-wrapper {
+        margin-bottom: 30px;
+    }
+    .models-grid__item:nth-child(1) {
+        padding: 20px;
+    }
+    .models-grid__item:nth-child(1) .models-grid__item-title {
+        font-size: 20px;
+    }
+
+    .photos-button {
+        width: 32px;
+        height: 32px;
+    }
+    .photos-slider {
+        transform: scale(0.65);
+        width: 154%;
+        margin-left: -27%;
+        margin-top: -110px;
+        margin-bottom: -100px;
+    }
+    .photos-slider-mini .photos-slider__item {
+        height: 70px;
+    }
+    .photos-slider-mini {
+        height: 95px;
+    }
+    .photos-slider-counter {
+        width: 65px;
+    }
+    .posts .container {
+        grid-template-rows: repeat(2, 280px);
+    }
+    .videos .container {
+        grid-template-rows: repeat(2, 123px);
+    }
+    .video-play {
+        width: 80px;
+    }
+    .text {
+        font-size: 30px;
+    }
+    .posts-info {
+        padding: 30px;
+    }
+    .posts-info__title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .posts-info__description {
+        font-size: 14px;
+    }
+    .image-text {
+        font-size: 40px;
+    }
+    .videos__item:nth-child(1) .videos__item-icon {
+        width: 80px;
+        height: 80px;
+    }
+    .videos__item-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .container {
+        width: 100%;
+        padding: 0 45px;
+    }
+    .title {
+        font-size: 26px;
+    }
+    .title-link {
+        font-size: 10px;
+    }
+    .header {
+        margin: 30px 0;
+    }
+    .header__logo-link {
+        margin-right: 20px;
+    }
+    .header__logo {
+        width: 70px;
+    }
+    .header__menu {
+        gap: 25px;
+    }
+    .header__menu-item-link {
+        font-size: 12px;
+    }
+    .header__samsung-logo {
+        width: 125px;
+    }
+    .top-slider-section {
+        margin-bottom: 35px;
+    }
+
+    .menu,
+    .banners {
+        margin-bottom: 50px;
+    }
+
+    .menu-list {
+        grid-gap: 6px;
+    }
+    .menu-list__item-link {
+        font-size: 10px;
+        padding: 0 0 15px 0;
+    }
+    .menu-list__item-icon.samsung {
+        margin-bottom: 20px;
+        transform: scale(1);
+        width: 80px;
+    }
+    .menu-list__item-icon {
+        transform: scale(0.5);
+        margin-bottom: 5px;
+    }
+    .banners .container {
+        grid-gap: 30px;
+    }
+    .title-row {
+        margin-bottom: 30px;
+    }
+    .news-grid {
+        grid-gap: 25px;
+    }
+    .news-grid__item-image-wrapper {
+        margin-bottom: 10px;
+        height: 110px;
+    }
+    .news-grid__item:nth-child(3n+2) .news-grid__item-image-wrapper {
+        height: 245px;
+    }
+    .news-grid__item-link {
+        font-size: 12px;
+    }
+    .news-grid__item:nth-child(3n+2) .news-grid__item-link {
+        font-size: 18px;
+    }
+
+    .news,
+    .reviews,
+    .articles,
+    .models,
+    .photos,
+    .video-section,
+    .text-section,
+    .posts,
+    .image-section,
+    .videos {
+        margin-bottom: 80px;
+    }
+
+    .reviews-grid {
+        grid-gap: 25px;
+    }
+    .reviews-grid__item-link {
+        font-size: 12px;
+    }
+    .reviews-grid__item-image-wrapper {
+        margin-bottom: 10px;
+        height: 110px;
+    }
+    .articles-grid {
+        grid-gap: 25px;
+    }
+    .articles-grid__item-image-wrapper {
+        min-width: 150px;
+        width: 150px;
+        height: 110px;
+        margin-bottom: 0;
+    }
+    .articles-grid__item-title {
+        font-size: 12px;
+        margin-right: 25px;
+    }
+    .models-grid {
+        grid-gap: 25px;
+        grid-template-rows: repeat(2, 209px);
+    }
+    .models-grid__item-title {
+        font-size: 12px;
+    }
+    .models-grid__item:nth-child(1) .models-grid__item-image-wrapper {
+        margin-bottom: 20px;
+    }
+    .models-grid__item:nth-child(1) {
+        padding: 15px;
+    }
+    .models-grid__item {
+        padding: 15px;
+    }
+    .models-grid__item:nth-child(1) .models-grid__item-title {
+        font-size: 16px;
+    }
+    .models-grid__item-link {
+        font-size: 10px;
+    }
+
+    .photos-button {
+        width: 26px;
+        height: 26px;
+    }
+    .photos-slider {
+        transform: scale(0.65);
+        width: 154%;
+        margin-left: -27%;
+        margin-top: -110px;
+        margin-bottom: -100px;
+    }
+    .photos-slider-mini .photos-slider__item {
+        height: 67px;
+    }
+    .photos-slider-mini {
+        height: 95px;
+        overflow-x: hidden;
+    }
+    .photos-slider-mini .swiper-wrapper {
+        overflow-x: hidden;
+    }
+    .photos-slider-counter {
+        width: 67px;
+        left: 45px;
+    }
+    .video-play {
+        width: 70px;
+    }
+    .text {
+        font-size: 26px;
+    }
+    .posts .container {
+        grid-template-rows: repeat(2, 254px);
+    }
+    .posts-info {
+        padding: 25px;
+    }
+    .posts-info__title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .posts-info__description {
+        font-size: 14px;
+    }
+    .image-text {
+        font-size: 40px;
+    }
+    .videos__item-icon {
+        width: 40px;
+        height: 40px;
+    }
+    .videos__item:nth-child(1) .videos__item-icon {
+        width: 70px;
+        height: 70px;
+    }
+    .videos .container {
+        grid-template-rows: repeat(2, 103px);
+    }
+}
+@media screen and (max-width: 699px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .top-slider__pagination {
+        margin-top: 10px;
+    }
+    .header {
+        margin: 25px 0;
+    }
+    .header__menu {
+        display: none;
+    }
+    .top-slider__pagination .swiper-pagination-bullet {
+        width: 60px;
+    }
+    .menu-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .banners .container {
+        grid-gap: 20px;
+    }
+    .news-grid,
+    .reviews-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+    .news-grid__item-image-wrapper,
+    .news-grid__item:nth-child(3n+2) .news-grid__item-image-wrapper,
+    .reviews-grid__item-image-wrapper {
+        height: 156px;
+    }
+    .news-grid__item:nth-child(3n+2) .news-grid__item-link {
+        font-size: 12px;
+    }
+    .reviews-grid__item:last-child {
+        display: none;
+    }
+    .models-grid {
+        grid-template-rows: repeat(2, 172px);
+    }
+    .models-grid__item,
+    .models-grid__item:nth-child(1) {
+        padding: 10px;
+        position: relative;
+    }
+    .models-grid__item-link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        opacity: 0;
+    }
+    .photos-slider {
+        transform: scale(0.5);
+        width: 200%;
+        margin-left: -50%;
+        margin-top: -135px;
+        margin-bottom: -120px;
+    }
+    .photos-slider-counter {
+        width: 76px;
+        left: 20px;
+    }
+    .photos-slider-mini {
+        height: 105px;
+    }
+    .photos-slider-mini .photos-slider__item {
+        height: 76px;
+    }
+    .text {
+        font-size: 20px;
+    }
+    .posts-info__description {
+        display: none;
+    }
+    .posts-info__title {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .posts .container {
+        grid-template-rows: repeat(2, 245px);
+    }
+    .image-text {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 419px) {
+    .container {
+        padding: 0 10px;
+    }
+    .top-slider-btn {
+        transform: scale(0.8);
+    }
+    .top-slider__buttons {
+        padding: 0 10px;
+    }
+    .top-slider__pagination .swiper-pagination-bullet {
+        width: 40px;
+    }
+    .menu-list__item-link {
+        font-size: 12px;
+    }
+    .menu,
+    .banners {
+        margin-bottom: 40px;
+    }
+    .news,
+    .reviews,
+    .articles,
+    .models,
+    .photos,
+    .video-section,
+    .text-section,
+    .posts,
+    .image-section,
+    .videos {
+        margin-bottom: 60px;
+    }
+
+    .banners .container,
+    .reviews-grid {
+        display: flex;
+        width: 100%;
+        overflow-x: auto;
+        gap: 20px;
+    }
+    .banners__item {
+        width: calc(50% - 10px);
+    }
+    .title-line,
+    .title-link:not(.mobile) {
+        display: none;
+    }
+    .title-link.mobile {
+        display: block;
+        margin-top: 20px;
+    }
+    .title-row {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .title {
+        text-align: center;
+    }
+    .news-grid {
+        display: flex;
+        width: 100%;
+        overflow-x: auto;
+        gap: 20px;
+    }
+    .news-grid__item {
+        min-width: 70%;
+    }
+
+    .news .container,
+    .reviews .container,
+    .articles .container,
+    .models .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reviews-grid__item {
+        min-width: 120px;
+    }
+    .reviews-grid__item-image-wrapper {
+        height: 90px;
+    }
+    .reviews-grid__item-link {
+        font-size: 11px;
+    }
+
+    .articles-grid {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .models-grid {
+        grid-template-columns: 100px 100px 230px 230px;
+        grid-template-rows: repeat(2, 130px);
+        width: 100%;
+        overflow-x: auto;
+    }
+    .models-grid__item:first-child {
+        flex-direction: column;
+    }
+    .models-grid__item {
+        flex-direction: row;
+        padding: 5px;
+    }
+    .models-grid__item-image-wrapper {
+        max-width: 105px;
+        width: 105px;
+        min-width: 105px;
+        margin-bottom: 0;
+        margin-right: 5px;
+    }
+    .models-grid__item:nth-child(1) .models-grid__item-image-wrapper {
+        margin-right: 0;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .models-grid__item-title {
+        margin: 0;
+    }
+
+    .photos-slider {
+        width: 350%;
+        margin-left: -125%;
+        transform: scale(0.3);
+        margin-top: -190px;
+        margin-bottom: -160px;
+    }
+    .photos-slider-mini {
+        display: none;
+    }
+    .video-play {
+        width: 40px;
+        height: 40px;
+    }
+    .text {
+        font-size: 18px;
+    }
+    .posts .container {
+        grid-template-rows: repeat(2, 113px);
+    }
+    .posts-info {
+        padding: 10px;
+    }
+    .posts-info__title {
+        font-size: 12px;
+    }
+    .image-text {
+        font-size: 18px;
+    }
+
+    .videos .container {
+        grid-template-rows: 118px;
+        grid-template-columns: repeat(3, 210px);
+        width: 100%;
+        overflow-x: auto;
+        grid-gap: 20px;
+        height: 118px;
+        overflow-y: hidden;
+    }
+    .videos__item:nth-child(1) .videos__item-icon {
+        width: 40px;
+        height: 40px;
+    }
+    .videos__item {
+        height: 118px;
+    }
 }
