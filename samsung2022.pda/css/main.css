@@ -26,6 +26,10 @@ body {
     font-family: 'SamsungSharpSans', serif;
     overflow-x: hidden;
 }
+section {
+    width: 100vw;
+    overflow-x: hidden;
+}
 /* title */
 .title-row {
     display: flex;
