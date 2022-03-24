@@ -1372,6 +1372,7 @@ body {
         width: 100%;
         overflow-x: auto;
         grid-template-columns: repeat(2, 260px);
+        grid-template-rows: repeat(2, 100px);
     }
     .articles-grid__item-image-wrapper {
         width: 120px;
