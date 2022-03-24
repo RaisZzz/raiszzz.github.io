@@ -20,6 +20,7 @@ a[class] {
 .container {
     width: 1198px;
     margin: 0 auto;
+    display: block;
 }
 body {
     font-family: 'SamsungSharpSans', serif;
@@ -1370,6 +1371,12 @@ body {
     .articles-grid {
         width: 100%;
         overflow-x: auto;
+        grid-template-columns: repeat(2, 260px);
+    }
+    .articles-grid__item-image-wrapper {
+        width: 120px;
+        min-width: 120px;
+        height: 90px;
     }
 
     .models-grid {

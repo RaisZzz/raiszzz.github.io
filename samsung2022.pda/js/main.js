@@ -37,8 +37,12 @@ document.addEventListener('DOMContentLoaded', function() {
 				nextEl: '.photos-next',
 				prevEl: '.photos-prev'
 			},
-			thumbs: {
-				swiper: photosSliderMini
+			breakpoints: {
+				419: {
+					thumbs: {
+						swiper: photosSliderMini
+					}
+				}
 			}
 		})
 
