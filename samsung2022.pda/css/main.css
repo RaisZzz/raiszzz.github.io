@@ -579,7 +579,7 @@ section {
     width: 100px;
     height: 100px;
     stroke: #000;
-    fill: #fff;
+    fill: #000;
     border-radius: 50%;
 }
 .video-overlay {
@@ -708,7 +708,7 @@ section {
     cursor: pointer;
     transition: 0.3s;
     stroke: #000;
-    fill: #fff;
+    fill: #000;
     background-color: #fff;
     border-radius: 50%;
 }
