@@ -581,6 +581,8 @@ section {
     stroke: #000;
     fill: #000;
     border-radius: 50%;
+    background-color: #fff;
+    transition: 0.3s;
 }
 .video-overlay {
     position: absolute;
@@ -593,6 +595,7 @@ section {
 .video-play:hover {
     fill: #000;
     stroke: #fff;
+    background-color: #000;
 }
 .video-play:hover circle {
     stroke: #000;
