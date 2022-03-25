@@ -1,3 +1,5 @@
+#footer{width: 100%;overflow: hidden;position: relative;display: table-footer-group;background: #e6e7e9;font-family: "Segoe UI", "Helvetica Neue", Helvetica, sans-serif}#footer .f-holder{width: 100%;display: table-row}#footer .f-frame{display: table-cell}.footer-nav{background: #fff;padding: 48px 0 12px;position: relative;font-size: 11px;line-height: 13px}.footer-nav .f-note{color: #585858;width: 800px}.btn-top{position: absolute;top: 36px;right: 24px;font-size: 18px;line-height: 60px;color: #585858;width: 60px;height: 60px;z-index: 5;text-align: center;background: #fff}.btn-top:hover{text-decoration: none;color: #0072bc}.footer-nav-box{overflow: hidden;padding: 0 0 36px;font-size: 13px;line-height: 16px;width: 100%}.footer-nav-box .col{float: left;width: 310px;padding: 0 12px 0 0}.footer-nav-box h3{font-size: 21px;line-height: 24px;color: #0072bc;margin: 0}.footer-nav-box p{margin: 0 0 36px}.footer-nav-list{margin: 0;padding: 0;list-style: none}.footer-nav-list li{padding: 0 0 12px}.footer-panel{background: #0072bc;padding: 24px 0;color: #fff}.footer-panel a{color: #fff}.logo-box{padding: 0 48px 0 0;font-size: 25px;line-height: 25px;display: inline-block;vertical-align: middle}.logo-frame-center{vertical-align: middle}.copyright{font-size: 12px;line-height: 15px;width: 300px;margin: 0;display: inline-block;vertical-align: middle}.copyright a{color: #e9eff7}.social{float: right;margin: 0;list-style: none;margin-top: -30px;font-size: 25px;line-height: 25px}.social li{float: left}.social li + li{padding: 0 0 0 24px}.social a{opacity: .5}.social a:hover{text-decoration: none;opacity: 1}.footer-area{padding: 24px 0 48px}.condition-list{font-size: 12px;line-height: 12px;margin: 0;padding: 0 0 36px;list-style: none;overflow: hidden}.condition-list li{float: left;padding: 0 6px 0 0}.condition-list li + li{padding-left: 6px;border-left: 1px solid #606061}.condition-list a{color: #000}.count-visitor{font-size: 12px;line-height: 15px;margin: 0 0 36px;overflow: hidden}.count-visitor .c-holder{float: left}.count-visitor img{float: left}@media only screen and (max-width: 1219px){.btn-top{top: -84px;right: 24px}.footer-nav-box .col{width: 302px}}@media only screen and (max-width: 997px){.btn-top{display: none}.footer-nav-box .col{width: 250px;padding: 0 3px 0 0}.footer-nav-box .col + .col + .col{width: 210px}.footer-nav .f-note{width: 100%}.logo-box{padding: 0 12px 0 0}.social li + li{padding: 0 0 0 12px}}@media only screen and (max-width: 767px){.footer-nav-box .col{width: 210px}.social{padding-right: 12px}.social li + li{padding: 0 0 0 9px}.copyright{width: 260px}}@media screen and (max-width: 699px){.footer-nav-box .col{float: none;padding: 0;width: auto}.footer-nav-box .f-box{width: 48%;float: left;margin: 0 2% 0 0}.footer-nav-box .f-box p{margin: 0}.footer-nav-box .col + .col + .col{width: auto;padding: 0 24px 0 24px}.footer-nav-list{padding: 0 24px 24px 72px}.footer-nav .f-note{display: none}.copyright{width: auto;overflow: visible;white-space: normal;display: block;margin-top: 12px}.social{overflow: hidden;text-align: center;float: none;padding: 0;margin: 12px 0 0}.social li{float: none;display: inline-block;padding: 0 12px}.social li + li{padding: 0 6px}.condition-list{text-align: center;padding: 0 0 24px}.condition-list li{float: none;padding: 0 0 6px}.condition-list li + li{border: none;padding-left: 0;padding-right: 0}.count-visitor{text-align: center}.count-visitor .c-holder{display: inline-block;overflow: hidden;float: none}.footer-nav-box{width: 100%}.logo-box{font-size: 45px;line-height: 45px;padding: 0 12px 0 0}.logo-frame-center{overflow: hidden;margin: 0 auto;float: none;position: relative;text-align: center;white-space: nowrap}#footer .f-frame,#footer .f-holder,#footer{display: block}#footer{font-family: "Segoe UI", "Helvetica Neue", Helvetica, sans-serif}}@media only screen and (max-width: 399px){.logo-frame-center{margin: 0;width: auto}.logo-box{font-size: 25px;line-height: 25px}}
+
 @font-face {
     font-family: 'SamsungSharpSans';
     font-style: normal;
@@ -16,6 +18,9 @@ ul[class] {
 }
 a[class] {
     text-decoration: none;
+}
+img {
+    height: auto;
 }
 .container {
     width: 1198px;
@@ -248,6 +253,19 @@ section {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-gap: 40px;
+}
+.loading {
+    position: relative;
+}
+.loading:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background-color: #d2d2d2;
 }
 .news-grid__item-link {
     position: relative;
@@ -558,6 +576,8 @@ section {
     transform: translate(-50%, -50%);
     cursor: pointer;
     z-index: 3;
+    width: 100px;
+    height: 100px;
     stroke: #000;
     fill: #fff;
     border-radius: 50%;
@@ -681,11 +701,14 @@ section {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 100px;
+    height: 100px;
     transform: translate(-50%, -50%);
     z-index: 9;
     cursor: pointer;
     transition: 0.3s;
     stroke: #000;
+    fill: #fff;
     background-color: #fff;
     border-radius: 50%;
 }
@@ -1460,4 +1483,60 @@ section {
     .videos__item {
         height: 118px;
     }
+}
+
+#footer {
+    display: block;
+    background: none !important;
+}
+.footer-nav a {
+    color: #0072bc;
+    text-decoration: none;
+}
+.f-frame,
+.f-holder {
+    display: block !important;
+}
+.footer-nav,
+.footer-panel,
+.footer-area {
+    position: relative;
+}
+.f-holder:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    background-color: #fff;
+    z-index: -1;
+}
+.footer-panel:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    background-color: #0072bc;
+    z-index: 1;
+}
+.footer-panel *,
+.footer-area * {
+    position: relative;
+    z-index: 2;
+}
+.footer-area:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    background-color: #e6e7e9;
+    z-index: 1;
 }

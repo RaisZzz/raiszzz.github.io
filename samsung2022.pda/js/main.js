@@ -1,4 +1,91 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', async function() {
+	// Load Posts, News Reviews
+	const newsItems = document.querySelectorAll('.news-grid__item')
+	const reviewsItems = document.querySelectorAll('.reviews-grid__item')
+	const articlesItems = document.querySelectorAll('.articles-grid__item')
+
+	const xhr = new XMLHttpRequest()
+	xhr.open(
+		'GET',
+		'https://4pda.to/tag/samsung_spec-news/feed/json',
+		true
+	)
+	xhr.send()
+
+	xhr.onreadystatechange = function() {
+		if (xhr.readyState != 4) {
+			return
+		}
+
+		if (xhr.status === 200) {
+			const response = JSON.parse(xhr.responseText)
+			newsItems.forEach((item, index) => {
+				item.querySelector('a').href = response[index].url
+				item.querySelector('img').src = response[index].img
+				item.querySelector('p').innerText = response[index].title
+
+				item.classList.remove('loading')
+			})
+		} else {
+			console.log('err', xhr.responseText)
+		}
+	}
+
+	const xhr2 = new XMLHttpRequest()
+	xhr2.open(
+		'GET',
+		'https://4pda.to/tag/samsung_spec-review/feed/json',
+		true
+	)
+	xhr2.send()
+
+	xhr2.onreadystatechange = function() {
+		if (xhr2.readyState != 4) {
+			return
+		}
+
+		if (xhr2.status === 200) {
+			const response = JSON.parse(xhr2.responseText)
+			reviewsItems.forEach((item, index) => {
+				item.querySelector('a').href = response[index].url
+				item.querySelector('img').src = response[index].img
+				item.querySelector('p').innerText = response[index].title
+
+				item.classList.remove('loading')
+			})
+		} else {
+			console.log('err', xhr.responseText)
+		}
+	}
+
+	const xhr3 = new XMLHttpRequest()
+	xhr3.open(
+		'GET',
+		'https://4pda.to/tag/samsung_spec-articles/feed/json',
+		true
+	)
+	xhr3.send()
+
+	xhr3.onreadystatechange = function() {
+		if (xhr3.readyState != 4) {
+			return
+		}
+
+		if (xhr3.status === 200) {
+			const response = JSON.parse(xhr3.responseText)
+			articlesItems.forEach((item, index) => {
+				item.href = response[index].url
+				item.querySelector('img').src = response[index].img
+				item.querySelector('p').innerText = response[index].title
+
+				item.classList.remove('loading')
+			})
+		} else {
+			console.log('err', xhr.responseText)
+		}
+	}
+
+	// Top slider
 	const topSlider = new Swiper('.top-slider', {
 		loop: true,
 		pagination: {
@@ -10,6 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		}
 	})
 
+	// Photos slider
 	setTimeout(() => {
 		const photosSliderMini = new Swiper('.photos-slider-mini', {
 			spaceBetween: 5,
@@ -46,6 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			}
 		})
 
+		// Photos counter
 		const photosCounter = document.getElementById('photos-counter'),
 			photosCurrent = document.getElementById('photos-current'),
 			photosTotal = document.getElementById('photos-total')
@@ -66,6 +155,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		photosTotal.innerText = totalSlides
 	}, 3000)
 
+	// Videos logic
 	const videoPlayBtn = document.getElementById('video-play'),
 				video = document.getElementById('video')
 	videoPlayBtn.addEventListener('click', function() {
@@ -93,6 +183,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		})
 	})
 
+	// Post text
 	const postsText = document.querySelectorAll('.posts-info__description')
 	postsText.forEach(text => {
 		let substr = false
