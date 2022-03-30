@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	const windowOpens = document.querySelectorAll('.window__open[data-window]'),
 				windowCloses = document.querySelectorAll('.window__close'),
-				largeIcon = document.getElementById('window-large-icon')
+				largeIcon = document.getElementById('window-large-icon'),
+				windowQuestions = document.querySelectorAll('.window__question-btn')
 	windowOpens.forEach(btn => {
 		btn.addEventListener('click', function() {
 			document.querySelector(`.window[data-window="${btn.dataset.window}"]`).classList.add('active')
@@ -23,6 +24,14 @@ document.addEventListener('DOMContentLoaded', function() {
 				largeIconAnimate(largeIcon)
 				largeStarted = true
 			}
+		})
+	})
+	windowQuestions.forEach(question => {
+		question.addEventListener('mouseenter', function() {
+			question.parentNode.parentNode.querySelector('.window__answer').classList.add('active')
+		})
+		question.addEventListener('mouseleave', function() {
+			question.parentNode.parentNode.querySelector('.window__answer').classList.remove('active')
 		})
 	})
 	windowCloses.forEach(btn => {
@@ -43,20 +52,39 @@ document.addEventListener('DOMContentLoaded', function() {
 	const drawingWindow = document.getElementById('drawing'),
 				ctx = drawingWindow.getContext('2d'),
 				letter = new Image()
-	let letterNumber = 1
+	const letters = [
+		document.getElementById('letterA1').src,
+		document.getElementById('letterA2').src,
+		document.getElementById('letterA3').src,
+		document.getElementById('letterA4').src
+	]
+	let letterNumber = 0
 	drawingWindow.addEventListener('mousemove', function (e) {
 		const drawX = e.clientX - drawingWindow.getBoundingClientRect().left,
 					drawY = e.clientY - drawingWindow.getBoundingClientRect().top
-		letter.src = `/img/letterA${letterNumber}.svg`
+		letter.src = letters[letterNumber]
+		ctx.drawImage(letter, drawX/2, drawY/2, 40, 40)
+	})
+
+	drawingWindow.addEventListener('touchstart', function () {
+		document.body.style.overflowY = 'hidden'
+	})
+	drawingWindow.addEventListener('touchmove', function(e) {
+		const drawX = e.targetTouches[0].screenX - drawingWindow.getBoundingClientRect().left,
+					drawY = e.targetTouches[0].screenY - drawingWindow.getBoundingClientRect().top
+		letter.src = letters[letterNumber]
 		ctx.drawImage(letter, drawX/2, drawY/2, 40, 40)
 	})
 	setInterval(() => {
-		if (letterNumber < 4) {
+		if (letterNumber < 3) {
 			letterNumber++
 		} else {
 			letterNumber = 1
 		}
 	}, 2000)
+	drawingWindow.addEventListener('touchend', function () {
+		document.body.style.overflowY = 'auto'
+	})
 
 
 	const rectanglePlus = document.getElementById('window-plus'),

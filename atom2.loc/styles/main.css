@@ -12,6 +12,7 @@ body {
     background-color: #000;
     color: #fff;
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
 .container {
     width: 100%;
@@ -54,6 +55,7 @@ body {
     text-align: center;
     font-weight: 400;
     margin: 30px 0;
+    font-size: 36px;
 }
 .header__icon {
     max-width: 100%;
@@ -73,6 +75,60 @@ body {
 .window.active {
     transform: none;
 }
+
+.window__answer {
+    position: absolute;
+    padding: 25px 10px;
+    background-color: #000;
+    border: 4px solid #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 220px;
+    text-align: center;
+    transform: scale(0);
+    z-index: 9999;
+    transition: 0.3s;
+}
+.window__answer.active {
+    transform: scale(1);
+}
+
+.first-window .window__answer,
+.third-window .window__answer,
+.fourth-window .window__answer {
+    left: -250px;
+    top: -50px;
+}
+.second-window .window__answer {
+    left: 100px;
+    top: -150px;
+}
+.fifth-window .window__answer {
+    right: -250px;
+    top: -50px;
+}
+.sixth-window .window__answer {
+    left: -100px;
+    top: -150px;
+}
+.seventh-window .window__answer {
+    left: -250px;
+    top: 50px;
+}
+.eighth-window .window__answer {
+    left: -150px;
+    top: -150px;
+}
+.ninth-window .window__answer,
+.tenth-window .window__answer {
+    left: -250px;
+    top: -100px;
+}
+.eleventh-window .window__answer {
+    left: 200px;
+    top: -150px;
+}
+
 
 .first-window {
     margin-left: auto;
@@ -224,10 +280,14 @@ body {
 .window-header {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 10px;
     border: 4px solid;
     border-radius: 10px 10px 0 0;
+}
+.window__question-btn {
+    cursor: pointer;
+    z-index: 9;
 }
 .window__close {
     cursor: pointer;
@@ -419,7 +479,7 @@ body {
     border-radius: 10px 10px 0 0;
 }
 
-.fifth-window path {
+.fifth-window .window__main path {
     opacity: 0;
     transition: 0.3s;
 }
