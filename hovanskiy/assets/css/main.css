@@ -180,6 +180,7 @@ body {
     background-image: url('../img/banner-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: right bottom;
 }
 .banner__title {
     color: #F3F1E9;
