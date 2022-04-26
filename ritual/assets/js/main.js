@@ -39,6 +39,38 @@ document.addEventListener('DOMContentLoaded', function() {
             document.querySelector(`.faq__answer[data-toggle="${index}"]`).classList.add('active')
         })
     })
+
+    const commandSlider = new Swiper('.command-slider', {
+        pagination: {
+            el: '.command-slider__pagination',
+        },
+        autoplay: {
+            delay: 4000
+        }
+    })
+
+    const questions = document.querySelectorAll('.question')
+    questions.forEach(question => {
+        question.addEventListener('click', function() {
+            question.classList.toggle('active')
+
+            const answer = question.querySelector('.question__answer')
+            if (question.classList.contains('active')) {
+                answer.style.height = `${answer.scrollHeight}px`
+            } else {
+                answer.style.height = '0'
+            }
+        })
+    })
+
+    const reviewsSlider = new Swiper('.reviews-slider', {
+        pagination: {
+            el: '.reviews-slider__pagination',
+        },
+        autoplay: {
+            delay: 4000
+        }
+    })
 })
 
 function photosSliderFirstImage() {
