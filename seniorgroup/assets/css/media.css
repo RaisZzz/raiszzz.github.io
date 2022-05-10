@@ -1,0 +1,338 @@
+@media screen and (max-width: 1256px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    section[class] {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .title {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .title-row {
+        margin-bottom: 30px;
+    }
+    .button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .banner__slider-slide {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px;
+    }
+    .banner__slider-slide__title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .banner__slider-slide__description {
+        font-size: 14px;
+    }
+    .banner__slider-pagination {
+        margin-top: 20px;
+        gap: 15px;
+    }
+    .banner__slider-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+    }
+
+    .center-info {
+        width: 100%;
+    }
+    .center__icon {
+        width: 300px;
+    }
+
+    .problems .container {
+        gap: 20px;
+    }
+    .problems__icon {
+        width: 300px;
+    }
+    .problems-info {
+        width: 100%;
+    }
+
+    .callback__icon {
+        width: 400px;
+    }
+
+    .reviews__button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .reviews__video-title {
+        font-size: 20px;
+    }
+    .reviews__video-arrows,
+    .reviews__patients-arrows,
+    .reviews__media-arrows {
+        gap: 25px;
+    }
+    .reviews__video-arrow,
+    .reviews__patients-arrow,
+    .reviews__media-arrow {
+        width: 40px;
+    }
+    .reviews__video-slide {
+        height: 200px;
+    }
+    .reviews__video-slide__play {
+        width: 60px;
+        height: 60px;
+    }
+    section.callback-footer {
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 850px) {
+    .title {
+        font-size: 28px;
+    }
+    .title.small {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .banner__slider-slide {
+        grid-template-columns: 1fr 200px;
+        grid-gap: 30px;
+    }
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .services-grid__item {
+        justify-content: center;
+    }
+    .services-grid__item:last-child {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .services-info {
+        grid-gap: 30px;
+    }
+    .services-info__text {
+        padding-right: 0;
+    }
+    .services-advantages {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+    .center__list-title {
+        font-size: 14px;
+    }
+    .center__list-item__count-wrapper {
+        width: 40px;
+        height: 40px;
+    }
+    .center__list-item__count-wrapper:after {
+        width: 30px;
+        height: 30px;
+    }
+    .center__list-item__count {
+        font-size: 18px;
+    }
+    .center__icon {
+        width: 200px;
+    }
+
+    .problems__icon {
+        width: 200px;
+    }
+    .problems__list-item-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .callback .container {
+        align-items: flex-start;
+    }
+    .callback__icon {
+        width: 200px;
+    }
+
+    .reviews-buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reviews__video-slide {
+        height: 200px;
+        padding: 15px;
+    }
+    .reviews__video-slide__title {
+        font-size: 14px;
+    }
+    .reviews__video-slide__play {
+        transform: translate(-50%, -50%) scale(0.75);
+    }
+    .reviews__video {
+        margin-bottom: 30px;
+    }
+    .reviews__video-top, .reviews__patients-arrows {
+        margin-bottom: 20px;
+    }
+    .reviews__media-slide {
+        grid-gap: 20px;
+    }
+    .reviews__media-icon-wrapper {
+        min-width: 120px;
+    }
+    .reviews__media-info__title {
+        font-size: 20px;
+    }
+    .reviews__media-info__description {
+        font-size: 14px;
+    }
+
+    .callback-footer {
+        padding-top: 40px;
+        padding-bottom: 150px;
+    }
+}
+@media screen and (max-width: 580px) {
+    .banner__slider-slide {
+        grid-template-columns: 1fr;
+    }
+    .banner__slider-slide__image {
+        display: none;
+    }
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    .services-grid__item-icon-wrapper {
+        width: 110px;
+        min-width: 110px;
+        padding-right: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .services-grid__item {
+        justify-content: flex-start;
+    }
+    .services-grid__item:last-child {
+        grid-column-end: 2;
+    }
+    .services-info {
+        grid-template-columns: 1fr;
+    }
+    .services-advantages {
+        grid-template-columns: 1fr;
+    }
+    .center__icon {
+        display: none;
+    }
+    .problems__icon {
+        display: none;
+    }
+    .callback__icon {
+        display: none;
+    }
+    .callback__title {
+        margin-bottom: 10px;
+    }
+    .callback__phone {
+        font-size: 20px;
+    }
+    .reviews-buttons {
+        grid-template-columns: 1fr;
+    }
+    .reviews .title-row {
+        align-items: flex-start;
+    }
+    .reviews__media-slide {
+        grid-template-columns: 1fr;
+    }
+    .reviews__patient-center__title {
+        font-size: 20px;
+    }
+    .reviews__patient-date {
+        font-size: 14px;
+    }
+    .reviews__patient-review {
+        gap: 10px;
+    }
+    .reviews__patient-quotes {
+        width: 25px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .title {
+        font-size: 24px;
+    }
+    .title.small {
+        font-size: 18px;
+    }
+    .banner__slider-slide {
+        padding: 20px;
+    }
+    .banner__slider-slide-info {
+        align-items: center;
+    }
+    .banner__slider-slide__title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .banner__slider-slide__description {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    .services-grid__item-icon-wrapper {
+        width: 80px;
+        min-width: 80px;
+    }
+    .services-grid__item-icon {
+        height: 60px;
+    }
+    .services-grid__item-icon-wrapper:after {
+        width: 50px;
+        height: 50px;
+    }
+    .services-grid__item-title {
+        font-size: 14px;
+    }
+    .services-info__text {
+        font-size: 14px;
+    }
+    .services-advantages {
+        grid-gap: 20px;
+    }
+    .services-advantages__item-icon {
+        height: 50px;
+        margin-bottom: 10px;
+    }
+    .services-advantages__item-title {
+        font-size: 14px;
+    }
+    .center {
+        padding: 40px 0;
+    }
+    .center__list-title {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .center__list-description {
+        padding-right: 0;
+    }
+    .callback__description {
+        font-size: 14px;
+    }
+    .callback-contacts {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px auto 0;
+        gap: 10px;
+    }
+    .callback-footer {
+        padding-bottom: 100px;
+    }
+    .reviews__media-icon-wrapper {
+        min-width: 90px;
+    }
+    .reviews__media-info__title {
+        font-size: 18px;
+    }
+}
