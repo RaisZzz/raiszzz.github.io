@@ -99,6 +99,7 @@
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 30px;
+    margin-top: auto;
 }
 
 .services {
@@ -393,6 +394,9 @@
     text-decoration: none;
 }
 
+.reviews__patient {
+    min-height: 0;
+}
 .reviews__patient-top {
     align-items: flex-end;
 }
