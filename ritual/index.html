@@ -14,13 +14,16 @@
 <body>
     <section class="header">
         <div class="container">
-            <a href="#" class="header__logo">
-                <img src="assets/img/logo.png" alt="" class="header__logo-image">
-                <span class="header__logo-text">
-                    <span class="header__logo-text-first">Городское управляющее предприятие «Ритуал»</span>
-                    <span class="header__logo-text-second">Организация похорон в Москве и МО</span>
-                </span>
-            </a>
+            <div class="header__logo-mobile">
+                <a href="#" class="header__logo">
+                    <img src="assets/img/logo.png" alt="" class="header__logo-image">
+                    <span class="header__logo-text">
+                        <span class="header__logo-text-first">Городское управляющее предприятие «Ритуал»</span>
+                        <span class="header__logo-text-second">Организация похорон в Москве и МО</span>
+                    </span>
+                </a>
+                <svg class="header__menu" id="menu-open"><use xlink:href="assets/img/icons.svg#menu"></use></svg>
+            </div>
             <div class="header__emblem">
                 <svg class="header__emblem-icon"><use xlink:href="assets/img/icons.svg#emblem"></use></svg>
                 <p class="header__emblem-text">Создано в соответствии с постановлением правительства москвы № 363 от 20.04.1993</p>
@@ -35,8 +38,15 @@
             <button class="header__phone-callback">Обратный звонок</button>
         </div>
     </section>
-    <section class="menu">
+    <section class="menu" id="menu">
         <div class="container">
+            <div class="menu-mobile">
+                <div class="header__emblem mobile">
+                    <svg class="header__emblem-icon"><use xlink:href="assets/img/icons.svg#emblem"></use></svg>
+                    <p class="header__emblem-text">Создано в соответствии с постановлением правительства москвы № 363 от 20.04.1993</p>
+                </div>
+                <svg class="menu-close" id="menu-close"><use xlink:href="assets/img/icons.svg#close"></use></svg>
+            </div>
             <a href="#" class="menu__link">О компании</a>
             <a href="#" class="menu__link">Тарифы</a>
             <a href="#" class="menu__link">Преимущества</a>
@@ -96,11 +106,11 @@
             </div>
             <div class="partners-grid">
                 <img src="assets/img/partners-1.png" alt="" class="partners-grid__item">
-                <img src="assets/img/partners-1.png" alt="" class="partners-grid__item">
-                <img src="assets/img/partners-1.png" alt="" class="partners-grid__item">
-                <img src="assets/img/partners-1.png" alt="" class="partners-grid__item">
-                <img src="assets/img/partners-1.png" alt="" class="partners-grid__item">
-                <img src="assets/img/partners-1.png" alt="" class="partners-grid__item">
+                <img src="assets/img/partners-2.png" alt="" class="partners-grid__item">
+                <img src="assets/img/partners-3.png" alt="" class="partners-grid__item">
+                <img src="assets/img/partners-4.png" alt="" class="partners-grid__item">
+                <img src="assets/img/partners-5.png" alt="" class="partners-grid__item">
+                <img src="assets/img/partners-6.png" alt="" class="partners-grid__item">
             </div>
         </div>
     </section>
@@ -298,32 +308,32 @@
                         <p class="how-grid__item-count bold">3</p>
                         <svg class="how-grid__item-arrow"><use xlink:href="assets/img/icons.svg#arrow-right"></use></svg>
                     </div>
-                    <a href="tel:84951912083" class="how-grid__item-title bold">8 (495) 191-20-83</a>
-                    <p class="how-grid__item-description">Вы звоните в городское бюро.</p>
+                    <p class="how-grid__item-title bold">Оформление</p>
+                    <p class="how-grid__item-description">Агент самостоятельно оформляет за вас всю необходимую документацию по вашему поручению.</p>
                 </div>
                 <div class="how-grid__item">
                     <div class="how-grid__item-top">
                         <p class="how-grid__item-count bold">4</p>
                         <svg class="how-grid__item-arrow"><use xlink:href="assets/img/icons.svg#arrow-right"></use></svg>
                     </div>
-                    <a href="tel:84951912083" class="how-grid__item-title bold">8 (495) 191-20-83</a>
-                    <p class="how-grid__item-description">Вы звоните в городское бюро.</p>
+                    <p class="how-grid__item-title bold">Организация</p>
+                    <p class="how-grid__item-description">Агент организовывает подготовку и транспортировку тела умершего на кладбище.</p>
                 </div>
                 <div class="how-grid__item">
                     <div class="how-grid__item-top">
                         <p class="how-grid__item-count bold">5</p>
                         <svg class="how-grid__item-arrow"><use xlink:href="assets/img/icons.svg#arrow-right"></use></svg>
                     </div>
-                    <a href="tel:84951912083" class="how-grid__item-title bold">8 (495) 191-20-83</a>
-                    <p class="how-grid__item-description">Вы звоните в городское бюро.</p>
+                    <p class="how-grid__item-title bold">Поминальная трапеза</p>
+                    <p class="how-grid__item-description">Агент организовывает поминальную трапезу.</p>
                 </div>
                 <div class="how-grid__item">
                     <div class="how-grid__item-top">
                         <p class="how-grid__item-count bold">6</p>
                         <svg class="how-grid__item-arrow"><use xlink:href="assets/img/icons.svg#arrow-right"></use></svg>
                     </div>
-                    <a href="tel:84951912083" class="how-grid__item-title bold">8 (495) 191-20-83</a>
-                    <p class="how-grid__item-description">Вы звоните в городское бюро.</p>
+                    <p class="how-grid__item-title bold">Мы сделаем всё за вас</p>
+                    <p class="how-grid__item-description">Вы полностью посвятили себя прощанию и поддержкой родственников вместо утомительных хлопот, которые на себя взяла Московская городская ритуальная служба.</p>
                 </div>
             </div>
         </div>
@@ -331,8 +341,9 @@
     <section class="video-section">
         <div class="container">
             <div class="video-wrapper">
-                <svg class="video-play"><use xlink:href="assets/img/icons.svg#play"></use></svg>
-                <img src="assets/img/video-image.png" alt="" class="video-image">
+                <svg class="video-play" id="video-play"><use xlink:href="assets/img/icons.svg#play"></use></svg>
+                <img src="assets/img/video-image.png" alt="" class="video-image" id="video-image">
+                <iframe class="video-video" id="video" src="https://www.youtube.com/embed/LXb3EKWsInQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </section>
@@ -419,42 +430,42 @@
             <h3 class="title">Почему стоит обратиться к нам?</h3>
             <div class="why-grid">
                 <div class="why-grid__item">
-                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#status"></use></svg>
+                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#why-1"></use></svg>
                     <div class="why-grid__item-info">
                         <div class="why-grid__item-title bold">Статус ГСС</div>
                         <p class="why-grid__item-description">ЗАО «Ритуал-Сервис» обладает статусом городской специализированной службы.</p>
                     </div>
                 </div>
                 <div class="why-grid__item">
-                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#status"></use></svg>
+                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#why-2"></use></svg>
                     <div class="why-grid__item-info">
                         <div class="why-grid__item-title bold">Статус ГСС</div>
                         <p class="why-grid__item-description">ЗАО «Ритуал-Сервис» обладает статусом городской специализированной службы.</p>
                     </div>
                 </div>
                 <div class="why-grid__item">
-                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#status"></use></svg>
+                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#why-3"></use></svg>
                     <div class="why-grid__item-info">
                         <div class="why-grid__item-title bold">Статус ГСС</div>
                         <p class="why-grid__item-description">ЗАО «Ритуал-Сервис» обладает статусом городской специализированной службы.</p>
                     </div>
                 </div>
                 <div class="why-grid__item">
-                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#status"></use></svg>
+                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#why-4"></use></svg>
                     <div class="why-grid__item-info">
                         <div class="why-grid__item-title bold">Статус ГСС</div>
                         <p class="why-grid__item-description">ЗАО «Ритуал-Сервис» обладает статусом городской специализированной службы.</p>
                     </div>
                 </div>
                 <div class="why-grid__item">
-                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#status"></use></svg>
+                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#why-5"></use></svg>
                     <div class="why-grid__item-info">
                         <div class="why-grid__item-title bold">Статус ГСС</div>
                         <p class="why-grid__item-description">ЗАО «Ритуал-Сервис» обладает статусом городской специализированной службы.</p>
                     </div>
                 </div>
                 <div class="why-grid__item">
-                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#status"></use></svg>
+                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#why-6"></use></svg>
                     <div class="why-grid__item-info">
                         <div class="why-grid__item-title bold">Статус ГСС</div>
                         <p class="why-grid__item-description">ЗАО «Ритуал-Сервис» обладает статусом городской специализированной службы.</p>
@@ -489,35 +500,35 @@
             <h3 class="title">Базовые услуги агентства</h3>
             <div class="base-grid">
                 <div class="base-grid__item">
-                    <svg class="bas-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-1"></use></svg>
+                    <svg class="base-grid__item-icon"><use xlink:href="assets/img/icons.svg#more-1"></use></svg>
                     <p class="base-grid__item-title bold">Организация похорон</p>
                 </div>
                 <div class="base-grid__item">
-                    <svg class="bas-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-1"></use></svg>
+                    <svg class="base-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-2"></use></svg>
                     <p class="base-grid__item-title bold">Прижизненный договор</p>
                 </div>
                 <div class="base-grid__item">
-                    <svg class="bas-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-1"></use></svg>
+                    <svg class="base-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-3"></use></svg>
                     <p class="base-grid__item-title bold">Организация похорон</p>
                 </div>
                 <div class="base-grid__item">
-                    <svg class="bas-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-1"></use></svg>
+                    <svg class="base-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-4"></use></svg>
                     <p class="base-grid__item-title bold">Прижизненный договор</p>
                 </div>
                 <div class="base-grid__item">
-                    <svg class="bas-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-1"></use></svg>
+                    <svg class="base-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-5"></use></svg>
                     <p class="base-grid__item-title bold">Организация похорон</p>
                 </div>
                 <div class="base-grid__item">
-                    <svg class="bas-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-1"></use></svg>
+                    <svg class="base-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-6"></use></svg>
                     <p class="base-grid__item-title bold">Прижизненный договор</p>
                 </div>
                 <div class="base-grid__item">
-                    <svg class="bas-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-1"></use></svg>
+                    <svg class="base-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-7"></use></svg>
                     <p class="base-grid__item-title bold">Организация похорон</p>
                 </div>
                 <div class="base-grid__item">
-                    <svg class="bas-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-1"></use></svg>
+                    <svg class="base-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-8"></use></svg>
                     <p class="base-grid__item-title bold">Прижизненный договор</p>
                 </div>
             </div>
@@ -542,88 +553,88 @@
             </div>
         </div>
     </section>
-    <section class="base">
+    <section class="base more">
         <div class="container">
             <h3 class="title">Дополнительные услуги</h3>
             <div class="base-grid">
                 <div class="base-grid__item">
-                    <svg class="bas-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-1"></use></svg>
+                    <svg class="base-grid__item-icon"><use xlink:href="assets/img/icons.svg#more-1"></use></svg>
                     <p class="base-grid__item-title bold">Беспроцентная рассрочка</p>
                 </div>
                 <div class="base-grid__item">
-                    <svg class="bas-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-1"></use></svg>
+                    <svg class="base-grid__item-icon"><use xlink:href="assets/img/icons.svg#more-2"></use></svg>
                     <p class="base-grid__item-title bold">Беспроцентная рассрочка</p>
                 </div>
                 <div class="base-grid__item">
-                    <svg class="bas-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-1"></use></svg>
+                    <svg class="base-grid__item-icon"><use xlink:href="assets/img/icons.svg#more-3"></use></svg>
                     <p class="base-grid__item-title bold">Беспроцентная рассрочка</p>
                 </div>
                 <div class="base-grid__item">
-                    <svg class="bas-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-1"></use></svg>
+                    <svg class="base-grid__item-icon"><use xlink:href="assets/img/icons.svg#more-4"></use></svg>
                     <p class="base-grid__item-title bold">Беспроцентная рассрочка</p>
                 </div>
                 <div class="base-grid__item">
-                    <svg class="bas-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-1"></use></svg>
+                    <svg class="base-grid__item-icon"><use xlink:href="assets/img/icons.svg#more-5"></use></svg>
                     <p class="base-grid__item-title bold">Беспроцентная рассрочка</p>
                 </div>
                 <div class="base-grid__item">
-                    <svg class="bas-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-1"></use></svg>
+                    <svg class="base-grid__item-icon"><use xlink:href="assets/img/icons.svg#more-6"></use></svg>
                     <p class="base-grid__item-title bold">Беспроцентная рассрочка</p>
                 </div>
                 <div class="base-grid__item">
-                    <svg class="bas-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-1"></use></svg>
+                    <svg class="base-grid__item-icon"><use xlink:href="assets/img/icons.svg#more-7"></use></svg>
                     <p class="base-grid__item-title bold">Беспроцентная рассрочка</p>
                 </div>
                 <div class="base-grid__item">
-                    <svg class="bas-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-1"></use></svg>
+                    <svg class="base-grid__item-icon"><use xlink:href="assets/img/icons.svg#more-8"></use></svg>
                     <p class="base-grid__item-title bold">Беспроцентная рассрочка</p>
                 </div>
                 <div class="base-grid__item">
-                    <svg class="bas-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-1"></use></svg>
+                    <svg class="base-grid__item-icon"><use xlink:href="assets/img/icons.svg#more-9"></use></svg>
                     <p class="base-grid__item-title bold">Беспроцентная рассрочка</p>
                 </div>
                 <div class="base-grid__item">
-                    <svg class="bas-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-1"></use></svg>
+                    <svg class="base-grid__item-icon"><use xlink:href="assets/img/icons.svg#more-10"></use></svg>
                     <p class="base-grid__item-title bold">Беспроцентная рассрочка</p>
                 </div>
                 <div class="base-grid__item">
-                    <svg class="bas-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-1"></use></svg>
+                    <svg class="base-grid__item-icon"><use xlink:href="assets/img/icons.svg#more-11"></use></svg>
                     <p class="base-grid__item-title bold">Беспроцентная рассрочка</p>
                 </div>
                 <div class="base-grid__item">
-                    <svg class="bas-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-1"></use></svg>
+                    <svg class="base-grid__item-icon"><use xlink:href="assets/img/icons.svg#more-12"></use></svg>
                     <p class="base-grid__item-title bold">Беспроцентная рассрочка</p>
                 </div>
                 <div class="base-grid__item">
-                    <svg class="bas-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-1"></use></svg>
+                    <svg class="base-grid__item-icon"><use xlink:href="assets/img/icons.svg#more-13"></use></svg>
                     <p class="base-grid__item-title bold">Беспроцентная рассрочка</p>
                 </div>
                 <div class="base-grid__item">
-                    <svg class="bas-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-1"></use></svg>
+                    <svg class="base-grid__item-icon"><use xlink:href="assets/img/icons.svg#more-14"></use></svg>
                     <p class="base-grid__item-title bold">Беспроцентная рассрочка</p>
                 </div>
                 <div class="base-grid__item">
-                    <svg class="bas-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-1"></use></svg>
+                    <svg class="base-grid__item-icon"><use xlink:href="assets/img/icons.svg#more-15"></use></svg>
                     <p class="base-grid__item-title bold">Беспроцентная рассрочка</p>
                 </div>
                 <div class="base-grid__item">
-                    <svg class="bas-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-1"></use></svg>
+                    <svg class="base-grid__item-icon"><use xlink:href="assets/img/icons.svg#more-16"></use></svg>
                     <p class="base-grid__item-title bold">Беспроцентная рассрочка</p>
                 </div>
                 <div class="base-grid__item">
-                    <svg class="bas-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-1"></use></svg>
+                    <svg class="base-grid__item-icon"><use xlink:href="assets/img/icons.svg#more-17"></use></svg>
                     <p class="base-grid__item-title bold">Беспроцентная рассрочка</p>
                 </div>
                 <div class="base-grid__item">
-                    <svg class="bas-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-1"></use></svg>
+                    <svg class="base-grid__item-icon"><use xlink:href="assets/img/icons.svg#more-18"></use></svg>
                     <p class="base-grid__item-title bold">Беспроцентная рассрочка</p>
                 </div>
                 <div class="base-grid__item">
-                    <svg class="bas-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-1"></use></svg>
+                    <svg class="base-grid__item-icon"><use xlink:href="assets/img/icons.svg#more-19"></use></svg>
                     <p class="base-grid__item-title bold">Беспроцентная рассрочка</p>
                 </div>
                 <div class="base-grid__item">
-                    <svg class="bas-grid__item-icon"><use xlink:href="assets/img/icons.svg#base-1"></use></svg>
+                    <svg class="base-grid__item-icon"><use xlink:href="assets/img/icons.svg#more-20"></use></svg>
                     <p class="base-grid__item-title bold">Беспроцентная рассрочка</p>
                 </div>
             </div>
@@ -668,7 +679,7 @@
             </div>
             <div class="why-grid">
                 <div class="why-grid__item">
-                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#status"></use></svg>
+                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#catalog-1"></use></svg>
                     <div class="why-grid__item-info">
                         <div class="why-grid__item-title bold">Венки</div>
                         <p class="why-grid__item-price bold">от 7 000 ₽</p>
@@ -676,7 +687,7 @@
                     </div>
                 </div>
                 <div class="why-grid__item">
-                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#status"></use></svg>
+                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#catalog-2"></use></svg>
                     <div class="why-grid__item-info">
                         <div class="why-grid__item-title bold">Венки</div>
                         <p class="why-grid__item-price bold">от 7 000 ₽</p>
@@ -684,7 +695,7 @@
                     </div>
                 </div>
                 <div class="why-grid__item">
-                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#status"></use></svg>
+                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#catalog-3"></use></svg>
                     <div class="why-grid__item-info">
                         <div class="why-grid__item-title bold">Венки</div>
                         <p class="why-grid__item-price bold">от 7 000 ₽</p>
@@ -692,7 +703,7 @@
                     </div>
                 </div>
                 <div class="why-grid__item">
-                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#status"></use></svg>
+                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#catalog-4"></use></svg>
                     <div class="why-grid__item-info">
                         <div class="why-grid__item-title bold">Венки</div>
                         <p class="why-grid__item-price bold">от 7 000 ₽</p>
@@ -700,7 +711,7 @@
                     </div>
                 </div>
                 <div class="why-grid__item">
-                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#status"></use></svg>
+                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#catalog-5"></use></svg>
                     <div class="why-grid__item-info">
                         <div class="why-grid__item-title bold">Венки</div>
                         <p class="why-grid__item-price bold">от 7 000 ₽</p>
@@ -708,7 +719,7 @@
                     </div>
                 </div>
                 <div class="why-grid__item">
-                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#status"></use></svg>
+                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#catalog-6"></use></svg>
                     <div class="why-grid__item-info">
                         <div class="why-grid__item-title bold">Венки</div>
                         <p class="why-grid__item-price bold">от 7 000 ₽</p>
@@ -716,7 +727,7 @@
                     </div>
                 </div>
                 <div class="why-grid__item">
-                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#status"></use></svg>
+                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#catalog-7"></use></svg>
                     <div class="why-grid__item-info">
                         <div class="why-grid__item-title bold">Венки</div>
                         <p class="why-grid__item-price bold">от 7 000 ₽</p>
@@ -724,7 +735,7 @@
                     </div>
                 </div>
                 <div class="why-grid__item">
-                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#status"></use></svg>
+                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#catalog-8"></use></svg>
                     <div class="why-grid__item-info">
                         <div class="why-grid__item-title bold">Венки</div>
                         <p class="why-grid__item-price bold">от 7 000 ₽</p>
@@ -732,7 +743,7 @@
                     </div>
                 </div>
                 <div class="why-grid__item">
-                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#status"></use></svg>
+                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#catalog-9"></use></svg>
                     <div class="why-grid__item-info">
                         <div class="why-grid__item-title bold">Венки</div>
                         <p class="why-grid__item-price bold">от 7 000 ₽</p>
@@ -740,7 +751,7 @@
                     </div>
                 </div>
                 <div class="why-grid__item">
-                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#status"></use></svg>
+                    <svg class="why-grid__item-icon"><use xlink:href="assets/img/icons.svg#catalog-10"></use></svg>
                     <div class="why-grid__item-info">
                         <div class="why-grid__item-title bold">Венки</div>
                         <p class="why-grid__item-price bold">от 7 000 ₽</p>

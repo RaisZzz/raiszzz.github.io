@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const menu = document.getElementById('menu'),
+          menuOpen = document.getElementById('menu-open'),
+          menuClose = document.getElementById('menu-close')
+    menuOpen.addEventListener('click', function() {
+        menu.classList.add('active')
+    })
+    menuClose.addEventListener('click', function() {
+        menu.classList.remove('active')
+    })
+
     const servicesButtons = document.querySelectorAll('.services__button[data-toggle]'),
           services = document.querySelectorAll('.services__table[data-toggle]')
     servicesButtons.forEach(btn => {
@@ -41,11 +51,17 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 
     const commandSlider = new Swiper('.command-slider', {
+        slidesPerView: 0.3,
         pagination: {
             el: '.command-slider__pagination',
         },
         autoplay: {
             delay: 4000
+        },
+        breakpoints: {
+            980: {
+                slidesPerView: 1
+            }
         }
     })
 
@@ -64,12 +80,31 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 
     const reviewsSlider = new Swiper('.reviews-slider', {
+        slidesPerView: 0.5,
         pagination: {
             el: '.reviews-slider__pagination',
         },
         autoplay: {
             delay: 4000
+        },
+        breakpoints: {
+            980: {
+                slidesPerView: 1
+            }
         }
+    })
+
+    const video = document.getElementById('video'),
+          videoPlay = document.getElementById('video-play'),
+          videoImage = document.getElementById('video-image')
+    video.style.height = `${video.clientWidth/16*9}px`
+
+    videoPlay.addEventListener('click', function() {
+        video.src += '?autoplay=1'
+        setTimeout(() => {
+            videoPlay.remove()
+            videoImage.remove()
+        }, 2000)
     })
 })
 
