@@ -1,0 +1,38 @@
+:root {
+    --offset-y: 290px;
+    --offset-x: 260px;
+    --width: 1093px;
+    --height: 720px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.calculator-wrapper {
+    width: var(--width);
+    height: var(--height);
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+.calculator-wrapper:before {
+    content: '';
+    position: absolute;
+    bottom: 50px;
+    left: 250px;
+    width: 200px;
+    height: 60px;
+    background-color: #fff;
+    z-index: 1;
+}
+.calculator {
+    width: calc(var(--width) + var(--offset-x) + 20px);
+    height: 99999px;
+    margin-top: calc(-1 * var(--offset-y));
+    margin-left: calc(-1 * var(--offset-x));
+    overflow: hidden;
+}
+.calculator * {
+    overflow: hidden !important;
+}
