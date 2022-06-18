@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Морг ГКБ №1 им. Пирогова</title>
+    <style>
+        :root {
+            --bg-color: #FFFFFF;
+            --header-color: #F8F9F4;
+            --menu-color: #1D2B2B;
+            --akcent-second: #A8AC90;
+            --menu-active-bg: #172121;
+            --akcent-color: #5D9494;
+            --banner-title-color: #F3F1E9;
+            --banner-text-color: #F3F1E9;
+            --title-color: #2B2E37;
+            --subtitle-color: #797D8A;
+            --text-color: #2B2E37;
+            --attention-color: #C29935;
+            --descktop-container: 1216px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <section class="header" id="header">
+        <div class="container">
+            <div class="header-col header-phone">
+                <svg class="header-col__icon"><use xlink:href="assets/img/icons.svg#phone"></use></svg>
+                <div class="header-col-info">
+                    <a href="tel:84951817092" class="header__main-text">8 (495) 181-70-92</a>
+                    <a href="#" class="header-phone__link">Заказать звонок</a>
+                </div>
+            </div>
+            <div class="header-col header-time">
+                <svg class="header-col__icon"><use xlink:href="assets/img/icons.svg#clock"></use></svg>
+                <div class="header-col-info">
+                    <p class="header__main-text">08:00–17:00</p>
+                    <p class="header__sub-text">Ежедневно</p>
+                </div>
+            </div>
+            <div class="header-col header-place">
+                <svg class="header-col__icon"><use xlink:href="assets/img/icons.svg#place"></use></svg>
+                <div class="header-col-info">
+                    <p class="header__main-text">Москва</p>
+                    <p class="header__sub-text">21-й км Киевского шоссе</p>
+                </div>
+            </div>
+            <div class="header__mobile-icon" id="burger">
+                <div class="header__mobile-icon-line"></div>
+                <div class="header__mobile-icon-line"></div>
+                <div class="header__mobile-icon-line"></div>
+            </div>
+            <button class="menu__search"><svg class="menu__search-icon"><use xlink:href="assets/img/icons.svg#search"></use></svg></button>
+        </div>
+    </section>
+    <section class="menu">
+        <div class="container">
+            <div class="header__logo">
+                <img class="header__logo-image" src="assets/img/logo.svg" alt="">
+                <p class="header__logo-text">Морг ГКБ №1<br>им. Пирогова</p>
+            </div>
+            <ul class="menu-list">
+                <li class="menu-list__item"><a href="#" class="menu-list__item-link">Услуги и цены</a></li>
+                <li class="menu-list__item"><a href="#" class="menu-list__item-link">Необходимые вещи для усопшего</a></li>
+                <li class="menu-list__item"><a href="#" class="menu-list__item-link">Порядок действий</a></li>
+                <li class="menu-list__item"><a href="#" class="menu-list__item-link">Схема территории</a></li>
+                <li class="menu-list__item"><a href="#" class="menu-list__item-link">Как добраться</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="banner">
+        <div class="container">
+            <h1 class="banner__title">Морг ГКБ №1 им. Пирогова</h1>
+            <p class="banner__description">В патологоанатомическое отделение клиники им. Пирогова поступают тела скончавшихся без признаков врачебной ошибки или насильственной смерти.
+                <br>В морг клинической больницы № 1 им. Пирогова доставляют:</p>
+            <ul class="banner-list">
+                <li class="banner-list__item">
+                    <svg class="banner-list__item-mark"><use xlink:href="assets/img/icons.svg#mark"></use></svg>
+                    Тела жителей Центрального административного округа Москвы, умерших дома
+                </li>
+                <li class="banner-list__item">
+                    <svg class="banner-list__item-mark"><use xlink:href="assets/img/icons.svg#mark"></use></svg>
+                    Тела умерших в лечебно-медицинских учреждениях Центрального административного округа Москвы
+                </li>
+            </ul>
+            <a href="#" class="primary-btn">Как добраться</a>
+        </div>
+    </section>
+    <section class="attention">
+        <div class="container">
+            <svg class="attention__icon"><use xlink:href="assets/img/icons.svg#attention"></use></svg>
+            <div class="attention-info">
+                <p class="attention-info__title">Внимание!</p>
+                <p class="attention-info__text">Нередки случаи, когда отпевание в морге проводят «священники», которые не имеют отношения к РПЦ. Участие ритуального агента в организации процедуры — гарантия достойного прощания.</p>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <h3 class="title">О морге</h3>
+            <p class="about__text">
+                В морг городской клинической больницы № 1 им. Н.И.Пирогова в Москве доставляют, согласно схеме раскрепления, тела скончавшихся естественной смертью дома или в лечебных стационарах. Для определения точной причины летального исхода в морге ГКБ № 1 выполняют аутопсию (вскрытие), обеспечивают сохранение тела, оформляют необходимые документы и проводят подготовку перед похоронами.
+                <br><br>
+                Существует три вида моргов: патологоанатомические отделения (ПАО), подразделения, занятые судебно-медицинской экспертизой (СМЭ) и трупохранилища. В ПАО доставляют скончавшихся по естественным причинам. В СМЭ размещаются тела умерших при невыясненных обстоятельствах, ставших жертвой несчастного случая или преступления. В трупохранилищах обеспечивается длительное, свыше двух недель, сохранение тел покойных.
+            </p>
+            <div class="about-images">
+                <img src="assets/img/about-1.png" alt="" class="about__image">
+                <img src="assets/img/about-2.png" alt="" class="about__image">
+                <img src="assets/img/about-3.png" alt="" class="about__image">
+            </div>
+        </div>
+    </section>
+    <section class="documents">
+        <div class="container">
+            <h3 class="title">Необходимые документы</h3>
+            <div class="documents-container">
+                <div class="documents-left">
+                    <p class="documents__title">Для выдачи тела</p>
+                    <div class="documents__item">
+                        <svg class="documents__item-icon"><use xlink:href="assets/img/icons.svg#file"></use></svg>
+                        <p class="documents__item-title">Паспорт</p>
+                    </div>
+                    <div class="documents__item">
+                        <svg class="documents__item-icon"><use xlink:href="assets/img/icons.svg#file"></use></svg>
+                        <p class="documents__item-title">Квитанция об оплате услуг</p>
+                    </div>
+                    <div class="documents__item">
+                        <svg class="documents__item-icon"><use xlink:href="assets/img/icons.svg#file"></use></svg>
+                        <p class="documents__item-title">Свидетельство о смерти</p>
+                    </div>
+                </div>
+                <div class="documents-right">
+                    <p class="documents__title">Которые выдаёт морг</p>
+                    <div class="documents__item">
+                        <svg class="documents__item-icon"><use xlink:href="assets/img/icons.svg#file"></use></svg>
+                        <p class="documents__item-title">Медицинское свидетельство о смерти (первичное медицинское свидетельство о смерти)</p>
+                    </div>
+                    <div class="documents__item">
+                        <svg class="documents__item-icon"><use xlink:href="assets/img/icons.svg#file"></use></svg>
+                        <p class="documents__item-title">Договор и кассовый чек на оплату медицинских услуг (подготовка тела умершего)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="help">
+        <div class="container">
+            <h3 class="title">Помощь в организации</h3>
+            <ul class="help-list">
+                <li class="help-list__item">
+                    <svg class="help-list__item-icon"><use xlink:href="assets/img/icons.svg#check"></use></svg>
+                    <div class="help-list__item-info">
+                        <p class="help-list__item-title">Документация</p>
+                        <p class="help-list__item-description">Сбор и правильное оформление документации, необходимой для проведения похорон</p>
+                    </div>
+                </li>
+                <li class="help-list__item">
+                    <svg class="help-list__item-icon"><use xlink:href="assets/img/icons.svg#check"></use></svg>
+                    <div class="help-list__item-info">
+                        <p class="help-list__item-title">Принадлежности</p>
+                        <p class="help-list__item-description">Подбор похоронных принадлежностей в соответствии с требованиями заказчика</p>
+                    </div>
+                </li>
+                <li class="help-list__item">
+                    <svg class="help-list__item-icon"><use xlink:href="assets/img/icons.svg#check"></use></svg>
+                    <div class="help-list__item-info">
+                        <p class="help-list__item-title">Обряд</p>
+                        <p class="help-list__item-description">Организация религиозного обряда (если необходимо)</p>
+                    </div>
+                </li>
+                <li class="help-list__item">
+                    <svg class="help-list__item-icon"><use xlink:href="assets/img/icons.svg#check"></use></svg>
+                    <div class="help-list__item-info">
+                        <p class="help-list__item-title">Перевозка</p>
+                        <p class="help-list__item-description">Перевозка покойного и участников церемонии прощания к месту погребения или кремации</p>
+                    </div>
+                </li>
+                <li class="help-list__item">
+                    <svg class="help-list__item-icon"><use xlink:href="assets/img/icons.svg#check"></use></svg>
+                    <div class="help-list__item-info">
+                        <p class="help-list__item-title">Поминальный обед</p>
+                        <p class="help-list__item-description">Сервис по организации поминального обеда</p>
+                    </div>
+                </li>
+                <li class="help-list__item">
+                    <svg class="help-list__item-icon"><use xlink:href="assets/img/icons.svg#check"></use></svg>
+                    <div class="help-list__item-info">
+                        <p class="help-list__item-title">Смета</p>
+                        <p class="help-list__item-description">Составление сметы и предоставление платежных документов</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="form">
+        <div class="container">
+            <form class="form-form">
+                <p class="form__title">Нужна помощь?</p>
+                <div class="form-grid">
+                    <input type="text" class="form__input" placeholder="Ваше Имя">
+                    <input type="phone" class="form__input" placeholder="Телефон">
+                    <textarea name="" id="" cols="30" rows="10" class="form__input form__textarea" placeholder="Ваш вопрос"></textarea>
+                </div>
+                <div class="form-terms">
+                    <p class="form-terms__text">Нажимая кнопку «Задать вопрос», вы принимаете условия<br>
+                        <a href="#" class="form-terms__link">Политики обработки персональных данных.</a></p>
+                    <input type="submit" class="primary-btn" value="Задать вопрос">
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="map">
+        <div class="container">
+            <div class="header__logo">
+                <img class="header__logo-image" src="assets/img/logo.svg" alt="">
+                <p class="header__logo-text">Морг ГКБ №1<br>им. Пирогова</p>
+            </div>
+            <div class="header-col header-phone">
+                <svg class="header-col__icon"><use xlink:href="assets/img/icons.svg#phone"></use></svg>
+                <div class="header-col-info">
+                    <a href="tel:84951817092" class="header__main-text">8 (495) 181-70-92</a>
+                    <a href="#" class="header-phone__link">Заказать звонок</a>
+                </div>
+            </div>
+            <div class="header-col header-time">
+                <svg class="header-col__icon"><use xlink:href="assets/img/icons.svg#clock"></use></svg>
+                <div class="header-col-info">
+                    <p class="header__main-text">08:00–17:00</p>
+                    <p class="header__sub-text">Ежедневно</p>
+                </div>
+            </div>
+            <div class="header-col header-place">
+                <svg class="header-col__icon"><use xlink:href="assets/img/icons.svg#place"></use></svg>
+                <div class="header-col-info">
+                    <p class="header__main-text">Москва</p>
+                    <p class="header__sub-text">21-й км Киевского шоссе</p>
+                </div>
+            </div>
+            <div class="map-social">
+                <a href="#" class="map-social__item"><svg class="map-social__item-icon"><use xlink:href="assets/img/icons.svg#facebook"></use></svg></a>
+                <a href="#" class="map-social__item"><svg class="map-social__item-icon"><use xlink:href="assets/img/icons.svg#youtube"></use></svg></a>
+                <a href="#" class="map-social__item"><svg class="map-social__item-icon"><use xlink:href="assets/img/icons.svg#ok"></use></svg></a>
+            </div>
+            <p class="map-copy">© 2022 Преображенское кладбище. Информация предоставляется с целью ознакомления.</p>
+        </div>
+        <iframe class="map-map" src="https://yandex.ru/map-widget/v1/-/CCUBQIQdPB" width="100%" height="600"></iframe>
+    </section>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
