@@ -149,6 +149,7 @@ a.header-phone__link {
     border: none;
     outline: none;
     cursor: pointer;
+    margin-left: 80px;
 }
 .menu__search-icon {
     width: 20px;
@@ -748,6 +749,9 @@ a.header-phone__link {
     }
 }
 @media screen and (max-width: 1120px) {
+    .menu__search {
+        margin-left: auto;
+    }
     .header__mobile-icon {
         display: flex;
     }
