@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Преображенское кладбище</title>
+    <style>
+        :root {
+            --bg-color: #FFFFFF;
+            --header-color: #F8F9F4;
+            --menu-color: #1D2B2B;
+            --akcent-second: #A8AC90;
+            --menu-active-bg: #172121;
+            --akcent-color: #5D9494;
+            --banner-title-color: #F3F1E9;
+            --banner-text-color: #F3F1E9;
+            --title-color: #2B2E37;
+            --subtitle-color: #797D8A;
+            --text-color: #2B2E37;
+            --attention-color: #C29935;
+            --descktop-container: 1216px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <section class="header" id="header">
+        <div class="container">
+            <div class="header-col header-phone">
+                <svg class="header-col__icon"><use xlink:href="assets/img/icons.svg#phone"></use></svg>
+                <div class="header-col-info">
+                    <a href="tel:84951817092" class="header__main-text">8 (495) 181-70-92</a>
+                    <a href="#" class="header-phone__link">Заказать звонок</a>
+                </div>
+            </div>
+            <div class="header-col header-time">
+                <svg class="header-col__icon"><use xlink:href="assets/img/icons.svg#clock"></use></svg>
+                <div class="header-col-info">
+                    <p class="header__main-text">08:00–17:00</p>
+                    <p class="header__sub-text">Ежедневно</p>
+                </div>
+            </div>
+            <div class="header-col header-place">
+                <svg class="header-col__icon"><use xlink:href="assets/img/icons.svg#place"></use></svg>
+                <div class="header-col-info">
+                    <p class="header__main-text">Москва</p>
+                    <p class="header__sub-text">21-й км Киевского шоссе</p>
+                </div>
+            </div>
+            <div class="header__mobile-icon" id="burger">
+                <div class="header__mobile-icon-line"></div>
+                <div class="header__mobile-icon-line"></div>
+                <div class="header__mobile-icon-line"></div>
+            </div>
+            <button class="menu__search"><svg class="menu__search-icon"><use xlink:href="assets/img/icons.svg#search"></use></svg></button>
+        </div>
+    </section>
+    <section class="menu">
+        <div class="container">
+            <div class="header__logo">
+                <img class="header__logo-image" src="assets/img/logo.svg" alt="">
+                <p class="header__logo-text">Преображенское<br>Кладбище</p>
+            </div>
+            <ul class="menu-list">
+                <li class="menu-list__item"><a href="#" class="menu-list__item-link">Правила захоронения</a></li>
+                <li class="menu-list__item"><a href="#" class="menu-list__item-link">Установка памятника</a></li>
+                <li class="menu-list__item"><a href="#" class="menu-list__item-link">Уход за могилой</a></li>
+                <li class="menu-list__item"><a href="#" class="menu-list__item-link">Схема кладбища</a></li>
+                <li class="menu-list__item"><a href="#" class="menu-list__item-link">Как добраться</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="banner">
+        <div class="container">
+            <h1 class="banner__title">Преображенское кладбище</h1>
+            <ul class="banner-list">
+                <li class="banner-list__item">
+                    <svg class="banner-list__item-mark"><use xlink:href="assets/img/icons.svg#mark"></use></svg>
+                    Площадь: 16,5 га
+                </li>
+                <li class="banner-list__item">
+                    <svg class="banner-list__item-mark"><use xlink:href="assets/img/icons.svg#mark"></use></svg>
+                    Действующий некрополь закрытого типа
+                </li>
+                <li class="banner-list__item">
+                    <svg class="banner-list__item-mark"><use xlink:href="assets/img/icons.svg#mark"></use></svg>
+                    Доступны родственные под захоронения
+                </li>
+                <li class="banner-list__item">
+                    <svg class="banner-list__item-mark"><use xlink:href="assets/img/icons.svg#mark"></use></svg>
+                    Действующий открытый колумбарий
+                </li>
+            </ul>
+            <p class="banner__description">Преображенское кладбище — бывшее старообрядческое кладбище в Москве, до начала XX века — центр старообрядцев-федосеевцев. Заложили за бывшим Камер-Коллежским валом во время сильнейшей эпидемии чумы, случившейся в 1771 году.</p>
+            <a href="#" class="primary-btn">Посмотреть схему</a>
+        </div>
+    </section>
+    <section class="attention">
+        <div class="container">
+            <svg class="attention__icon"><use xlink:href="assets/img/icons.svg#attention"></use></svg>
+            <div class="attention-info">
+                <p class="attention-info__title">Внимание!</p>
+                <p class="attention-info__text">С 09 июня 2020 года, указом мэра города Сергея Собянина Хованское кладбище открыто для посещения.</p>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <h3 class="title">О кладбище</h3>
+            <p class="about__text">На Преображенском кладбище и вокруг него Ковылиным были построены дома, магазины, фабрики, молельни. В начале XIX в. прихожан было до 10 тыс. человек, в приютах находилось 1500 человек. Для ограничения деятельности раскольников по указанию императора Николая I 3 апреля 1854 г. Успенская церковь была переосвящена в Православную.
+                <br><br>В 1866 мужской двор переселён на женский, где сохранилась старообрядческая община, а на территории бывшего мужского двора открыт Никольский единоверческий монастырь. На Преображенском кладбище находилась богатейшая библиотека сочинений о расколе, собранная купцом А. И. Хлудовым; хранились древние иконы (в том числе 1300 икон, собранных Е. Е. Егоровым), произведения древнерусского искусства. В 1920 все федосеевские молельни, кроме Крестовоздвиженской, закрыты, призреваемые выселены.
+                <br><br>В начале 1920-х гг. закрыт Никольский единоверческий монастырь. Библиотека Хлудова и часть собрания Егорова переданы в Государственный Исторический музей[1], древние иконы — также в Исторический музей, откуда потом часть из них попала в Третьяковскую галерею и небольшое количество в Музей Коломенское. В 1920-х гг. в здании бывшей монастырской школы и в кельях монастыря открыта трудовая школа, а после размещались различные учреждения, например общежитие завода Радио.</p>
+            <div class="about-images">
+                <img src="assets/img/about-1.png" alt="" class="about__image">
+                <img src="assets/img/about-2.png" alt="" class="about__image">
+            </div>
+        </div>
+    </section>
+    <section class="documents">
+        <div class="container">
+            <h3 class="title">Необходимые документы</h3>
+            <ul class="documents-list">
+                <li class="documents-list__item">
+                    <svg class="documents-list__item-icon"><use xlink:href="assets/img/icons.svg#file"></use></svg>
+                    <div class="documents-list__item-info">
+                        <p class="documents-list__item-title">Протокол осмотра тела</p>
+                        <p class="documents-list__item-description">Выдается сотрудником полиции, телефон 02 (102 с мобильного телефона)</p>
+                    </div>
+                </li>
+                <li class="documents-list__item">
+                    <svg class="documents-list__item-icon"><use xlink:href="assets/img/icons.svg#file"></use></svg>
+                    <div class="documents-list__item-info">
+                        <p class="documents-list__item-title">Гербовое свидетельство o смерти органов ЗАГС</p>
+                        <p class="documents-list__item-description">Выдается работником органа ЗАГС</p>
+                    </div>
+                </li>
+                <li class="documents-list__item">
+                    <svg class="documents-list__item-icon"><use xlink:href="assets/img/icons.svg#file"></use></svg>
+                    <div class="documents-list__item-info">
+                        <p class="documents-list__item-title">Справку o констатации смерти</p>
+                        <p class="documents-list__item-description">Выдается врачом поликлиники или бригадой скорой помощи, телефон 03 (103 с мобильного)</p>
+                    </div>
+                </li>
+                <li class="documents-list__item">
+                    <svg class="documents-list__item-icon"><use xlink:href="assets/img/icons.svg#file"></use></svg>
+                    <div class="documents-list__item-info">
+                        <p class="documents-list__item-title">Справка на получение государственного пособия на погребение</p>
+                        <p class="documents-list__item-description">Выдается работником органа ЗАГС</p>
+                    </div>
+                </li>
+                <li class="documents-list__item">
+                    <svg class="documents-list__item-icon"><use xlink:href="assets/img/icons.svg#file"></use></svg>
+                    <div class="documents-list__item-info">
+                        <p class="documents-list__item-title">Врачебное свидетельство o смерти</p>
+                        <p class="documents-list__item-description">Выдается врачом поликлиники или работниками морга</p>
+                    </div>
+                </li>
+                <li class="documents-list__item">
+                    <svg class="documents-list__item-icon"><use xlink:href="assets/img/icons.svg#file"></use></svg>
+                    <div class="documents-list__item-info">
+                        <p class="documents-list__item-title">Договор об оказании ритуальных услуг</p>
+                        <p class="documents-list__item-description">Оформляется сотрудником похоронной службы</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="form">
+        <div class="container">
+            <form class="form-form">
+                <p class="form__title">Не нашли ответ?</p>
+                <div class="form-grid">
+                    <input type="text" class="form__input" placeholder="Ваше Имя">
+                    <input type="phone" class="form__input" placeholder="Телефон">
+                    <textarea name="" id="" cols="30" rows="10" class="form__input form__textarea" placeholder="Ваш вопрос"></textarea>
+                </div>
+                <div class="form-terms">
+                    <p class="form-terms__text">Нажимая кнопку «Задать вопрос», вы принимаете условия<br>
+                        <a href="#" class="form-terms__link">Политики обработки персональных данных.</a></p>
+                    <input type="submit" class="primary-btn" value="Задать вопрос">
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="map">
+        <div class="container">
+            <div class="header__logo">
+                <img class="header__logo-image" src="assets/img/logo.svg" alt="">
+                <p class="header__logo-text">Преображенское<br>Кладбище</p>
+            </div>
+            <div class="header-col header-phone">
+                <svg class="header-col__icon"><use xlink:href="assets/img/icons.svg#phone"></use></svg>
+                <div class="header-col-info">
+                    <a href="tel:84951817092" class="header__main-text">8 (495) 181-70-92</a>
+                    <a href="#" class="header-phone__link">Заказать звонок</a>
+                </div>
+            </div>
+            <div class="header-col header-time">
+                <svg class="header-col__icon"><use xlink:href="assets/img/icons.svg#clock"></use></svg>
+                <div class="header-col-info">
+                    <p class="header__main-text">08:00–17:00</p>
+                    <p class="header__sub-text">Ежедневно</p>
+                </div>
+            </div>
+            <div class="header-col header-place">
+                <svg class="header-col__icon"><use xlink:href="assets/img/icons.svg#place"></use></svg>
+                <div class="header-col-info">
+                    <p class="header__main-text">Москва</p>
+                    <p class="header__sub-text">21-й км Киевского шоссе</p>
+                </div>
+            </div>
+            <div class="map-social">
+                <a href="#" class="map-social__item"><svg class="map-social__item-icon"><use xlink:href="assets/img/icons.svg#facebook"></use></svg></a>
+                <a href="#" class="map-social__item"><svg class="map-social__item-icon"><use xlink:href="assets/img/icons.svg#youtube"></use></svg></a>
+                <a href="#" class="map-social__item"><svg class="map-social__item-icon"><use xlink:href="assets/img/icons.svg#ok"></use></svg></a>
+            </div>
+            <p class="map-copy">© 2022 Преображенское кладбище. Информация предоставляется с целью ознакомления.</p>
+        </div>
+        <iframe class="map-map" src="https://yandex.ru/map-widget/v1/-/CCUBQIQdPB" width="100%" height="600"></iframe>
+    </section>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
