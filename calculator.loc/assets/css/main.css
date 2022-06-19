@@ -513,6 +513,9 @@ body {
     .calculator-type__description {
         font-size: 16px;
     }
+    .calculator-type__description.active {
+        display: none;
+    }
     .calculator__submit {
         padding: 32px;
     }
