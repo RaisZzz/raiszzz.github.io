@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const $promo = document.getElementById('promo')
     const $total = document.getElementById('total')
     const $submit = document.getElementById('submit')
+    const $orderedPopup = document.getElementById('calculator-ordered')
 
     // Инициализация
     let fromChecked = false
@@ -251,6 +252,45 @@ document.addEventListener('DOMContentLoaded', function() {
         checkForm()
     })
 
+    // Оформление заказа
+    $submit.addEventListener('click', async function () {
+        let day = DATETIME.getDate()
+        let month = DATETIME.getMonth() + 1
+        const year = DATETIME.getFullYear()
+        let hours = DATETIME.getHours()
+        let minutes = DATETIME.getMinutes()
+        if (day < 10) day = `0${day}`
+        if (month < 10) month = `0${month}`
+        if (hours < 10) hours = `0${hours}`
+        if (minutes < 10) minutes = `0${minutes}`
+        const date_from = `${year}-${month}-${day}`
+        const time_from = `${hours}:${minutes}`
+        const phone = parseInt($phone.value.replace(/[^0-9]/g, ""))
+
+        if (!isLoading) {
+            isLoading = true
+            const response = await axios.get('https://apps.itlogist.ru/api/v1/all/srochno_order_add/', {
+                params: {
+                    address_from: FROM,
+                    address_to: TO,
+                    duration: DURATION,
+                    date_from,
+                    time_from,
+                    vehicle_type: TYPE,
+                    passengers_number: PASSENGERS,
+                    loaders_number: MOVERS,
+                    phone,
+                    promocode: PROMO,
+                    usersession
+                }
+            })
+            if (response.data.order_processed) {
+                $orderedPopup.classList.add('active')
+            }
+            isLoading = false
+        }
+    })
+
     // Проверка всех полей
     function checkForm() {
         setTimeout(async () => {
@@ -373,10 +413,12 @@ document.addEventListener('DOMContentLoaded', function() {
             $phoneWrapper.classList.add('error')
         } else {
             $phoneWrapper.classList.remove('error')
-            phoneValid = true
+            if (!phoneValid) {
+                phoneValid = true
+                checkForm()
+            }
         }
         phoneValid = matrix.length === this.value.length
-        checkForm()
     }
 })
 
