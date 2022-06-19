@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+	<link href="assets/css/main.css" rel="stylesheet">
+<body>
+	<form class="calculator">
+		<div class="input">
+			<label for="summ">Сумма (руб.)</label>
+			<input id="summ_input" type="text" class="value" value="10948906" min="1" max="40000000" control-id="ControlID-1">
+			<div class="range">
+				<input id="summ" name="summ" type="range" min="1" max="40000000" value="10948906" control-id="ControlID-2">
+				<span style="width: 21.4964px;"></span>
+			</div>
+		</div>
+		<div class="input">
+			<label for="time">Срок (месяц)</label>
+			<input id="time_input" type="text" class="value" value="3" min="1" max="60" control-id="ControlID-3">
+			<div class="range">
+				<input id="time" name="time" type="range" min="1" max="60" value="3" control-id="ControlID-4">
+				<span style="width: 15.5px;"></span>
+			</div>
+		</div>
+		<div class="radio_buttons numbers_mark">
+			<div class="radio">
+				<div class="radio_btn">
+					<input id="fffz" type="radio" name="number_mark" checked="" control-id="ControlID-5">
+					<span></span>
+				</div>
+				<label for="fffz">44-ФЗ</label>
+			</div>
+			<div class="radio">
+				<div class="radio_btn">
+					<input id="ttffz" type="radio" name="number_mark" control-id="ControlID-6">
+					<span></span>
+				</div>
+				<label for="ttffz">223-ФЗ</label>
+			</div>
+			<div class="radio">
+				<div class="radio_btn">
+					<input id="oeffz" type="radio" name="number_mark">
+					<span></span>
+				</div>
+				<label for="oeffz">185-ФЗ/615-ПП</label>
+			</div>
+		</div>
+		<div class="radio_buttons product_types">
+			<div class="radio">
+				<div class="radio_btn">
+					<input id="execution" type="radio" name="product_type" checked="" control-id="ControlID-7">
+					<span></span>
+				</div>
+				<label for="execution">Исполнение</label>
+			</div>
+			<div class="radio">
+				<div class="radio_btn">
+					<input id="prepaid" type="radio" name="product_type" control-id="ControlID-8">
+					<span></span>
+				</div>
+				<label for="prepaid">Аванс</label>
+			</div>
+			<div class="radio">
+				<div class="radio_btn">
+					<input id="participation" type="radio" name="product_type">
+					<span></span>
+				</div>
+				<label for="participation">Участие</label>
+			</div>
+			<div class="radio_btn">
+				<input id="liabilities" type="radio" name="product_type">
+				<span></span>
+				<label for="liabilities">Обязательства</label>
+			</div>
+		</div>
+		<div class="input">
+			<label>Сумма комиссии</label>
+			<span class="value"><span id="commission">936.99</span> ₽</span>
+		</div>
+		<div class="input">
+			<label>Ставка (%)</label>
+			<span id="rate" class="value">4.11</span>
+		</div>
+		<div class="input submit">
+			<p>Рассчитать</p>
+		</div>
+	</form>
+	<script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.13/jquery.mask.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
