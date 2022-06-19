@@ -1,99 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<title>Calculator</title>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-	<form class="calculator">
-		<div class="input">
-			<label for="summ">Сумма (руб.)</label>
-			<input id="summ_input" type="text" class="value" value="10948906" min="1" max="40000000"></input>
-			<div class="range">
-				<input id="summ" name="summ" type="range" min="1" max="40000000" value="10948906">
-				<span></span>
-			</div>
-		</div>
-		<div class="input">
-			<label for="time">Срок (месяц)</label>
-			<input id="time_input" type="text" class="value" value="3" min="1" max="60"></input>
-			<div class="range">
-				<input id="time" name="time" type="range" min="1" max="60" value="3">
-				<span></span>
-			</div>
-		</div>
-		<div class="radio_buttons numbers_mark">
-			<div class="radio">
-				<div class="radio_btn">
-					<input id="fffz" type="radio" name="number_mark" checked>
-					<span></span>
-				</div>
-				<label for="fffz">44-ФЗ</label>
-			</div>
-			<div class="radio">
-				<div class="radio_btn">
-					<input id="ttffz" type="radio" name="number_mark">
-					<span></span>
-				</div>
-				<label for="ttffz">223-ФЗ</label>
-			</div>
-			<div class="radio">
-				<div class="radio_btn">
-					<input id="oeffz" type="radio" name="number_mark">
-					<span></span>
-				</div>
-				<label for="oeffz">185-ФЗ/615-ПП</label>
-			</div>
-		</div>
-		<div class="radio_buttons product_types">
-			<div class="radio">
-				<div class="radio_btn">
-					<input id="execution" type="radio" name="product_type" checked>
-					<span></span>
-				</div>
-				<label for="execution">Исполнение</label>
-			</div>
-			<div class="radio">
-				<div class="radio_btn">
-					<input id="prepaid" type="radio" name="product_type">
-					<span></span>
-				</div>
-				<label for="prepaid">Аванс</label>
-			</div>
-			<div class="radio">
-				<div class="radio_btn">
-					<input id="participation" type="radio" name="product_type">
-					<span></span>
-				</div>
-				<label for="participation">Участие</label>
-			</div>
-			<div class="radio_btn">
-				<input id="liabilities" type="radio" name="product_type">
-				<span></span>
-				<label for="liabilities">Обязательства</label>
-			</div>
-		</div>
-		<div class="input">
-			<label>Сумма комиссии</label>
-			<span class="value"><span id="commission">3473.66</span> ₽</span>
-		</div>
-		<div class="input">
-			<label>Ставка (%)</label>
-			<span id="rate" class="value">3,86</span>
-		</div>
-		<div class="input submit">
-			<p>Рассчитать</p>
-		</div>
-	</form>
-	<script
-  src="https://code.jquery.com/jquery-3.5.0.min.js"
-  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
-  crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.13/jquery.mask.js"></script>
-	<script src="assets/js/main.js"></script>
+    <div class="calculator">
+        <div class="calculator-address">
+            <p class="calculator__title">Укажите адрес:</p>
+            <div class="calculator__address-wrapper" id="address-wrapper">
+                <input type="text" class="calculator__address" placeholder="Откуда" id="from">
+                <input type="text" class="calculator__address" placeholder="Куда" id="to">
+            </div>
+        </div>
+        <div class="calculator-type-wrapper" id="types-wrapper">
+            <p class="calculator__title">Выберите тип кузова:</p>
+            <div class="calculator-type">
+                <div class="calculator-type__btn">
+                    <input type="radio" id="small" name="type" class="calculator-type__btn-input" data-type="10">
+                    <label for="small" class="calculator-type__btn-title">Малый</label>
+                </div>
+                <div class="calculator-type__btn">
+                    <input type="radio" id="medium" name="type" class="calculator-type__btn-input" data-type="20">
+                    <label for="medium" class="calculator-type__btn-title">Средний</label>
+                </div>
+                <div class="calculator-type__btn">
+                    <input type="radio" id="big" name="type" class="calculator-type__btn-input" data-type="30">
+                    <label for="big" class="calculator-type__btn-title">Большой</label>
+                </div>
+            </div>
+            <p class="calculator-type__description" data-type="10">170 X 100 X 90 см. Подойдет для нескольких коробок, духового шкафа или кресла</p>
+            <p class="calculator-type__description" data-type="20">260 Х 160 Х 150 см. Поместится трехместный диван или шкаф и пара коробок</p>
+            <p class="calculator-type__description" data-type="30">400 Х 190 Х 200 см. Отлично подойдет для переезда. Поместятся вещи всей семьи</p>
+        </div>
+        <div class="calculator-duration" id="duration-wrapper">
+            <p class="calculator-duration__title">Длительность</p>
+            <div class="calculator-count-choose">
+                <button class="calculator-count-choose__btn" id="duration-minus"><span class="minus"></span></button>
+                <p class="calculator-count-choose__value"><span id="duration"></span>ч</p>
+                <button class="calculator-count-choose__btn" id="duration-plus"><span class="plus"></span></button>
+            </div>
+        </div>
+        <div class="calculator-peoples" id="peoples-wrapper">
+            <div class="calculator-peoples-column">
+                <p class="calculator-peoples__title">Пассажиры</p>
+                <div class="calculator-count-choose">
+                    <button class="calculator-count-choose__btn" id="passengers-minus"><span class="minus"></span></button>
+                    <p class="calculator-count-choose__value"><span id="passengers"></span></p>
+                    <button class="calculator-count-choose__btn" id="passengers-plus"><span class="plus"></span></button>
+                </div>
+            </div>
+            <span class="calculator-peoples__line"></span>
+            <div class="calculator-peoples-column">
+                <p class="calculator-peoples__title">Грузчики</p>
+                <div class="calculator-count-choose">
+                    <button class="calculator-count-choose__btn" id="movers-minus"><span class="minus"></span></button>
+                    <p class="calculator-count-choose__value"><span id="movers"></span></p>
+                    <button class="calculator-count-choose__btn" id="movers-plus"><span class="plus"></span></button>
+                </div>
+            </div>
+        </div>
+        <div class="calculator-datetime" id="datetime-wrapper">
+            <label for="datetime" class="calculator-datetime__title">Дата и время</label>
+            <p class="calculator-datetime__value"><span id="date"></span><span class="calculator-datetime__line"></span> <span id="time"></span></p>
+            <input type="datetime-local" class="calculator-datetime__input" min="2022-06-19T20:20" id="datetime">
+        </div>
+        <div class="calculator-more">
+            <div class="calculator-phone" id="phone-wrapper">
+                <input type="text" class="calculator-phone__input" id="phone" placeholder="+7 ( _ _ _ ) _ _ _-_ _-_ _">
+            </div>
+            <div class="calculator-promo" id="promo-wrapper">
+                <input type="text" class="calculator-promo__input" id="promo" placeholder="Промокод">
+            </div>
+        </div>
+        <p class="calculator__total">Итого: <span id="total"></span></p>
+        <button class="calculator__submit" id="submit" disabled>Оформить заказ</button>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -1,1126 +1,383 @@
-function getRate(time, summ){
-	if(time == 1){
-
-		if(summ >= 1 && summ < 100000){
-			rate = 12.17;
-		}else if(summ >= 100000 && summ < 200000){
-			rate = 10.95;
-		}else if(summ >= 200000 && summ < 300000){
-			rate = 10.54;
-		}else if(summ >= 300000 && summ < 400000){
-			rate = 10.04;
-		}else if(summ >= 400000 && summ < 500000){
-			rate = 8.76;
-		}else if(summ >= 500000 && summ < 700000){
-			rate = 8.69;
-		}else if(summ >= 700000 && summ < 999000){
-			rate = 8.53;
-		}else if(summ >= 999000 && summ < 1000000){
-			rate = 4.14;
-		}else if(summ >= 1000000 && summ < 2000000){
-			rate = 4.14;
-		}else if(summ >= 2000000 && summ < 2999000){
-			rate = 4.14;
-		}else if(summ >= 2999000 && summ < 3000000){
-			rate = 3.89;
-		}else if(summ >= 3000000 && summ < 5000000){
-			rate = 3.89;
-		}else if(summ >= 5000000 && summ < 7000000){
-			rate = 3.88;
-		}else if(summ >= 7000000 && summ < 10000000){
-			rate = 3.88;
-		}else if(summ >= 10000000 && summ < 20000000){
-			rate = 3.88;
-		}else if(summ >= 20000000){
-			rate = 3.88;
-		}
-
-	}else if(time == 2){
-
-		if(summ >= 1 && summ < 100000){
-			rate = 10.34;
-		}else if(summ >= 100000 && summ < 200000){
-			rate = 10.04;
-		}else if(summ >= 200000 && summ < 300000){
-			rate = 10.14;
-		}else if(summ >= 300000 && summ < 400000){
-			rate = 9.58;
-		}else if(summ >= 400000 && summ < 500000){
-			rate = 8.03;
-		}else if(summ >= 500000 && summ < 700000){
-			rate = 8.08;
-		}else if(summ >= 700000 && summ < 999000){
-			rate = 8.04;
-		}else if(summ >= 999000 && summ < 1000000){
-			rate = 4.14;
-		}else if(summ >= 1000000 && summ < 2000000){
-			rate = 4.11;
-		}else if(summ >= 2000000 && summ < 2999000){
-			rate = 4.12;
-		}else if(summ >= 2999000 && summ < 3000000){
-			rate = 3.87;
-		}else if(summ >= 3000000 && summ < 5000000){
-			rate = 3.87;
-		}else if(summ >= 5000000 && summ < 7000000){
-			rate = 3.87;
-		}else if(summ >= 7000000 && summ < 10000000){
-			rate = 3.87;
-		}else if(summ >= 10000000 && summ < 20000000){
-			rate = 3.87;
-		}else if(summ >= 20000000){
-			rate = 3.87;
-		}
-
-	}else if(time == 3){
-
-		if(summ >= 1 && summ < 100000){
-			rate = 9.73;
-		}else if(summ >= 100000 && summ < 200000){
-			rate = 9.73;
-		}else if(summ >= 200000 && summ < 300000){
-			rate = 9.60;
-		}else if(summ >= 300000 && summ < 400000){
-			rate = 9.13;
-		}else if(summ >= 400000 && summ < 500000){
-			rate = 7.62;
-		}else if(summ >= 500000 && summ < 700000){
-			rate = 7.59;
-		}else if(summ >= 700000 && summ < 999000){
-			rate = 7.55;
-		}else if(summ >= 999000 && summ < 1000000){
-			rate = 4.14;
-		}else if(summ >= 1000000 && summ < 2000000){
-			rate = 4.12;
-		}else if(summ >= 2000000 && summ < 2999000){
-			rate = 4.11;
-		}else if(summ >= 2999000 && summ < 3000000){
-			rate = 3.87;
-		}else if(summ >= 3000000 && summ < 5000000){
-			rate = 3.87;
-		}else if(summ >= 5000000 && summ < 7000000){
-			rate = 3.86;
-		}else if(summ >= 7000000 && summ < 10000000){
-			rate = 3.86;
-		}else if(summ >= 10000000 && summ < 20000000){
-			rate = 3.86;
-		}else if(summ >= 20000000){
-			rate = 3.86;
-		}
-
-	}else if(time == 4){
-
-		if(summ >= 1 && summ < 100000){
-			rate = 9.13;
-		}else if(summ >= 100000 && summ < 200000){
-			rate = 9.13;
-		}else if(summ >= 200000 && summ < 300000){
-			rate = 9.02;
-		}else if(summ >= 300000 && summ < 400000){
-			rate = 8.59;
-		}else if(summ >= 400000 && summ < 500000){
-			rate = 7.06;
-		}else if(summ >= 500000 && summ < 700000){
-			rate = 7.04;
-		}else if(summ >= 700000 && summ < 999000){
-			rate = 7.03;
-		}else if(summ >= 999000 && summ < 1000000){
-			rate = 4.11;
-		}else if(summ >= 1000000 && summ < 2000000){
-			rate = 4.11;
-		}else if(summ >= 2000000 && summ < 2999000){
-			rate = 4.11;
-		}else if(summ >= 2999000 && summ < 3000000){
-			rate = 3.86;
-		}else if(summ >= 3000000 && summ < 5000000){
-			rate = 3.86;
-		}else if(summ >= 5000000 && summ < 7000000){
-			rate = 3.86;
-		}else if(summ >= 7000000 && summ < 10000000){
-			rate = 3.86;
-		}else if(summ >= 10000000 && summ < 20000000){
-			rate = 3.86;
-		}else if(summ >= 20000000){
-			rate = 3.86;
-		}
-
-	}else if(time == 5){
-
-		if(summ >= 1 && summ < 100000){
-			rate = 8.76;
-		}else if(summ >= 100000 && summ < 200000){
-			rate = 8.64;
-		}else if(summ >= 200000 && summ < 300000){
-			rate = 8.60;
-		}else if(summ >= 300000 && summ < 400000){
-			rate = 8.03;
-		}else if(summ >= 400000 && summ < 500000){
-			rate = 6.52;
-		}else if(summ >= 500000 && summ < 700000){
-			rate = 6.54;
-		}else if(summ >= 700000 && summ < 999000){
-			rate = 6.53;
-		}else if(summ >= 999000 && summ < 1000000){
-			rate = 4.11;
-		}else if(summ >= 1000000 && summ < 2000000){
-			rate = 4.10;
-		}else if(summ >= 2000000 && summ < 2999000){
-			rate = 4.10;
-		}else if(summ >= 2999000 && summ < 3000000){
-			rate = 3.86;
-		}else if(summ >= 3000000 && summ < 5000000){
-			rate = 3.86;
-		}else if(summ >= 5000000 && summ < 7000000){
-			rate = 3.86;
-		}else if(summ >= 7000000 && summ < 10000000){
-			rate = 3.86;
-		}else if(summ >= 10000000 && summ < 20000000){
-			rate = 3.86;
-		}else if(summ >= 20000000){
-			rate = 3.86;
-		}
-
-	}else if(time == 6){
-
-		if(summ >= 1 && summ < 100000){
-			rate = 8.11;
-		}else if(summ >= 100000 && summ < 200000){
-			rate = 8.11;
-		}else if(summ >= 200000 && summ < 300000){
-			rate = 8.04;
-		}else if(summ >= 300000 && summ < 400000){
-			rate = 7.55;
-		}else if(summ >= 400000 && summ < 500000){
-			rate = 6.04;
-		}else if(summ >= 500000 && summ < 700000){
-			rate = 6.03;
-		}else if(summ >= 700000 && summ < 999000){
-			rate = 6.03;
-		}else if(summ >= 999000 && summ < 1000000){
-			rate = 4.10;
-		}else if(summ >= 1000000 && summ < 2000000){
-			rate = 4.10;
-		}else if(summ >= 2000000 && summ < 2999000){
-			rate = 4.10;
-		}else if(summ >= 2999000 && summ < 3000000){
-			rate = 3.86;
-		}else if(summ >= 3000000 && summ < 5000000){
-			rate = 3.86;
-		}else if(summ >= 5000000 && summ < 7000000){
-			rate = 3.86;
-		}else if(summ >= 7000000 && summ < 10000000){
-			rate = 3.85;
-		}else if(summ >= 10000000 && summ < 20000000){
-			rate = 3.85;
-		}else if(summ >= 20000000){
-			rate = 3.85;
-		}
-
-	}else if(time == 7){
-
-		if(summ >= 1 && summ < 100000){
-			rate = 7.65;
-		}else if(summ >= 100000 && summ < 200000){
-			rate = 7.56;
-		}else if(summ >= 200000 && summ < 300000){
-			rate = 7.53;
-		}else if(summ >= 300000 && summ < 400000){
-			rate = 7.04;
-		}else if(summ >= 400000 && summ < 500000){
-			rate = 5.53;
-		}else if(summ >= 500000 && summ < 700000){
-			rate = 5.54;
-		}else if(summ >= 700000 && summ < 999000){
-			rate = 5.53;
-		}else if(summ >= 999000 && summ < 1000000){
-			rate = 4.10;
-		}else if(summ >= 1000000 && summ < 2000000){
-			rate = 4.09;
-		}else if(summ >= 2000000 && summ < 2999000){
-			rate = 4.10;
-		}else if(summ >= 2999000 && summ < 3000000){
-			rate = 3.85;
-		}else if(summ >= 3000000 && summ < 5000000){
-			rate = 3.85;
-		}else if(summ >= 5000000 && summ < 7000000){
-			rate = 3.85;
-		}else if(summ >= 7000000 && summ < 10000000){
-			rate = 3.85;
-		}else if(summ >= 10000000 && summ < 20000000){
-			rate = 3.85;
-		}else if(summ >= 20000000){
-			rate = 3.85;
-		}
-
-	}else if(time == 8){
-
-		if(summ >= 1 && summ < 100000){
-			rate = 7.15;
-		}else if(summ >= 100000 && summ < 200000){
-			rate = 7.07;
-		}else if(summ >= 200000 && summ < 300000){
-			rate = 6.44;
-		}else if(summ >= 300000 && summ < 400000){
-			rate = 6.31;
-		}else if(summ >= 400000 && summ < 500000){
-			rate = 4.84;
-		}else if(summ >= 500000 && summ < 700000){
-			rate = 4.82;
-		}else if(summ >= 700000 && summ < 999000){
-			rate = 4.83;
-		}else if(summ >= 999000 && summ < 1000000){
-			rate = 4.09;
-		}else if(summ >= 1000000 && summ < 2000000){
-			rate = 4.09;
-		}else if(summ >= 2000000 && summ < 2999000){
-			rate = 4.09;
-		}else if(summ >= 2999000 && summ < 3000000){
-			rate = 3.85;
-		}else if(summ >= 3000000 && summ < 5000000){
-			rate = 3.85;
-		}else if(summ >= 5000000 && summ < 7000000){
-			rate = 3.85;
-		}else if(summ >= 7000000 && summ < 10000000){
-			rate = 3.85;
-		}else if(summ >= 10000000 && summ < 20000000){
-			rate = 3.85;
-		}else if(summ >= 20000000){
-			rate = 3.85;
-		}
-
-	}else if(time == 9){
-
-		if(summ >= 1 && summ < 100000){
-			rate = 6.35;
-		}else if(summ >= 100000 && summ < 200000){
-			rate = 6.29;
-		}else if(summ >= 200000 && summ < 300000){
-			rate = 5.54;
-		}else if(summ >= 300000 && summ < 400000){
-			rate = 5.54;
-		}else if(summ >= 400000 && summ < 500000){
-			rate = 4.57;
-		}else if(summ >= 500000 && summ < 700000){
-			rate = 4.56;
-		}else if(summ >= 700000 && summ < 999000){
-			rate = 4.55;
-		}else if(summ >= 999000 && summ < 1000000){
-			rate = 4.10;
-		}else if(summ >= 1000000 && summ < 2000000){
-			rate = 4.09;
-		}else if(summ >= 2000000 && summ < 2999000){
-			rate = 4.09;
-		}else if(summ >= 2999000 && summ < 3000000){
-			rate = 3.85;
-		}else if(summ >= 3000000 && summ < 5000000){
-			rate = 3.85;
-		}else if(summ >= 5000000 && summ < 7000000){
-			rate = 3.85;
-		}else if(summ >= 7000000 && summ < 10000000){
-			rate = 3.85;
-		}else if(summ >= 10000000 && summ < 20000000){
-			rate = 3.85;
-		}else if(summ >= 20000000){
-			rate = 3.85;
-		}
-
-	}else if(time == 10){
-
-		if(summ >= 1 && summ < 100000){
-			rate = 5.60;
-		}else if(summ >= 100000 && summ < 200000){
-			rate = 5.60;
-		}else if(summ >= 200000 && summ < 300000){
-			rate = 5.56;
-		}else if(summ >= 300000 && summ < 400000){
-			rate = 5.20;
-		}else if(summ >= 400000 && summ < 500000){
-			rate = 4.55;
-		}else if(summ >= 500000 && summ < 700000){
-			rate = 4.55;
-		}else if(summ >= 700000 && summ < 999000){
-			rate = 4.55;
-		}else if(summ >= 999000 && summ < 1000000){
-			rate = 4.09;
-		}else if(summ >= 1000000 && summ < 2000000){
-			rate = 4.09;
-		}else if(summ >= 2000000 && summ < 2999000){
-			rate = 4.09;
-		}else if(summ >= 2999000 && summ < 3000000){
-			rate = 3.84;
-		}else if(summ >= 3000000 && summ < 5000000){
-			rate = 3.84;
-		}else if(summ >= 5000000 && summ < 7000000){
-			rate = 3.84;
-		}else if(summ >= 7000000 && summ < 10000000){
-			rate = 3.84;
-		}else if(summ >= 10000000 && summ < 20000000){
-			rate = 3.84;
-		}else if(summ >= 20000000){
-			rate = 3.84;
-		}
-
-	}else if(time == 11){
-
-		if(summ >= 1 && summ < 100000){
-			rate = 5.64;
-		}else if(summ >= 100000 && summ < 200000){
-			rate = 5.64;
-		}else if(summ >= 200000 && summ < 300000){
-			rate = 5.57;
-		}else if(summ >= 300000 && summ < 400000){
-			rate = 5.09;
-		}else if(summ >= 400000 && summ < 500000){
-			rate = 4.56;
-		}else if(summ >= 500000 && summ < 700000){
-			rate = 4.55;
-		}else if(summ >= 700000 && summ < 999000){
-			rate = 4.55;
-		}else if(summ >= 999000 && summ < 1000000){
-			rate = 4.09;
-		}else if(summ >= 1000000 && summ < 2000000){
-			rate = 4.09;
-		}else if(summ >= 2000000 && summ < 2999000){
-			rate = 4.09;
-		}else if(summ >= 2999000 && summ < 3000000){
-			rate = 3.83;
-		}else if(summ >= 3000000 && summ < 5000000){
-			rate = 3.83;
-		}else if(summ >= 5000000 && summ < 7000000){
-			rate = 3.83;
-		}else if(summ >= 7000000 && summ < 10000000){
-			rate = 3.83;
-		}else if(summ >= 10000000 && summ < 20000000){
-			rate = 3.83;
-		}else if(summ >= 20000000){
-			rate = 3.83;
-		}
-
-	}else if(time == 12){
-
-		if(summ >= 1 && summ < 100000){
-			rate = 5.68;
-		}else if(summ >= 100000 && summ < 200000){
-			rate = 5.63;
-		}else if(summ >= 200000 && summ < 300000){
-			rate = 5.54;
-		}else if(summ >= 300000 && summ < 400000){
-			rate = 5.07;
-		}else if(summ >= 400000 && summ < 500000){
-			rate = 4.54;
-		}else if(summ >= 500000 && summ < 700000){
-			rate = 4.55;
-		}else if(summ >= 700000 && summ < 999000){
-			rate = 4.54;
-		}else if(summ >= 999000 && summ < 1000000){
-			rate = 4.09;
-		}else if(summ >= 1000000 && summ < 2000000){
-			rate = 4.08;
-		}else if(summ >= 2000000 && summ < 2999000){
-			rate = 4.08;
-		}else if(summ >= 2999000 && summ < 3000000){
-			rate = 3.82;
-		}else if(summ >= 3000000 && summ < 5000000){
-			rate = 3.82;
-		}else if(summ >= 5000000 && summ < 7000000){
-			rate = 3.82;
-		}else if(summ >= 7000000 && summ < 10000000){
-			rate = 3.82;
-		}else if(summ >= 10000000 && summ < 20000000){
-			rate = 3.82;
-		}else if(summ >= 20000000){
-			rate = 3.82;
-		}
-
-	}else if(time == 13){
-
-		if(summ >= 1 && summ < 100000){
-			rate = 5.62;
-		}else if(summ >= 100000 && summ < 200000){
-			rate = 5.62;
-		}else if(summ >= 200000 && summ < 300000){
-			rate = 5.55;
-		}else if(summ >= 300000 && summ < 400000){
-			rate = 5.08;
-		}else if(summ >= 400000 && summ < 500000){
-			rate = 4.55;
-		}else if(summ >= 500000 && summ < 700000){
-			rate = 4.55;
-		}else if(summ >= 700000 && summ < 999000){
-			rate = 4.54;
-		}else if(summ >= 999000 && summ < 1000000){
-			rate = 4.09;
-		}else if(summ >= 1000000 && summ < 2000000){
-			rate = 4.09;
-		}else if(summ >= 2000000 && summ < 2999000){
-			rate = 4.09;
-		}else if(summ >= 2999000 && summ < 3000000){
-			rate = 3.82;
-		}else if(summ >= 3000000 && summ < 5000000){
-			rate = 3.82;
-		}else if(summ >= 5000000 && summ < 7000000){
-			rate = 3.82;
-		}else if(summ >= 7000000 && summ < 10000000){
-			rate = 3.82;
-		}else if(summ >= 10000000 && summ < 20000000){
-			rate = 3.82;
-		}else if(summ >= 20000000){
-			rate = 3.82;
-		}
-
-	}else if(time == 14){
-
-		if(summ >= 1 && summ < 100000){
-			rate = 5.65;
-		}else if(summ >= 100000 && summ < 200000){
-			rate = 5.65;
-		}else if(summ >= 200000 && summ < 300000){
-			rate = 5.56;
-		}else if(summ >= 300000 && summ < 400000){
-			rate = 5.08;
-		}else if(summ >= 400000 && summ < 500000){
-			rate = 4.55;
-		}else if(summ >= 500000 && summ < 700000){
-			rate = 4.56;
-		}else if(summ >= 700000 && summ < 999000){
-			rate = 4.56;
-		}else if(summ >= 999000 && summ < 1000000){
-			rate = 4.10;
-		}else if(summ >= 1000000 && summ < 2000000){
-			rate = 4.10;
-		}else if(summ >= 2000000 && summ < 2999000){
-			rate = 4.09;
-		}else if(summ >= 2999000 && summ < 3000000){
-			rate = 3.83;
-		}else if(summ >= 3000000 && summ < 5000000){
-			rate = 3.83;
-		}else if(summ >= 5000000 && summ < 7000000){
-			rate = 3.83;
-		}else if(summ >= 7000000 && summ < 10000000){
-			rate = 3.83;
-		}else if(summ >= 10000000 && summ < 20000000){
-			rate = 3.83;
-		}else if(summ >= 20000000){
-			rate = 3.83;
-		}
-
-	}else if(time == 15){
-
-		if(summ >= 1 && summ < 100000){
-			rate = 5.68;
-		}else if(summ >= 100000 && summ < 200000){
-			rate = 5.64;
-		}else if(summ >= 200000 && summ < 300000){
-			rate = 5.57;
-		}else if(summ >= 300000 && summ < 400000){
-			rate = 5.09;
-		}else if(summ >= 400000 && summ < 500000){
-			rate = 4.57;
-		}else if(summ >= 500000 && summ < 700000){
-			rate = 4.57;
-		}else if(summ >= 700000 && summ < 999000){
-			rate = 4.56;
-		}else if(summ >= 999000 && summ < 1000000){
-			rate = 4.10;
-		}else if(summ >= 1000000 && summ < 2000000){
-			rate = 4.10;
-		}else if(summ >= 2000000 && summ < 2999000){
-			rate = 4.10;
-		}else if(summ >= 2999000 && summ < 3000000){
-			rate = 3.84;
-		}else if(summ >= 3000000 && summ < 5000000){
-			rate = 3.84;
-		}else if(summ >= 5000000 && summ < 7000000){
-			rate = 3.84;
-		}else if(summ >= 7000000 && summ < 10000000){
-			rate = 3.84;
-		}else if(summ >= 10000000 && summ < 20000000){
-			rate = 3.84;
-		}else if(summ >= 20000000){
-			rate = 3.84;
-		}
-
-	}else if(time == 16){
-
-		if(summ >= 1 && summ < 100000){
-			rate = 5.70;
-		}else if(summ >= 100000 && summ < 200000){
-			rate = 5.67;
-		}else if(summ >= 200000 && summ < 300000){
-			rate = 5.58;
-		}else if(summ >= 300000 && summ < 400000){
-			rate = 5.09;
-		}else if(summ >= 400000 && summ < 500000){
-			rate = 4.58;
-		}else if(summ >= 500000 && summ < 700000){
-			rate = 4.57;
-		}else if(summ >= 700000 && summ < 999000){
-			rate = 4.57;
-		}else if(summ >= 999000 && summ < 1000000){
-			rate = 4.11;
-		}else if(summ >= 1000000 && summ < 2000000){
-			rate = 4.11;
-		}else if(summ >= 2000000 && summ < 2999000){
-			rate = 4.11;
-		}else if(summ >= 2999000 && summ < 3000000){
-			rate = 3.84;
-		}else if(summ >= 3000000 && summ < 5000000){
-			rate = 3.84;
-		}else if(summ >= 5000000 && summ < 7000000){
-			rate = 3.84;
-		}else if(summ >= 7000000 && summ < 10000000){
-			rate = 3.84;
-		}else if(summ >= 10000000 && summ < 20000000){
-			rate = 3.84;
-		}else if(summ >= 20000000){
-			rate = 3.84;
-		}
-
-	}else if(time == 17){
-
-		if(summ >= 1 && summ < 100000){
-			rate = 5.73;
-		}else if(summ >= 100000 && summ < 200000){
-			rate = 5.69;
-		}else if(summ >= 200000 && summ < 300000){
-			rate = 5.61;
-		}else if(summ >= 300000 && summ < 400000){
-			rate = 5.12;
-		}else if(summ >= 400000 && summ < 500000){
-			rate = 4.58;
-		}else if(summ >= 500000 && summ < 700000){
-			rate = 4.58;
-		}else if(summ >= 700000 && summ < 999000){
-			rate = 4.58;
-		}else if(summ >= 999000 && summ < 1000000){
-			rate = 4.12;
-		}else if(summ >= 1000000 && summ < 2000000){
-			rate = 4.12;
-		}else if(summ >= 2000000 && summ < 2999000){
-			rate = 4.12;
-		}else if(summ >= 2999000 && summ < 3000000){
-			rate = 3.85;
-		}else if(summ >= 3000000 && summ < 5000000){
-			rate = 3.85;
-		}else if(summ >= 5000000 && summ < 7000000){
-			rate = 3.85;
-		}else if(summ >= 7000000 && summ < 10000000){
-			rate = 3.85;
-		}else if(summ >= 10000000 && summ < 20000000){
-			rate = 3.85;
-		}else if(summ >= 20000000){
-			rate = 3.85;
-		}
-
-	}else if(time == 18){
-
-		if(summ >= 1 && summ < 100000){
-			rate = 5.68;
-		}else if(summ >= 100000 && summ < 200000){
-			rate = 5.68;
-		}else if(summ >= 200000 && summ < 300000){
-			rate = 5.61;
-		}else if(summ >= 300000 && summ < 400000){
-			rate = 5.12;
-		}else if(summ >= 400000 && summ < 500000){
-			rate = 4.60;
-		}else if(summ >= 500000 && summ < 700000){
-			rate = 4.59;
-		}else if(summ >= 700000 && summ < 999000){
-			rate = 4.59;
-		}else if(summ >= 999000 && summ < 1000000){
-			rate = 4.12;
-		}else if(summ >= 1000000 && summ < 2000000){
-			rate = 4.12;
-		}else if(summ >= 2000000 && summ < 2999000){
-			rate = 4.12;
-		}else if(summ >= 2999000 && summ < 3000000){
-			rate = 3.86;
-		}else if(summ >= 3000000 && summ < 5000000){
-			rate = 3.85;
-		}else if(summ >= 5000000 && summ < 7000000){
-			rate = 3.85;
-		}else if(summ >= 7000000 && summ < 10000000){
-			rate = 3.85;
-		}else if(summ >= 10000000 && summ < 20000000){
-			rate = 3.85;
-		}else if(summ >= 20000000){
-			rate = 3.85;
-		}
-
-	}else if(time == 19){
-
-		if(summ >= 1 && summ < 100000){
-			rate = 5.70;
-		}else if(summ >= 100000 && summ < 200000){
-			rate = 5.70;
-		}else if(summ >= 200000 && summ < 300000){
-			rate = 5.61;
-		}else if(summ >= 300000 && summ < 400000){
-			rate = 5.14;
-		}else if(summ >= 400000 && summ < 500000){
-			rate = 4.60;
-		}else if(summ >= 500000 && summ < 700000){
-			rate = 4.60;
-		}else if(summ >= 700000 && summ < 999000){
-			rate = 4.60;
-		}else if(summ >= 999000 && summ < 1000000){
-			rate = 4.13;
-		}else if(summ >= 1000000 && summ < 2000000){
-			rate = 4.13;
-		}else if(summ >= 2000000 && summ < 2999000){
-			rate = 4.13;
-		}else if(summ >= 2999000 && summ < 3000000){
-			rate = 3.86;
-		}else if(summ >= 3000000 && summ < 5000000){
-			rate = 3.86;
-		}else if(summ >= 5000000 && summ < 7000000){
-			rate = 3.86;
-		}else if(summ >= 7000000 && summ < 10000000){
-			rate = 3.86;
-		}else if(summ >= 10000000 && summ < 20000000){
-			rate = 3.86;
-		}else if(summ >= 20000000){
-			rate = 3.86;
-		}
-
-	}else if(time == 20){
-
-		if(summ >= 1 && summ < 100000){
-			rate = 5.72;
-		}else if(summ >= 100000 && summ < 200000){
-			rate = 5.72;
-		}else if(summ >= 200000 && summ < 300000){
-			rate = 5.64;
-		}else if(summ >= 300000 && summ < 400000){
-			rate = 5.14;
-		}else if(summ >= 400000 && summ < 500000){
-			rate = 4.61;
-		}else if(summ >= 500000 && summ < 700000){
-			rate = 4.61;
-		}else if(summ >= 700000 && summ < 999000){
-			rate = 4.60;
-		}else if(summ >= 999000 && summ < 1000000){
-			rate = 4.14;
-		}else if(summ >= 1000000 && summ < 2000000){
-			rate = 4.14;
-		}else if(summ >= 2000000 && summ < 2999000){
-			rate = 4.14;
-		}else if(summ >= 2999000 && summ < 3000000){
-			rate = 3.86;
-		}else if(summ >= 3000000 && summ < 5000000){
-			rate = 3.87;
-		}else if(summ >= 5000000 && summ < 7000000){
-			rate = 3.87;
-		}else if(summ >= 7000000 && summ < 10000000){
-			rate = 3.87;
-		}else if(summ >= 10000000 && summ < 20000000){
-			rate = 3.87;
-		}else if(summ >= 20000000){
-			rate = 3.87;
-		}
-
-	}else if(time == 21){
-
-		if(summ >= 1 && summ < 100000){
-			rate = 5.74;
-		}else if(summ >= 100000 && summ < 200000){
-			rate = 5.74;
-		}else if(summ >= 200000 && summ < 300000){
-			rate = 5.64;
-		}else if(summ >= 300000 && summ < 400000){
-			rate = 5.16;
-		}else if(summ >= 400000 && summ < 500000){
-			rate = 4.61;
-		}else if(summ >= 500000 && summ < 700000){
-			rate = 4.62;
-		}else if(summ >= 700000 && summ < 999000){
-			rate = 4.62;
-		}else if(summ >= 999000 && summ < 1000000){
-			rate = 4.14;
-		}else if(summ >= 1000000 && summ < 2000000){
-			rate = 4.14;
-		}else if(summ >= 2000000 && summ < 2999000){
-			rate = 4.14;
-		}else if(summ >= 2999000 && summ < 3000000){
-			rate = 3.87;
-		}else if(summ >= 3000000 && summ < 5000000){
-			rate = 3.87;
-		}else if(summ >= 5000000 && summ < 7000000){
-			rate = 3.87;
-		}else if(summ >= 7000000 && summ < 10000000){
-			rate = 3.87;
-		}else if(summ >= 10000000 && summ < 20000000){
-			rate = 3.87;
-		}else if(summ >= 20000000){
-			rate = 3.87;
-		}
-
-	}else if(time == 22){
-
-		if(summ >= 1 && summ < 100000){
-			rate = 5.75;
-		}else if(summ >= 100000 && summ < 200000){
-			rate = 5.75;
-		}else if(summ >= 200000 && summ < 300000){
-			rate = 5.66;
-		}else if(summ >= 300000 && summ < 400000){
-			rate = 5.17;
-		}else if(summ >= 400000 && summ < 500000){
-			rate = 4.62;
-		}else if(summ >= 500000 && summ < 700000){
-			rate = 4.62;
-		}else if(summ >= 700000 && summ < 999000){
-			rate = 4.62;
-		}else if(summ >= 999000 && summ < 1000000){
-			rate = 4.15;
-		}else if(summ >= 1000000 && summ < 2000000){
-			rate = 4.15;
-		}else if(summ >= 2000000 && summ < 2999000){
-			rate = 4.15;
-		}else if(summ >= 2999000 && summ < 3000000){
-			rate = 3.88;
-		}else if(summ >= 3000000 && summ < 5000000){
-			rate = 3.88;
-		}else if(summ >= 5000000 && summ < 7000000){
-			rate = 3.88;
-		}else if(summ >= 7000000 && summ < 10000000){
-			rate = 3.88;
-		}else if(summ >= 10000000 && summ < 20000000){
-			rate = 3.88;
-		}else if(summ >= 20000000){
-			rate = 3.88;
-		}
-
-	}else if(time == 23){
-
-		if(summ >= 1 && summ < 100000){
-			rate = 5.77;
-		}else if(summ >= 100000 && summ < 200000){
-			rate = 5.74;
-		}else if(summ >= 200000 && summ < 300000){
-			rate = 5.68;
-		}else if(summ >= 300000 && summ < 400000){
-			rate = 5.17;
-		}else if(summ >= 400000 && summ < 500000){
-			rate = 4.63;
-		}else if(summ >= 500000 && summ < 700000){
-			rate = 4.63;
-		}else if(summ >= 700000 && summ < 999000){
-			rate = 4.63;
-		}else if(summ >= 999000 && summ < 1000000){
-			rate = 4.16;
-		}else if(summ >= 1000000 && summ < 2000000){
-			rate = 4.16;
-		}else if(summ >= 2000000 && summ < 2999000){
-			rate = 4.16;
-		}else if(summ >= 2999000 && summ < 3000000){
-			rate = 3.88;
-		}else if(summ >= 3000000 && summ < 5000000){
-			rate = 3.88;
-		}else if(summ >= 5000000 && summ < 7000000){
-			rate = 3.88;
-		}else if(summ >= 7000000 && summ < 10000000){
-			rate = 3.88;
-		}else if(summ >= 10000000 && summ < 20000000){
-			rate = 3.88;
-		}else if(summ >= 20000000){
-			rate = 3.88;
-		}
-
-	}else if(time == 24){
-
-		if(summ >= 1 && summ < 100000){
-			rate = 5.78;
-		}else if(summ >= 100000 && summ < 200000){
-			rate = 5.75;
-		}else if(summ >= 200000 && summ < 300000){
-			rate = 5.68;
-		}else if(summ >= 300000 && summ < 400000){
-			rate = 5.18;
-		}else if(summ >= 400000 && summ < 500000){
-			rate = 4.64;
-		}else if(summ >= 500000 && summ < 700000){
-			rate = 4.64;
-		}else if(summ >= 700000 && summ < 999000){
-			rate = 4.64;
-		}else if(summ >= 999000 && summ < 1000000){
-			rate = 4.17;
-		}else if(summ >= 1000000 && summ < 2000000){
-			rate = 4.16;
-		}else if(summ >= 2000000 && summ < 2999000){
-			rate = 4.16;
-		}else if(summ >= 2999000 && summ < 3000000){
-			rate = 3.89;
-		}else if(summ >= 3000000 && summ < 5000000){
-			rate = 3.89;
-		}else if(summ >= 5000000 && summ < 7000000){
-			rate = 3.89;
-		}else if(summ >= 7000000 && summ < 10000000){
-			rate = 3.89;
-		}else if(summ >= 10000000 && summ < 20000000){
-			rate = 3.89;
-		}else if(summ >= 20000000){
-			rate = 3.89;
-		}
-
-	}else if(time == 25){
-
-		if(summ >= 1 && summ < 100000){
-			rate = 5.79;
-		}else if(summ >= 100000 && summ < 200000){
-			rate = 5.77;
-		}else if(summ >= 200000 && summ < 300000){
-			rate = 5.69;
-		}else if(summ >= 300000 && summ < 400000){
-			rate = 5.20;
-		}else if(summ >= 400000 && summ < 500000){
-			rate = 4.65;
-		}else if(summ >= 500000 && summ < 700000){
-			rate = 4.65;
-		}else if(summ >= 700000 && summ < 999000){
-			rate = 4.65;
-		}else if(summ >= 999000 && summ < 1000000){
-			rate = 4.17;
-		}else if(summ >= 1000000 && summ < 2000000){
-			rate = 4.17;
-		}else if(summ >= 2000000 && summ < 2999000){
-			rate = 4.17;
-		}else if(summ >= 2999000 && summ < 3000000){
-			rate = 3.90;
-		}else if(summ >= 3000000 && summ < 5000000){
-			rate = 3.90;
-		}else if(summ >= 5000000 && summ < 7000000){
-			rate = 3.90;
-		}else if(summ >= 7000000 && summ < 10000000){
-			rate = 3.90;
-		}else if(summ >= 10000000 && summ < 20000000){
-			rate = 3.90;
-		}else if(summ >= 20000000){
-			rate = 3.90;
-		}
-
-	}else if(time == 26){
-
-		if(summ >= 1 && summ < 100000){
-			rate = 5.81;
-		}else if(summ >= 100000 && summ < 200000){
-			rate = 5.79;
-		}else if(summ >= 200000 && summ < 300000){
-			rate = 5.70;
-		}else if(summ >= 300000 && summ < 400000){
-			rate = 5.20;
-		}else if(summ >= 400000 && summ < 500000){
-			rate = 4.65;
-		}else if(summ >= 500000 && summ < 700000){
-			rate = 4.65;
-		}else if(summ >= 700000 && summ < 999000){
-			rate = 4.65;
-		}else if(summ >= 999000 && summ < 1000000){
-			rate = 4.17;
-		}else if(summ >= 1000000 && summ < 2000000){
-			rate = 4.17;
-		}else if(summ >= 2000000 && summ < 2999000){
-			rate = 4.17;
-		}else if(summ >= 2999000 && summ < 3000000){
-			rate = 3.90;
-		}else if(summ >= 3000000 && summ < 5000000){
-			rate = 3.90;
-		}else if(summ >= 5000000 && summ < 7000000){
-			rate = 3.90;
-		}else if(summ >= 7000000 && summ < 10000000){
-			rate = 3.90;
-		}else if(summ >= 10000000 && summ < 20000000){
-			rate = 3.90;
-		}else if(summ >= 20000000){
-			rate = 3.90;
-		}
-
-	}
-
-	return rate;
-}
-
-document.addEventListener('DOMContentLoaded', function(){
-
-	$('#summ_input').mask('## ### ###', {
-		reverse: true
-	});
-
-	let input_range = document.querySelectorAll('.calculator input[type="range"]');
-	let rate_val = document.getElementById('rate');
-	let comission = document.getElementById('commission');
-
-	input_range.forEach(elem => {
-		elem.parentNode.querySelector('span').style.width = elem.offsetWidth/elem.max*elem.value + 'px';
-
-		elem.addEventListener('input', function(){
-			let range_line = elem.parentNode.querySelector('span');
-			let range_val = elem.parentNode.parentNode.querySelector('.value');
-			let summ = document.getElementById('summ').value;
-			let time = document.getElementById('time').value;
-			let rate = getRate(time, summ);
-
-			if(elem.max <= 10){
-				range_line.style.width = elem.offsetWidth/elem.max*elem.value - elem.offsetWidth/100 * 12 + 'px';
-			}else{
-				range_line.style.width = elem.offsetWidth/elem.max*elem.value + 'px';
-			}
-
-			if(elem.value >= 1 && elem.value < 1000){
-				range_val.value = elem.value;
-			}else if(elem.value >= 1000 && elem.value < 10000){
-				range_val.value = elem.value.substring(0, elem.value.length-3) + ' ' + elem.value.substring(1, elem.value.length);
-			}else if(elem.value >= 10000 && elem.value < 100000){
-				range_val.value = elem.value.substring(0, elem.value.length-3) + ' ' + elem.value.substring(2, elem.value.length);
-			}else if(elem.value >= 100000 && elem.value < 1000000){
-				range_val.value = elem.value.substring(0, elem.value.length-3) + ' ' + elem.value.substring(3, elem.value.length);
-			}else if(elem.value >= 1000000 && elem.value < 10000000){
-				range_val.value = elem.value.substring(0, elem.value.length-6) + ' ' + elem.value.substring(1, elem.value.length-3) + ' ' + elem.value.substring(4, elem.value.length);
-			}else if(elem.value >= 10000000 && elem.value < 100000000){
-				range_val.value = elem.value.substring(0, elem.value.length-6) + ' ' + elem.value.substring(2, elem.value.length-3) + ' ' + elem.value.substring(5, elem.value.length);
-			}
-			
-			comission.innerHTML = Math.ceil(summ*rate/100/365*time *100)/100;
-			rate_val.innerHTML = rate;
-
-		});
-	});
-
-	document.querySelectorAll('.calculator input[type="text"]').forEach(elem => {
-		elem.addEventListener('input', function(){
-			if(elem.value < 1){
-				elem.value = 1;
-			}
-			elem.value = elem.value.replace(/[^-0-9]/gim,'');
-			let range = elem.parentNode.querySelector('.range').querySelector('input[type="range"]');
-			if(Number(elem.value) > Number(elem.max)){
-				elem.value = elem.max;
-			}
-			if(Number(elem.value) > Number(elem.max)){
-				elem.value = elem.min;
-			}
-			range.value = elem.value;
-
-			let range_line = elem.parentNode.querySelector('.range').querySelector('span');
-			let summ = document.getElementById('summ').value;
-			let time = document.getElementById('time').value;
-
-			let rate = getRate(time, summ);
-
-			if(elem.max <= 10){
-				range_line.style.width = elem.offsetWidth/elem.max*elem.value - elem.offsetWidth/100 * 12 + 'px';
-			}else{
-				range_line.style.width = elem.offsetWidth/elem.max*elem.value + 'px';
-			}
-			
-			comission.innerHTML = Math.ceil(summ*rate/100/365*time *100)/100;
-			rate_val.innerHTML = rate;
-
-			if(elem.value >= 1 && elem.value < 1000){
-				elem.value = elem.value;
-			}else if(elem.value >= 1000 && elem.value < 10000){
-				elem.value = elem.value.substring(0, elem.value.length-3) + ' ' + elem.value.substring(1, elem.value.length);
-			}else if(elem.value >= 10000 && elem.value < 100000){
-				elem.value = elem.value.substring(0, elem.value.length-3) + ' ' + elem.value.substring(2, elem.value.length);
-			}else if(elem.value >= 100000 && elem.value < 1000000){
-				elem.value = elem.value.substring(0, elem.value.length-3) + ' ' + elem.value.substring(3, elem.value.length);
-			}else if(elem.value >= 1000000 && elem.value < 10000000){
-				elem.value = elem.value.substring(0, elem.value.length-6) + ' ' + elem.value.substring(1, elem.value.length-3) + ' ' + elem.value.substring(4, elem.value.length);
-			}else if(elem.value >= 10000000 && elem.value < 100000000){
-				elem.value = elem.value.substring(0, elem.value.length-6) + ' ' + elem.value.substring(2, elem.value.length-3) + ' ' + elem.value.substring(5, elem.value.length);
-			}
-		});
-	});
-
-	let fffz_id = 'fffz'; // 44-ФЗ id
-	let ttffz_id = 'ttffz'; // 223-ФЗ id
-	let oeffz_id = 'oeffz'; // 185-ФЗ/615-ПП id
-	let execution_id = 'execution'; // Исполнение id
-	let prepaid_id = 'prepaid'; // Аванс id
-	let participation_id = 'participation'; // Участие id
-	let liabilities_id = 'liabilities'; // Обязательства id
-
-	document.querySelectorAll('.calculator .numbers_mark input[type="radio"]').forEach(elem => {
-		elem.addEventListener('input', function(){
-			if(elem.id == oeffz_id){
-				document.getElementById(liabilities_id).disabled = 1;
-			}else{
-				document.getElementById(liabilities_id).disabled = 0;
-			}
-		});
-	});
-
-	document.querySelectorAll('.calculator input[type="radio"]').forEach(elem => {
-		elem.addEventListener('change', function(){
-			let number_mark = document.querySelector('.calculator .numbers_mark input:checked');
-			let product_type = document.querySelector('.calculator .product_types input:checked');
-			let summ_input = document.getElementById('summ_input');
-			let summ = document.getElementById('summ');
-			let time_input = document.getElementById('time_input');
-			let time = document.getElementById('time');
-
-			if(number_mark.id == fffz_id || number_mark.id == ttffz_id){
-				if(product_type.id == execution_id || product_type.id == prepaid_id){
-					summ_input.max = 40000000;
-					summ.max = 40000000;
-					time_input.max = 60;
-					time.max = 60;
-				}else if(product_type.id == participation_id){
-					summ_input.max = 20000000;
-					summ.max = 20000000;
-					time_input.max = 5;
-					time.max = 5;
-				}else if(product_type.id == liabilities_id){
-					summ_input.max = 20000000;
-					summ.max = 10000000;
-					time_input.max = 37;
-					time.max = 37;
-				}
-			}else if(number_mark.id == oeffz_id){
-				if(product_type.id == execution_id || product_type.id == prepaid_id){
-					summ_input.max = 40000000;
-					summ.max = 40000000;
-					time_input.max = 60;
-					time.max = 60;
-				}else if(product_type.id == participation_id){
-					summ_input.max = 20000000;
-					summ.max = 20000000;
-					time_input.max = 5;
-					time.max = 5;
-				}else if(product_type.id == liabilities_id){
-					summ_input.max = 0;
-					summ.max = 0;
-					time_input.max = 0;
-					time.max = 0;
-				}
-			}
-
-			if(summ.value >= summ.max){
-				summ.value = summ.max;
-				summ_input.value = summ.max.substring(0, summ.max.length - 6) + ' ' + summ.max.substring(2, summ.max.length - 3) + ' ' + summ.max.substring(5, summ.max.length);
-			}
-			if(time.value >= time.max){
-				time.value = time.max;
-				time_input.value = time.max;
-			}
-
-			document.querySelectorAll('.range').forEach(elem => {
-				if(elem.querySelector('input').max <= 10){
-					elem.querySelector('span').style.width = elem.querySelector('input').offsetWidth/elem.querySelector('input').max*elem.querySelector('input').value - elem.offsetWidth/100 * 12 + 'px';
-				}else{
-					elem.querySelector('span').style.width = elem.querySelector('input').offsetWidth/elem.querySelector('input').max*elem.querySelector('input').value + 'px';
-				}
-			});
-
-			let rate = getRate(time.value, summ.value);
-			let comission = document.getElementById('commission');
-			let rate_val = document.getElementById('rate');
-			console.log(summ.value + ' ' + rate + ' ' + time.value);
-			
-			comission.innerHTML = Math.ceil(summ.value*rate/100/365*time.value *100)/100;
-			rate_val.innerHTML = rate;
-
-		});
-	});
-
-});
+document.addEventListener('DOMContentLoaded', function() {
+    // Настройки
+    const MAX_PASSENGERS = 4 // Максимальное число пассажиров
+    const MAX_MOVERS = 4 // Максимальное число грузчиков
+    let DURATION = 1 // Изначальная длительность
+    let DATETIME = new Date()
+    DATETIME.setMinutes(DATETIME.getMinutes() + 15) // Изначальные дата и время (текущие + 15 минут)
+    let PASSENGERS = 0 // Изначальное количество пассажиров
+    let MOVERS = 0 // Изначальное количество грузчиков
+    let FROM = '' // Изначальный адрес "откуда"
+    let TO = '' // Изначальный адрес "Куда"
+    let TYPE = null // Тип кузова
+    let PROMO = null // Промокод
+    const MAX_PROMO = 20 // Максимальная длина промокода
+    const MIN_PROMO = 3 // Минимальная длина промокода
+    const usersession = md5(Date.now())
+
+
+    // Получение HTML элементов
+    const $addressWrapper = document.getElementById('address-wrapper')
+    const $from = document.getElementById('from')
+    const $to = document.getElementById('to')
+    const $durationWrapper = document.getElementById('duration-wrapper')
+    const $duration = document.getElementById('duration')
+    const $durationMinus = document.getElementById('duration-minus')
+    const $durationPlus = document.getElementById('duration-plus')
+    const $typesWrapper = document.getElementById('types-wrapper')
+    const $types = document.querySelectorAll('.calculator-type__btn-input')
+    const $typesDesc = document.querySelectorAll('.calculator-type__description')
+    const $peoplesWrapper = document.getElementById('peoples-wrapper')
+    const $passengers = document.getElementById('passengers')
+    const $passengersMinus = document.getElementById('passengers-minus')
+    const $passengersPlus = document.getElementById('passengers-plus')
+    const $movers = document.getElementById('movers')
+    const $moversMinus = document.getElementById('movers-minus')
+    const $moversPlus = document.getElementById('movers-plus')
+    const $datetimeWrapper = document.getElementById('datetime-wrapper')
+    const $datetimeInput = document.getElementById('datetime')
+    const $date = document.getElementById('date')
+    const $time = document.getElementById('time')
+    const $phoneWrapper = document.getElementById('phone-wrapper')
+    const $phone = document.getElementById('phone')
+    const $promoWrapper = document.getElementById('promo-wrapper')
+    const $promo = document.getElementById('promo')
+    const $total = document.getElementById('total')
+    const $submit = document.getElementById('submit')
+
+    // Инициализация
+    let fromChecked = false
+    let toChecked = false
+    if (DURATION < 1) DURATION = 1
+    setDuration()
+    setDateTime()
+    $datetimeInput.min = DATETIME.toISOString().split(".")[0].substring(DATETIME.toISOString().split(".")[0].length - 3, 0)
+    if (PASSENGERS < 0) PASSENGERS = 0
+    setPassengers()
+    if (MOVERS < 0) MOVERS = 0
+    setMovers()
+    let phoneValid = false
+    let isLoading = false
+
+
+    // Логика
+
+    // Адрес
+    $from.addEventListener('focusin', function() {
+        $addressWrapper.classList.add('active')
+    })
+    $from.addEventListener('focusout', function() {
+        $addressWrapper.classList.remove('active')
+    })
+    $to.addEventListener('focusin', function() {
+        $addressWrapper.classList.add('active')
+    })
+    $to.addEventListener('focusout', function() {
+        $addressWrapper.classList.remove('active')
+    })
+    $from.addEventListener('input', function () {
+        FROM = $from.value
+        fromChecked = true
+        if ((FROM.length <= 0 || TO.length <= 0) && fromChecked && toChecked) {
+            $addressWrapper.classList.add('error')
+        } else {
+            $addressWrapper.classList.remove('error')
+        }
+        checkForm()
+    })
+    $to.addEventListener('input', function () {
+        TO = $to.value
+        toChecked = true
+        if ((FROM.length <= 0 || TO.length <= 0) && fromChecked && toChecked) {
+            $addressWrapper.classList.add('error')
+        } else {
+            $addressWrapper.classList.remove('error')
+        }
+        checkForm()
+    })
+
+    // Длительность
+    $durationMinus.addEventListener('focusin', function() {
+        $durationWrapper.classList.add('active')
+        $durationMinus.classList.add('active')
+        $durationPlus.classList.add('active')
+    })
+    $durationMinus.addEventListener('focusout', function() {
+        $durationWrapper.classList.remove('active')
+        $durationMinus.classList.remove('active')
+        $durationPlus.classList.remove('active')
+    })
+    $durationPlus.addEventListener('focusin', function() {
+        $durationWrapper.classList.add('active')
+        $durationMinus.classList.add('active')
+        $durationPlus.classList.add('active')
+    })
+    $durationPlus.addEventListener('focusout', function() {
+        $durationWrapper.classList.remove('active')
+        $durationMinus.classList.remove('active')
+        $durationPlus.classList.remove('active')
+    })
+    $durationMinus.addEventListener('click', function() {
+        if ((DURATION - 1) > 0) {
+            DURATION -= 1
+        }
+        setDuration()
+    })
+    $durationPlus.addEventListener('click', function() {
+        DURATION += 1
+        setDuration()
+    })
+
+    // Дата и время
+    $datetimeInput.addEventListener('focusin', function() {
+        $datetimeWrapper.classList.add('active')
+    })
+    $datetimeInput.addEventListener('focusout', function() {
+        $datetimeWrapper.classList.remove('active')
+    })
+    $datetimeInput.addEventListener('input', function() {
+        if (!$datetimeInput.value || new Date($datetimeInput.value) < new Date()) {
+            DATETIME = new Date()
+            DATETIME.setMinutes(DATETIME.getMinutes() + 15)
+        } else {
+            DATETIME = new Date($datetimeInput.value)
+        }
+        setDateTime()
+    })
+
+    // Тип кузова
+    $types.forEach(typeBtn => {
+        typeBtn.addEventListener('focusin', function() {
+            $typesWrapper.classList.add('active')
+        })
+        typeBtn.addEventListener('focusout', function() {
+            $typesWrapper.classList.remove('active')
+        })
+        typeBtn.addEventListener('input', function() {
+            $typesDesc.forEach(desc => {
+                if (desc.dataset.type === typeBtn.dataset.type) {
+                    desc.classList.add('active')
+                    TYPE = parseInt(desc.dataset.type)
+                    checkForm()
+                } else {
+                    desc.classList.remove('active')
+                }
+            })
+        })
+    })
+
+    // Пассажиры
+    $passengersMinus.addEventListener('focusin', function() {
+        $peoplesWrapper.classList.add('active')
+    })
+    $passengersMinus.addEventListener('focusout', function() {
+        $peoplesWrapper.classList.remove('active')
+    })
+    $passengersPlus.addEventListener('focusin', function() {
+        $peoplesWrapper.classList.add('active')
+    })
+    $passengersPlus.addEventListener('focusout', function() {
+        $peoplesWrapper.classList.remove('active')
+    })
+    $moversMinus.addEventListener('focusin', function() {
+        $peoplesWrapper.classList.add('active')
+    })
+    $moversMinus.addEventListener('focusout', function() {
+        $peoplesWrapper.classList.remove('active')
+    })
+    $moversPlus.addEventListener('focusin', function() {
+        $peoplesWrapper.classList.add('active')
+    })
+    $moversPlus.addEventListener('focusout', function() {
+        $peoplesWrapper.classList.remove('active')
+    })
+    $passengersMinus.addEventListener('click', function() {
+        if ((PASSENGERS - 1) >= 0) {
+            PASSENGERS -= 1
+        }
+        setPassengers()
+    })
+    $passengersPlus.addEventListener('click', function() {
+        if ((PASSENGERS + 1) <= MAX_PASSENGERS) {
+            PASSENGERS += 1
+        }
+        setPassengers()
+    })
+    $moversMinus.addEventListener('click', function() {
+        if ((MOVERS - 1) >= 0) {
+            MOVERS -= 1
+        }
+        setMovers()
+    })
+    $moversPlus.addEventListener('click', function() {
+        if ((MOVERS + 1) <= MAX_MOVERS) {
+            MOVERS += 1
+        }
+        setMovers()
+    })
+
+    // Номер телефона
+    $phoneWrapper.addEventListener('click', function() {
+        $phone.focus()
+    })
+    $phone.addEventListener('input', setPhone, false)
+    $phone.addEventListener('focus', setPhone, false)
+    $phone.addEventListener('blur', setPhone, false)
+    $phone.addEventListener('keydown', setPhone, false)
+
+    // Промокод
+    $promoWrapper.addEventListener('click', function() {
+        $promo.focus()
+    })
+    $promo.addEventListener('focusin', function() {
+        $promoWrapper.classList.add('active')
+    })
+    $promo.addEventListener('focusout', function() {
+        $promoWrapper.classList.remove('active')
+        if ($promo.value.length < MIN_PROMO) {
+            $promoWrapper.classList.add('error')
+        } else {
+            $promoWrapper.classList.remove('error')
+        }
+    })
+    $promo.addEventListener('input', function() {
+        if ($promo.value.length >= MAX_PROMO) {
+            $promo.value = $promo.value.substring(0, MAX_PROMO)
+        }
+        if ($promo.value.length >= MIN_PROMO) {
+            $promoWrapper.classList.remove('error')
+        }
+        PROMO = $promo.value
+        checkForm()
+    })
+
+    // Проверка всех полей
+    function checkForm() {
+        setTimeout(async () => {
+            if (!FROM.length || !TO.length || !TYPE || !phoneValid) {
+                $submit.setAttribute('disabled', 'true')
+            } else {
+                let day = DATETIME.getDate()
+                let month = DATETIME.getMonth() + 1
+                const year = DATETIME.getFullYear()
+                let hours = DATETIME.getHours()
+                let minutes = DATETIME.getMinutes()
+                if (day < 10) day = `0${day}`
+                if (month < 10) month = `0${month}`
+                if (hours < 10) hours = `0${hours}`
+                if (minutes < 10) minutes = `0${minutes}`
+                const date_from = `${year}-${month}-${day}`
+                const time_from = `${hours}:${minutes}`
+                const phone = parseInt($phone.value.replace(/[^0-9]/g,""))
+
+                if (!isLoading) {
+                    isLoading = true
+                    const response = await axios.get('https://apps.itlogist.ru/api/v1/all/srochno_calc/', {
+                        params: {
+                            address_from: FROM,
+                            address_to: TO,
+                            duration: DURATION,
+                            date_from,
+                            time_from,
+                            vehicle_type: TYPE,
+                            passengers_number: PASSENGERS,
+                            loaders_number: MOVERS,
+                            phone,
+                            promocode: PROMO,
+                            usersession
+                        }
+                    })
+                    if (response.data.delivery_possibility === 1) {
+                        $submit.removeAttribute('disabled')
+                    } else {
+                        $submit.setAttribute('disabled', 'true')
+                    }
+                    if (response.data.cost_of_delivery) {
+                        $total.innerText = `${response.data.cost_of_delivery} ₽`
+                    } else {
+                        $total.innerText = ''
+                    }
+                    isLoading = false
+                }
+            }
+        }, 100)
+    }
+
+
+    // Вставка значений в HTML
+    function setDuration() {
+        $duration.innerText = DURATION
+        checkForm()
+    }
+    function setDateTime() {
+        let day = DATETIME.getDate()
+        let month = DATETIME.getMonth() + 1
+        const year = DATETIME.getFullYear()
+        let hours = DATETIME.getHours()
+        let minutes = DATETIME.getMinutes()
+        if (day < 10) day = `0${day}`
+        if (month < 10) month = `0${month}`
+        if (hours < 10) hours = `0${hours}`
+        if (minutes < 10) minutes = `0${minutes}`
+
+        $date.innerText = `${day}.${month}.${year}`
+        $time.innerText = `${hours}:${minutes}`
+        checkForm()
+    }
+    function setPassengers() {
+        $passengers.innerText = PASSENGERS
+        checkForm()
+    }
+    function setMovers() {
+        $movers.innerText = MOVERS
+        checkForm()
+    }
+    let keyCode
+    function setPhone(event) {
+        $phoneWrapper.classList.add('active')
+        event.keyCode && (keyCode = event.keyCode);
+        const pos = this.selectionStart;
+        if (pos < 3) event.preventDefault();
+        let matrix = "+7 (___) ___-__-__",
+            i = 0,
+            def = matrix.replace(/\D/g, ""),
+            val = this.value.replace(/\D/g, ""),
+            new_value = matrix.replace(/[_\d]/g, function (a) {
+                return i < val.length ? val.charAt(i++) || def.charAt(i) : a
+            });
+        i = new_value.indexOf("_");
+        if (i !== -1) {
+            i < 5 && (i = 3);
+            new_value = new_value.slice(0, i)
+        }
+        let reg = matrix.substring(0, this.value.length).replace(/_+/g,
+            function (a) {
+                return "\\d{1," + a.length + "}"
+            }).replace(/[+()]/g, "\\$&");
+        reg = new RegExp("^" + reg + "$");
+        if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) {
+            this.value = new_value
+            if (event.type !== 'blur' && matrix.length !== this.value.length) {
+                setTimeout(() => {
+                    $phone.selectionStart = this.value.length
+                }, 100)
+            }
+        }
+        if (event.type === 'blur' && this.value.length < 5) {
+            this.value = ""
+        }
+        if (event.type === 'blur') {
+            $phoneWrapper.classList.remove('active')
+        }
+        if (event.type === 'blur' && matrix.length !== this.value.length) {
+            $phoneWrapper.classList.add('error')
+        } else {
+            $phoneWrapper.classList.remove('error')
+            phoneValid = true
+        }
+        phoneValid = matrix.length === this.value.length
+        checkForm()
+    }
+})
+
+const md5 = function(d){d=unescape(encodeURIComponent(d));result=M(V(Y(X(d),8*d.length)));return result.toLowerCase()};function M(d){for(var _,m="0123456789ABCDEF",f="",r=0;r<d.length;r++)_=d.charCodeAt(r),f+=m.charAt(_>>>4&15)+m.charAt(15&_);return f}function X(d){for(var _=Array(d.length>>2),m=0;m<_.length;m++)_[m]=0;for(m=0;m<8*d.length;m+=8)_[m>>5]|=(255&d.charCodeAt(m/8))<<m%32;return _}function V(d){for(var _="",m=0;m<32*d.length;m+=8)_+=String.fromCharCode(d[m>>5]>>>m%32&255);return _}function Y(d,_){d[_>>5]|=128<<_%32,d[14+(_+64>>>9<<4)]=_;for(var m=1732584193,f=-271733879,r=-1732584194,i=271733878,n=0;n<d.length;n+=16){var h=m,t=f,g=r,e=i;f=md5_ii(f=md5_ii(f=md5_ii(f=md5_ii(f=md5_hh(f=md5_hh(f=md5_hh(f=md5_hh(f=md5_gg(f=md5_gg(f=md5_gg(f=md5_gg(f=md5_ff(f=md5_ff(f=md5_ff(f=md5_ff(f,r=md5_ff(r,i=md5_ff(i,m=md5_ff(m,f,r,i,d[n+0],7,-680876936),f,r,d[n+1],12,-389564586),m,f,d[n+2],17,606105819),i,m,d[n+3],22,-1044525330),r=md5_ff(r,i=md5_ff(i,m=md5_ff(m,f,r,i,d[n+4],7,-176418897),f,r,d[n+5],12,1200080426),m,f,d[n+6],17,-1473231341),i,m,d[n+7],22,-45705983),r=md5_ff(r,i=md5_ff(i,m=md5_ff(m,f,r,i,d[n+8],7,1770035416),f,r,d[n+9],12,-1958414417),m,f,d[n+10],17,-42063),i,m,d[n+11],22,-1990404162),r=md5_ff(r,i=md5_ff(i,m=md5_ff(m,f,r,i,d[n+12],7,1804603682),f,r,d[n+13],12,-40341101),m,f,d[n+14],17,-1502002290),i,m,d[n+15],22,1236535329),r=md5_gg(r,i=md5_gg(i,m=md5_gg(m,f,r,i,d[n+1],5,-165796510),f,r,d[n+6],9,-1069501632),m,f,d[n+11],14,643717713),i,m,d[n+0],20,-373897302),r=md5_gg(r,i=md5_gg(i,m=md5_gg(m,f,r,i,d[n+5],5,-701558691),f,r,d[n+10],9,38016083),m,f,d[n+15],14,-660478335),i,m,d[n+4],20,-405537848),r=md5_gg(r,i=md5_gg(i,m=md5_gg(m,f,r,i,d[n+9],5,568446438),f,r,d[n+14],9,-1019803690),m,f,d[n+3],14,-187363961),i,m,d[n+8],20,1163531501),r=md5_gg(r,i=md5_gg(i,m=md5_gg(m,f,r,i,d[n+13],5,-1444681467),f,r,d[n+2],9,-51403784),m,f,d[n+7],14,1735328473),i,m,d[n+12],20,-1926607734),r=md5_hh(r,i=md5_hh(i,m=md5_hh(m,f,r,i,d[n+5],4,-378558),f,r,d[n+8],11,-2022574463),m,f,d[n+11],16,1839030562),i,m,d[n+14],23,-35309556),r=md5_hh(r,i=md5_hh(i,m=md5_hh(m,f,r,i,d[n+1],4,-1530992060),f,r,d[n+4],11,1272893353),m,f,d[n+7],16,-155497632),i,m,d[n+10],23,-1094730640),r=md5_hh(r,i=md5_hh(i,m=md5_hh(m,f,r,i,d[n+13],4,681279174),f,r,d[n+0],11,-358537222),m,f,d[n+3],16,-722521979),i,m,d[n+6],23,76029189),r=md5_hh(r,i=md5_hh(i,m=md5_hh(m,f,r,i,d[n+9],4,-640364487),f,r,d[n+12],11,-421815835),m,f,d[n+15],16,530742520),i,m,d[n+2],23,-995338651),r=md5_ii(r,i=md5_ii(i,m=md5_ii(m,f,r,i,d[n+0],6,-198630844),f,r,d[n+7],10,1126891415),m,f,d[n+14],15,-1416354905),i,m,d[n+5],21,-57434055),r=md5_ii(r,i=md5_ii(i,m=md5_ii(m,f,r,i,d[n+12],6,1700485571),f,r,d[n+3],10,-1894986606),m,f,d[n+10],15,-1051523),i,m,d[n+1],21,-2054922799),r=md5_ii(r,i=md5_ii(i,m=md5_ii(m,f,r,i,d[n+8],6,1873313359),f,r,d[n+15],10,-30611744),m,f,d[n+6],15,-1560198380),i,m,d[n+13],21,1309151649),r=md5_ii(r,i=md5_ii(i,m=md5_ii(m,f,r,i,d[n+4],6,-145523070),f,r,d[n+11],10,-1120210379),m,f,d[n+2],15,718787259),i,m,d[n+9],21,-343485551),m=safe_add(m,h),f=safe_add(f,t),r=safe_add(r,g),i=safe_add(i,e)}return Array(m,f,r,i)}function md5_cmn(d,_,m,f,r,i){return safe_add(bit_rol(safe_add(safe_add(_,d),safe_add(f,i)),r),m)}function md5_ff(d,_,m,f,r,i,n){return md5_cmn(_&m|~_&f,d,_,r,i,n)}function md5_gg(d,_,m,f,r,i,n){return md5_cmn(_&f|m&~f,d,_,r,i,n)}function md5_hh(d,_,m,f,r,i,n){return md5_cmn(_^m^f,d,_,r,i,n)}function md5_ii(d,_,m,f,r,i,n){return md5_cmn(m^(_|~f),d,_,r,i,n)}function safe_add(d,_){var m=(65535&d)+(65535&_);return(d>>16)+(_>>16)+(m>>16)<<16|65535&m}function bit_rol(d,_){return d<<_|d>>>32-_}var result=md5('Lorem Ipsum is simply dummy text of the printing');var result=md5('Прародителем текста-рыбы является известный "Lorem Ipsum"');
