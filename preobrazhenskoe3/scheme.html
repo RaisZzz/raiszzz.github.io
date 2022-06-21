@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Преображенское кладбище</title>
+    <style>
+        :root {
+            --bg-color: #FFFFFF;
+            --header-color: #1B1514;
+            --menu-color: #1B1514;
+            --akcent-second: #AE9989;
+            --menu-active-bg: #1B1514;
+            --akcent-color: #503935;
+            --banner-title-color: #F3F1E9;
+            --banner-text-color: #F3F1E9;
+            --title-color: #2B2E37;
+            --subtitle-color: #797D8A;
+            --text-color: #2B2E37;
+            --attention-color: #FFF2F2;
+            --descktop-container: 1216px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <section class="header" id="header">
+        <div class="container">
+            <div class="header-col">
+                <div class="header-col__info">
+                    <p class="header__main-text">Москва</p>
+                    <p class="header__sub-text">21-й км Киевского шоссе</p>
+                    <p class="header__main-text time">08:00–17:00</p>
+                </div>
+            </div>
+            <div class="header__logo">
+                <img class="header__logo-image" src="assets/img/logo.svg" alt="">
+                <p class="header__logo-text">Преображенское кладбище</p>
+            </div>
+            <div class="header-col">
+                <div class="header-col__info right">
+                    <a href="tel:84951817092" class="header__main-text">8 (495) 181-70-92</a>
+                    <p class="header__sub-text">Круглосуточная консультация</p>
+                    <a href="#" class="header-phone__link">Заказать звонок</a>
+                </div>
+            </div>
+            <div class="header__mobile-icon" id="burger">
+                <div class="header__mobile-icon-line"></div>
+                <div class="header__mobile-icon-line"></div>
+                <div class="header__mobile-icon-line"></div>
+            </div>
+        </div>
+    </section>
+    <section class="menu">
+        <div class="container">
+            <ul class="menu-list">
+                <li class="menu-list__item"><a href="#" class="menu-list__item-link">Правила захоронения</a></li>
+                <li class="menu-list__item"><a href="#" class="menu-list__item-link">Установка памятника</a></li>
+                <li class="menu-list__item"><a href="#" class="menu-list__item-link">Уход за могилой</a></li>
+                <li class="menu-list__item"><a href="#" class="menu-list__item-link active">Схема кладбища</a></li>
+                <li class="menu-list__item"><a href="#" class="menu-list__item-link">Как добраться</a></li>
+            </ul>
+            <button class="menu__search"><svg class="menu__search-icon"><use xlink:href="assets/img/icons.svg#search"></use></svg></button>
+        </div>
+    </section>
+    <section class="page">
+        <div class="container">
+            <h1 class="page-title">Схема кладбища</h1>
+            <div class="breadcrumbs">
+                <a href="#" class="breadcrumbs__item">Главная</a>
+                <a class="breadcrumbs__item active">Схема кладбища</a>
+            </div>
+        </div>
+    </section>
+    <section class="page-info">
+        <div class="container">
+            <p class="page-text">
+                <b style="font-size: 20px;">Центральная территория</b>
+                <br><br>
+                Ниже представлена центральная территория с номерами участков.
+            </p>
+        </div>
+    </section>
+    <section class="scheme">
+        <div class="container">
+            <img src="./assets/img/scheme.png" alt="" class="scheme__image">
+        </div>
+    </section>
+    <section class="form">
+        <div class="container">
+            <form class="form-form">
+                <p class="form__title">Возникли вопросы?</p>
+                <div class="form-grid">
+                    <input type="text" class="form__input" placeholder="Ваше Имя">
+                    <input type="phone" class="form__input" placeholder="Телефон">
+                    <textarea name="" id="" cols="30" rows="10" class="form__input form__textarea" placeholder="Ваш вопрос"></textarea>
+                </div>
+                <div class="form-terms">
+                    <p class="form-terms__text">Нажимая кнопку «Задать вопрос», вы принимаете условия<br>
+                        <a href="#" class="form-terms__link">Политики обработки персональных данных.</a></p>
+                    <input type="submit" class="primary-btn" value="Задать вопрос">
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="map">
+        <iframe class="map-map" src="https://yandex.ru/map-widget/v1/-/CCUBQIQdPB" width="100%" height="600"></iframe>
+    </section>
+    <section class="footer">
+        <div class="container info">
+            <div class="footer-column">
+                <p class="header__main-text">08:00–17:00</p>
+                <p class="header__sub-text">Ежедневно</p>
+            </div>
+            <div class="footer-column address">
+                <p class="header__main-text">Москва</p>
+                <p class="header__sub-text">Ленинский район, п/о «Мосрентген», 21-й км Киевского шоссе, Калужское шоссе 1,4 км. от МКАД </p>
+            </div>
+            <div class="footer-column">
+                <a href="tel:84951817092" class="header__main-text">8 (495) 181-70-92</a>
+                <p class="header__sub-text">Круглосуточная консультация</p>
+            </div>
+            <div class="footer-column callback">
+                <a href="#" class="header-phone__link">Заказать звонок</a>
+            </div>
+        </div>
+        <div class="container copy">
+            <p class="footer__copy">© 2022 Преображенское кладбище. Информация предоставляется с целью ознакомления.</p>
+            <div class="footer__social">
+                <a href="#" class="footer__social-item">
+                    <svg class="footer__social-item-icon facebook" width="13" height="27" viewBox="0 0 13 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.50155 26.1115V13.0542H12.1059L12.5836 8.5546H8.50155L8.50767 6.30251C8.50767 5.12894 8.61918 4.50012 10.3048 4.50012H12.5581V0H8.95318C4.62313 0 3.09907 2.18279 3.09907 5.85357V8.55511H0.399994V13.0547H3.09907V26.1115H8.50155Z"/>
+                    </svg>
+                </a>
+                <a href="#" class="footer__social-item">
+                    <svg class="footer__social-item-icon youtube" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M25.8016 7.54933C26.9031 7.85159 27.7706 8.74221 28.065 9.87322C28.6 11.923 28.6 16.2 28.6 16.2C28.6 16.2 28.6 20.4768 28.065 22.5268C27.7706 23.6578 26.9031 24.5484 25.8016 24.8508C23.8054 25.4 15.8 25.4 15.8 25.4C15.8 25.4 7.79462 25.4 5.79825 24.8508C4.69673 24.5484 3.82924 23.6578 3.53484 22.5268C3 20.4768 3 16.2 3 16.2C3 16.2 3 11.923 3.53484 9.87322C3.82924 8.74221 4.69673 7.85159 5.79825 7.54933C7.79462 7 15.8 7 15.8 7C15.8 7 23.8054 7 25.8016 7.54933ZM13.4 12.6001V20.6001L19.8 16.6003L13.4 12.6001Z"/>
+                    </svg>
+                </a>
+                <a href="#" class="footer__social-item">
+                    <svg class="footer__social-item-icon ok" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.596 21.4403L22.1826 24.9028C22.9174 25.6106 22.9174 26.7601 22.1826 27.4686C21.4486 28.1771 20.259 28.1771 19.5257 27.4686L15.9993 24.0661L12.476 27.4686C12.1086 27.8225 11.6272 27.9996 11.1458 27.9996C10.6652 27.9996 10.1846 27.8225 9.81719 27.4686C9.0832 26.7601 9.0832 25.6113 9.81643 24.9028L13.4035 21.4403C12.0975 21.1531 10.838 20.6536 9.67784 19.951C8.79989 19.4167 8.53616 18.2972 9.08934 17.449C9.64099 16.5996 10.8011 16.3439 11.6806 16.8783C14.3072 18.4732 17.6907 18.4736 20.3188 16.8783C21.1983 16.3439 22.3581 16.5996 22.9109 17.449C23.464 18.2964 23.1995 19.4167 22.3216 19.951C21.1615 20.6543 19.9019 21.1531 18.596 21.4403Z"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.56775 10.1936C9.56775 13.6079 12.4454 16.3853 15.9837 16.3853C19.5227 16.3853 22.3996 13.6079 22.3996 10.1936C22.3996 6.77811 19.5227 4 15.9837 4C12.4454 4 9.56775 6.77811 9.56775 10.1936ZM18.6402 10.1938C18.6402 8.77974 17.4486 7.62988 15.9837 7.62988C14.5199 7.62988 13.3272 8.77974 13.3272 10.1938C13.3272 11.6068 14.5199 12.7574 15.9837 12.7574C17.4486 12.7574 18.6402 11.6068 18.6402 10.1938Z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
