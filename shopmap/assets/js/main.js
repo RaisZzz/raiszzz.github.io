@@ -695,13 +695,19 @@ document.addEventListener('DOMContentLoaded', async function () {
             $filterBtn.innerHTML = `<span class="shop__map-filter__button-icon" style="background-color: ${filter.color};"></span> ${filter.title}`
         }
         $filterBtn.addEventListener('click', function() {
-            document.querySelectorAll('.shop__map-filter__button').forEach(btn => btn.classList.remove('active'))
-            $filterBtn.classList.add('active')
-            document.querySelectorAll('.shop__map.first .shop__map-area-objects__item').forEach(item => item.classList.add('disabled'))
-            document.querySelectorAll(`.shop__map-area-objects__item[data-category="${filter.id}"]`).forEach(item => {
-                item.classList.remove('disabled')
-            })
-            $clearFilter.classList.add('active')
+            if (document.querySelectorAll('.shop__map-filter__button.active').length === 1 && $filterBtn.classList.contains('active')) {
+                document.querySelectorAll('.shop__map-filter__button').forEach(btn => btn.classList.add('active'))
+                document.querySelectorAll('.shop__map .shop__map-area-objects__item').forEach(item => item.classList.remove('disabled'))
+                $clearFilter.classList.remove('active')
+            } else {
+                document.querySelectorAll('.shop__map-filter__button').forEach(btn => btn.classList.remove('active'))
+                $filterBtn.classList.add('active')
+                document.querySelectorAll('.shop__map.first .shop__map-area-objects__item').forEach(item => item.classList.add('disabled'))
+                document.querySelectorAll(`.shop__map-area-objects__item[data-category="${filter.id}"]`).forEach(item => {
+                    item.classList.remove('disabled')
+                })
+                $clearFilter.classList.add('active')
+            }
         })
         $firstFilter.append($filterBtn)
     })
@@ -710,13 +716,19 @@ document.addEventListener('DOMContentLoaded', async function () {
     $emptyFilter.className = 'shop__map-filter__button active empty'
     $emptyFilter.innerText = 'Свободные места'
     $emptyFilter.addEventListener('click', function() {
-        document.querySelectorAll('.shop__map-filter__button').forEach(btn => btn.classList.remove('active'))
-        $emptyFilter.classList.add('active')
-        document.querySelectorAll('.shop__map .shop__map-area-objects__item').forEach(item => item.classList.add('disabled'))
-        document.querySelectorAll(`.shop__map-area-objects__item.free`).forEach(item => {
-            item.classList.remove('disabled')
-        })
-        $clearFilter.classList.add('active')
+        if (document.querySelectorAll('.shop__map-filter__button.active').length === 1 && $emptyFilter.classList.contains('active')) {
+            document.querySelectorAll('.shop__map-filter__button').forEach(btn => btn.classList.add('active'))
+            document.querySelectorAll('.shop__map .shop__map-area-objects__item').forEach(item => item.classList.remove('disabled'))
+            $clearFilter.classList.remove('active')
+        } else {
+            document.querySelectorAll('.shop__map-filter__button').forEach(btn => btn.classList.remove('active'))
+            $emptyFilter.classList.add('active')
+            document.querySelectorAll('.shop__map .shop__map-area-objects__item').forEach(item => item.classList.add('disabled'))
+            document.querySelectorAll(`.shop__map-area-objects__item.free`).forEach(item => {
+                item.classList.remove('disabled')
+            })
+            $clearFilter.classList.add('active')
+        }
     })
     $firstFilter.append($emptyFilter)
 
@@ -731,13 +743,19 @@ document.addEventListener('DOMContentLoaded', async function () {
             $filterBtn.innerHTML = `<span class="shop__map-filter__button-icon" style="background-color: ${filter.color};"></span> ${filter.title}`
         }
         $filterBtn.addEventListener('click', function() {
-            document.querySelectorAll('.shop__map-filter__button').forEach(btn => btn.classList.remove('active'))
-            $filterBtn.classList.add('active')
-            document.querySelectorAll('.shop__map.second .shop__map-area-objects__item').forEach(item => item.classList.add('disabled'))
-            document.querySelectorAll(`.shop__map-area-objects__item[data-category="${filter.id}"]`).forEach(item => {
-                item.classList.remove('disabled')
-            })
-            $clearFilter.classList.add('active')
+            if (document.querySelectorAll('.shop__map-filter__button.active').length === 1 && $filterBtn.classList.contains('active')) {
+                document.querySelectorAll('.shop__map-filter__button').forEach(btn => btn.classList.add('active'))
+                document.querySelectorAll('.shop__map .shop__map-area-objects__item').forEach(item => item.classList.remove('disabled'))
+                $clearFilter.classList.remove('active')
+            } else {
+                document.querySelectorAll('.shop__map-filter__button').forEach(btn => btn.classList.remove('active'))
+                $filterBtn.classList.add('active')
+                document.querySelectorAll('.shop__map.second .shop__map-area-objects__item').forEach(item => item.classList.add('disabled'))
+                document.querySelectorAll(`.shop__map-area-objects__item[data-category="${filter.id}"]`).forEach(item => {
+                    item.classList.remove('disabled')
+                })
+                $clearFilter.classList.add('active')
+            }
         })
         $secondFilter.append($filterBtn)
     })
@@ -746,13 +764,19 @@ document.addEventListener('DOMContentLoaded', async function () {
     $emptyFilterSecond.className = 'shop__map-filter__button active empty'
     $emptyFilterSecond.innerText = 'Свободные места'
     $emptyFilterSecond.addEventListener('click', function() {
-        document.querySelectorAll('.shop__map-filter__button').forEach(btn => btn.classList.remove('active'))
-        $emptyFilterSecond.classList.add('active')
-        document.querySelectorAll('.shop__map .shop__map-area-objects__item').forEach(item => item.classList.add('disabled'))
-        document.querySelectorAll(`.shop__map-area-objects__item.free`).forEach(item => {
-            item.classList.remove('disabled')
-        })
-        $clearFilter.classList.add('active')
+        if (document.querySelectorAll('.shop__map-filter__button.active').length === 1 && $emptyFilterSecond.classList.contains('active')) {
+            document.querySelectorAll('.shop__map-filter__button').forEach(btn => btn.classList.add('active'))
+            document.querySelectorAll('.shop__map .shop__map-area-objects__item').forEach(item => item.classList.remove('disabled'))
+            $clearFilter.classList.remove('active')
+        } else {
+            document.querySelectorAll('.shop__map-filter__button').forEach(btn => btn.classList.remove('active'))
+            $emptyFilterSecond.classList.add('active')
+            document.querySelectorAll('.shop__map .shop__map-area-objects__item').forEach(item => item.classList.add('disabled'))
+            document.querySelectorAll(`.shop__map-area-objects__item.free`).forEach(item => {
+                item.classList.remove('disabled')
+            })
+            $clearFilter.classList.add('active')
+        }
     })
     $secondFilter.append($emptyFilterSecond)
 
