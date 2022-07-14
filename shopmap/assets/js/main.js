@@ -1,4 +1,4 @@
-const SHOW_COUNT = true // Показывать счетчик в фильтрах (true/false)
+const SHOW_COUNT = false // Показывать счетчик в фильтрах (true/false)
 
 
 
