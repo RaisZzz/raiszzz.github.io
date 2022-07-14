@@ -756,6 +756,14 @@ document.addEventListener('DOMContentLoaded', async function () {
     })
     $secondFilter.append($emptyFilterSecond)
 
+    document.addEventListener('click', function(event) {
+        if(!event.target.classList.contains('shop__map-filter__button')) {
+            document.querySelectorAll('.shop__map-filter__button').forEach(btn => btn.classList.add('active'))
+            document.querySelectorAll('.shop__map .shop__map-area-objects__item').forEach(item => item.classList.remove('disabled'))
+            $clearFilter.classList.remove('active')
+        }
+    })
+
     // Set disabled
     const first = document.getElementById('firstMap')
     const second = document.getElementById('secondMap')
