@@ -235,7 +235,7 @@
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translate(-50%, 0) scale(0);
+    transform: translate(-50%, -100%) scale(0);
     background-color: #fff;
     padding: 16px;
     box-shadow: 0 20px 50px rgba(17, 58, 35, 0.15);
@@ -2910,6 +2910,24 @@
     top: 0;
     right: 0;
 }
+.shop__map-clear {
+    margin-right: auto;
+    margin-top: 12px;
+    background: none;
+    font-size: 20px;
+    font-family: 'Buyan', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #F3F0DA;
+    background: #F3F0DA;
+    border-radius: 36px;
+    padding: 9px 16px;
+    display: none;
+    text-align: left;
+}
+.shop__map-clear.active {
+    display: block;
+}
 
 @media screen and (max-width: 600px) {
     .shop__map-filter {
@@ -2930,5 +2948,8 @@
         font-weight: 700;
         border: 2px solid #EAE7D9;
         font-family: 'Buyan', sans-serif;
+    }
+    .shop__map-clear {
+        width: 100%;
     }
 }

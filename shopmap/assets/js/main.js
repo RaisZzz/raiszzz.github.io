@@ -1,3 +1,8 @@
+const SHOW_COUNT = true // Показывать счетчик в фильтрах (true/false)
+
+
+
+
 const line = `<svg width="3357" height="36" viewBox="0 0 3357 36" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_4526_10008)">
 <path d="M25.6262 0L26.6513 1.38462L1.02505 36L0 34.6154L25.6262 0Z" fill="#E7E7E7"/>
@@ -675,10 +680,20 @@ document.addEventListener('DOMContentLoaded', async function () {
     // Add filters
     const firstFilterData = data.data.categories.area1
     const $firstFilter = document.getElementById('filter-first')
+    const $clearFilter = document.getElementById('clear-filter')
+    $clearFilter.addEventListener('click', function() {
+        document.querySelectorAll('.shop__map-filter__button').forEach(btn => btn.classList.add('active'))
+        document.querySelectorAll('.shop__map .shop__map-area-objects__item').forEach(item => item.classList.remove('disabled'))
+        $clearFilter.classList.remove('active')
+    })
     firstFilterData.forEach(filter => {
         const $filterBtn = document.createElement('button')
         $filterBtn.className = 'shop__map-filter__button active'
-        $filterBtn.innerHTML = `<span class="shop__map-filter__button-icon" style="background-color: ${filter.color};"></span> ${filter.title} · ${filter.count}`
+        if (SHOW_COUNT) {
+            $filterBtn.innerHTML = `<span class="shop__map-filter__button-icon" style="background-color: ${filter.color};"></span> ${filter.title} · ${filter.count}`
+        } else {
+            $filterBtn.innerHTML = `<span class="shop__map-filter__button-icon" style="background-color: ${filter.color};"></span> ${filter.title}`
+        }
         $filterBtn.addEventListener('click', function() {
             document.querySelectorAll('.shop__map-filter__button').forEach(btn => btn.classList.remove('active'))
             $filterBtn.classList.add('active')
@@ -686,6 +701,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             document.querySelectorAll(`.shop__map-area-objects__item[data-category="${filter.id}"]`).forEach(item => {
                 item.classList.remove('disabled')
             })
+            $clearFilter.classList.add('active')
         })
         $firstFilter.append($filterBtn)
     })
@@ -700,6 +716,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         document.querySelectorAll(`.shop__map-area-objects__item.free`).forEach(item => {
             item.classList.remove('disabled')
         })
+        $clearFilter.classList.add('active')
     })
     $firstFilter.append($emptyFilter)
 
@@ -708,7 +725,11 @@ document.addEventListener('DOMContentLoaded', async function () {
     secondFilterData.forEach(filter => {
         const $filterBtn = document.createElement('button')
         $filterBtn.className = 'shop__map-filter__button active'
-        $filterBtn.innerHTML = `<span class="shop__map-filter__button-icon" style="background-color: ${filter.color};"></span> ${filter.title} · ${filter.count}`
+        if (SHOW_COUNT) {
+            $filterBtn.innerHTML = `<span class="shop__map-filter__button-icon" style="background-color: ${filter.color};"></span> ${filter.title} · ${filter.count}`
+        } else {
+            $filterBtn.innerHTML = `<span class="shop__map-filter__button-icon" style="background-color: ${filter.color};"></span> ${filter.title}`
+        }
         $filterBtn.addEventListener('click', function() {
             document.querySelectorAll('.shop__map-filter__button').forEach(btn => btn.classList.remove('active'))
             $filterBtn.classList.add('active')
@@ -716,6 +737,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             document.querySelectorAll(`.shop__map-area-objects__item[data-category="${filter.id}"]`).forEach(item => {
                 item.classList.remove('disabled')
             })
+            $clearFilter.classList.add('active')
         })
         $secondFilter.append($filterBtn)
     })
@@ -730,6 +752,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         document.querySelectorAll(`.shop__map-area-objects__item.free`).forEach(item => {
             item.classList.remove('disabled')
         })
+        $clearFilter.classList.add('active')
     })
     $secondFilter.append($emptyFilterSecond)
 
@@ -751,6 +774,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         firstChoose.classList.remove('active')
         second.classList.remove('active')
         secondChoose.classList.remove('active')
+        $clearFilter.classList.remove('active')
         document.querySelectorAll('.shop__map-filter__button').forEach(btn => btn.classList.add('active'))
         if (index === 1) {
             $firstFilter.classList.add('active')
