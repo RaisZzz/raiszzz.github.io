@@ -546,6 +546,29 @@ const WIDTH = 1396
 
 document.addEventListener('DOMContentLoaded', async function () {
     // Get DOM
+    const $CONTAINER = document.getElementById('shop-map-container')
+    $CONTAINER.innerHTML = `<div class="shop__map-choose">
+        <button class="shop__map-choose__btn" id="choose-first">Зал А</button>
+        <button class="shop__map-choose__btn" id="choose-second">Зал Б</button>
+    </div>
+    <div class="shop__map-filter" id="filter-first"></div>
+    <div class="shop__map-filter" id="filter-second"></div>
+    <button class="shop__map-clear" id="clear-filter">Очистить фильтр</button>
+    <div class="shop__map-scroll-wrapper">
+        <div class="shop__map-scroll" id="firstMap">
+            <div class="shop__map-wrapper first" id="shop-map-wrapper">
+                <div class="shop__map first" id="shop-map"></div>
+            </div>
+        </div>
+        <div class="shop__map-scroll second" id="secondMap">
+            <div class="shop__map-wrapper second" id="shop-map-wrapper-second">
+                <div class="shop__map second" id="shop-map-second"></div>
+            </div>
+        </div>
+    </div>`
+
+
+
     const $map = document.getElementById('shop-map')
     const $wrapper = document.getElementById('shop-map-wrapper')
     const $mapSecond = document.getElementById('shop-map-second')

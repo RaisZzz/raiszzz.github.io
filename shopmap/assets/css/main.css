@@ -2948,6 +2948,12 @@
         font-weight: 700;
         border: 2px solid #EAE7D9;
         font-family: 'Buyan', sans-serif;
+        padding-left: 35px;
+        position: relative;
+    }
+    .shop__map-filter__button.empty:before {
+        transform: translate(50%, -50%);
+        left: 9px;
     }
     .shop__map-clear {
         width: 100%;
