@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="popup contacts-popup" id="contacts-popup">
+        <div class="popup__wrapper contacts-wrapper">
+            <img src="images/icons/mail.svg" alt="" class="contacts-popup__icon">
+            <p class="contacts-popup__title">Ваше сообщение отправлено!</p>
+            <p class="contacts-popup__description">В скором времени мы свяжемся с вами.</p>
+            <a href="#" class="button secondary">Вернуться на главную</a>
+        </div>
+    </div>
+    <section class="mobile-menu" id="menu">
+        <div class="container">
+            <a href="#" class="header__logo">
+                <span class="header__logo-first">NIX</span>
+                <span class="header__logo-second">exchange</span>
+            </a>
+            <ul class="header__menu">
+                <li class="header__menu__item"><a href="#" class="header__menu__item-link">Главная</a></li>
+                <li class="header__menu__item"><a href="#" class="header__menu__item-link">Обмена через бота</a></li>
+                <li class="header__menu__item"><a href="#" class="header__menu__item-link">FAQ</a></li>
+                <li class="header__menu__item"><a href="#" class="header__menu__item-link">Контакты</a></li>
+            </ul>
+            <a href="#" class="button">Обменять</a>
+        </div>
+    </section>
+    <section class="header">
+        <div class="container">
+            <a href="#" class="header__logo">
+                <span class="header__logo-first">NIX</span>
+                <span class="header__logo-second">exchange</span>
+            </a>
+            <ul class="header__menu">
+                <li class="header__menu__item"><a href="#" class="header__menu__item-link">Главная</a></li>
+                <li class="header__menu__item"><a href="#" class="header__menu__item-link">Обмена через бота</a></li>
+                <li class="header__menu__item"><a href="#" class="header__menu__item-link">FAQ</a></li>
+                <li class="header__menu__item"><a href="#" class="header__menu__item-link">Контакты</a></li>
+            </ul>
+            <a href="#" class="button">Обменять</a>
+            <div class="header__menu-btn" id="menu-btn">
+                <span class="header__menu-btn-line"></span>
+                <span class="header__menu-btn-line"></span>
+                <span class="header__menu-btn-line"></span>
+            </div>
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="container">
+            <div class="attention">
+                <img class="attention__icon" src="images/icons/attention.svg" alt="">
+                <p class="attention__text">Пожалуйста, используйте форму обратной связи для оперативного получения техподдержки.</p>
+            </div>
+            <form class="contacts-form" id="contacts-form">
+                <div class="contacts-form-item">
+                    <label class="label" for="mail">Ваш e-mail</label>
+                    <input type="text" id="mail" class="input" placeholder="Введите ваш e-mail" required>
+                </div>
+                <div class="contacts-form-item">
+                    <label class="label" for="transaction">Номер транзакции:</label>
+                    <input type="text" id="transaction" class="input" placeholder="Введите номер транзакции:" required>
+                </div>
+                <div class="contacts-form-item">
+                    <label class="label" for="question">Введите сообщение:</label>
+                    <textarea id="question" class="input" placeholder="Введите текст..." required></textarea>
+                </div>
+                <div class="contacts-form-item">
+                    <input type="submit" class="button" value="Отправить">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="popup transaction-popup" id="transaction-popup">
+        <form class="popup__wrapper transaction" id="transaction-form">
+            <div class="transaction-info">
+                <p class="exchange-popup-item__label">Транзакция <span>#2127034</span></p>
+                <p class="exchange-popup-item__label">14.11.2021 <span>08:48</span></p>
+            </div>
+            <div class="attention">
+                <img class="attention__icon" src="images/icons/attention.svg" alt="">
+                <p class="attention__text">Вам необходимо совершить перевод с указанного Вами в заявке счета, для совершения платежа нажмите на кнопку ‘оплатить’.</p>
+            </div>
+            <div class="exchange-popup-item">
+                <p class="exchange-popup-item__label">Данные транзакции</p>
+                <div class="exchange-popup-item-row">
+                    <p class="exchange-popup-item__title">Ваш e-mail:</p>
+                    <p class="exchange-popup-item__value">example@gmail.com</p>
+                </div>
+                <div class="exchange-popup-item-row">
+                    <p class="exchange-popup-item__title">Ваш номер:</p>
+                    <p class="exchange-popup-item__value">+7 983 07 37 425</p>
+                </div>
+            </div>
+            <div class="exchange-popup-item">
+                <p class="exchange-popup-item__label">Реквизиты отправителя:</p>
+                <div class="exchange-popup-item-row">
+                    <p class="exchange-popup-item__title">Номер счета:</p>
+                    <p class="exchange-popup-item__value">U84958475</p>
+                </div>
+            </div>
+            <div class="exchange-form__control-row">
+                <a href="#" class="button secondary">Отмена</a>
+                <input type="submit" class="button" value="Продолжить" />
+            </div>
+        </form>
+    </div>
+    <div class="popup exchange-popup" id="exchange-popup">
+        <form class="popup__wrapper" id="exchange-popup-form">
+            <div class="attention">
+                <img class="attention__icon" src="images/icons/attention.svg" alt="">
+                <p class="attention__text">Внимательно проверьте введенные Вами данные!</p>
+            </div>
+            <div class="exchange-popup-item">
+                <p class="exchange-popup-item__label">Персональные данные</p>
+                <div class="exchange-popup-item-row">
+                    <p class="exchange-popup-item__title">Ваш e-mail:</p>
+                    <p class="exchange-popup-item__value">example@gmail.com</p>
+                </div>
+                <div class="exchange-popup-item-row">
+                    <p class="exchange-popup-item__title">Ваш номер:</p>
+                    <p class="exchange-popup-item__value">+7 983 07 37 425</p>
+                </div>
+            </div>
+            <div class="exchange-popup-item">
+                <p class="exchange-popup-item__label">Отдаете <span>PerfectMoney</span></p>
+                <p class="currency">USD</p>
+                <div class="exchange-popup-item-row">
+                    <p class="exchange-popup-item__title">Номер счета:</p>
+                    <p class="exchange-popup-item__value">U84958475</p>
+                </div>
+                <div class="exchange-popup-item-row">
+                    <p class="exchange-popup-item__title accent">Отдаете:</p>
+                    <p class="exchange-popup-item__value accent">150.00 USD</p>
+                </div>
+            </div>
+            <div class="exchange-popup-item">
+                <p class="exchange-popup-item__label">Получаете <span>Сбербанк</span></p>
+                <p class="currency">RUB</p>
+                <div class="exchange-popup-item-row">
+                    <p class="exchange-popup-item__title">Номер карты:</p>
+                    <p class="exchange-popup-item__value">2890 4947 4241 3388</p>
+                </div>
+                <div class="exchange-popup-item-row">
+                    <p class="exchange-popup-item__title">ФИО:</p>
+                    <p class="exchange-popup-item__value">Михайлов Артемий Александрович</p>
+                </div>
+                <div class="exchange-popup-item-row">
+                    <p class="exchange-popup-item__title accent">Получаете:</p>
+                    <p class="exchange-popup-item__value accent">10 472.00 RUB</p>
+                </div>
+            </div>
+            <div class="exchange-popup-item">
+                <div class="attention">
+                    <img class="attention__icon" src="images/icons/attention.svg" alt="">
+                    <p class="attention__text">На Ваш e-mail отправлен PIN-код, введите его в соответствующее поле.</p>
+                </div>
+                <label class="label" for="pin">Введите PIN-код:</label>
+                <input type="text" id="pin" class="input popup-input" placeholder="PIN" required>
+            </div>
+            <div class="exchange-popup-item">
+                <label class="label" for="captcha">Текст с картинки:</label>
+                <img src="" alt="" class="exchange-popup__captcha">
+                <input type="text" id="captcha" class="input popup-input" placeholder="16620" required>
+            </div>
+            <div class="exchange-form__control-row">
+                <a href="#" class="button secondary">Отмена</a>
+                <input type="submit" class="button" value="Продолжить" />
+            </div>
+        </form>
+    </div>
+    <section class="mobile-menu" id="menu">
+        <div class="container">
+            <a href="#" class="header__logo">
+                <span class="header__logo-first">NIX</span>
+                <span class="header__logo-second">exchange</span>
+            </a>
+            <ul class="header__menu">
+                <li class="header__menu__item"><a href="#" class="header__menu__item-link">Главная</a></li>
+                <li class="header__menu__item"><a href="#" class="header__menu__item-link">Обмена через бота</a></li>
+                <li class="header__menu__item"><a href="#" class="header__menu__item-link">FAQ</a></li>
+                <li class="header__menu__item"><a href="#" class="header__menu__item-link">Контакты</a></li>
+            </ul>
+            <a href="#" class="button">Обменять</a>
+        </div>
+    </section>
+    <section class="header">
+        <div class="container">
+            <a href="#" class="header__logo">
+                <span class="header__logo-first">NIX</span>
+                <span class="header__logo-second">exchange</span>
+            </a>
+            <ul class="header__menu">
+                <li class="header__menu__item"><a href="#" class="header__menu__item-link">Главная</a></li>
+                <li class="header__menu__item"><a href="#" class="header__menu__item-link">Обмена через бота</a></li>
+                <li class="header__menu__item"><a href="#" class="header__menu__item-link">FAQ</a></li>
+                <li class="header__menu__item"><a href="#" class="header__menu__item-link">Контакты</a></li>
+            </ul>
+            <a href="#" class="button">Обменять</a>
+            <div class="header__menu-btn" id="menu-btn">
+                <span class="header__menu-btn-line"></span>
+                <span class="header__menu-btn-line"></span>
+                <span class="header__menu-btn-line"></span>
+            </div>
+        </div>
+    </section>
+    <section class="exchange-page">
+        <div class="container">
+            <div class="exchange__values">
+                <div class="exchange__system__value">
+                    <img class="exchange__system__value-icon" src="images/icons/visa.svg" alt="">
+                    <p class="exchange__system__value-title">Brand Name title</p>
+                </div>
+                <svg class="exchange__values-icon"><use xlink:href="images/icons/refresh.svg#refresh"></use></svg>
+                <div class="exchange__system__value">
+                    <img class="exchange__system__value-icon" src="images/icons/visa.svg" alt="">
+                    <p class="exchange__system__value-title">Brand Name title</p>
+                </div>
+            </div>
+            <form class="exchange-form" id="exchange-form">
+                <div class="exchange-form-row">
+                    <div class="exchange-form__input-container">
+                        <label class="label" for="paid">Отдаете</label>
+                        <input type="text" id="paid" class="input" placeholder="0.00" required>
+                    </div>
+                    <div class="exchange-form__input-container">
+                        <label class="label" for="paid-comm">Отдаете с учетом комиссии</label>
+                        <input type="text" id="paid-comm" class="input" placeholder="0.00" required>
+                    </div>
+                    <svg class="exchange-form__exchange-icon"><use xlink:href="images/icons/refresh.svg#refresh"></use></svg>
+                    <div class="exchange-form__input-container">
+                        <label class="label" for="paid-get">Получаете</label>
+                        <input type="text" id="paid-get" class="input" placeholder="0.00" required>
+                    </div>
+                </div>
+                <div class="exchange-form-row">
+                    <div class="exchange-form__input-container">
+                        <label class="label" for="lastname">Ваша Фамилия</label>
+                        <input type="text" id="lastname" class="input" placeholder="Введите вашу фамилию" required>
+                    </div>
+                    <div class="exchange-form__input-container">
+                        <label class="label" for="phone">Ваш номер телефона</label>
+                        <input type="text" id="phone" class="input" placeholder="Введите номер телефона" required>
+                    </div>
+                </div>
+                <div class="exchange-form-row">
+                    <div class="exchange-form__input-container">
+                        <label class="label" for="firstname">Ваше Имя</label>
+                        <input type="text" id="firstname" class="input" placeholder="Введите ваше имя" required>
+                    </div>
+                    <div class="exchange-form__input-container">
+                        <label class="label" for="mail">Ваш e-mail</label>
+                        <input type="text" id="mail" class="input" placeholder="Введите ваш e-mail" required>
+                    </div>
+                </div>
+                <div class="exchange-form-row">
+                    <div class="exchange-form__input-container">
+                        <label class="label" for="wallet">Номер кошелька PerfectMoney</label>
+                        <p class="currency">USD</p>
+                        <input type="text" id="wallet" class="input" placeholder="Введите номер кошелька..." required>
+                    </div>
+                </div>
+                <div class="exchange-form-row">
+                    <div class="exchange-form__input-container">
+                        <label class="label" for="card">Номер пластиковой карты</label>
+                        <p class="currency">RUB</p>
+                        <input type="text" id="card" class="input" placeholder="Введите номер карты..." required>
+                    </div>
+                </div>
+                <div class="exchange-form-row">
+                    <div class="exchange-form__input-container">
+                        <p class="exchange-form__info">Если хотите получать уведомления о нужном Вам резерве или курсе, перейдите по <a class="accent" href="#" target="_blank">ссылке.</a></p>
+                        <div class="exchange-form__terms">
+                            <input class="exchange-form__terms-check" id="terms" type="checkbox" required>
+                            <label for="terms" class="exchange-form__terms-title">Я принимаю условия <a class="accent underline" href="#" target="_blank">соглашения.</a></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="exchange-form__control-row">
+                    <a href="#" class="button secondary">Отмена</a>
+                    <input type="submit" class="button" value="Продолжить" />
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
