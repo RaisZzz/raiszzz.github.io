@@ -62,6 +62,10 @@ ul[class] {
     list-style: none;
 }
 
+html,body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Biotif', sans-serif;
     background-color: var(--main-bg);
