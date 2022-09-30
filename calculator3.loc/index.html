@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<div class="calculator-ordered" id="calculator-ordered">
+    <p class="calculator-ordered__title">Спасибо!</p>
+    <p class="calculator-ordered__description">
+        Вы успешно оформили заказ. В ближайшее рабочее время с 9-00 до 20-00 с Вами свяжется наш менеджер для уточнения заказа.
+        <br>
+        <a href="tel:88125076211">8 812 507 62 11</a>
+    </p>
+    <button class="calculator-ordered__more" id="order-more">Заказать еще</button>
+</div>
+<div class="calculator-wrapper" id="first-step">
+    <div class="calculator-header">
+        <svg class="calculator__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="118" height="63" viewBox="0 0 118 63">
+            <image id="transport_05_копия_2" data-name="transport_05 копия 2" width="118" height="63" xlink:href="data:img/png;base64,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"/>
+        </svg>
+        <p class="calculator__legend">Рассчитайте стоимость заказа</p>
+    </div>
+    <div class="calculator-container">
+        <div class="calculator" id="calculator">
+            <div class="calculator-type-wrapper" id="types-wrapper">
+                <p class="calculator__title">Выберите тип кузова:</p>
+                <div class="calculator-type">
+                    <div class="calculator-type__btn">
+                        <input type="radio" id="small" name="type" class="calculator-type__btn-input" data-type="10">
+                        <label for="small" class="calculator-type__btn-title">Малый</label>
+                    </div>
+                    <div class="calculator-type__btn">
+                        <input type="radio" id="medium" name="type" class="calculator-type__btn-input" data-type="20"
+                               checked="checked">
+                        <label for="medium" class="calculator-type__btn-title">Средний</label>
+                    </div>
+                    <div class="calculator-type__btn">
+                        <input type="radio" id="big" name="type" class="calculator-type__btn-input" data-type="30">
+                        <label for="big" class="calculator-type__btn-title">Большой</label>
+                    </div>
+                </div>
+                <p class="calculator-type__description" data-type="10">170 X 100 X 90 см. Подойдет для нескольких
+                    коробок, духового шкафа или кресла</p>
+                <p class="calculator-type__description" data-type="20">260 Х 160 Х 150 см. Поместится трехместный диван
+                    или шкаф и пара коробок</p>
+                <p class="calculator-type__description" data-type="30">400 Х 190 Х 200 см. Отлично подойдет для
+                    переезда. Поместятся вещи всей семьи</p>
+            </div>
+            <div class="calculator-peoples" id="peoples-wrapper">
+                <div class="calculator-peoples-column">
+                    <p class="calculator-peoples__title">Длительность</p>
+                    <div class="calculator-count-choose">
+                        <button class="calculator-count-choose__btn" id="duration-minus"><span class="minus"></span>
+                        </button>
+                        <p class="calculator-count-choose__value"><span id="duration"></span></p>
+                        <button class="calculator-count-choose__btn" id="duration-plus"><span class="plus"></span></button>
+                    </div>
+                </div>
+                <span class="calculator-peoples__line"></span>
+                <div class="calculator-peoples-column">
+                    <p class="calculator-peoples__title">Грузчики</p>
+                    <div class="calculator-count-choose">
+                        <button class="calculator-count-choose__btn" id="movers-minus"><span class="minus"></span>
+                        </button>
+                        <p class="calculator-count-choose__value"><span id="movers"></span></p>
+                        <button class="calculator-count-choose__btn" id="movers-plus"><span class="plus"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="calculator-promo-wrapper">
+                <p class="calculator-promo__title">Промкод</p>
+                <div class="calculator-promo" id="promo-wrapper">
+                    <input type="text" class="calculator-promo__input" id="promo">
+                </div>
+            </div>
+            <div class="calculator-duration" id="duration-wrapper">
+                <p class="calculator-duration__title">Пассажиры</p>
+                <div class="calculator-count-choose">
+                    <button class="calculator-count-choose__btn" id="passengers-minus"><span class="minus"></span>
+                    </button>
+                    <p class="calculator-count-choose__value"><span id="passengers"></span></p>
+                    <button class="calculator-count-choose__btn" id="passengers-plus"><span class="plus"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="calculator-promo-wrapper">
+                <p class="calculator-promo__title">Итого</p>
+                <div class="calculator-promo">
+                    <span class="calculator-promo__input total__value"></span>
+                </div>
+            </div>
+            <div class="calculator__submit-wrapper">
+                <button class="calculator__submit" id="next">
+                    Оформить заказ
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="calculator-wrapper" id="second-step">
+    <div class="calculator-header">
+        <svg class="calculator__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="118" height="63" viewBox="0 0 118 63">
+            <image id="transport_05_копия_2" data-name="transport_05 копия 2" width="118" height="63" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHYAAAA/CAYAAAA18Dy1AAAKr0lEQVR4nO2dC3QU1RnHfzsJEiBAKWCEUkXaVBSogB5A8EEFD9CKUXlUe0R6oA9bEBTpoUVsj/LQagu1lkJtRQQKCkhpEaWKFLSAFFGiOZQ3ArW8wisQkgDZ7bmz34bJ7GR3Z7IzO7vp/5zNY/bO3O+bb+693/1eE6hcj5toDdwAXA9cA7QFLgeaAjnSbzlwGjgKHAB2AFuBj4D/mGnTssJXuOe7sPw9V2lPa2S7QHxHoADoD3QH6sVpr4ScB3zNdLwS+BewClgOfJIB99szJFOw9wMjgT5xW4YgoEGgUcxWamzeJJ8ngbXAS2SxgCZQz41HMoOQjNvzIDABuC7hMwIQCkFlia1+equPlsXj5PDc+QssAioc0OslgqnquDZrbE/gOfltC1pjOHMMuo+AknN2KQ6P9uMnOVZW4VvBBkRnUEvRhVQQ4HTEPiOj1BmyIBiEf++vFe0ta3W2+2idys7tCrYNsFjWPedQa2wAmjaC06XJZ8onOJJKMuwIVk25K4EvuEjP/5EkJCrYAcCbbt/07h2ge08InXJ2fqABHD5G4eK3+LPMLl7iZqCrx33WiEQE288LoSoM6w+jfgX81+EF6unTfPMnNrL82ZfZNf+vSSYwNiakk2BvFAOBJyhW9qdiCDlVqkK6OtqmY1d2zutJj0ceYNO0P8Lrb3tC/hc96SVBaHEIXeclMWpvq4QTcvqRjWNQPRi7WNf1JvKWzoN358AtXVwnP+B6DzYQa8Sq57yhn4hNGJou4Prs410tm463fwtu7war10BpWfWLBFrC5vdhyst+Zsg+ahLsZDHepzc0OgSDTGcH47SG0PduMVQa0RququeaYC+m6v5ZCbY9MCkFtLiFR8nilWAFhRyM7kELwUF3dpyV4YUlNbAS7KupIsZFLAQ6eNxnc/FKJcNerFyYU+ycYBbs3eI7zTQoB8VQsZp5hRxxXyYD9wBviJ86IZi14ukZKNQIZviDDMdYYOdEo2CVY/xqf/DgCpRR/t40pl8tJcMSbWyciie6Q4+v8DNgmYcE7QJOODhP7Yk7A5eZjv9eRm5cpSwi2C8DtzggIN2gLGn5csO9wCjgHYf9KDPLlaZjueIDHx/v5MhUfH+mSC4BfMfDvswjzg5qsmQ9Bnwp3nUigk2W9pYOuNNDGp0KVotjopybyAVUlGAPhwSkI9R03CLNeegLfCNWA00c6LGcAZkI23FaPsS8eIL1jQ/RQ2QCzyqQYGxNXyrBXustPb5AOvK8QTImjFBhCZbR2UqwV3lKnj+Qjjz/DhhnOpYte9soaJJLU9eQjjxfAcyxiFN+0MrBoQTbxDvafAPFc/00o7md/LZaV6PsyJoh660uIScN+a6U37OAfabvOov3qgpaHdzqIJv/KgNAwFfRSjXCaB+2cgbMNv6jhHo+NXSmFBeq+A7AhZRk19jGccMJKuPqWdMFmgFTI/8orepMBlhi7ELxHA5rC0BJeqSZ3AYclr/VtGwVVq88dC+odtnyJGSyH9YKx6umtmw4etJv5Fmir3ziQYXlDdCsygHUAXxOZJENwsGjGcWwCpi4VQl2pw+I8Ro6zwEViloKOw/4ksbY+f6x8SetjtZ2KNR/qg3PMSj0yu1uD7VR6fKzxQZZ1xDmuQls3waHjvuO+6B4oOIVZkF0hR+ZDBens2Wzuwf4iouE+gkH9Kk4FPZEr0s4oNNz7LHRYVTbiHHCkzRJn0DPHtS08IZnhbt1rrxCU3M/EcEuzAj2EsNreqtmcG47vLPJ/wQ7QUSwH8gUlelQG5s1+gp2BSxeA+dTljblLox24ufTivJQeDrVckFrAdrloDUDrT4EQjVG3iqfpt5G2W1meJnw4TGMgp2VqppEtlAJWj3Q2oVj+y+cgX1FsPMjKN4fdsYF8kFrqYpYRQn4ed0YdzV8sAo+2e0rzppJzHPbBLXhmDBmAijb6S99nUJ5ETQJoV6xBOavhA1b4XOxHDXMgevawTdvhYcGQasuENgHwTI9L/bXQImWE77OuJkp5SQClZH3EDBQnOW5cvwQsBH0IimOMhfMLrvJVcZxv0EJ9Ro49BkMGAZ3jYUlb18SqsK5cvhwGzw1G/IHwswZ4Vh6rTXntMZMUtM2X4c1i2BjUcr5GyHblClSwS3X8F0ryTN6XdcJHITymAWrXFk/rD3NSYYSaj7s3Qod74RV/4x/+dJyGD0VxoyB0nPcV3aa8rJyKN4Cw59JOUeT9YKfFtsUC6j44SKpKpswrBKf5wM/kLpFqYdSkvLg/FHoNRRO2HSxvfAaLFhJs6zLwo9x2SkoTa0mPMLBcpcrPtg24nKMi5pqUBRIybiUF4/VPTAt4OHhcNiiWqoqGjKgNzRuBEV7YMFiOFVevc3Js7wiU1qqPVktZKSacVYGVKEUdOknHyOayLlDa7y6ATUJ7oQs6G8lj6f4yG0QLn2pGRMP86BkM7y4Mvr0uRNhuHr2G1w69uQouPd7sO7TqOa/AL7vIvlWc4nZGW6VqrrJMJAiUNrBEIsM/CFStNtcNeOs+aKxRuQqySd9OkabpEIZ4w8VQXDvpatqF2H2ouhepo2E4VPDq8+038Lhk1BwM/QZC2sXQX5/2F19fH5bFBW3QoHyLI6pAIbt8rdmkelXLEueWhx6yWhULomngCWi7/zBdM54i8oDrcwdJ1Kv+DexUgmcQGsKJYfhyoLq1U91g4Nm2ntqcNG0u27eFIrfD0cH97oDNhhG54dz4YbhjG7fljM79utTsBEhQ7RfsmEVGGjcSQcsihFNlIGjqrKvNhz/WJLHgjXkyZq1BHPfpxNZQx+Rkx526YZUQdUwDpprrFiIoZsqFdIJ3pteXagKgyewo88yZu7Yb5lDGvBYbzAL0oy18v+TpuNdJBLiTVGazIKNy0OioadjjBFwyULIYRWkivPhcZDTIPq7z45w8KW/6X/GTQ72ASIWJqs66xF7gpMc24CdmOJJoqrXHlJh3HbZeMGmbRDcBN2GweDoAgtqfUKeeL9joND3U9PcpEbqP+Tv2xzw0MTJOwE6S25mJ6c3LVAfKkrhxb9ARRzrdKAFfLweFq6ufvzHBTBzub5+bRzUm1eXrdNnnzfEmqO2BgdN6Sun3Jh1bOInpryhcrENH5HpdrAoTxHdQD2kT5i6WCqadCxU1OZlD9NEa7YPMeTrLMWbM9Rt+BSyroegaep+dDDb2nSlw7w5UHjJoK8sNEukdKARUyxuktcYL8VBjDgg5sMtpuNWbUm0ympt35TVSfaHg9y6QYEgBDrA5HHw8+jKC+VhsetP8FmpwHaXxWWC4j2x90KY5CNHbAQW2oE+2xSJgaJvDa+7mWGRSmmJZL0CTe3BRgP3Jf1WKJNiE10PPNulgDNbd0Xv2RLAEJnC/IB+Dot7qyXmq4k2TlZC1nopKaQC4h4HNifpumri2UIJk2hJuxuv1f2Vdv0yj/lIqAp/F1u8Hey2++YUN19a2F6KgvUIO8v0/M545dVVssVeiXVW06syQ2zTX1SYB0NGwtI1+t5wVgLmwT16SVtYkUSekok7JGolXtmE+WKBsuVOdfttlEY0kr1lS9FWc0QRKJO175i85iHK7mkSbARKO39AHp5I1MFxGdFKmCqHJWX1gm1ApUQqvUBVnVVOAmVVUtYmJRkVZKhe3GgPwP8A3ROGcnZiy+8AAAAASUVORK5CYII="/>
+        </svg>
+        <p class="calculator__legend">Рассчитайте стоимость заказа</p>
+    </div>
+    <div class="calculator-container">
+        <div class="calculator" id="calculator2">
+            <div class="calculator-address">
+                <p class="calculator__title">Укажите адрес:</p>
+                <div class="calculator__address-wrapper" id="address-wrapper">
+                    <div class="calculator__address-input-container">
+                        <input type="text" class="calculator__address" id="from">
+                        <div class="calculator__addresses-list" id="from-list"></div>
+                    </div>
+                    <div class="calculator__address-input-container">
+                        <input type="text" class="calculator__address" id="to">
+                        <div class="calculator__addresses-list" id="to-list"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="calculator-phone-wrapper">
+                <p class="calculator__title">Укажите номер телефона:</p>
+                <div class="calculator-more">
+                    <div class="calculator-phone" id="phone-wrapper">
+                        <input type="text" class="calculator-phone__input" id="phone"
+                               placeholder="+7 ( _ _ _ ) _ _ _-_ _-_ _">
+                    </div>
+                </div>
+            </div>
+            <div class="calculator-datetime" id="datetime-wrapper">
+                <label for="datetime" class="calculator-datetime__title">Дата и время</label>
+                <p class="calculator-datetime__value"><span id="date"></span><span
+                        class="calculator-datetime__line"></span> <span id="time"></span></p>
+                <input type="datetime-local" class="calculator-datetime__input" min="2022-06-19T20:20" id="datetime">
+            </div>
+            <div></div>
+            <div class="calculator__submit-wrapper">
+                <button class="calculator__submit" id="submit" disabled>
+                    Оформить заказ
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
