@@ -116,7 +116,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 40px 100px;
-    padding-right: 30%;
+    padding-right: 400px;
     position: relative;
     z-index: 1;
 }
@@ -456,6 +456,15 @@
 }
 
 @media all and (max-width: 1600px) {
+    .whatsection__image {
+        width: 400px;
+        max-width: 100%;
+    }
+
+    .levelsection__container {
+        width: calc(100% - 40px);
+    }
+
     .firstsection__banner {
         width: 600px;
     }
@@ -514,11 +523,20 @@
     }
 
     .wishsection__bg {
-        width: 50%;
+        width: 550px;
+        max-width: 50%;
         left: 0;
     }
     .forsection__bg {
-        right: -10%;
+        right: -1%;
+    }
+
+    .wishsection__title {
+        font-size: 30px;
+    }
+
+    .wishsection__container {
+        width: calc(100% - 40px);
     }
 }
 
