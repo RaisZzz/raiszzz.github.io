@@ -109,6 +109,7 @@
     right: 0;
     max-width: 35%;
     max-height: calc(100% - 150px);
+    z-index: 0;
 }
 
 .forsection-list {
@@ -116,6 +117,8 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 40px 100px;
     padding-right: 30%;
+    position: relative;
+    z-index: 1;
 }
 
 .forsection__item {
@@ -439,7 +442,6 @@
 }
 
 .wishsection-col .primary-btn {
-    padding: 30px;
     text-align: center;
     margin-top: 40px;
 }
@@ -453,6 +455,72 @@
     background-color: var(--menu-mobile);
 }
 
+@media all and (max-width: 1600px) {
+    .firstsection__banner {
+        width: 600px;
+    }
+
+    .primary-btn {
+        padding: 20px 30px;
+        font-size: 18px;
+        border-width: 2px;
+    }
+
+    .forsection-list {
+        grid-gap: 20px 40px;
+    }
+
+    .forsection__item-count {
+        font-size: 50px;
+    }
+
+    .forsection__item-text {
+        font-size: 18px;
+    }
+
+    .waitsection__item-icon {
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .waitsection__item-value {
+        font-size: 30px;
+    }
+
+    .whatsection-row {
+        gap: 100px;
+    }
+
+    .whatsection__text {
+        font-size: 18px;
+    }
+
+    .whatsection__title {
+        font-size: 24px;
+        padding-bottom: 15px;
+    }
+
+    .whatsection-col {
+        gap: 20px;
+    }
+
+    .levelsection__line {
+        margin-top: 40px;
+        height: 30px;
+    }
+
+    .levelsection__item {
+        font-size: 20px;
+    }
+
+    .wishsection__bg {
+        width: 50%;
+        left: 0;
+    }
+    .forsection__bg {
+        right: -10%;
+    }
+}
 
 @media all and (max-width: 1000px) {
     .primary-btn {
