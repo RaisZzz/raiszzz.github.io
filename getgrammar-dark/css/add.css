@@ -455,6 +455,26 @@
     background-color: var(--menu-mobile);
 }
 
+.try-link {
+    position: fixed;
+    top: 100px;
+    right: 15px;
+    z-index: 9;
+    color: #fff;
+    background-color: var(--secondary);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.try-link:hover {
+    opacity: 0.7;
+}
+
 @media all and (max-width: 1600px) {
     .whatsection__image {
         width: 400px;
@@ -625,10 +645,19 @@
     .levelsection__line:before {
         width: 62%;
     }
-}
-
-@media all and (max-width: 600px) {
     .levelsection__item {
         font-size: 10px;
+    }
+    .try-link {
+        width: calc(100% - 30px);
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 29.99875em) {
+    .try-link {
+        width: 100%;
+        right: 0;
     }
 }
