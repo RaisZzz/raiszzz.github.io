@@ -52,6 +52,10 @@
     top: calc(250px + -20 * ((100vw - 320px) / 1600));
 }
 
+.firstsection {
+    padding-top: calc(150px + 60 * ((100vw - 320px) / 1600));
+}
+
 .firstsection__container {
     display: flex;
     flex-direction: column;
